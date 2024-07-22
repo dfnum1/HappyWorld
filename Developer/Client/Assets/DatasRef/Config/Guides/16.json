@@ -1,0 +1,446 @@
+﻿{
+    "Guid": 122,
+    "Name": "1-3-继续战斗-非强制",
+    "priority": 0,
+    "Tag": 122,
+    "bRemoveOver": false,
+    "bChangeStateBreak": false,
+    "vTriggers": [
+        {
+            "Guid": 2,
+            "Name": "打开某个UI",
+            "bExpand": true,
+            "posX": -377,
+            "posY": -528,
+            "Ops": [
+                3
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 2,
+            "priority": 986,
+            "argvGuids": [
+                1,
+                2
+            ],
+            "Events": []
+        },
+        {
+            "Guid": 12,
+            "Name": "关闭某个UI",
+            "bExpand": true,
+            "posX": -365,
+            "posY": -37,
+            "Ops": [
+                13
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 6,
+            "priority": 986,
+            "argvGuids": [
+                17,
+                18
+            ],
+            "Events": []
+        }
+    ],
+    "vExcudes": [
+        {
+            "Guid": 4,
+            "Name": "是否执行过引导组",
+            "bExpand": true,
+            "posX": 205,
+            "posY": -180,
+            "Ops": [
+                5
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 202,
+            "argvGuids": [
+                3,
+                4
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 6,
+            "Name": "当前关卡进度",
+            "bExpand": true,
+            "posX": 805,
+            "posY": -178,
+            "Ops": [
+                7
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 104,
+            "argvGuids": [
+                5
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 20,
+            "Name": "获取玩家等级",
+            "bExpand": true,
+            "posX": 1377,
+            "posY": -175,
+            "Ops": [
+                21
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 138,
+            "argvGuids": [
+                21
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        }
+    ],
+    "vSteps": [
+        {
+            "Guid": 8,
+            "Name": "控件点击",
+            "bExpand": true,
+            "posX": 675,
+            "posY": 492,
+            "Ops": [],
+            "nextGuid": 0,
+            "bFireCheck": false,
+            "type": 100,
+            "fDeltaTime": 0.0,
+            "fDeltaSignTime": 0.0,
+            "bOption": true,
+            "bAutoNext": false,
+            "bAutoSignCheck": false,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 10,
+            "Name": "等待界面关闭",
+            "bExpand": true,
+            "posX": -347,
+            "posY": 492,
+            "Ops": [],
+            "nextGuid": 15,
+            "bFireCheck": false,
+            "type": 110,
+            "fDeltaTime": 0.0,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": true,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [
+                16
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 15,
+            "Name": "等待界面关闭",
+            "bExpand": true,
+            "posX": -22,
+            "posY": 491,
+            "Ops": [],
+            "nextGuid": 18,
+            "bFireCheck": false,
+            "type": 110,
+            "fDeltaTime": 0.0,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": true,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [
+                19
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 18,
+            "Name": "等待界面关闭",
+            "bExpand": true,
+            "posX": 294,
+            "posY": 491,
+            "Ops": [],
+            "nextGuid": 8,
+            "bFireCheck": false,
+            "type": 110,
+            "fDeltaTime": 0.0,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": true,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [
+                20
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        }
+    ],
+    "vOperates": [
+        {
+            "Guid": 3,
+            "Name": "3",
+            "bExpand": true,
+            "posX": -78,
+            "posY": -528,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 14,
+                    "dummys": [
+                        {
+                            "nodeGuid": 2,
+                            "argvGuid": 1
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 4
+        },
+        {
+            "Guid": 5,
+            "Name": "5",
+            "bExpand": true,
+            "posX": 537,
+            "posY": -178,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 1,
+                    "dummys": []
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 6
+        },
+        {
+            "Guid": 7,
+            "Name": "7",
+            "bExpand": true,
+            "posX": 1106,
+            "posY": -174,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 103001,
+                    "dummys": [
+                        {
+                            "nodeGuid": 6,
+                            "argvGuid": 5
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 20
+        },
+        {
+            "Guid": 13,
+            "Name": "13",
+            "bExpand": true,
+            "posX": -96,
+            "posY": -37,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 35,
+                    "dummys": [
+                        {
+                            "nodeGuid": 12,
+                            "argvGuid": 17
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 4
+        },
+        {
+            "Guid": 21,
+            "Name": "21",
+            "bExpand": true,
+            "posX": 1707,
+            "posY": -172,
+            "Vars": [
+                {
+                    "type": 2,
+                    "value": 3,
+                    "dummys": [
+                        {
+                            "nodeGuid": 20,
+                            "argvGuid": 21
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 10
+        }
+    ],
+    "vPorts": [
+        {
+            "guid": 6,
+            "value": 3,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 7,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 8,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 9,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 10,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 11,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 12,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 13,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 14,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 15,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 16,
+            "value": 29,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 19,
+            "value": 42,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 20,
+            "value": 45,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 1,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 2,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 17,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 18,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 3,
+            "value": 134,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 4,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 5,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 21,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        }
+    ]
+}

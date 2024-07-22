@@ -1,0 +1,1579 @@
+﻿{
+    "datas": [
+        {
+            "nID": 1,
+            "strName": "无垠草原-黄沙",
+            "loading": "",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "",
+            "NearEffect": "",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.8207547068595886,
+                "g": 0.6233090162277222,
+                "b": 0.4452207088470459,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 10.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.801886796951294,
+                "g": 0.709745466709137,
+                "b": 0.47281062602996828,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 2,
+            "strName": "无垠草原-晴天",
+            "loading": "Assets/Datas/Texture/loading/Loading_jinglingzhisen750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Plain",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_101wuyincaoyuan_beijing.mat",
+            "NearEffect": "Assets/Datas/Particles/Common/Hero/SpeedWind.prefab",
+            "NearKeepDistance": 20.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.8207547068595886,
+                "g": 0.6153401136398315,
+                "b": 0.3523050844669342,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.8773584961891174,
+                "g": 0.795509934425354,
+                "b": 0.5007565021514893,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 3,
+            "strName": "精灵之森-晴天",
+            "loading": "Assets/Datas/Texture/loading/loading.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Plain",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_102jinglingzhisen_bejing.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.27843141555786135,
+                "g": 0.7906618714332581,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 30.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 4,
+            "strName": "精灵之森-阴雨",
+            "loading": "Assets/Datas/Texture/loading/loading.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Rainforest",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_102jinglingzhisen_bejing.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Rain.prefab",
+            "NearKeepDistance": 0.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.29036134481430056,
+                "g": 0.5436835885047913,
+                "b": 0.8207547068595886,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.3118102550506592,
+                "g": 0.5479241609573364,
+                "b": 0.7264150977134705,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 5,
+            "strName": "猛毒雨林-晴天",
+            "loading": "Assets/Datas/Texture/loading/Loading_mengduyulin750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Forest",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_103menduyulin_bejing.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Leaves.prefab",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 150.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.5058823823928833,
+                "g": 0.6567083597183228,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 400.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 6,
+            "strName": "猛毒雨林-雨天",
+            "loading": "Assets/Datas/Texture/loading/Loading_mengduyulin750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Rainforest",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_103menduyulin_bejing.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Rain.prefab",
+            "NearKeepDistance": 0.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.5742637515068054,
+                "g": 0.47058823704719546,
+                "b": 0.772549033164978,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.7008721828460693,
+                "g": 0.8250740170478821,
+                "b": 0.849056601524353,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 7,
+            "strName": "熔岩池-洞窟",
+            "loading": "Assets/Datas/Texture/loading/Loading_rongyanchi750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Lava",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_109ronyanchi_beij.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Firedot.prefab",
+            "NearKeepDistance": 14.5,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": -50.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.46666669845581057,
+                "g": 0.3529411852359772,
+                "b": 0.4745098352432251,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.8301886916160584,
+                "g": 0.7851471900939941,
+                "b": 0.6618013381958008,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 8,
+            "strName": "熔岩池-岩浆",
+            "loading": "Assets/Datas/Texture/loading/Loading_rongyanchi750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Lava",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_109ronyanchi_beij.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Firedot.prefab",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.849056601524353,
+                "g": 0.4668840765953064,
+                "b": 0.2843538820743561,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 0.9305173754692078,
+                "b": 0.8254716992378235,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 9,
+            "strName": "竹林",
+            "loading": "Assets/Datas/Texture/loading/Loading_jinglingzhisen750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Forest",
+            "SkyBoxMat": "Assets/DatasRef/Scenes/111zhulin/Materials/zhulinsky.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.6274510025978088,
+                "g": 1.0,
+                "b": 0.7856353521347046,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 30.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.6063354015350342,
+                "g": 0.7358490228652954,
+                "b": 0.3713954985141754,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [
+                {
+                    "lightName": "Directional Light",
+                    "position": {
+                        "x": 0.0,
+                        "y": 3.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 48.0,
+                        "y": -38.0,
+                        "z": -52.0
+                    },
+                    "lightmapType": 4,
+                    "color": {
+                        "r": 0.9318653345108032,
+                        "g": 1.0,
+                        "b": 0.6941176652908325,
+                        "a": 1.0
+                    },
+                    "intensity": 1.8799999952316285,
+                    "indirectMultiplier": 1.0,
+                    "shadowType": 2,
+                    "shadowStrength": 1.0,
+                    "shadowNearPlane": 0.20000000298023225,
+                    "renderMode": 0,
+                    "layerMask": -1
+                },
+                {
+                    "lightName": "Directional Light (1)",
+                    "position": {
+                        "x": 0.0,
+                        "y": 3.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 31.839344024658204,
+                        "y": 183.69134521484376,
+                        "z": 216.0001220703125
+                    },
+                    "lightmapType": 4,
+                    "color": {
+                        "r": 0.17621928453445435,
+                        "g": 0.2660484313964844,
+                        "b": 0.37735849618911745,
+                        "a": 1.0
+                    },
+                    "intensity": 3.299999952316284,
+                    "indirectMultiplier": 1.0,
+                    "shadowType": 0,
+                    "shadowStrength": 0.8320000171661377,
+                    "shadowNearPlane": 0.20000000298023225,
+                    "renderMode": 0,
+                    "layerMask": -1
+                }
+            ],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 10,
+            "strName": "极地冰原",
+            "loading": "",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "",
+            "NearEffect": "",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 15.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.250980406999588,
+                "g": 0.8705882430076599,
+                "b": 1.4980392456054688,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 35.0,
+            "FogEnd": 350.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.0,
+                        "value": 0.0,
+                        "inSlope": 2.0,
+                        "outSlope": 2.0,
+                        "tangentMode": 0,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 1.0,
+                        "value": 1.0,
+                        "inSlope": 0.0,
+                        "outSlope": 0.0,
+                        "tangentMode": 0,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0
+                    }
+                ],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 11,
+            "strName": "训练场",
+            "loading": "Assets/Datas/Texture/loading/Loading_jinglingzhisen750.png",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_600weichengxunlianchang_beijing.mat",
+            "NearEffect": "Assets/Datas/Particles/Common/Hero/SpeedWind.prefab",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 5.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": -12.729999542236329,
+                "z": -89.0
+            },
+            "FarRotate": {
+                "x": -11.100000381469727,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.6784313917160034,
+                "g": 0.9169600009918213,
+                "b": 0.9921568632125855,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 30.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 12,
+            "strName": "中式竹林",
+            "loading": "Assets/Datas/Texture/loading/Loading_longdaozhulin750.png",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.5254902243614197,
+                "g": 0.8235294818878174,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 10.0,
+            "FogEnd": 500.0,
+            "EnvironmentColor": {
+                "r": 0.319108247756958,
+                "g": 0.9528301954269409,
+                "b": 0.7801604270935059,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 1000,
+            "strName": "主城主题",
+            "loading": "Assets/Datas/Texture/loading/loading.png",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_for3dmaincity.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.42352941632270815,
+                "g": 0.95686274766922,
+                "b": 1.4980392456054688,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 200.0,
+            "FogEnd": 700.0,
+            "EnvironmentColor": {
+                "r": 0.0,
+                "g": 0.3960897624492645,
+                "b": 0.7775094509124756,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [
+                    {
+                        "serializedVersion": "3",
+                        "time": 0.0,
+                        "value": 0.0,
+                        "inSlope": 0.0,
+                        "outSlope": 0.0,
+                        "tangentMode": 0,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0
+                    },
+                    {
+                        "serializedVersion": "3",
+                        "time": 1.0,
+                        "value": 1.0,
+                        "inSlope": 2.0,
+                        "outSlope": 2.0,
+                        "tangentMode": 0,
+                        "weightedMode": 0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0
+                    }
+                ],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 2000,
+            "strName": "PVP主题",
+            "loading": "Assets/Datas/Texture/loading/Loading_jinglingzhisen750.png",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "Assets/Datas/Scenes/101wuyincaoyuan/DistantView_10101.prefab",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.2395073026418686,
+                "g": 0.19037023186683656,
+                "b": 0.5849056243896484,
+                "a": 1.0
+            },
+            "FogDensity": 0.009999999776482582,
+            "FogStart": 10.0,
+            "FogEnd": 174.0,
+            "EnvironmentColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7449712753295898,
+                "b": 0.5411764979362488,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 3000,
+            "strName": "岛屿PVE主题",
+            "loading": "",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.2800000011920929,
+                "g": 0.75,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 50.0,
+            "FogEnd": 1000.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 13,
+            "strName": "死亡荒漠",
+            "loading": "Assets/Datas/Texture/loading/Loading_siwangshamo750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Desert",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_105siwanghuangmo_bejing.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Desert.prefab",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 0.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.9245283007621765,
+                "g": 0.6762253046035767,
+                "b": 0.4579031467437744,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 10.0,
+            "FogEnd": 350.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 0.9628537893295288,
+                "b": 0.8726415038108826,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 14,
+            "strName": "雷霆崖",
+            "loading": "Assets/Datas/Texture/loading/Loading_leitingya750.png",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/Plain",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_150leitingya_beijing.mat",
+            "NearEffect": "Assets/Datas/FX/Scene/Ambience/Thunder.prefab",
+            "NearKeepDistance": 10.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.684059739112854,
+                "g": 0.551886796951294,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 10.0,
+            "FogEnd": 300.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 15,
+            "strName": "爬塔场景",
+            "loading": "Assets/Datas/Texture/loading/Loading_jinglingzhisen750.png",
+            "PrefabMusic": "Assets/Datas/Sounds/BG/beizhan01.mp3",
+            "BattleMusic": "Assets/Datas/Sounds/BG/environment/602.mp3",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_661talou_beijing.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 0.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 100.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.07173370569944382,
+                "g": 0.1575489640235901,
+                "b": 0.4905660152435303,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 10.0,
+            "FogEnd": 450.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 0.13679248094558717,
+                "b": 0.8994973301887512,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 17,
+            "strName": "天山雪景",
+            "loading": "",
+            "PrefabMusic": "event:/Music/Beizhan",
+            "BattleMusic": "event:/Ambient/IceSheet",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_611tianshanxuejing_beijing.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.2800000011920929,
+                "g": 0.75,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 20.0,
+            "FogEnd": 200.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 16,
+            "strName": "风哭岩谷",
+            "loading": "",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_104fengkuyangu_bejing.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 1.0592737197875977,
+                "g": 0.8873497247695923,
+                "b": 0.7487013339996338,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 50.0,
+            "FogEnd": 350.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 18,
+            "strName": "公会boss",
+            "loading": "",
+            "PrefabMusic": "Assets/Datas/Sounds/BG/beizhan01.mp3",
+            "BattleMusic": "",
+            "SkyBoxMat": "Assets/Datas/Scenes/Environments/SkyBox/Skybox_662001gonghuiBOSS_beijing.mat",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.014150917530059815,
+                "g": 0.2590823471546173,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 50.0,
+            "FogEnd": 400.0,
+            "EnvironmentColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        },
+        {
+            "nID": 19,
+            "strName": "地下城",
+            "loading": "Assets/Datas/Texture/loading/Loading_dixiacheng750.png",
+            "PrefabMusic": "",
+            "BattleMusic": "",
+            "SkyBoxMat": "",
+            "NearEffect": "",
+            "NearKeepDistance": 2.0,
+            "NearOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NearRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarBGScene": "Assets/Datas/Scenes/102jinglingzhisen/DistantView_10201.prefab",
+            "BGKeepDistance": 200.0,
+            "FarOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "FarRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "EnableFog": true,
+            "FogColor": {
+                "r": 0.25485047698020937,
+                "g": 0.35249823331832888,
+                "b": 0.650943398475647,
+                "a": 1.0
+            },
+            "FogDensity": 1.0,
+            "FogStart": 10.0,
+            "FogEnd": 200.0,
+            "EnvironmentColor": {
+                "r": 0.9046613574028015,
+                "g": 0.7454044818878174,
+                "b": 0.539479672908783,
+                "a": 1.0
+            },
+            "fLerp": 0.5,
+            "lightDatas": [],
+            "MusicFade": {
+                "serializedVersion": "2",
+                "m_Curve": [],
+                "m_PreInfinity": 2,
+                "m_PostInfinity": 2,
+                "m_RotationOrder": 4
+            },
+            "CurveBlendAixs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "CurveBlendOffset": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        }
+    ]
+}

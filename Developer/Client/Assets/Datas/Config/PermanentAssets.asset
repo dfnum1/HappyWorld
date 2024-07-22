@@ -1,0 +1,657 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a4367ec97378441bc89e449af51c5d, type: 3}
+  m_Name: PermanentAssets
+  m_EditorClassIdentifier: 
+  Assets:
+  - {fileID: 1682568235400392538, guid: 2c8d08f3eb0f24144b28d131a45e971d, type: 3}
+  - {fileID: 3488666827178102697, guid: 294d0883623e8134c9c6e34bd1f04729, type: 3}
+  - {fileID: 1682568235400392538, guid: 2c8d08f3eb0f24144b28d131a45e971d, type: 3}
+  - {fileID: 2487284203389874255, guid: c18b72ed5aa8b4244a87d74995dc7769, type: 3}
+  - {fileID: 2487284203389874255, guid: c18b72ed5aa8b4244a87d74995dc7769, type: 3}
+  - {fileID: 2431602726818718942, guid: f308deca75515ff4c8bcf60b08ca87b0, type: 3}
+  - {fileID: 2100000, guid: 02029293d4debca4aa868c6daa496e4d, type: 2}
+  - {fileID: 7404783359605326190, guid: 41db490217fc7974c95f70943ab81e40, type: 3}
+  - {fileID: 7404783359605326190, guid: 41db490217fc7974c95f70943ab81e40, type: 3}
+  - {fileID: 0}
+  - {fileID: 1680231196174953439, guid: 56dd032846d22c84f81aeac3e43651ef, type: 3}
+  - {fileID: 3862001742060525685, guid: 0664217479e0eac459074ee3beb9418a, type: 3}
+  - {fileID: 0}
+  - {fileID: 5209775522410138981, guid: bdd52b7148470b140839c1c5772f038f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 7485684216727519155, guid: fa643fb3e53845e488cad762a2cddd34, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 1682568235400392538, guid: a7ac08181ec9a564999119e2e95123ef, type: 3}
+  - {fileID: 4775035672456595945, guid: fd5a6214ff703a544b4b925e1da6023b, type: 3}
+  - {fileID: 1682568235400392538, guid: e51dede9aaa79f349b9bd5e60ff02f52, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 7404783359605326190, guid: f621d1b90df365e42ba9db721a54061f, type: 3}
+  - {fileID: 7404783359605326190, guid: f621d1b90df365e42ba9db721a54061f, type: 3}
+  - {fileID: 7404783359605326190, guid: 9b0bcbcc5e0e98d4484123a2c2d35a41, type: 3}
+  - {fileID: 7404783359605326190, guid: 9b0bcbcc5e0e98d4484123a2c2d35a41, type: 3}
+  - {fileID: 0}
+  - {fileID: 3862001742060525685, guid: 0664217479e0eac459074ee3beb9418a, type: 3}
+  - {fileID: 6744401700902348463, guid: b66b78131e822374491356900bad915d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2100000, guid: 5df2b7fc2c4324e459f2bdd0624684e0, type: 2}
+  - {fileID: 2100000, guid: 5c1dddfae3abe00479e468f53637e564, type: 2}
+  - {fileID: 2100000, guid: bed3f770922b7ba489e469b6961ed2f8, type: 2}
+  - {fileID: 2100000, guid: 3f9906d30a8e72e4e883a9f7624aad83, type: 2}
+  - {fileID: 2100000, guid: 7eb8ea1e2a8428248b904a122b8dee28, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2431602726818718942, guid: a0b554caa3831194b9f4453e9cc0781e, type: 3}
+  - {fileID: 2431602726818718942, guid: 5bc8d6e349a83e24a95ea5a132b422c6, type: 3}
+  - {fileID: 2431602726818718942, guid: e57f4b08f4b9e634b8afa0ce358012f1, type: 3}
+  - {fileID: 2431602726818718942, guid: d203257947fcb774d9b30bd8eea60a11, type: 3}
+  - {fileID: 2431602726818718942, guid: fa21734734ab82d4498db8c45c452987, type: 3}
+  - {fileID: 3619598646523797172, guid: e66a024986ea4004480b901c2d9dc738, type: 3}
+  - {fileID: 1682568235400392538, guid: 2c8d08f3eb0f24144b28d131a45e971d, type: 3}
+  - {fileID: 2100000, guid: a75c214c0c200844a8e4ea607d644f0b, type: 2}
+  - {fileID: 2100000, guid: 12419acf8afd5ac4a9b0f6db10c8802b, type: 2}
+  - {fileID: 2100000, guid: 8603e8f59e4bcd943933854777a831cd, type: 2}
+  - {fileID: 2100000, guid: e312910d58d936148ac54713c8f26e0e, type: 2}
+  - {fileID: 7703963266857416140, guid: 724d3630ee39f164abd2b7e2454791ee, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2061595696376163607, guid: 21391c51640e55d4da3b7abdeaabd831, type: 3}
+  - {fileID: 3488666827178102697, guid: 6ed99825eacde8042aa37870ae3925c6, type: 3}
+  - {fileID: 3488666827178102697, guid: f9cd7e45df0a6444686dbe49242e6a64, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 1682568235400392538, guid: 5bbbf6fa1ec15a24aa5e56e775445372, type: 3}
+  Paths:
+  - asset: Assets/Datas/Particles/Common/Boss/Weakness.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Normal_Doorway_01.prefab
+    permanent: 0
+  - asset: Assets/Datas/FX/Common/FX_GetGold.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Blue_Transfer.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Red_Transfer.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Yellow_Transfer.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Purple_Transfer.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Rainbow_Transfer.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Green_Flag.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Red_Flag.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/Maze_Yellow_Flag.prefab
+    permanent: 0
+  - asset: Assets/Datas/Elements/Trap/Maze/Maze_juanzhou.prefab
+    permanent: 0
+  - asset: Assets/Datas/Elements/Trap/Maze/Maze_kapai.prefab
+    permanent: 0
+  - asset: Assets/Datas/Elements/Trap/Maze/Maze_mianju.prefab
+    permanent: 0
+  - asset: Assets/Datas/Elements/Trap/Maze/Maze_shuijing.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_EquipComposite_01.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_EquipComposite_02.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_EquipComposite_03.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_EquipComposite_04.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_EquipComposite_05.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/BuffInfo.prefab
+    permanent: 0
+  - asset: Assets/Datas/FX/UI/FX_UI_TreasureChest_Ribbon.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Unboxing_02.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Unboxing_03.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Lightning_Line.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/HeroSkill/Hero_1043_Unique_line.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/uis/Common/bubbleTalk.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Hero_Leader_Ice.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Hero_Leader_Fire.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Hero_Leader_Wood.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Hero_Leader_Soil.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Hero_Leader_Lightning.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Card_GetBlue.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Card_Blue+.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Card_GetPurple.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Card_Purple+.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_GetCard_Blue.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_GetCard_Blue+.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_GetCard_Purple.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_GetCard_Purple+.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Card_GetGreen.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Card_GetGolden.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Posture_01.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Posture_02.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Posture_03.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Forging.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Activation.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Activation.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Unlocking.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_GetThing.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Hero/Hero_Resurrection.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Element_01.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Element_02.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Element_03.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Element_04.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_Element_05.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/FX/UI/FX_UI_Achievement_Glow.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/Common/Scene/zhangaiwuxiaochu02.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_UR_Root.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_SSR_Root.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_UR_star.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_SSR_star.prefab
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: 
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_kapaiguangxiao01.prefab
+    permanent: 0
+  - asset: Assets/Datas/Particles/UIEffect/UI_kapaiguangxiao02.prefab
+    permanent: 0
+  - asset: Assets/Datas/uis/Commons/ItemTween.prefab
+    permanent: 0
+  - asset: Assets/Datas/uis/Common/WanderOrderIcon.prefab
+    permanent: 0
+  - asset: Assets/Datas/uis/Common/WanderOrderIconLike.prefab
+    permanent: 0
+  - asset: Assets/Datas/uis/Common/HeroTopInfo.prefab
+    permanent: 0
+  - asset: Assets/Datas/uis/Common/WanderNpcTaskMark.prefab
+    permanent: 0
+  BuffMaterials:
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 2100000, guid: 90db190a61f8f3540b7869b6d7024aa8, type: 2}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 
+  - asset: {fileID: 0}
+    propertyName: 

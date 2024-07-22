@@ -1,0 +1,4 @@
+
+[submodule "Developer/Client/GamePlus"]
+	path = Developer/Client/GamePlus
+	url = git@github.com:dfnum1/unitygameframework.git

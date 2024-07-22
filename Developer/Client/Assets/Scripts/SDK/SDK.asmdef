@@ -1,0 +1,20 @@
+{
+    "name": "SDK",
+    "rootNamespace": "",
+    "references": [
+        "GUID:790c4397de67a034fa7138e193b21ec4",
+        "GUID:3368c5c9ba08d1e40ab295bd25fbcb76",
+        "GUID:eb3867057e46a42fc844e0e5fa9a7627",
+        "GUID:9b1c19877f4294a9cb33ff38fc9f1c83",
+        "GUID:e2146bdc04d424169b039613a1b62bdf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

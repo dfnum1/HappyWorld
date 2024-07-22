@@ -1,0 +1,22 @@
+{
+    "name": "Framework",
+    "rootNamespace": "",
+    "references": [
+        "ThirdParty",
+        "Unity.Timeline",
+        "Unity.Timeline.Editor",
+        "Cinemachine",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "HybridCLR.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,8 @@
+﻿场景ID,场景AB路径,场景名,子场景名,当前位置偏移,当前视点位置偏移,当前角度,X向角度限制,Y向角度限制,跟随速度,当前视距,最小跟随距离,最大跟随距离,过渡快慢,FOV,主题,
+ushort,string,string,string,vector3,vector3,vector3,vector2,vector2,vector4,float,float,float,float,float,uint,
+,,,,,,,,,,,,,,,,
+ID,strFile,strName,strSubScene,PositionOffset,LookAtOffset,EulerAngles,ClampAngleX,ClampAngleY,FollowSpeed,FollowDistance,FollowMinDistance,FollowMaxDistance,fLerp,FOV,nTheme,
+1,"","Login","",0.5|8|5.4,0|0|0,15|-2.2|0,-360|360,-360|360,5|0.05|0|4,11,11,100,0.1,60,0,
+2,"","City","",0|0|0,0.46|0.00|17.77,3.50|1.25|0.00,-360|360,-360|360,5|5|5|4,21.82,10,250,5,40,1000,
+3,"","Battle","",0|0|-3,0.74|0.00|-1.63,23.64|-65.19|0.73,-360|360,-360|360,1.5|1.5|0|1.5,40,45,100,1,45,0,
+100,"","Ocean","",5|7|0,0|0|0,43|-94|0.00,-360|360,-360|360,10|10|10|10,10,10,100,2,60,10,

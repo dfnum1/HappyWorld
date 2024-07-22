@@ -1,0 +1,6 @@
+﻿模型ID,名字,,,展示用模型偏移,展示用模型旋转,展示用模型缩放,
+uint,string,float,string,Vector3,Vector3,Vector3,
+,,,,,,,
+ID,strName,fHeight,strFile,modelPosition,modelRotation,modelScale,
+1,"",,"Assets/Datas/Objects/Submarines/qianting.prefab",,,,
+2,"",,"Assets/Datas/Objects/Roles/Test/X_Bot.prefab",,,,

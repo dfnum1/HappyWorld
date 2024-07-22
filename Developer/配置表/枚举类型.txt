@@ -1,0 +1,356 @@
+enum|Core.EActorCollisionType
+{
+0, //包围盒
+1, //胶囊体
+}
+
+//绑定类型
+bit|byte
+{
+    Position = 0,
+    Rotate = 1,
+    Scale = 2,
+}
+
+//元素类型
+bit|uint
+{
+    [Plugin.PluginDisplay("无")] Nothing = 0,
+    [Plugin.PluginDisplay("水")] Water = 1,
+    [Plugin.PluginDisplay("火")] Fire= 2,
+    [Plugin.PluginDisplay("木")] Wood = 3,
+    [Plugin.PluginDisplay("土")] Soil = 4,
+    [Plugin.PluginDisplay("电")] Electric = 5,
+}
+
+enum|Base.EObstacleType
+{
+        [Data.DisplayNameGUI("金币")]
+        Gold = 0,
+        [Data.DisplayNameGUI("食物")]
+        Food = 1,
+        [Data.DisplayNameGUI("矮墙")]
+        SmallWall = 2,
+        [Data.DisplayNameGUI("高墙")]
+        Wall = 3,
+        [Data.DisplayNameGUI("地刺")]
+        Sunkens = 4, //地刺
+        [Data.DisplayNameGUI("传送NPC")]
+        Transfer = 5,   //传送NPC
+        [Data.DisplayNameGUI("触发器")]
+        Trigger = 6,
+        [Data.DisplayNameGUI("陷阱")]
+        Trap = 7,
+        [Data.DisplayNameGUI("炸药桶")]
+        BombBox = 8,
+        [Data.DisplayNameGUI("收集")]
+        Collect = 9,
+        [Data.DisplayNameGUI("收集元素")]
+        CollectElement = 10,
+        [Data.DisplayNameGUI("无")]
+        [Data.DisableGUI]
+        None = 255,
+}
+
+enum|Core.EDamageType
+{
+        AttackDamage = 0,
+        BuffDamage,
+        Cure,
+        Shield,
+        Count,
+}
+
+enum|Base.EMonsterType
+{
+    Normal = 0,     //普通
+    Elite = 1,      //精英
+    Summon = 2,     // 召唤物
+    Boss = 3,
+}
+	
+enum|Base.EMoveType
+{
+    Fixed = 0,
+    Rush = 1,
+    Wander = 2,
+    Standoff = 3,
+}
+
+enum|Base.ESkillType
+{
+    Attack = 0,                          //普攻
+    SmallSkill =1,                  //小技能
+    BigSkill=2，                         //大招
+    PassivitySkill  =3,                           //被动技能
+    FettersSkillActive=4，          //羁绊技能-主动技
+    FettersSkillPassive=5，        //羁绊技能-被动技
+    TalentSkill=6，                    //天赋技能
+}
+//技能触发条件
+bit|uint
+{
+    Immediately = 0,            //随时间自动触发（立即触发，即满足冷却时间和技能消耗的前提下立刻自动触发
+    Initiative = 1,             //大招（主动施放，点击头像施放，自动模式可满能量会自动施放
+    KillEnemy = 2,              //杀敌触发（自己击杀敌人后触发
+    Hitted = 3,                 //受击触发（自身受到攻击后触发
+     TeamSkillPower = 4,         //队友施放大招时触发
+    EnemyDead = 5,              //敌方怪物&英雄死亡时触发
+    TeamMemberDead = 6,         //队友英雄死亡时触发
+    SelfDead = 7,               //自身死亡时触发
+   TeamDying=8,                //队友濒死触发
+   SelfDying=9,                   //自身濒死触发
+    LowerBloodVolume =10，              //血量低于百分比触发
+    Collision = 11,              //碰撞触发
+}
+
+//锁敌类型
+enum|Core.ELockHitType
+{
+    None = 0,    //无目标
+    Self =1,              //自身
+    Team = 2,            //己方
+    DeadFriends=3，   //阵亡友方
+    AllEnemy = 4,      //敌人
+    LittleMonster = 5,     //小怪
+    Boss = 6,                  //BOSS
+    Obstacle=7，           //障碍物
+    trap=8，                  //陷阱
+    ObstacleTrap=9，    //障碍物&陷阱	
+}
+//锁敌条件类型
+enum|Core.ELockHitCondition
+{
+    None = 0,
+    NearDistance  = 1,       //距离最近的目标
+    FarDistance =2,            //距离最远的目标
+    LowerHp=3,                 //血量最少的目标
+    ToperHp =4,                  //血量最多的目标
+    LowerHpRate = 5,          //血量百分比最低的目标
+    ToperHpRate = 6,          //血量百分比最多的目标
+    LowerAttack= 7,            //攻击最低的目标
+    ToperAttack = 8,            //攻击最高的目标            
+    OwnBuff = 9,                 //拥有增益buff
+    OwnDebuff = 10，         //拥有减益buff
+    OwnBuffID = 12,             //拥有指定buffID
+}
+
+enum|Core.EProjectileType
+{
+	Projectile = 0, //飞行器
+    Track,			//跟踪飞行器
+    Trap,			//陷阱
+}
+enum|Core.EBuffType
+{
+	None = 0,
+    Buff = 1,
+    Debuff = 2,
+	Shield = 3,
+	
+}
+
+enum|Core.EBuffAttrType
+{
+		[Plugin.PluginDisplay("血量")]
+        MaxHp = 0,
+        [Plugin.PluginDisplay("能量")]
+        MaxSp = 1,
+        [Plugin.PluginDisplay("攻击力")]
+        Attack = 2,
+        [Plugin.PluginDisplay("防御力")]
+        Defense = 3,
+        [Plugin.PluginDisplay("血量恢复")]
+        HpRec = 4,
+        [Plugin.PluginDisplay("能量恢复")]
+        SpRec = 5,
+        [Plugin.PluginDisplay("暴击伤害")]
+        Crit = 6,
+        [Plugin.PluginDisplay("暴击率")]
+        CritRate = 7,
+        [Plugin.PluginDisplay("攻速")]
+        AttackSpeedRate = 8,
+        [Plugin.PluginDisplay("穿透")]
+        Thorn = 9,
+        [Plugin.PluginDisplay("伤害免疫")]
+        DamageDerate = 10,
+        [Plugin.PluginDisplay("伤害加深")]
+        DamageDeepen = 11,
+        [Plugin.PluginDisplay("架势")]
+        Posture = 12,
+        [Plugin.PluginDisplay("架势恢复")]
+        PostureRec = 13,
+        [Plugin.PluginDisplay("增益BUFF增强")]
+        BuffRate = 14,
+        [Plugin.PluginDisplay("减益BUFF抵抗")]
+        DeBuffRate = 15,
+        [Plugin.DisableGUI]
+
+        [Plugin.PluginDisplay("移动速度")]
+        RunSpeedRate = 22,
+        [Plugin.PluginDisplay("跳跃速度")]
+        JumpRate = 23,
+
+        [Plugin.PluginDisplay("护盾时长")]
+        ShieldDuration = 24,             //护盾时长
+
+        [Plugin.PluginDisplay("弹道速度加成")]
+        ProjectileSpeedAdd = 25,             //弹道速度加成
+        [Plugin.PluginDisplay("索敌数量")]
+        LockHitNum = 26,             //索敌数量
+        [Plugin.PluginDisplay("索敌距离")]
+        LockHitDistance = 27,             //索敌距离
+
+        [Plugin.PluginDisplay("当前损失血量")]
+        CurLostHp = 31,
+
+        [Plugin.PluginDisplay("CD")]
+        CoolDownRate = 32,
+
+        [Plugin.PluginDisplay("损失血量百分比")]
+        LostHpRate = 33,
+        [Plugin.PluginDisplay("当前血量百分比")]
+        CurHpRate = 34,
+
+        [Plugin.PluginDisplay("架势伤害加成")]
+        PostureDamage = 35,
+
+        [Plugin.PluginDisplay("架势伤害穿透")]
+        PostureThornDamage = 36,
+
+        [Plugin.PluginDisplay("额外伤害")]
+        ExternDamage = 37,
+
+        [Plugin.PluginDisplay("吸血")]
+        AbsorbHP = 38,
+        [Plugin.PluginDisplay("击杀回血")]
+        KilledGrowHP = 39,
+        [Plugin.PluginDisplay("反伤")]
+        ReverseDamage = 40,
+
+        [Plugin.PluginDisplay("治疗")]
+        CurveHP = 41,
+        [Plugin.PluginDisplay("受到治疗")]
+        HitCurveHP = 42,
+
+        [Plugin.PluginDisplay("引爆")]
+        Detonate = 43,
+
+        [Plugin.PluginDisplay("额外生命上限伤害")]
+        ExternHpDamage = 44,
+
+        [Plugin.DisableGUI]
+        Count,
+}
+
+//buff 表现
+bit|ushort
+{
+    [Data.DisplayNameGUI("无")]
+    Normal = 0,
+    [Data.DisplayNameGUI("眩晕")]
+    Dizzy = 1,
+    [Data.DisplayNameGUI("击飞")]
+    HitFly = 2,
+    [Data.DisplayNameGUI("无敌")]
+    Invincible = 3, 
+    [Data.DisplayNameGUI("击退")]
+    Repel= 4，
+    [Data.DisplayNameGUI("护盾")]
+    Shield= 5，
+    [Data.DisplayNameGUI("缠绕")]
+    Twining= 6，
+    [Data.DisplayNameGUI("虚弱")]
+    Exhaustion = 7,
+    [Data.DisplayNameGUI("燃烧")]
+    burning= 8,
+    [Data.DisplayNameGUI("加攻")]
+    AddAttack= 9,
+    [Data.DisplayNameGUI("加暴击")]
+    AddCriticalHit= 10,
+    [Data.DisplayNameGUI("复活")]
+    resurrection= 11，
+    [Data.DisplayNameGUI("治疗")]
+    treatment= 12，
+    [Data.DisplayNameGUI("冰冻")]
+    frozen= 13
+    [Data.DisplayNameGUI("易碎")]
+    fragile = 14，
+    [Data.DisplayNameGUI("缴械")]
+    disarm = 15,
+    [Data.DisplayNameGUI("索敌")]
+    target = 16,
+    [Data.DisplayNameGUI("毒液")]
+    venom = 17,
+    [Data.DisplayNameGUI("失灵")]
+    malfunction = 18,
+    [Data.DisplayNameGUI("置换")]
+    substitution = 19,
+    [Data.DisplayNameGUI("吸血")]
+    BloodSucking = 20,
+    [Data.DisplayNameGUI("冷静")]
+    chill = 21,
+    [Data.DisplayNameGUI("最终受伤加深")]
+    EasyHurt= 22,
+    [Data.DisplayNameGUI("最终伤害加深")]
+    HurtDeepen= 23,
+    [Data.DisplayNameGUI("受到的治疗效果增加")]
+    EasyTreat = 24,
+    [Data.DisplayNameGUI("施放的治疗效果增加")]
+    treatmentDeepen = 25,
+    [Data.DisplayNameGUI("无法获得增益buff")]
+    NoGain = 26,
+}
+
+// 战斗中掉落类型
+enum|Base.EDropType
+{
+    BalanceCoin = 0,  //结算金币增幅
+}
+//战斗中掉落道具数据类型
+enum|Base.EDropItemType
+{
+    Rate = 1,// 比率
+}
+
+//奖励掉落类型
+enum ItemTypeCode{
+        Currency = 0; // 货币
+        Item = 1; // 道具
+        Hero = 2; // 英雄 
+        Equip = 3; // 装备   
+        Avatar = 4; // 头像
+        AvatarFrame = 5; // 头像框
+        Title = 6; // 称号
+        EquipSynthesis = 7; // 新装备            
+}
+
+ // 货币类型
+enum CurrencyTypeCode{
+        Null = 0;
+        Gold = 1; // 金币
+        Exp = 2; // 经验
+        Powder = 3; // 魔尘
+        Gem = 4; // 宝石
+        PubPoints = 5; // 酒馆积分
+        FriendlySpot = 6; // 友情点
+        OrdinaryLottery = 7; // 普通抽奖卷
+        GenreLottery = 8; // 流派抽奖卷
+        Severance = 9; // 遣散币        
+        DiscussPoints = 10; // 讨划点数
+        Tears = 11; //  女神之泪
+        HissFragment = 12; //  希斯碎片
+        WarOrder = 13; // 战令 
+        HangUpTime = 14; // 时之沙
+        Currency15 = 15;
+        Currency16 = 16;
+        Currency17 = 17;
+        ActivePoint = 18; // 活跃点
+        ForgingMaterial1 = 19; // 锻造材料1
+        ForgingMaterial2 = 20; // 锻造材料2
+        ForgingMaterial3 = 21; // 锻造材料3
+        ElementsResonate = 22; // 元素共鸣
+
+        RMB = 9999; //人民币 
+}
+

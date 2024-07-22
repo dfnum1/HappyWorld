@@ -1,0 +1,660 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dccf5fb206df874b9e92a632960ae27, type: 3}
+  m_Name: BattleAT
+  m_EditorClassIdentifier: 
+  Data:
+    bEnable: 1
+    Locals:
+      varVariableBool:
+      - GUID: 5231
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5232
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5252
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5277
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5278
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5285
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5286
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      varVariableBoolList: []
+      varVariableByte:
+      - GUID: 5258
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5260
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5262
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableByteList: []
+      varVariableColor:
+      - GUID: 5284
+        strName: 
+        flags: 0
+        mValueDef: {r: 1, g: 0, b: 0, a: 0}
+        bindVarGuid: 0
+      varVariableColorList: []
+      varVariableCurve:
+      - GUID: 5273
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 126.68457
+            outSlope: 126.68457
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.058333337
+          - serializedVersion: 3
+            time: 0.15
+            value: 10
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.3
+            value: 0
+            inSlope: -103.773636
+            outSlope: -103.773636
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.0666666
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      varVariableCurveList: []
+      varVariableFloat:
+      - GUID: 5251
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5274
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5275
+        strName: 
+        flags: 0
+        mValueDef: 0.3
+        bindVarGuid: 0
+      - GUID: 5276
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableFloatList: []
+      varVariableInt:
+      - GUID: 5238
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5240
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5235
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5242
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 5246
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5250
+        strName: 
+        flags: 0
+        mValueDef: 170466615
+        bindVarGuid: 0
+      - GUID: 5265
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5267
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5269
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 205
+        bindVarGuid: 0
+      - GUID: 5279
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5287
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableIntList:
+      - GUID: 5230
+        strName: 
+        flags: 17
+        mValueDef: 0f00000013000000
+        bindVarGuid: 0
+      varVariableLong: []
+      varVariableLongList: []
+      varVariableMonoScript:
+      - GUID: 5282
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      varVariableMonoScriptList: []
+      varVariableObject: []
+      varVariableObjectList: []
+      varVariableQuaternion: []
+      varVariableQuaternionList: []
+      varVariableString:
+      - GUID: 5245
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Drama/GuideTimeline.prefab
+        bindVarGuid: 0
+      - GUID: 5272
+        strName: 
+        flags: 0
+        mValueDef: _RimFactor
+        bindVarGuid: 0
+      - GUID: 5283
+        strName: 
+        flags: 0
+        mValueDef: _RimFactor
+        bindVarGuid: 0
+      varVariableStringList: []
+      varVariableUser:
+      - GUID: 5229
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 5237
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5244
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5248
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1879118545
+        bAutoDestroy: 0
+      - GUID: 5255
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5257
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 55777259
+        bAutoDestroy: 0
+      - GUID: 5264
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -113451244
+        bAutoDestroy: 0
+      - GUID: 5271
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5280
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      varVariableUserList: []
+      varVariableVector2: []
+      varVariableVector2List: []
+      varVariableVector2Int: []
+      varVariableVector2IntList: []
+      varVariableVector3: []
+      varVariableVector3List: []
+      varVariableVector3Int: []
+      varVariableVector3IntList: []
+      varVariableVector4: []
+      varVariableVector4List: []
+    vNodes:
+    - GUID: 31
+      strName: "\u9884\u5B9E\u4F8B\u5316UI\u8D44\u6E90"
+      flags: 0
+      actionType: -410715753
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5229
+        dummys: []
+      - guid: 5230
+        dummys: []
+      - guid: 5231
+        dummys: []
+      - guid: 5232
+        dummys: []
+      outArgvs: []
+      nextActionsID: 21000000
+      rect:
+        serializedVersion: 2
+        x: -657.4435
+        y: -2196.979
+        width: 241.45122
+        height: 10
+    - GUID: 33
+      strName: "\u83B7\u53D6\u4E4B\u524D\u72B6\u6001"
+      flags: 0
+      actionType: 155236381
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5237
+        dummys: []
+      outArgvs:
+      - guid: 5238
+        dummys: []
+      nextActionsID: 22000000
+      rect:
+        serializedVersion: 2
+        x: -270.2649
+        y: -2136.7012
+        width: 211.79611
+        height: 10
+    - GUID: 34
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5242
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 23000000
+      inArgvs:
+      - guid: 5240
+        dummys:
+        - actionGuid: 32
+          varGuid: 5235
+        - actionGuid: 33
+          varGuid: 5238
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 41.040825
+        y: -2136.701
+        width: 194.14427
+        height: 10
+    - GUID: 35
+      strName: PreloadInstance
+      flags: 0
+      actionType: -816304263
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5244
+        dummys: []
+      - guid: 5245
+        dummys: []
+      - guid: 5246
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 402.95193
+        y: -2078.1619
+        width: 240.03906
+        height: 10
+    - GUID: 36
+      strName: "\u663E\u793A\u6389\u8840\u6548\u679C"
+      flags: 0
+      actionType: 1157515512
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5250
+        dummys: []
+      - guid: 5251
+        dummys: []
+      - guid: 5252
+        dummys: []
+      outArgvs: []
+      nextActionsID: 2b000000
+      rect:
+        serializedVersion: 2
+        x: 1078.5
+        y: -15.5
+        width: 242
+        height: 10
+    - GUID: 37
+      strName: get_pActor
+      flags: 0
+      actionType: 325760087
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5248
+        dummys: []
+      outArgvs:
+      - guid: 5255
+        dummys: []
+      nextActionsID: 27000000
+      rect:
+        serializedVersion: 2
+        x: -108.5
+        y: -54.5
+        width: 204.5
+        height: 10
+    - GUID: 38
+      strName: GetAttackGroup
+      flags: 0
+      actionType: 265337666
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5257
+        dummys: []
+      outArgvs:
+      - guid: 5258
+        dummys: []
+      nextActionsID: 28000000
+      rect:
+        serializedVersion: 2
+        x: 455.5
+        y: -46.5
+        width: 245.5
+        height: 10
+    - GUID: 39
+      strName: "\u53D8\u91CF\u8F6C\u5316"
+      flags: 0
+      actionType: 3
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5255
+        dummys: []
+      outArgvs:
+      - guid: 5257
+        dummys: []
+      nextActionsID: 26000000
+      rect:
+        serializedVersion: 2
+        x: 175.5
+        y: -45
+        width: 184
+        height: 10
+    - GUID: 40
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      actionType: 70
+      custumeValue: 3
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5262
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 24000000
+      inArgvs:
+      - guid: 5260
+        dummys:
+        - actionGuid: 38
+          varGuid: 5258
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 793.5
+        y: -41.5
+        width: 196.5
+        height: 10
+    - GUID: 41
+      strName: GetLocationState
+      flags: 0
+      actionType: 1919035152
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5264
+        dummys: []
+      outArgvs:
+      - guid: 5265
+        dummys: []
+      nextActionsID: 2a000000
+      rect:
+        serializedVersion: 2
+        x: -711.6
+        y: -98.8
+        width: 253.5
+        height: 10
+    - GUID: 42
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5269
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 25000000
+      inArgvs:
+      - guid: 5267
+        dummys:
+        - actionGuid: 41
+          varGuid: 5265
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -374.99994
+        y: -94.399994
+        width: 196.5
+        height: 10
+    - GUID: 43
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5271
+        dummys: []
+      - guid: 5272
+        dummys: []
+      - guid: 5273
+        dummys: []
+      - guid: 5274
+        dummys: []
+      - guid: 5275
+        dummys: []
+      - guid: 5276
+        dummys: []
+      - guid: 5277
+        dummys: []
+      - guid: 5278
+        dummys: []
+      - guid: 5279
+        dummys: []
+      outArgvs:
+      - guid: 5280
+        dummys: []
+      nextActionsID: 2c000000
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: -12.5
+        width: 268.5
+        height: 10
+    - GUID: 44
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 5282
+        dummys: []
+      - guid: 5283
+        dummys: []
+      - guid: 5284
+        dummys: []
+      - guid: 5285
+        dummys: []
+      - guid: 5286
+        dummys: []
+      - guid: 5287
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: -11.5
+        width: 189
+        height: 10
+    Tasks:
+    - type: 0
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 0
+        CustomID: 0
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 31
+        rect:
+          serializedVersion: 2
+          x: -851.63293
+          y: -2196.4158
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 200
+        CustomID: 1
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5248
+          dummys: []
+        ActionGUID: 41
+        rect:
+          serializedVersion: 2
+          x: -953.8
+          y: -107.19999
+          width: 100
+          height: 100
+    StructDatas: []

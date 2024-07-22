@@ -1,0 +1,192 @@
+syntax = "proto3";
+option java_package = "com.topgame.message";
+option csharp_namespace ="Proto3";
+
+//1-10000 		内部消息(游戏服务器内部使用)
+//10001-20000           大厅消息（所有非大厅消息，网关进行转发到子游戏服务器处理）
+//20001-30000           战斗
+
+enum MID{
+	NONE  						= 0;
+	//服务器内部消息
+	ServerRegisterReq			= 101;	//注册服务器消息
+	ServerRegisterRes			= 102;	//注册服务器消息
+	ServerListReq				= 103;	//获取服务器列表
+	ServerListRes				= 104;	//获取服务器列表
+	ChangeRoleServerReq			= 105;	//改变角色服务器
+	ChangeRoleServerRes			= 106;	//改变角色服务器
+	ServerEventReq				= 107; //服务器事件
+	ServerEventRes				= 108; //服务器事件
+	ServerStatusRes				= 109; //服务器状态 
+	ServerCmdReq				= 110; //服务器内部GM
+	LinkServerChangeRes			= 111; //用户跟换服务器
+	WebGmReq								= 112; //web gm指令
+	WebGmRes								= 113; //web gm指令
+	WebToggleHotReq					= 114; //设置登入服热更
+	WebSendNoticeReq				= 115; //web 发送公告
+	
+	ServerLoginListReq			= 200; //客户端登录列表请求 
+	ServerLoginListRes			= 201; //客户端登录列表请求 
+	
+	SystemErrorRes				= 401; //系统错误
+	
+	CommandReq					= 501; //GM
+	FlagDirtyRes				= 601; //FlagDirty
+	NewDayDirtyReq			= 602; //0点刷新
+	NewDayDirtyRes			= 603; //0点刷新
+	
+	LogActionReq				= 700; //日志操作
+	LogActionBatchReq			= 701; //日志操作
+	
+	KickOutRes 					= 10000; //踢出
+	LoginReq					= 10001; //登录
+	LoginRes					= 10002; //
+	HeartReq					= 10011; //心跳
+	HeartRes					= 10012; //心跳
+	KillUserRes					= 10013; //玩家被踢下线
+	MessageSeedRes 				= 10014; // 消息种子
+	LoginFinishRes              = 10015; // 登陆完成
+	LogoutReq 					= 10016;
+	LogoutRes 					= 10017;
+	LoginVerifyReq					= 10018; //登录验证
+	LoginVerifyRes					= 10019; //
+	UserBaseInfoRes					= 10020; //用户基础信息
+	GuideSaveReq					= 10021; //保存引导数据
+	GuideInfoRes					= 10022; //引导数据信息
+	
+	PayOrderGenReq					= 10100;//支付生成订单
+	PayOrderGenRes					= 10101;
+	PaySdkActionReq					= 10102;//支付订单状态
+	PaySdkActionRes					= 10103;
+	PaySdkCallbackRes				= 10104;//SDK 支付回调
+	
+	EnterLevelReq					= 20001; //请求进入关卡
+	EnterLevelRes					= 20002; //
+	ExitLevelReq					= 20011; //请求推出关卡
+	ExitLevelRes					= 20012;
+	StartLevelReq					= 20013; //请求开始
+	StartLevelRes					= 20014;
+	
+	RevivePlayerReq						= 20015;//请求复活
+	RevivePlayerRes						= 20016;
+
+	ChallengesRes						= 20017;//挑战次数
+	ChallengesDirtyRes			= 20018;//挑战关卡信息
+	AddChallengesLevelRes		= 20019;
+
+	AchieveInfoRes 					= 21000;
+	AchieveDirtyRes 				= 21001;
+	AchieveRewardReq 				= 21002;//成就奖励
+	AchieveRewardRes 				= 21003;	
+
+	RankInfoReq 					= 22000;//排行榜信息
+	RankInfoRes 					= 22001;
+	RankUserReq						= 22002;//获取某个用户位置的前后排名
+	RankUserRes						= 22003;
+	DirtyRankRes					= 22004;//排名变化
+	RankRewardReq					= 22005;//排名奖励
+	RankRewardRes					= 22006;//排名奖励
+	
+	HeroInfoRes						= 23000;//英雄信息
+	HeroFightChangeReq 				= 23001;//出战英雄修改
+	HeroFightChangeRes 				= 23002;	
+	HeroBuyReq 						= 23003;//购买英雄
+	HeroBuyRes 						= 23004;
+	HeroEquipReq 					= 23005;//英雄装备
+	HeroEquipRes 					= 23006;
+	HeroDirtyRes 					= 23007;
+	
+	EquipInfosRes					= 23008;//
+	EquipDirtyReq					= 23009;//道具变化
+	EquipDirtyRes					= 23010;//道具变化
+	HeroEquipUnlockReq 				= 23011;//英雄装备解锁
+	HeroEquipUnlockRes 				= 23012;
+	HeroEquipUpgradeReq 				= 23013;//英雄装备升级
+	HeroEquipUpgradeRes 				= 23014;
+	
+	ItemInfosRes					= 23100;//道具信息
+	ItemDirtyReq					= 23101;//道具变化
+	ItemDirtyRes					= 23102;//道具变化
+	OpenChestReq					= 23103;//开宝箱
+	OpenChestRes					= 23104;
+	
+	BuyActionPointReq				= 23105;//购买体力
+	BuyActionPointRes				= 23106;//购买体力
+	
+	SignInReq						= 23200;//签到
+	SignInRes						= 23201;
+	
+	ShopInfoReq					= 23301;//商店
+	ShopInfoRes					= 23302;
+	ShopDirtyReq					= 23303;
+	ShopDirtyRes					= 23304;
+	ShopBuyReq					= 23305;
+	ShopBuyRes					= 23306;
+	ShopBuyGachaReq					= 23307;
+	ShopBuyGachaRes					= 23308;
+	
+	HangUpInfoReq				= 23400;//挂机
+	HangUpInfoRes			  = 23401;
+	HangUpGetReq				= 23402;
+	HangUpGetRes				= 23403;
+	HangUpFastGetReq		= 23404;
+	HangUpFastGetRes		= 23405;
+
+	TalentInfoReq				= 23500;//天赋
+	TalentInfoRes				= 23501;
+	TalentUnLockReq			= 23502;
+	TalentUnLockRes			= 23503;
+
+	PetInfoReq					= 23600;//宠物
+	PetInfoRes					= 23601;
+	PetDirtyReq					= 23602;//宠物变化
+	PetDirtyRes					= 23603;
+	PetLevelUpReq				= 23604;
+	PetLevelUpRes				= 23605;
+	PetStarUpReq				= 23606;
+	PetStarUpRes				= 23607;
+	
+	SystemUnLockInfoReq		= 23700; //功能解锁
+	SystemUnLockInfoRes		= 23701;
+	SystemUnLockRes				= 23702;
+
+	ExchangeCodeReq					= 23800; //兑换码
+	ExchangeCodeRes					= 23801; 
+	
+	ChangeNameReq					= 23900; //改名
+	ChangeNameRes					= 23901;
+
+	WebEmailSendReq				= 24000; //web邮件
+	WebEmailDelReq		  = 24001;
+
+	EmailInfoReq					=	24100; //邮件
+	EmailInfoRes					= 24101;
+	EmailDirtyRes					= 24102;
+	EmailRewardReq				= 24103;
+	EmailRewardRes				= 24104;
+	EmailReadReq					= 24105;
+	EmailReadRes					= 24106;
+
+	
+	
+	SevenDayGiftInfoRes					= 25100;//七日礼包
+	SevenDayGiftReceiveReq					= 25101;
+	SevenDayGiftReceiveRes					= 25102;
+
+	RoomFrameStepReq				= 3000; //帧同步
+	RoomFrameStepRes				= 3001; //帧同步
+	RoomFramePingReq				= 3002; //离开房间
+	RoomFramePingRes				= 3003; //	
+	EnterRoomReq					= 3004; //加入房间
+	EnterRoomRes					= 3005; //
+	NotifyMatchRoomRes				= 3006;
+	LeaveRoomReq					= 3007; //离开房间
+	LeaveRoomRes					= 3008; //	
+	NotifyAddRoomRes				= 3009; //通知有人加入房间	
+	RoomBattleStatusReq				= 3010; //房间战斗状态
+	RoomBattleStatusRes				= 3011;	
+	NotifyRoomBattleStartRes		= 3012;
+	NotifyRoomBattleEndRes			= 3013;	
+	
+	
+}

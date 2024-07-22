@@ -1,0 +1,34 @@
+/********************************************************************
+生成日期:	#DATE_TIME#
+类    名: 	#CLASSNAME#
+作    者:	#AUTHOR#
+描    述:	#DESC#
+*********************************************************************/
+
+using TopGame.Base;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace TopGame.UI
+{
+    [UI((ushort)EUIType.#TYPE_NAME#, UI.EUIAttr.View)]
+    public class #CLASSNAME# : UIView
+    {
+#SERIALIZED_FIELD#
+        //------------------------------------------------------
+        public override void Init(UIBase pBase)
+        {
+            base.Init(pBase);
+        }
+        //------------------------------------------------------
+        public override void Awake()
+        {
+            base.Awake();
+            if (m_pBaseUI == null) return;
+            if (m_pBaseUI.ui)
+            {
+#SERIALIZED_CODE#
+            }
+        }
+    }
+}

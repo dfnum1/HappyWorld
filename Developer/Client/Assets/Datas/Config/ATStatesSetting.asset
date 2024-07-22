@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b985dc47aeafcf458efc3fe70fd6949, type: 3}
+  m_Name: ATStatesSetting
+  m_EditorClassIdentifier: 
+  mainAT: {fileID: 11400000, guid: 5406def8a9f4a53458290d17ca701095, type: 2}
+  uiMgrAT: {fileID: 11400000, guid: a2e5a8d63c3bb8340a426cca63aff54a, type: 2}
+  soundAT: {fileID: 11400000, guid: 74e39d873c5d86b4d97c5a49ee595cdb, type: 2}
+  dialogSystemAT: {fileID: 11400000, guid: e557a740488bcfe4f9648f4ebd8fa8ec, type: 2}
+  stateATs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: aaaffb60d009ec24bb605e23b2300092, type: 2}
+  - {fileID: 11400000, guid: e49b55e37f2b11e4b9728ca0bd1ddc90, type: 2}
+  - {fileID: 11400000, guid: e241fd099d580a1408dddc34508a78d8, type: 2}
+  - {fileID: 0}

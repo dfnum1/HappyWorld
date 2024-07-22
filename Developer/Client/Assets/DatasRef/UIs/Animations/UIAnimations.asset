@@ -1,0 +1,2946 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741f9c556eab0d44b87d92566c71c089, type: 3}
+  m_Name: UIAnimations
+  m_EditorClassIdentifier: 
+  animations:
+  - nID: 1
+    desc: "\u9876\u90E8\u8FDB\u5165"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: HeroBagPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 1560
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 6
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.7
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 2
+    desc: "\u9876\u90E8\u9000\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: GMPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 1440
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 0
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 3
+    desc: "\u5DE6\u8FB9\u9000\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: FightTaskMainPanel(Clone)
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: -800
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 8
+      equation: 0
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 4
+    desc: "\u5DE6\u8FB9\u8FDB\u5165"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -800
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.4
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 5
+    desc: "\u53F3\u8FB9\u8FDB\u5165"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 800
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.4
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 6
+    desc: "\u53F3\u8FB9\u9000\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 800
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 2
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 7
+    desc: "\u5E95\u90E8\u8FDB\u5165"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -1440
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 6
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.47
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 8
+    desc: "\u5E95\u90E8\u9000\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: -1440
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 7
+      equation: 0
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 9
+    desc: "\u4E2D\u5FC3\u7F29\u653E\u8FDB\u5165"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: CommonTip
+      controllerTag: 0
+      type: 2
+      from:
+        property1: -0.9
+        property2: -0.9
+        property3: -0.9
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 1
+      transition: 9
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: CommonTip
+      controllerTag: 0
+      type: 3
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0.5
+        property2: 0.5
+        property3: 0
+        property4: 0
+      time: 1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.9
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 10
+    desc: "\u4E2D\u5FC3\u7F29\u653E\u9000\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: -1
+        property2: -1
+        property3: -1
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 0
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: 
+      controllerTag: 0
+      type: 3
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0.5
+        property2: 0.5
+        property3: 0
+        property4: 0
+      time: 1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgMask
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.1
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 11
+    desc: "\u4E3BUI\u754C\u9762"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BottomBar
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 200
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 9
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: MenuRoot
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -150
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: AdventureBtns
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 150
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 12
+    desc: "Login\u767B\u5F55\u5F39\u7A97"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Btn
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -200
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 10
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Name
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -300
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 10
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 13
+    desc: "\u5907\u6218\u5F39\u7A97"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: BattlePreparePanel(Clone)
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -1000
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 8
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 14
+    desc: "\u80CC\u5305&\u90AE\u4EF6\u5F39\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: ItemBag(Clone)
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -1000
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Mask
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      to:
+        property1: 3
+        property2: 3
+        property3: 3
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 15
+    desc: "\u5143\u7D20\u77F3\u677F\u6A21\u677F"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: left
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 1000
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: top
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -300
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 16
+    desc: "\u6218\u6597\u901A\u7528\u754C\u9762"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: UpPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 500
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: DownPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -500
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 10
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 17
+    desc: "\u5EFA\u7B51\u751F\u4EA7\u8BE6\u60C5"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: top
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 100
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: left
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -400
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: mid
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 800
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 18
+    desc: "\u9000\u51FA\u6E10\u9690"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: StarSkyPanel
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 19
+    desc: "\u4E3B\u754C\u9762\u51FA\u573A\uFF08\u56DB\u5411\u8FDB\u5165\uFF09"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: left
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -300
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 300
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: bottom
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -300
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: top
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 300
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 20
+    desc: "\u90AE\u4EF6\u7CFB\u7EDF\uFF08\u5DE6\u53F3\uFF09"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: left
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right1
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 1200
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right2
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.4
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 21
+    desc: "\u9152\u9986\u754C\u9762"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: top
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 100
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Middle
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -1000
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 5
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Middle
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 300
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 22
+    desc: "Tips\u901A\u7528\u4E2D\u5FC3\u5F39\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: middle
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.2
+      transition: 5
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: middle
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 23
+    desc: "\u8FDB\u5165\u6E10\u9690"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 1
+      strControllerName: SelectModePanel
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 24
+    desc: "\u6218\u4EE4\u4EFB\u52A1"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: top
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 800
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 5
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: left
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -400
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: right
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 1200
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 5
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 25
+    desc: "\u8FC7\u6E21\u9000\u51FA"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: bg
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 0
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: back
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 5
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: front
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0.5
+        property2: 0.5
+        property3: 0.5
+        property4: 0
+      to:
+        property1: 20
+        property2: 20
+        property3: 20
+        property4: 0
+      time: 0.3
+      transition: 5
+      equation: 0
+      pingpong: 0
+      delay: 0.5
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 1
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: -8.535637
+          outSlope: -8.535637
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.044643097
+        - serializedVersion: 3
+          time: 0.15
+          value: 0.5
+          inSlope: -0.035047375
+          outSlope: -0.035047375
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.47675076
+          outWeight: 0.12632394
+        - serializedVersion: 3
+          time: 1.5
+          value: 1
+          inSlope: 0.9866446
+          outSlope: 0.9866446
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.04002465
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 26
+    desc: "Hall\u754C\u9762\u521D\u59CB"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: RankPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 250
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: FightingBtn
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -200
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: MultiplayerBtn
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: -200
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: GiftPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -250
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.5
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: HeroSelectPanel
+      controllerTag: 0
+      type: 0
+      from:
+        property1: -200
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Gold
+      controllerTag: 0
+      type: 0
+      from:
+        property1: 0
+        property2: 200
+        property3: 0
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 27
+    desc: "\u6392\u884C\u754C\u9762"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: Bg
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: AlphaGroup
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: RankingTop1
+      controllerTag: 0
+      type: 2
+      from:
+        property1: -0.2
+        property2: -0.2
+        property3: -0.2
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.4
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: RankingTop2
+      controllerTag: 0
+      type: 2
+      from:
+        property1: -0.2
+        property2: -0.2
+        property3: -0.2
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: RankingTop3
+      controllerTag: 0
+      type: 2
+      from:
+        property1: -0.2
+        property2: -0.2
+        property3: -0.2
+        property4: 0
+      to:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: MyRanking
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.3
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 28
+    desc: "\u6210\u5C31\u754C\u9762"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BG
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0.5
+        property2: 0.5
+        property3: 0.5
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.4
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BG
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 29
+    desc: "\u5B9D\u7BB1\u754C\u9762"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: AlphaGroup
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0.5
+        property2: 0.5
+        property3: 0.5
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.4
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: AlphaGroup
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []
+  - nID: 30
+    desc: "\u901A\u7528\u5956\u52B1\u83B7\u53D6"
+    fSpeed: 1
+    Parameters:
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: AlphaGroup
+      controllerTag: 0
+      type: 5
+      from:
+        property1: 0
+        property2: 0
+        property3: 0
+        property4: 0
+      to:
+        property1: 1
+        property2: 0
+        property3: 0
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 1
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: bg (1)
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 1
+        property2: 0
+        property3: 1
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: BgImage
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 1
+        property2: 0
+        property3: 1
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.2
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0.2
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    - eControllerType: 0
+      isFullPath: 0
+      bFirstParent: 0
+      strControllerName: OpenChestPanelImage
+      controllerTag: 0
+      type: 2
+      from:
+        property1: 0.5
+        property2: 0.5
+        property3: 0.5
+        property4: 0
+      to:
+        property1: 1
+        property2: 1
+        property3: 1
+        property4: 0
+      time: 0.3
+      transition: 1
+      equation: 1
+      pingpong: 0
+      delay: 0
+      loop: 1
+      delay_times: 0
+      bLocal: 1
+      bOffset: 0
+      bRecover: 0
+      finalValue: 1
+      initialValue: 0
+      lerpCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    BindTracks: []

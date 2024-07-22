@@ -1,0 +1,2766 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dccf5fb206df874b9e92a632960ae27, type: 3}
+  m_Name: UIManagerAT
+  m_EditorClassIdentifier: 
+  Data:
+    bEnable: 1
+    Locals:
+      varVariableBool:
+      - GUID: 69
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 81
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 87
+        strName: 
+        flags: 16
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 95
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 458
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableBoolList: []
+      varVariableByte: []
+      varVariableByteList: []
+      varVariableColor: []
+      varVariableColorList: []
+      varVariableCurve: []
+      varVariableCurveList: []
+      varVariableDelegate: []
+      varVariableFloat: []
+      varVariableFloatList: []
+      varVariableInt:
+      - GUID: 4
+        strName: 
+        flags: 0
+        mValueDef: 18
+        bindVarGuid: 0
+      - GUID: 68
+        strName: 
+        flags: 0
+        mValueDef: 22
+        bindVarGuid: 0
+      - GUID: 80
+        strName: 
+        flags: 0
+        mValueDef: 13
+        bindVarGuid: 0
+      - GUID: 90
+        strName: 
+        flags: 0
+        mValueDef: 13
+        bindVarGuid: 0
+      - GUID: 94
+        strName: 
+        flags: 0
+        mValueDef: 13
+        bindVarGuid: 0
+      - GUID: 150
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 154
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 158
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 162
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 166
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 170
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 174
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 178
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 182
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 186
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 190
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 194
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 198
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 202
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 206
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 210
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 214
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 218
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 222
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 226
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 230
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 234
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 238
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 242
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 246
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 250
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 254
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 258
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 262
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 266
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 270
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 274
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 371
+        strName: 
+        flags: 0
+        mValueDef: 88
+        bindVarGuid: 0
+      - GUID: 448
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 452
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 364
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableIntList: []
+      varVariableLong: []
+      varVariableLongList: []
+      varVariableMonoScript:
+      - GUID: 2
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 148
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 152
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 156
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 160
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 164
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 168
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 172
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 176
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 180
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 184
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 188
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 192
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 196
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 200
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 204
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 208
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 212
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 216
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 220
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 224
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 228
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 232
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 236
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 240
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 244
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 248
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 252
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 256
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 260
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 264
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 268
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 272
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 446
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 450
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      varVariableMonoScriptList: []
+      varVariableObject: []
+      varVariableObjectList: []
+      varVariableQuaternion: []
+      varVariableQuaternionList: []
+      varVariableString:
+      - GUID: 3
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 149
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/aixin.wav
+        bindVarGuid: 0
+      - GUID: 153
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_function_switch.wav
+        bindVarGuid: 0
+      - GUID: 157
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/chuansongmen.mp3
+        bindVarGuid: 0
+      - GUID: 161
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_box02.wav
+        bindVarGuid: 0
+      - GUID: 165
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_clickOn_01.wav
+        bindVarGuid: 0
+      - GUID: 169
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_hero_call.wav
+        bindVarGuid: 0
+      - GUID: 173
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_win.wav
+        bindVarGuid: 0
+      - GUID: 177
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_lose.wav
+        bindVarGuid: 0
+      - GUID: 181
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_reward.wav
+        bindVarGuid: 0
+      - GUID: 185
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/jiasu.mp3
+        bindVarGuid: 0
+      - GUID: 189
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_hero_unlock_01.wav
+        bindVarGuid: 0
+      - GUID: 193
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_clickOn_01.wav
+        bindVarGuid: 0
+      - GUID: 197
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_clickOn_01.wav
+        bindVarGuid: 0
+      - GUID: 201
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_select_01.wav
+        bindVarGuid: 0
+      - GUID: 205
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_hero_levelUP.wav
+        bindVarGuid: 0
+      - GUID: 209
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_event_random.wav
+        bindVarGuid: 0
+      - GUID: 213
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_hero_unlock_01.wav
+        bindVarGuid: 0
+      - GUID: 217
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_win.wav
+        bindVarGuid: 0
+      - GUID: 221
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/tuozhuangbei.mp3
+        bindVarGuid: 0
+      - GUID: 225
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_clickOn_01.wav
+        bindVarGuid: 0
+      - GUID: 229
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/yijianzhuangbei.mp3
+        bindVarGuid: 0
+      - GUID: 233
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_clickOn_01.wav
+        bindVarGuid: 0
+      - GUID: 237
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/yujing.mp3
+        bindVarGuid: 0
+      - GUID: 241
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_start.wav
+        bindVarGuid: 0
+      - GUID: 245
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/zhuangjizhangaiwu.mp3
+        bindVarGuid: 0
+      - GUID: 249
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_function_place.wav
+        bindVarGuid: 0
+      - GUID: 253
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_hero_evolution.wav
+        bindVarGuid: 0
+      - GUID: 257
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_equip_synthesis.wav
+        bindVarGuid: 0
+      - GUID: 261
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_equip_wear.wav
+        bindVarGuid: 0
+      - GUID: 265
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_equip_decompose.wav
+        bindVarGuid: 0
+      - GUID: 269
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_function_maze.wav
+        bindVarGuid: 0
+      - GUID: 273
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_function_battlePass.wav
+        bindVarGuid: 0
+      - GUID: 447
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_win.wav
+        bindVarGuid: 0
+      - GUID: 451
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/UI/ui_battle_lose.wav
+        bindVarGuid: 0
+      - GUID: 454
+        strName: param
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      varVariableStringList: []
+      varVariableUser:
+      - GUID: 67
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 70
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1458859266
+        bAutoDestroy: 0
+      - GUID: 75
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 2139732164
+        bAutoDestroy: 0
+      - GUID: 65
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1706902470
+        bAutoDestroy: 0
+      - GUID: 79
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 82
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1458859266
+        bAutoDestroy: 0
+      - GUID: 84
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1196114489
+        bAutoDestroy: 0
+      - GUID: 86
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1196114489
+        bAutoDestroy: 0
+      - GUID: 89
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 91
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -2075288371
+        bAutoDestroy: 0
+      - GUID: 93
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 96
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1458859266
+        bAutoDestroy: 0
+      - GUID: 124
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1196114489
+        bAutoDestroy: 0
+      - GUID: 370
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 372
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -2075288371
+        bAutoDestroy: 0
+      - GUID: 456
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      varVariableUserList: []
+      varVariableVector2: []
+      varVariableVector2List: []
+      varVariableVector2Int:
+      - GUID: 120
+        strName: 
+        flags: 0
+        mValueDef: {x: 0, y: 0}
+        bindVarGuid: 0
+      varVariableVector2IntList: []
+      varVariableVector3: []
+      varVariableVector3List: []
+      varVariableVector3Int: []
+      varVariableVector3IntList: []
+      varVariableVector4: []
+      varVariableVector4List: []
+    vNodes:
+    - GUID: 0
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      - guid: 3
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 4
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 68.5
+        y: -152.5
+        width: 146
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 16
+      strName: "\u83B7\u53D6\u4E00\u4E2AUI"
+      flags: 0
+      inArgvs:
+      - guid: 67
+        refPortID: 0
+        dummys: []
+      - guid: 68
+        refPortID: 0
+        dummys: []
+      - guid: 69
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 70
+        refPortID: 0
+        dummys: []
+      nextActionsID: 13000000
+      rect:
+        serializedVersion: 2
+        x: 598.5
+        y: -1031.5
+        width: 192.50479
+        height: 10
+      actionType: 1167764636
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 19
+      strName: "\u53D8\u91CF\u8F6C\u5316"
+      flags: 0
+      inArgvs:
+      - guid: 70
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 75
+        refPortID: 0
+        dummys: []
+      nextActionsID: 12000000
+      rect:
+        serializedVersion: 2
+        x: 843.75
+        y: -1011.5
+        width: 179.249
+        height: 10
+      actionType: 3
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 18
+      strName: "\u968F\u673A\u4E8B\u4EF6\u63D0\u793A\u79FB\u9664\u56DE\u5305"
+      flags: 0
+      inArgvs:
+      - guid: 75
+        refPortID: 0
+        dummys: []
+      - guid: 65
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: -961.5
+        width: 244.02501
+        height: 10
+      actionType: 478836128
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 20
+      strName: "\u83B7\u53D6\u4E00\u4E2AUI"
+      flags: 0
+      inArgvs:
+      - guid: 79
+        refPortID: 0
+        dummys: []
+      - guid: 80
+        refPortID: 0
+        dummys: []
+      - guid: 81
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 82
+        refPortID: 0
+        dummys: []
+      nextActionsID: 16000000
+      rect:
+        serializedVersion: 2
+        x: 1798.5
+        y: -308
+        width: 199.38501
+        height: 10
+      actionType: 1167764636
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 22
+      strName: "\u53D8\u91CF\u8F6C\u5316"
+      flags: 0
+      inArgvs:
+      - guid: 82
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 84
+        refPortID: 0
+        dummys: []
+      nextActionsID: 1b000000
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: -279
+        width: 192.2
+        height: 10
+      actionType: 3
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 23
+      strName: "\u662F\u5426\u9884\u89C8"
+      flags: 0
+      inArgvs:
+      - guid: 86
+        refPortID: 0
+        dummys: []
+      - guid: 87
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 18000000
+      rect:
+        serializedVersion: 2
+        x: 2950.3586
+        y: -68.96669
+        width: 140
+        height: 10
+      actionType: 1192405515
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 24
+      strName: "\u663E\u793A\u4E00\u4E2AUI"
+      flags: 0
+      inArgvs:
+      - guid: 89
+        refPortID: 0
+        dummys: []
+      - guid: 90
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 91
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 3034.0098
+        y: -186.46411
+        width: 193.38501
+        height: 10
+      actionType: -2073083593
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 25
+      strName: "\u83B7\u53D6\u4E00\u4E2AUI"
+      flags: 0
+      inArgvs:
+      - guid: 93
+        refPortID: 0
+        dummys: []
+      - guid: 94
+        refPortID: 0
+        dummys: []
+      - guid: 95
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 96
+        refPortID: 0
+        dummys: []
+      nextActionsID: 1a000000
+      rect:
+        serializedVersion: 2
+        x: 2546.185
+        y: -236.08952
+        width: 193.38501
+        height: 10
+      actionType: 1167764636
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 26
+      strName: "\u53D8\u91CF\u8F6C\u5316"
+      flags: 0
+      inArgvs:
+      - guid: 96
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 86
+        refPortID: 0
+        dummys: []
+      nextActionsID: 17000000
+      rect:
+        serializedVersion: 2
+        x: 2783.772
+        y: -151.5281
+        width: 180.2
+        height: 10
+      actionType: 3
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 27
+      strName: "\u521D\u59CB\u5316\u88C5\u5907\u4FE1\u606F2"
+      flags: 0
+      inArgvs:
+      - guid: 124
+        refPortID: 0
+        dummys:
+        - actionGuid: 22
+          varGuid: 84
+      - guid: 120
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 19000000
+      rect:
+        serializedVersion: 2
+        x: 2275.5
+        y: -181
+        width: 195
+        height: 10
+      actionType: 1078912609
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 28
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 148
+        refPortID: 0
+        dummys: []
+      - guid: 149
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 150
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1148.5
+        y: -715.5
+        width: 146
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 29
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 152
+        refPortID: 0
+        dummys: []
+      - guid: 153
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 154
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1157.5
+        y: -471.5
+        width: 146
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 30
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 156
+        refPortID: 0
+        dummys: []
+      - guid: 157
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 158
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1162.5
+        y: -199.5
+        width: 146
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 31
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 160
+        refPortID: 0
+        dummys: []
+      - guid: 161
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 162
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1164.5
+        y: 65.5
+        width: 146
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 32
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 164
+        refPortID: 0
+        dummys: []
+      - guid: 165
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 166
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1171.5
+        y: 312.5
+        width: 146
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 33
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 168
+        refPortID: 0
+        dummys: []
+      - guid: 169
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 170
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1172.5
+        y: 573.5
+        width: 182.8768
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 34
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 172
+        refPortID: 0
+        dummys: []
+      - guid: 173
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 174
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1186.5
+        y: 827.5
+        width: 182.8768
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 35
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 176
+        refPortID: 0
+        dummys: []
+      - guid: 177
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 178
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1195.5
+        y: 1080.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 36
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 180
+        refPortID: 0
+        dummys: []
+      - guid: 181
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 182
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1200.5
+        y: 1309.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 37
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 184
+        refPortID: 0
+        dummys: []
+      - guid: 185
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 186
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1213.5
+        y: 1573.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 38
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 188
+        refPortID: 0
+        dummys: []
+      - guid: 189
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 190
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1209.5
+        y: 1811.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 39
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 192
+        refPortID: 0
+        dummys: []
+      - guid: 193
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 194
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1216.5
+        y: 2068.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 40
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 196
+        refPortID: 0
+        dummys: []
+      - guid: 197
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 198
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1225.5
+        y: 2331.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 41
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 200
+        refPortID: 0
+        dummys: []
+      - guid: 201
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 202
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1229.5
+        y: 2572.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 42
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 204
+        refPortID: 0
+        dummys: []
+      - guid: 205
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 206
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1236.5
+        y: 2809.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 43
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 208
+        refPortID: 0
+        dummys: []
+      - guid: 209
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 210
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1236.5
+        y: 3052.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 44
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 212
+        refPortID: 0
+        dummys: []
+      - guid: 213
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 214
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1247.5
+        y: 3311.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 45
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 216
+        refPortID: 0
+        dummys: []
+      - guid: 217
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 218
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1244.5
+        y: 3567.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 46
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 220
+        refPortID: 0
+        dummys: []
+      - guid: 221
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 222
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1247.5
+        y: 3812.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 47
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 224
+        refPortID: 0
+        dummys: []
+      - guid: 225
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 226
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1247.5
+        y: 4043.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 48
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 228
+        refPortID: 0
+        dummys: []
+      - guid: 229
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 230
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1248.5
+        y: 4291.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 49
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 232
+        refPortID: 0
+        dummys: []
+      - guid: 233
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 234
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1250.5
+        y: 4538.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 50
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 236
+        refPortID: 0
+        dummys: []
+      - guid: 237
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 238
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1248.5
+        y: 4787.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 51
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 240
+        refPortID: 0
+        dummys: []
+      - guid: 241
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 242
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1247.5
+        y: 5031.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 52
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 244
+        refPortID: 0
+        dummys: []
+      - guid: 245
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 246
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1256.5
+        y: 5270.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 53
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 248
+        refPortID: 0
+        dummys: []
+      - guid: 249
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 250
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1263.5
+        y: 5512.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 54
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 252
+        refPortID: 0
+        dummys: []
+      - guid: 253
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 254
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1271.5
+        y: 5781.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 55
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 256
+        refPortID: 0
+        dummys: []
+      - guid: 257
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 258
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1270.5
+        y: 6063.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 56
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 260
+        refPortID: 0
+        dummys: []
+      - guid: 261
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 262
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1269.5
+        y: 6333.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 57
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 264
+        refPortID: 0
+        dummys: []
+      - guid: 265
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 266
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1245.5
+        y: 6616.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 58
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 268
+        refPortID: 0
+        dummys: []
+      - guid: 269
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 270
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1228.5
+        y: 6868.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 59
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 272
+        refPortID: 0
+        dummys: []
+      - guid: 273
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 274
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1233.5
+        y: 7126.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 87
+      strName: "\u663E\u793A\u4E00\u4E2AUI"
+      flags: 0
+      inArgvs:
+      - guid: 370
+        refPortID: 0
+        dummys: []
+      - guid: 371
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 372
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1363.5
+        y: -1089.5
+        width: 198
+        height: 10
+      actionType: -2073083593
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 109
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 446
+        refPortID: 0
+        dummys: []
+      - guid: 447
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 448
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -595.5
+        y: 813.5
+        width: 182.8768
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 110
+      strName: "\u64AD\u653E\u97F3\u6548"
+      flags: 0
+      inArgvs:
+      - guid: 450
+        refPortID: 0
+        dummys: []
+      - guid: 451
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 452
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -604.5
+        y: 1066.5
+        width: 182
+        height: 10
+      actionType: 1401625004
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 111
+      strName: SDKLogin
+      flags: 0
+      inArgvs:
+      - guid: 456
+        refPortID: 0
+        dummys: []
+      - guid: 454
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 458
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: -471
+        width: 193.9
+        height: 10
+      actionType: -1458745467
+      custumeValue: 0
+      condition:
+        portals: []
+    vATApis: []
+    Tasks:
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnHallLoadComplete_75
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 87
+        rect:
+          serializedVersion: 2
+          x: -1746.5
+          y: -1094.5
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 101
+        CustomID: 10505
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 65
+          refPortID: 0
+          dummys: []
+        ActionGUID: 16
+        rect:
+          serializedVersion: 2
+          x: 313.5
+          y: -1031.5
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 1
+        CustomID: 0
+        CustomName: UIClick_Sound
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 0
+        rect:
+          serializedVersion: 2
+          x: -265
+          y: -225
+          width: 100
+          height: 100
+    - type: 0
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 0
+        CustomID: 0
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: -1
+        rect:
+          serializedVersion: 2
+          x: 177.5
+          y: 142
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnShowEquipCommonTip
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 120
+          refPortID: 0
+          dummys: []
+        ActionGUID: 20
+        rect:
+          serializedVersion: 2
+          x: 1532.2863
+          y: -315.8003
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1001
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 28
+        rect:
+          serializedVersion: 2
+          x: -1431.5
+          y: -720
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1002
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 29
+        rect:
+          serializedVersion: 2
+          x: -1426.5
+          y: -470
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1003
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 30
+        rect:
+          serializedVersion: 2
+          x: -1417.5
+          y: -198
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1004
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 31
+        rect:
+          serializedVersion: 2
+          x: -1419.5
+          y: 67
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1005
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 32
+        rect:
+          serializedVersion: 2
+          x: -1426.5
+          y: 314
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1006
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 33
+        rect:
+          serializedVersion: 2
+          x: -1427.5
+          y: 575
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1007
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 34
+        rect:
+          serializedVersion: 2
+          x: -1441.5
+          y: 829
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1008
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 35
+        rect:
+          serializedVersion: 2
+          x: -1450.5
+          y: 1082
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1009
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 36
+        rect:
+          serializedVersion: 2
+          x: -1455.5
+          y: 1311
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1010
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 37
+        rect:
+          serializedVersion: 2
+          x: -1468.5
+          y: 1575
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1011
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 38
+        rect:
+          serializedVersion: 2
+          x: -1464.5
+          y: 1813
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1012
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 39
+        rect:
+          serializedVersion: 2
+          x: -1471.5
+          y: 2070
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1013
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 40
+        rect:
+          serializedVersion: 2
+          x: -1480.5
+          y: 2333
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1014
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 41
+        rect:
+          serializedVersion: 2
+          x: -1484.5
+          y: 2574
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1015
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 42
+        rect:
+          serializedVersion: 2
+          x: -1491.5
+          y: 2811
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1016
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 43
+        rect:
+          serializedVersion: 2
+          x: -1483.5
+          y: 3057
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1017
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 44
+        rect:
+          serializedVersion: 2
+          x: -1494.5
+          y: 3316
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1018
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 45
+        rect:
+          serializedVersion: 2
+          x: -1491.5
+          y: 3572
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1019
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 46
+        rect:
+          serializedVersion: 2
+          x: -1494.5
+          y: 3817
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1020
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 47
+        rect:
+          serializedVersion: 2
+          x: -1494.5
+          y: 4048
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1021
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 48
+        rect:
+          serializedVersion: 2
+          x: -1495.5
+          y: 4296
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1022
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 49
+        rect:
+          serializedVersion: 2
+          x: -1497.5
+          y: 4543
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1023
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 50
+        rect:
+          serializedVersion: 2
+          x: -1495.5
+          y: 4792
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1024
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 51
+        rect:
+          serializedVersion: 2
+          x: -1494.5
+          y: 5036
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1025
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 52
+        rect:
+          serializedVersion: 2
+          x: -1503.5
+          y: 5275
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1026
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 53
+        rect:
+          serializedVersion: 2
+          x: -1510.5
+          y: 5517
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1027
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 54
+        rect:
+          serializedVersion: 2
+          x: -1518.5
+          y: 5787
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1028
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 55
+        rect:
+          serializedVersion: 2
+          x: -1517.5
+          y: 6068
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1029
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 56
+        rect:
+          serializedVersion: 2
+          x: -1516.5
+          y: 6338
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1030
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 57
+        rect:
+          serializedVersion: 2
+          x: -1528.5
+          y: 6611
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1031
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 58
+        rect:
+          serializedVersion: 2
+          x: -1530.5
+          y: 6868
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1032
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 59
+        rect:
+          serializedVersion: 2
+          x: -1516.5
+          y: 7121
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnHallLoadComplete
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 364
+          refPortID: 0
+          dummys: []
+        ActionGUID: -1
+        rect:
+          serializedVersion: 2
+          x: -685.5
+          y: -1096.5
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1033
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 109
+        rect:
+          serializedVersion: 2
+          x: -850.5
+          y: 815
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: UISOUND_1034
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 110
+        rect:
+          serializedVersion: 2
+          x: -859.5
+          y: 1068
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 1
+        CustomID: 0
+        CustomName: sdk_login_call
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 454
+          refPortID: 0
+          dummys: []
+        ActionGUID: 111
+        rect:
+          serializedVersion: 2
+          x: -291
+          y: -507
+          width: 100
+          height: 100
+    StructDatas: []
+    RefPorts: []

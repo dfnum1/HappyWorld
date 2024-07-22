@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e088b622ab1b64586e73cd9b4ff876, type: 3}
+  m_Name: GlobalShaderSetting
+  m_EditorClassIdentifier: 
+  pbrConfig:
+    SHConfig:
+      buildType: 0
+      mCube2D: {fileID: 0}
+      mCubeMap: {fileID: 8900000, guid: 3bc29da690099674da276a2d9d949e43, type: 3}
+      IsHDRToLDR: 0
+      Blur: 1
+      maxSamples: 0
+      maxPower: 0
+      LightSH: []
+      rotatorAngle: 0
+      IsBuildSHDataForGLSL: 0
+      matR:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 0
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      matG:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 0
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      matB:
+        e00: 1
+        e01: 0
+        e02: 0
+        e03: 0
+        e10: 0
+        e11: 1
+        e12: 0
+        e13: 0
+        e20: 0
+        e21: 0
+        e22: 1
+        e23: 0
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+      SH9Value:
+        SHParams:
+        - {x: -0.035621643, y: -0.10246226, z: 0.10806565, w: 0.3294117}
+        - {x: -0.03562165, y: -0.049630158, z: 0.10806567, w: 0.26642144}
+        - {x: -0.03562164, y: 0.01600973, z: 0.09525787, w: 0.24591495}
+        - {x: -0.000000007830079, y: 0, z: 0.2499997, w: -0.24346398}
+        - {x: 0, y: -0.0000000039150394, z: 0.2095586, w: -0.24346393}
+        - {x: -0.0000000019575197, y: -0.000000007830079, z: 0.17892136, w: -0.243464}
+        - {x: 0.025735332, y: 0.024509797, z: 0.013480401, w: 1}
+    environment_exposure: 1
+  IsApplyChangePerFrame: 1

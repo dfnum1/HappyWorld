@@ -1,0 +1,13 @@
+{
+	"eventNewFile":"/Scripts/MainScripts/Runtimes/EventRuntime/EventMallocHandler.cs",
+    "datas": [
+        {
+			"assembly" : "FrameworkPlus",
+			"output" : "/../GamePlus/FrameworkPlus/Source/Mains/Core/Events/AutoSerializeds/"
+		},
+		{
+			"assembly" : "MainScripts",
+			"output" : "/Scripts/MainScripts/Runtimes/EventRuntime/AutoSerializeds/"
+		}
+    ]
+}

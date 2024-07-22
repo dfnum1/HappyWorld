@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a60169bafb639c4abcb4f377d3ab8d6, type: 3}
+  m_Name: ShadersTab
+  m_EditorClassIdentifier: 
+  tabs:
+  - shaderName: SD/Role/SD_RoleMultiMatCap
+    items:
+    - name: Alpha
+      shader: {fileID: 4800000, guid: d49d7fcfabf0b68428bab0f76580a1c4, type: 3}
+      keyWorlds: []
+    - name: Dissolve
+      shader: {fileID: 0}
+      keyWorlds:
+      - USE_DISSOLVE
+  - shaderName: SD/Role/SD_RoleMatCap
+    items:
+    - name: Alpha
+      shader: {fileID: 4800000, guid: 30fe847a9d66f524a8350a27de1e0d54, type: 3}
+      keyWorlds: []
+    - name: Dissolve
+      shader: {fileID: 0}
+      keyWorlds:
+      - USE_DISSOLVE
+  - shaderName: SD/Actor/SD_ActorLambet
+    items:
+    - name: DiffuseLerp
+      shader: {fileID: 0}
+      keyWorlds:
+      - USE_DIFFUSE_LERP
+  - shaderName: SD/Actor/SD_ActorMatcap
+    items:
+    - name: Dissolve
+      shader: {fileID: 0}
+      keyWorlds:
+      - USE_DISSOLVE
+  - shaderName: SD/Actor/SD_ActorMatcap_OnOutline
+    items:
+    - name: Dissolve
+      shader: {fileID: 0}
+      keyWorlds:
+      - USE_DISSOLVE

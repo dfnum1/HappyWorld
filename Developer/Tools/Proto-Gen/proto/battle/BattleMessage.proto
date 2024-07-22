@@ -1,0 +1,121 @@
+syntax = "proto3";
+option java_package = "com.topgame.message.battle";
+option csharp_namespace ="Proto3";
+import "proto/common/CommonMessage.proto"; 
+
+ // 关卡怪物信息
+message KillMonsterInfo {	
+
+	int32 mosterID = 1;// 怪物ID
+	int32 killNum = 2; // 击杀数量
+	int32 hurt = 3; // 伤害
+}
+
+message PickItemInfo {	 
+	int32 itemID = 1;// 道具ID
+	int32 itemNum = 2; // 道具数量 
+}
+
+enum EBattleModeType
+{
+	None = 0;//无
+	Run = 201;	//无限模式
+	PvpRun = 202;	//pvp
+	Pve = 207;//闯关模式
+	DailyChg = 208;//每日挑战
+}
+
+message EnterLevelRequest {	 
+	int64 userID = 1; //用户id （服务器内部使用）
+	repeated int64 id = 2; // 英雄ID 	
+	int32 levelID = 3; // 关卡ID
+	int32 battleMode = 4;//战斗模式
+}
+
+message EnterLevelResponse {
+	bool isOk 			= 1; //进入关卡是否成功
+	int32 levelID = 2;  // 当前的关卡
+	int64 userID = 3; //用户id （服务器内部使用）
+	int32 chapterLevel = 4; // 关卡等级 
+	repeated int32 takeBuffs = 5; // 附加的buffID
+	int32 battleMode = 6;//战斗模式
+}
+
+message StartLevelRequest{
+	int64 userID = 1;
+	int32 levelID = 2;
+}
+
+message StartLevelResponse{
+	int64 userID = 1;
+	int32 levelID = 2;
+	int32 randomSeed = 3; // 随机种子
+	int64 battleId = 4; // 战斗唯一id
+}
+
+enum EReviveType
+{
+	Item = 0;	//道具复活
+	Diamond = 1;	//钻石复活
+	AD = 2;//广告复活
+}
+
+message RevivePlayerRequest{
+	int64 userID = 1;
+	EReviveType reviveType = 2;
+	int32 adCode = 3;
+}
+
+message RevivePlayerResponse{
+	int64 userID = 1;
+}
+
+message ExitLevelRequest { 
+	int64 userID = 1; //用户id （服务器内部使用）
+	int32 status = 2; // 关卡战斗是否胜利 1胜利2失败3退出
+	int32 levelID = 3;  // 当前的关卡
+	int32 passTime = 4; // 通关的时间
+	int32 score = 5; // 最终得分;
+	int32 point = 6; // 最终得分;
+	int32 distance = 7; //距离
+	repeated KillMonsterInfo mosterInfos = 8;//本次扣除的公会boss血量等于mosterInfo.hurt
+	repeated PickItemInfo pickItems = 9;//本次扣除的公会boss血量等于mosterInfo.hurt
+	repeated PickItemInfo obsItems = 10;//障碍表元素拾取
+	int64 totalHurt = 11;
+	bool isBattleServerCheck = 12; // 是否是战斗服校验
+	repeated FrameInput frameInputs = 13; //关卡实操
+	int32 levelStage = 14; //关卡阶段
+	string petLog		= 15; //战斗宠物信息
+}
+
+message ExitLevelResponse {
+	bool isOk 			= 1; //退出关卡是否成功
+	int64 userID = 2; //用户id （服务器内部使用）
+	int32 status = 3; // 关卡战斗是否胜利 1胜利2失败3退出
+	int32 levelID = 4;  // 当前的关卡、PVP防御记录序号
+	int32 nextLevelID = 5;  // 下一个关卡
+	int32 passTime = 6; // 通关的时间
+	bool isEnd = 7;// 是否是最后一关
+	int32 starLevel=8;//评分等级
+	repeated ItemData rewards = 9;
+	int64 battleId=10;//战斗唯一id
+	int32 levelStage = 11; //关卡阶段
+}
+
+message ChallengesResponse {
+	int64 userID = 1; //用户id （服务器内部使用）
+	repeated KeyValue challenges = 2;//挑战次数
+	int32 pveChapterID = 3;  // pve关卡id	
+	int32 levelStage = 4; //关卡阶段
+}
+message ChallengesDirtyResponse {
+	int64 userID = 1; //用户id （服务器内部使用）
+	repeated KeyValue challengeLevels = 2;//挑战关卡等级
+	repeated int32 openId = 3; //开启关卡
+}
+
+message AddChallengesLevelResponse {
+	int64 userID = 1; //用户id （服务器内部使用）
+	int32 challengeId = 2;
+	int32 challengeLevel = 3;
+}

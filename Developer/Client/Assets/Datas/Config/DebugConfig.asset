@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718505be56eab5849a649b32294c4f37, type: 3}
+  m_Name: DebugConfig
+  m_EditorClassIdentifier: 
+  m_LogLevel: 65798
+  m_bSkillDebug: 0
+  m_bAIDebug: 0
+  m_bDamageDebug: 0
+  m_bEventDebug: 0
+  m_bLockDebug: 0
+  m_bEnableGuide: 1
+  m_bAutoAccountRegister: 0
+  m_bGuideLogEnable: 0
+  m_bGuideGuidLog: 0
+  m_bIsShowLock: 0
+  m_bIsShowAdventureAniamtion: 0
+  m_bEnableGuideSkip: 1
+  m_bRunPointRecord: 0
+  m_fRunPointRecordPrecision: 1
+  m_bTestController: 0
+  m_bProfilerTick: 0
+  m_bEnableModuleLock: 1
+  m_bEnableModuleLockLog: 0
+  m_bEnableBuffFont: 0
+  m_bShowSpatial: 0
+  m_bShowNodeDebugFrame: 0
+  m_bShowGridMap: 0

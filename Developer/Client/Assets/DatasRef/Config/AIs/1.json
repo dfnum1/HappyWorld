@@ -1,0 +1,1073 @@
+﻿{
+    "GUID": 1,
+    "inheritGUID": 0,
+    "strName": "角色通用AI",
+    "vNodes": [
+        {
+            "Guid": 32,
+            "sort": 0,
+            "nexts": [
+                33
+            ],
+            "bExpand": true,
+            "posX": 1215,
+            "posY": 128,
+            "strName": "技能[产生伤害-可全局]",
+            "type": 311,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        },
+        {
+            "Guid": 2,
+            "sort": 0,
+            "nexts": [
+                3,
+                9,
+                10
+            ],
+            "bExpand": true,
+            "posX": -543,
+            "posY": -174,
+            "strName": "Buff[新增Buff]",
+            "type": 400,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        },
+        {
+            "Guid": 30,
+            "sort": 0,
+            "nexts": [
+                31
+            ],
+            "bExpand": true,
+            "posX": 1203,
+            "posY": -370,
+            "strName": "飞行道具[飞行道具击中]",
+            "type": 200,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        },
+        {
+            "Guid": 48,
+            "sort": 0,
+            "nexts": [
+                43
+            ],
+            "bExpand": true,
+            "posX": 1230,
+            "posY": 790,
+            "strName": "技能[受到伤害]",
+            "type": 310,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        }
+    ],
+    "vEventNodes": [
+        {
+            "Guid": 6,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 585,
+            "posY": -396,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,300701,0,1,"
+        },
+        {
+            "Guid": 4,
+            "sort": 0,
+            "nexts": [
+                6
+            ],
+            "bExpand": true,
+            "posX": 171,
+            "posY": -397,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10300,0,1,"
+        },
+        {
+            "Guid": 5,
+            "sort": 0,
+            "nexts": [
+                7
+            ],
+            "bExpand": true,
+            "posX": 166,
+            "posY": 29,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10490,0,1,"
+        },
+        {
+            "Guid": 7,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 594,
+            "posY": 31,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,300701,0,1,"
+        },
+        {
+            "Guid": 40,
+            "sort": 0,
+            "nexts": [
+                41
+            ],
+            "bExpand": true,
+            "posX": 173,
+            "posY": 3116,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10530,0,1,"
+        },
+        {
+            "Guid": 41,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 582,
+            "posY": 3115,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,301001,0,1,"
+        },
+        {
+            "Guid": 13,
+            "sort": 0,
+            "nexts": [
+                19
+            ],
+            "bExpand": true,
+            "posX": 172,
+            "posY": 1756,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10490,0,1,"
+        },
+        {
+            "Guid": 14,
+            "sort": 0,
+            "nexts": [
+                20
+            ],
+            "bExpand": true,
+            "posX": 177,
+            "posY": 1330,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10300,0,1,"
+        },
+        {
+            "Guid": 15,
+            "sort": 0,
+            "nexts": [
+                22
+            ],
+            "bExpand": true,
+            "posX": 171,
+            "posY": 2643,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10490,0,1,"
+        },
+        {
+            "Guid": 16,
+            "sort": 0,
+            "nexts": [
+                21
+            ],
+            "bExpand": true,
+            "posX": 168,
+            "posY": 2214,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10300,0,1,"
+        },
+        {
+            "Guid": 39,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 583,
+            "posY": 925,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,300901,0,1,"
+        },
+        {
+            "Guid": 38,
+            "sort": 0,
+            "nexts": [
+                39
+            ],
+            "bExpand": true,
+            "posX": 178,
+            "posY": 928,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10530,0,1,"
+        },
+        {
+            "Guid": 19,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 591,
+            "posY": 1754,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,300901,0,1,"
+        },
+        {
+            "Guid": 20,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 582,
+            "posY": 1327,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,300901,0,1,"
+        },
+        {
+            "Guid": 21,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 592,
+            "posY": 2215,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,301001,0,1,"
+        },
+        {
+            "Guid": 22,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 588,
+            "posY": 2644,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,301001,0,1,"
+        },
+        {
+            "Guid": 29,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 3104,
+            "posY": -376,
+            "strName": "Projectile",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "2:0,-1,1,61440,2,1,58,0.000,0.000,0.000,F_zero,0.000,0.000,0.000,255,7,0,0,"
+        },
+        {
+            "Guid": 36,
+            "sort": 0,
+            "nexts": [
+                37
+            ],
+            "bExpand": true,
+            "posX": 184,
+            "posY": -803,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,10530,0,1,"
+        },
+        {
+            "Guid": 37,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 598,
+            "posY": -802,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,5,300701,0,1,"
+        }
+    ],
+    "vTimers": [],
+    "vOperates": [
+        {
+            "Guid": 3,
+            "sort": 0,
+            "nexts": [
+                5,
+                36,
+                4
+            ],
+            "bExpand": true,
+            "posX": -222,
+            "posY": -172,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 2,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 100071
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 9,
+            "sort": 0,
+            "nexts": [
+                13,
+                38,
+                14
+            ],
+            "bExpand": true,
+            "posX": -221,
+            "posY": 1334,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 2,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 100091
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 10,
+            "sort": 0,
+            "nexts": [
+                15,
+                40,
+                16
+            ],
+            "bExpand": true,
+            "posX": -235,
+            "posY": 2224,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 2,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 100101
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 31,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 1516,
+            "posY": -369,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 30,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1
+                },
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 30,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 3
+                }
+            ],
+            "Relation": 1,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 26,
+            "sort": 0,
+            "nexts": [
+                27
+            ],
+            "bExpand": true,
+            "posX": 2137,
+            "posY": -376,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 25,
+                    "nodeArgv": 1,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 28,
+            "sort": 0,
+            "nexts": [
+                29
+            ],
+            "bExpand": true,
+            "posX": 2783,
+            "posY": -376,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 2,
+                    "cmdType": -1,
+                    "nodeGuid": 27,
+                    "nodeArgv": 2,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 34
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 33,
+            "sort": 0,
+            "nexts": [
+                34
+            ],
+            "bExpand": true,
+            "posX": 1528,
+            "posY": 128,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 1,
+                    "cmdType": -1,
+                    "nodeGuid": 32,
+                    "nodeArgv": 10,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 0
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 35,
+            "sort": 0,
+            "nexts": [
+                25
+            ],
+            "bExpand": true,
+            "posX": 2302,
+            "posY": 128,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 34,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1030001
+                },
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 34,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1049001
+                },
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 34,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1053001
+                }
+            ],
+            "Relation": 3,
+            "times": 0,
+            "opInterval": 0.5,
+            "fallbacks": []
+        },
+        {
+            "Guid": 43,
+            "sort": 0,
+            "nexts": [
+                46
+            ],
+            "bExpand": true,
+            "posX": 1690,
+            "posY": 791,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 48,
+                    "nodeArgv": 9,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 2
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 44,
+            "sort": 0,
+            "nexts": [
+                51
+            ],
+            "bExpand": true,
+            "posX": 2585,
+            "posY": 791,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 46,
+                    "nodeArgv": 2,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 30030
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        }
+    ],
+    "vExcudes": [
+        {
+            "Guid": 51,
+            "sort": 0,
+            "nexts": [
+                52
+            ],
+            "bExpand": true,
+            "posX": 1530,
+            "posY": 1361,
+            "strName": "执行器[共享列表/清理列表]",
+            "type": 11,
+            "Vars": []
+        },
+        {
+            "Guid": 25,
+            "sort": 0,
+            "nexts": [
+                26
+            ],
+            "bExpand": true,
+            "posX": 1833,
+            "posY": -376,
+            "strName": "执行器[拥有指定buff]",
+            "type": 402,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 100081
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "Guid": 27,
+            "sort": 0,
+            "nexts": [
+                28
+            ],
+            "bExpand": true,
+            "posX": 2470,
+            "posY": -376,
+            "strName": "执行器[区间随机]",
+            "type": 9,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 1
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 100
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "Guid": 34,
+            "sort": 0,
+            "nexts": [
+                35
+            ],
+            "bExpand": true,
+            "posX": 1849,
+            "posY": 128,
+            "strName": "执行器[获取本次伤害帧参数-*伤害结算有效]",
+            "type": 5013,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "Guid": 46,
+            "sort": 0,
+            "nexts": [
+                44
+            ],
+            "bExpand": true,
+            "posX": 2073,
+            "posY": 791,
+            "strName": "执行器[获取本次伤害帧参数-*伤害结算有效]",
+            "type": 5013,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "Guid": 52,
+            "sort": 0,
+            "nexts": [
+                53
+            ],
+            "bExpand": true,
+            "posX": 1889,
+            "posY": 1361,
+            "strName": "执行器[组类型区间获取Buffs(结果存放共享列表)]",
+            "type": 426,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 650001
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 650050
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 650001
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "Guid": 53,
+            "sort": 0,
+            "nexts": [
+                55
+            ],
+            "bExpand": true,
+            "posX": 2412,
+            "posY": 1360,
+            "strName": "执行器[共享列表/遍历列表]",
+            "type": 10,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "Guid": 55,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 2772,
+            "posY": 1360,
+            "strName": "执行器[激活buff]",
+            "type": 427,
+            "Vars": [
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": false,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": 53,
+                    "cmdType": -1,
+                    "nodeArgv": 0,
+                    "constValue": true,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 4
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 0
+                },
+                {
+                    "nodeGuid": -1,
+                    "cmdType": -1,
+                    "nodeArgv": 255,
+                    "constValue": true,
+                    "value": 1
+                }
+            ]
+        }
+    ],
+    "vTasks": [],
+    "vVariables": []
+}

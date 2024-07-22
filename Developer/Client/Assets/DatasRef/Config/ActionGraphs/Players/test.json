@@ -1,0 +1,153 @@
+﻿{
+    "strName": "test",
+    "action_template": "",
+    "fix_rotation": false,
+    "hard_body": false,
+    "object_scale": 1.0,
+    "foot_shadow_scale": 1.0,
+    "physics_push_force": 0.0,
+    "physics_radius": 0.0,
+    "physics_gravity": 100.0,
+    "falling_speed": 1.0,
+    "global_action_speed_scale": 1.0,
+    "collision_type": 2,
+    "collison_box_extrude": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "collision_capsule_radius": 0.0,
+    "collision_capsule_height": 0.0,
+    "ai_id": 0,
+    "frames": [],
+    "stance_desc": [
+        {
+            "stance_name": "default",
+            "inherit_stance": "",
+            "run_speed": 10.0,
+            "fast_run_speed": 10.0,
+            "turn_speed": 0.0,
+            "jump_horizen_speed": 0.0,
+            "jump_vertical_speed": 0.0,
+            "stance_action_state_core": [
+                {
+                    "name": "idle",
+                    "type": 0,
+                    "id": 1,
+                    "tag": 0,
+                    "animLoadType": 3,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "Idle",
+                            "hashState": 2081823275,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 10.000000953674317,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 10.000000953674317,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 0,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "run",
+                    "type": 1,
+                    "id": 2,
+                    "tag": 0,
+                    "animLoadType": 3,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "Run",
+                            "hashState": 1748754976,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 0.7000000476837158,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 0.7000000476837158,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 0,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                }
+            ]
+        }
+    ],
+    "action_state_cancle": [],
+    "succeed_action_state": [],
+    "min_attack_distance": 100.0,
+    "max_attack_distance": 100.0,
+    "max_target_distance": 100.0,
+    "max_target_zoom": 100.0,
+    "slotAvatars": []
+}

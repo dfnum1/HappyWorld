@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.topgame.message.common";
+option csharp_namespace ="Proto3";
+
+message CommandItem{
+	int32 key = 1;
+	int32 value = 2;
+	string cmd = 3;
+}
+
+message CommandRequest{
+	int64 account = 1;
+	int32 type = 2;	//0-道具, 1-英雄 2-xxx 根据需要商议定义
+	repeated CommandItem cmds  =3;
+}

@@ -1,0 +1,140 @@
+﻿{
+    "GUID": 3,
+    "inheritGUID": 0,
+    "strName": "初始宝藏哥布林",
+    "vNodes": [
+        {
+            "Guid": 1,
+            "sort": 0,
+            "nexts": [
+                2
+            ],
+            "bExpand": true,
+            "posX": -401,
+            "posY": -180,
+            "strName": "通用[AI激活OR停止]",
+            "type": 6,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        }
+    ],
+    "vEventNodes": [
+        {
+            "Guid": 3,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 287,
+            "posY": -180,
+            "strName": "ActionStateProperty",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "300:0,-1,1,61440,2,1,1/1/0@0@0@0@0@0@0@0@0@0@0@0@0|10@0@0@60@0@0@0@0@0@0@0@0@0|20@0@0@120@0@0@0@0@0@0@0@0@0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0,0,"
+        },
+        {
+            "Guid": 5,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": -69,
+            "posY": 445,
+            "strName": "Trigger",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "19:0,-1,1,61440,2,1,199,0,,"
+        },
+        {
+            "Guid": 7,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": -63,
+            "posY": 85,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,2202902,0,1,"
+        }
+    ],
+    "vTimers": [
+        {
+            "Guid": 4,
+            "sort": 0,
+            "nexts": [
+                5
+            ],
+            "bExpand": true,
+            "posX": -399,
+            "posY": 443,
+            "strName": "计时器",
+            "fTime": 20.0,
+            "loop": 1,
+            "idleInterval": 0.0,
+            "cmdTypes": []
+        },
+        {
+            "Guid": 6,
+            "sort": 0,
+            "nexts": [
+                7
+            ],
+            "bExpand": true,
+            "posX": -413,
+            "posY": 138,
+            "strName": "计时器",
+            "fTime": 11.0,
+            "loop": 1,
+            "idleInterval": 0.0,
+            "cmdTypes": []
+        }
+    ],
+    "vOperates": [
+        {
+            "Guid": 2,
+            "sort": 0,
+            "nexts": [
+                3
+            ],
+            "bExpand": false,
+            "posX": -65,
+            "posY": -180,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 1,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        }
+    ],
+    "vExcudes": [],
+    "vTasks": [],
+    "vVariables": []
+}

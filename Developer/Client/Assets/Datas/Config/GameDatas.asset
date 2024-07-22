@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aacd5e5e8f2e99498234f5301726400, type: 3}
+  m_Name: GameDatas
+  m_EditorClassIdentifier: 
+  TileLine: 3
+  bBinary: 1
+  dllRead: 0
+  CommonAssets:
+  - Assets/Datas/Config/GlobalSetting.asset
+  - Assets/Datas/Config/ShadersTab.asset
+  - Assets/Datas/Config/PermanentAssets.asset
+  - Assets/Datas/Config/TakeSlotSkillFormation.asset
+  - Assets/Datas/Config/ATStatesSetting.asset
+  - Assets/Datas/Config/TeamFormation.asset
+  - Assets/Datas/Config/SummonSlotFormation.asset
+  - Assets/Datas/Config/DebugConfig.asset
+  - Assets/Datas/Config/TerrainBrushs.asset
+  - Assets/Datas/Config/InstanceLimits.asset
+  - Assets/Datas/Config/TextureClipAssets.asset
+  - Assets/Datas/Config/CollisonFilters.asset
+  - Assets/Datas/Config/DamageCoefficientParams.asset
+  - Assets/Datas/Config/AIDatas.asset
+  - Assets/Datas/Config/DIYBlocks.asset
+  - Assets/Datas/Config/GuideDatas.asset
+  Assets:
+  - nHash: -146561370
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 4d9b1a631424f3c4baf000a1bb396d33, type: 3}
+  - nHash: 48322455
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: b51feab60b1081d4a904abe59a8e6d56, type: 3}
+  - nHash: 856641488
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: ed553ce1b1713a0479b3a828103b7c29, type: 3}
+  - nHash: 2116951547
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 16626dc312653fa4baac579efce46c43, type: 3}
+  - nHash: -174920154
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 8e071bb9db2078e47b64199e79cf1469, type: 3}
+  - nHash: -1925025643
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: a37f04839f5d9a24781828bc1b64db94, type: 3}
+  - nHash: 168196920
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 8c969e6bc01d3da4fa1633597c56de71, type: 3}
+  - nHash: -1863375723
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 97790c554a157ba409aa9417da6b62f3, type: 3}
+  - nHash: -96464625
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 3
+    Asset: {fileID: 4900000, guid: 255ed1865c2108b4099d518a1c742d24, type: 3}
+  - nHash: 1151311073
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 3
+    Asset: {fileID: 4900000, guid: 286a6030e20112e44ab2467fc58dc990, type: 3}
+  - nHash: -565984975
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 1d5a0a26edce43046b578e43da9db9cb, type: 3}
+  - nHash: 710777463
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 9aca86f393d86ff41bed86997d12f928, type: 3}
+  - nHash: -1829301839
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 3
+    Asset: {fileID: 4900000, guid: 43f12ff759ac4c346bf4528c4a40bcd7, type: 3}
+  - nHash: -1554595844
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 1
+    type: 2
+    Asset: {fileID: 4900000, guid: 5b90616188da08747a097451d62cc2cc, type: 3}
+  - nHash: 1595923064
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 83822a47399de7141972ee130e4140f6, type: 3}
+  - nHash: -1031938645
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 27ca67c171c5e4340a4c9a92acbd0f74, type: 3}
+  - nHash: 906640040
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: efe55ff04a72872429edcea04fa2f979, type: 3}
+  - nHash: -220898432
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 4a973a7ae8f803f4891ae2775b12b21d, type: 3}
+  - nHash: -825142436
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: e71680b4916445a4692b942038b28101, type: 3}
+  - nHash: -963581922
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: fd8cc9a2272d215469a4b8e5a24a9514, type: 3}
+  - nHash: 1279699418
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 6d5c49eb70086bb41a5383b336e1fe10, type: 3}
+  - nHash: -2079187569
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: d2d71c7ecc295e840ae1053ee1f47242, type: 3}
+  - nHash: 884211508
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: 2007b800ce1c0a248993bde9d32513aa, type: 3}
+  - nHash: -86817816
+    csharpParse: 1
+    dllParse: 0
+    exportAT: 0
+    type: 2
+    Asset: {fileID: 4900000, guid: e6e935a79a39daf43bde0f1498082431, type: 3}

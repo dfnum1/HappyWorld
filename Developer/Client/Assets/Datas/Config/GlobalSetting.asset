@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7f43470564dd148a2d5eeda5430d66, type: 3}
+  m_Name: GlobalSetting
+  m_EditorClassIdentifier: 
+  fTurnSpeed: 0
+  bSwapTeamTurnDir: 0
+  fMoveSpeed: 8
+  fFollowSpeed: 12
+  fSlideDuration: 0.7
+  fJumpSpeed: 2
+  RunJumpSpeed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 25
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 50
+      value: 10
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  RunJumpGravitySpeed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.000018961136
+      outSlope: -0.000018961136
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.25136244
+    - serializedVersion: 3
+      time: 150
+      value: 1
+      inSlope: 0.021131285
+      outSlope: 0.021131285
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.052294005
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  fSlideFallingSpeed: 38.3
+  fDropFallingSpeed: 10
+  BreakTerrainHeightFalling: {x: 4, y: 10}
+  fJumpInitVelocity: 6
+  fFallingVelocity: 4
+  fBlanceHeightFactor: 7
+  fIdleSpeed: 0.9
+  canSlideSplitScreen: 0
+  fTouch3DSensitivity: 0.3
+  bPressSlideToggle: 0
+  fTouchUISensitivity: 60
+  fCityTouchSensitivity: 0.1
+  fRunLoadDistance: 300
+  SceneLoadSizeCheck: 3
+  PVPSceneLoadSizeCheck: 4
+  nOutViewUnloadDistance: 120
+  fMagentDuration: 0.15
+  MagentSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 0.5
+      inSlope: -0.028972402
+      outSlope: -0.028972402
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.10052538
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cityCameraViewParam: {x: 10, y: 5, z: 20}
+  fDropSpeed: 5
+  fCameraLockFallingSpeed: 5
+  LeftRunJumpParam: {x: 0.16, y: 2}
+  RightRunJumpParam: {x: 0.16, y: 1}
+  fAdjustPartitionRodeGapTime: 0.2
+  globalDefParameter: 100
+  globalDefSubAtkParameter: 0
+  globalRandomAdjust: {x: 100, y: 100}
+  globalCarrerParameter: 1
+  lowerBattleSpeed: 1
+  frameFpsScale: 1.5
+  bitProjectileIgnoreFilter: 227
+  bAlwayShowPartAimPoint: 1
+  bAlwayShowADBtn: 1
+  fAtuoRunCheckDistance: 40
+  fHookDiffDistance: 20
+  fHookEleRandom: 0.5
+  Lods:
+  - index: 0
+    distance: 200
+  - index: 1
+    distance: 1000
+  HeroDetailDragRotateTime: 0
+  HeroDetailDragRotateSpeed: 0.2
+  HeroDetailDragEndRotateTime: 1
+  HeroDetailRotateRestoreTime: 5
+  HeroDetailDragEndTriggerSwitchDistance: 200
+  BattleHeadTurnTime: 0.4
+  prepareEnemyTeamOffset: {x: 0, y: 0, z: 15}
+  RVOTimeHorizon: 5
+  RVOTimeHorizonObst: 5
+  fDefaultBattleRegionWidth: 11
+  LookFocusScatters: []
+  PrepareLookFocusScatters: []

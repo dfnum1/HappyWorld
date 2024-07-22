@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcd8e879dd214d4ebcf78e74b2aa73f, type: 3}
+  m_Name: SDKSetting
+  m_EditorClassIdentifier: 
+  Params:
+  - sdkName: bugly
+    Params:
+    - label: android
+      strValue: 918050afce
+      nValue: 0
+    - label: ios
+      strValue: 87c698713c
+      nValue: 0
+  - sdkName: googleAd
+    Params:
+    - label: andoridID
+      strValue: ca-app-pub-7291647801970657~8867239412
+      nValue: 0
+    - label: iosID
+      strValue: 96e23e80653bb28980d3f40beb58915c
+      nValue: 0
+    - label: rewardedAndroidID
+      strValue: ca-app-pub-7291647801970657/2110259375
+      nValue: 0
+    - label: rewardedIosID
+      strValue: ca-app-pub-7291647801970657/2110259375
+      nValue: 0
+  - sdkName: unityAd
+    Params:
+    - label: andoridID
+      strValue: 4152865
+      nValue: 0
+    - label: iosID
+      strValue: 4152864
+      nValue: 0
+    - label: videoPlacement
+      strValue: rewardedVideo
+      nValue: 0
+    - label: testMode
+      strValue: 
+      nValue: 1
+  - sdkName: facebookAd
+    Params:
+    - label: andoridID
+      strValue: 1111
+      nValue: 0
+    - label: iosID
+      strValue: 1111
+      nValue: 0
+  - sdkName: AppsFlyer
+    Params:
+    - label: androidDevKey
+      strValue: WEYqZmRBi6ZmFww2esj28Y
+      nValue: 0
+    - label: iosDevKey
+      strValue: 
+      nValue: 0
+    - label: isDebug
+      strValue: 
+      nValue: 0
+    - label: getConversionData
+      strValue: 
+      nValue: 0
+  - sdkName: FireBase
+    Params: []
+  - sdkName: QuickSDK
+    Params:
+    - label: QUICK_PRODUCT_CODE
+      strValue: 25812195033624539889787045042415
+      nValue: 0
+    - label: QUICK_PRODUCT_KEY
+      strValue: 90611672
+      nValue: 0
+  - sdkName: TalkingData
+    Params:
+    - label: TALKING_APPID
+      strValue: 502E37026C6B43D1A5FFD26AAB6B476F
+      nValue: 0
+  - sdkName: AIHelp
+    Params:
+    - label: appKey
+      strValue: METAWORLDENTERTAINMENT_app_d5fe58ff5f3344afa6aada61b762f257
+      nValue: 0
+    - label: domain
+      strValue: ' metaworldentertainment.aihelp.net'
+      nValue: 0
+    - label: invitationCode
+      strValue: 3C1925F9529CF8EA4D4D45651B735499
+      nValue: 0
+    - label: android_appId
+      strValue: metaworldentertainment_platform_8f60db7dec8465779039da3ed06075cf
+      nValue: 0
+    - label: ios_appId
+      strValue: metaworldentertainment_platform_62b2c28de888dba9f36860cd10949c65
+      nValue: 0
+  - sdkName: Taptap
+    Params:
+    - label: ClientID
+      strValue: bf5xgp66eeahojjzpq
+      nValue: 0
+    - label: ClientToken
+      strValue: Wguer1Eqb1AXdUhowK4qbi0OPIskpsDgAqqoT76e
+      nValue: 0
+    - label: ServerUrl
+      strValue: https://bf5xgp66.cloud.tds1.tapapis.cn
+      nValue: 0
+    - label: TestQualification
+      strValue: 1
+      nValue: 1
+    - label: Asset
+      strValue: Assets/Datas/SDKs/Taptap.prefab
+      nValue: 0
+  - sdkName: Oppo
+    Params:
+    - label: Debug
+      strValue: false
+      nValue: 0
+    - label: offline
+      strValue: true
+      nValue: 0
+    - label: appKey
+      strValue: 5hHDqypivkW0c4K4SWS88Sw08
+      nValue: 0
+    - label: appSecret
+      strValue: xxx
+      nValue: 0
+    - label: Asset
+      strValue: Assets/Datas/SDKs/Oppo.prefab
+      nValue: 0
+  - sdkName: Vivo
+    Params:
+    - label: appId
+      strValue: xxx
+      nValue: 0
+    - label: appKey
+      strValue: xxxx
+      nValue: 0
+    - label: cpId
+      strValue: xxx
+      nValue: 0
+    - label: passPrivacy
+      strValue: 0
+      nValue: 0
+    - label: Asset
+      strValue: Assets/Datas/SDKs/Vivo.prefab
+      nValue: 0
+  - sdkName: Xiaomi
+    Params:
+    - label: mi_game_appid
+      strValue: mi_2882303761517543214
+      nValue: 0
+    - label: mi_game_appkey
+      strValue: mi_5751754320214
+      nValue: 0
+  - sdkName: Yingyongbao
+    Params:
+    - label: QQ_APP_ID
+      strValue: 
+      nValue: 0
+    - label: WX_APP_ID
+      strValue: 
+      nValue: 0
+    - label: OFFER_ID
+      strValue: 1104936059
+      nValue: 0
+    - label: YSDK_URL
+      strValue: https://ysdk.qq.com
+      nValue: 0
+    - label: YSDK_AUTH_KEY
+      strValue: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsKX4kg6T32qn8uHc6j9AwMeQzpUW3hh6o8WiBJi9wlx0pWWRLoqdQuhoUPGpfrdVyt/iEnlvF4fmCkk82bJxXv4x2QRqR4tq3Li5YODzk/xLlQsa3F9nPb+iadqdQJfm6n53ts3uxkApl3gMURuw8SfoFuzuB3mpYHFO+DXQ7BSU2N/+Sdjb6xuOPWHrk9kXSo+h2VTkCwYcpEVC505T0MoA4PtX3GwsO7+lSJrRwuwzXi0eBi5evV57g9WhNnsZLfHTYqC43EGfbj0+/rNXQgz2AfJ78y5jW0am2WMBaO4Sao/acYHu/e+PSqr+fvolmbB1cFLCkCFnF6jBMuk8AQIDAQAB
+      nValue: 0
+    - label: ui_prefab
+      strValue: Assets/Datas/uis/SDKs/Yingyongbao.prefab
+      nValue: 0
+  - sdkName: InnerQuickSDK
+    Params:
+    - label: QUICK_PRODUCT_CODE
+      strValue: 
+      nValue: 0
+    - label: QUICK_PRODUCT_KEY
+      strValue: 
+      nValue: 0
+  - sdkName: Apple
+    Params:
+    - label: Asset
+      strValue: Assets/Datas/SDKs/AppleSign.prefab
+      nValue: 0
+    - label: useAuth
+      strValue: 1
+      nValue: 1
+  - sdkName: Admobile
+    Params: []
+  - sdkName: Huawei
+    Params:
+    - label: Asset
+      strValue: Assets/Datas/SDKs/Huawei.prefab
+      nValue: 0
+  - sdkName: ToBid
+    Params:
+    - label: TOBID_APPID
+      strValue: 29210
+      nValue: 0
+    - label: TOBID_APPKEY
+      strValue: de5c126aa45573c2
+      nValue: 0
+  - sdkName: Operate
+    Params:
+    - label: appKey
+      strValue: 30904
+      nValue: 0
+    - label: Policy
+      strValue: SDK_Operate_Policy
+      nValue: 0
+  - sdkName: LZT
+    Params:
+    - label: AppKey
+      strValue: AJoOF79ilNkt2m0MqaepjDyVbUC5gBdz
+      nValue: 0
+    - label: AppId
+      strValue: 70090
+      nValue: 0
+  - sdkName: ZSSdk
+    Params:
+    - label: AppId
+      strValue: 54000
+      nValue: 0
+    - label: AppKey
+      strValue: vjAIcxQMnu1PKL0oymd2sBHNW7qOlakz
+      nValue: 0
+  - sdkName: 233
+    Params:
+    - label: AppKey
+      strValue: 
+      nValue: 0
+  - sdkName: GameAnalytics
+    Params:
+    - label: user
+      strValue: 
+      nValue: 0
+    - label: password
+      strValue: 
+      nValue: 0

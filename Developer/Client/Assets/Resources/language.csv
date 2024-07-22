@@ -1,0 +1,42 @@
+﻿文本ID,中文文本,英文文本
+uint,string,string
+,,
+id,textCN,textEN
+80010015,确定,Confirm
+80010019,关闭,Close
+80010201,错误：连接失败，请确认网络环境后重试；,"Error:   Connection failed! Please check your network, then try again."
+80010202,重启,Relaunch
+80010203,重试,Retry
+80010210,"尊敬的用户，狩猎大陆发生了一些变化，需要更新{0}的更新包。
+继续下载可能产生流量费用，是否继续下载？","Dear user, some changes have happened in the world of Hunterold. You need to download the updates of {0}.\n If you download now, it may cause data fees. Continue?"
+80010211,网络状态变更，继续下载可能产生流量费用，是否继续下载？,"Your network status has just changed. If you continue to download now, it may cause data fees. Continue?"
+80010212,正在前往狩猎大陆……,Entering Hunterold...
+80010221,"是否清理本地缓存的游戏资源以及账号信息？
+当游戏运行有问题时，也可通过此操作解决部分异常问题。
+需要重新下载补丁包及游戏扩展资源。","Are you sure you wish to delete the local cached game data and account info?\n If the game could not run normally in your device, you can do so to fix some problems.\n But you will have to redownload the latest updates and the corresponding expansion sets."
+80010222,载入游戏中…,Loading…
+80010223,尊敬的用户，狩猎大陆发生了一些变化，请前往应用商店进行更新操作。,"Dear user, some changes have happened in the world of Hunterold. Please update it in the App Store."
+80010224,应用商店,App Store
+80010225,秒,s
+80010226,清除缓存中，此过程不消耗流量……,Deleting cached data without cost of date fees...
+80010227,正在前往奥比安大陆……,Entering the world of Aubion...
+80010228,合理搭配阵容可使挑战更加轻松哦~,Loading…
+80010229,正在加载游戏……,Loading…
+80010230,正在构建英雄形象……,Creating images of heroes...
+80010231,正在前往奥比安大陆……,Entering the world of Aubion...
+80010232,合理搭配阵容可使挑战更加轻松哦~,Make up a team reasonably to make your challenge easier~
+80010233,正在加载游戏……,Loading…
+80010234,你的网络环境不佳，更新中断，请连接网络后重试。,Your network does not work stably. Updating has paused. Please connect to a network and then try again.
+80010235,"<size=30>健康游戏忠告</size>
+抵制不良游戏，拒绝盗版游戏。
+注意自我保护，谨防受骗上当。
+适度游戏益脑，沉迷游戏伤身。
+合理安排时间，享受健康生活。","抵制不良游戏，拒绝盗版游戏。
+注意自我保护，谨防受骗上当。
+适度游戏益脑，沉迷游戏伤身。
+合理安排时间，享受健康生活。"
+80010236,运行内存不足，暂时无法进入游戏，请清理系统后再次尝试。,N/A
+80010237,"您的手机不符合最低配置要求,无法运行游戏",N/A
+80010238,版本检测中...,
+80010239,同意,
+80010240,退出,

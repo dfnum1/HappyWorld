@@ -1,0 +1,5987 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dccf5fb206df874b9e92a632960ae27, type: 3}
+  m_Name: Main
+  m_EditorClassIdentifier: 
+  Data:
+    bEnable: 1
+    Locals:
+      varVariableBool:
+      - GUID: 5185
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5205
+        strName: bResetTimeIfExist
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5214
+        strName: bForceStart
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5215
+        strName: bAnimatorTrigger
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5216
+        strName: bClearOnHitActorSet
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5218
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5231
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5232
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5613
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5614
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5621
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5622
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5628
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5629
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5384
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5602
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5603
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5427
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5942
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5422
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5940
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5432
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5938
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5437
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5944
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5580
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5581
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5470
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5505
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5714
+        strName: bCloneMaterial
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5715
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5653
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5654
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5700
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5681
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5682
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5702
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5704
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5723
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5717
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5719
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5735
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5744
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5746
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5763
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5768
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5765
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5832
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5936
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5837
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5946
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5843
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5844
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5848
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5853
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5855
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5859
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5889
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5890
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5896
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5897
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5903
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5904
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5910
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5911
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5919
+        strName: bBlock
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5920
+        strName: bShare
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5960
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5962
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5964
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5968
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5996
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6031
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6033
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6035
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6047
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6048
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6072
+        strName: bMix
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableBoolList: []
+      varVariableByte:
+      - GUID: 5221
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5201
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 5473
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5475
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5477
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableByteList: []
+      varVariableColor:
+      - GUID: 5300
+        strName: 
+        flags: 0
+        mValueDef: {r: 1, g: 0, b: 0, a: 0}
+        bindVarGuid: 0
+      - GUID: 5620
+        strName: color
+        flags: 0
+        mValueDef: {r: 1, g: 0, b: 0, a: 0}
+        bindVarGuid: 0
+      - GUID: 5627
+        strName: color
+        flags: 0
+        mValueDef: {r: 1, g: 0, b: 0, a: 1}
+        bindVarGuid: 0
+      - GUID: 5842
+        strName: color
+        flags: 0
+        mValueDef: {r: 1, g: 0.70826584, b: 0, a: 0}
+        bindVarGuid: 0
+      - GUID: 5888
+        strName: color
+        flags: 0
+        mValueDef: {r: 0, g: 0.8662233, b: 2, a: 1}
+        bindVarGuid: 0
+      - GUID: 5895
+        strName: color
+        flags: 0
+        mValueDef: {r: 0.20430754, g: 2.1256545, b: 0, a: 1}
+        bindVarGuid: 0
+      - GUID: 5902
+        strName: color
+        flags: 0
+        mValueDef: {r: 2, g: 1.0406137, b: 0, a: 1}
+        bindVarGuid: 0
+      - GUID: 5909
+        strName: 
+        flags: 0
+        mValueDef: {r: 0.5340314, g: 0, b: 2, a: 1}
+        bindVarGuid: 0
+      - GUID: 5918
+        strName: color
+        flags: 0
+        mValueDef: {r: 2, g: 0, b: 0, a: 1}
+        bindVarGuid: 0
+      varVariableColorList: []
+      varVariableCurve:
+      - GUID: 5609
+        strName: curve
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 66.666664
+            outSlope: 66.666664
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.15
+            value: 10
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.3
+            value: 0
+            inSlope: -66.666664
+            outSlope: -66.666664
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 5296
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 67.459045
+            outSlope: 67.459045
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.1503357
+            value: 10.141502
+            inSlope: -0.15130615
+            outSlope: -0.15130615
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.3
+            value: 0
+            inSlope: -67.76166
+            outSlope: -67.76166
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 5373
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.049652457
+            value: 0.5
+            inSlope: -0.069678225
+            outSlope: -0.069678225
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 5598
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 5576
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: -0.0018196106
+            value: 0
+            inSlope: 0.072206914
+            outSlope: 0.072206914
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.15262593
+          - serializedVersion: 3
+            time: 0.6
+            value: 1.0069153
+            inSlope: 1.5166872
+            outSlope: 1.5166872
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.03766244
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 5649
+        strName: curve
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 6.2485924
+            outSlope: 6.2485924
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.15766308
+            value: 0.9851723
+            inSlope: 0.10030546
+            outSlope: 0.10030546
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0.13429256
+          - serializedVersion: 3
+            time: 0.5
+            value: 0
+            inSlope: -2.8777857
+            outSlope: -2.8777857
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 5677
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 6043
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0.28201792
+            tangentMode: 5
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.04702751
+          - serializedVersion: 3
+            time: 2.5
+            value: 1
+            inSlope: 1.527875
+            outSlope: 1.3064997
+            tangentMode: 1
+            weightedMode: 0
+            inWeight: 0.03245745
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      varVariableCurveList: []
+      varVariableDelegate: []
+      varVariableFloat:
+      - GUID: 5168
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5170
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 25
+        bindVarGuid: 0
+      - GUID: 5172
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 25
+        bindVarGuid: 0
+      - GUID: 5184
+        strName: 
+        flags: 0
+        mValueDef: 36000
+        bindVarGuid: 0
+      - GUID: 5204
+        strName: fShowTime
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5212
+        strName: fDeltaTime
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5213
+        strName: fSpeed
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5217
+        strName: fAnimationOffset
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5610
+        strName: srcValue
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5611
+        strName: dstValue
+        flags: 0
+        mValueDef: 0.3
+        bindVarGuid: 0
+      - GUID: 5612
+        strName: fDelay
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5295
+        strName: 
+        flags: 0
+        mValueDef: 0.3
+        bindVarGuid: 0
+      - GUID: 5372
+        strName: 
+        flags: 0
+        mValueDef: 0.1
+        bindVarGuid: 0
+      - GUID: 5383
+        strName: 
+        flags: 0
+        mValueDef: 1.5
+        bindVarGuid: 0
+      - GUID: 5599
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5600
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5601
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6058
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5426
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5428
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5421
+        strName: 
+        flags: 0
+        mValueDef: 5
+        bindVarGuid: 0
+      - GUID: 5423
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5431
+        strName: 
+        flags: 0
+        mValueDef: -10
+        bindVarGuid: 0
+      - GUID: 5433
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5436
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5438
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5577
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5578
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5579
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5469
+        strName: 
+        flags: 0
+        mValueDef: 1.5
+        bindVarGuid: 0
+      - GUID: 5861
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5551
+        strName: 
+        flags: 0
+        mValueDef: -1
+        bindVarGuid: 0
+      - GUID: 5864
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5713
+        strName: fKeepTime
+        flags: 0
+        mValueDef: 0.5
+        bindVarGuid: 0
+      - GUID: 5650
+        strName: srcValue
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5651
+        strName: dstValue
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5652
+        strName: fDelay
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5678
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5679
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5680
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5757
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5759
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5761
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5771
+        strName: fDelay
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5833
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5838
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5967
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6044
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6045
+        strName: 
+        flags: 0
+        mValueDef: 2.5
+        bindVarGuid: 0
+      - GUID: 6046
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6056
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6039
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6057
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6066
+        strName: fVolume
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableFloatList: []
+      varVariableInt:
+      - GUID: 5948
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6020
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6022
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6024
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 2
+        bindVarGuid: 0
+      - GUID: 6026
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 6028
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 4
+        bindVarGuid: 0
+      - GUID: 5211
+        strName: pType
+        flags: 0
+        mValueDef: 50
+        bindVarGuid: 0
+      - GUID: 5227
+        strName: type
+        flags: 0
+        mValueDef: 5
+        bindVarGuid: 0
+      - GUID: 5615
+        strName: materialIndex
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5623
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5305
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5303
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5353
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5356
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5307
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5309
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5630
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5316
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5321
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5319
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5323
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6006
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5325
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5327
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5330
+        strName: nEventID
+        flags: 0
+        mValueDef: 15
+        bindVarGuid: 0
+      - GUID: 5336
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5338
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5340
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5440
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5343
+        strName: nEventID
+        flags: 0
+        mValueDef: 5061
+        bindVarGuid: 0
+      - GUID: 5346
+        strName: 
+        flags: 0
+        mValueDef: 6
+        bindVarGuid: 0
+      - GUID: 5349
+        strName: nEventID
+        flags: 0
+        mValueDef: 4004
+        bindVarGuid: 0
+      - GUID: 5358
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5728
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5604
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5445
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5443
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5447
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 5449
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5869
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5582
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5863
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5552
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5710
+        strName: 
+        flags: 0
+        mValueDef: 170466615
+        bindVarGuid: 0
+      - GUID: 5712
+        strName: type
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5633
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5655
+        strName: materialIndex
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5697
+        strName: 
+        flags: 0
+        mValueDef: 170466615
+        bindVarGuid: 0
+      - GUID: 5699
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5667
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5670
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5683
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5724
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5731
+        strName: nEventID
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5740
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5742
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5753
+        strName: nEventID
+        flags: 0
+        mValueDef: 67
+        bindVarGuid: 0
+      - GUID: 5821
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5988
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5990
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1001001
+        bindVarGuid: 0
+      - GUID: 5826
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5845
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5867
+        strName: 
+        flags: 0
+        mValueDef: 16
+        bindVarGuid: 0
+      - GUID: 5872
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5874
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5876
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5878
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 5880
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 2
+        bindVarGuid: 0
+      - GUID: 5882
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 5884
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 4
+        bindVarGuid: 0
+      - GUID: 5914
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 5
+        bindVarGuid: 0
+      - GUID: 5891
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5898
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5905
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5912
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5921
+        strName: index
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5959
+        strName: 
+        flags: 0
+        mValueDef: 5
+        bindVarGuid: 0
+      - GUID: 5992
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5994
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1999999
+        bindVarGuid: 0
+      - GUID: 5972
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6003
+        strName: nEventID
+        flags: 0
+        mValueDef: 15
+        bindVarGuid: 0
+      - GUID: 6078
+        strName: doActionType
+        flags: 0
+        mValueDef: 255
+        bindVarGuid: 0
+      - GUID: 6079
+        strName: tag
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6049
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6061
+        strName: nEventID
+        flags: 0
+        mValueDef: 17
+        bindVarGuid: 0
+      - GUID: 6067
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6070
+        strName: nId
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6073
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6084
+        strName: pReturn
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6086
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 6088
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 6090
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 2
+        bindVarGuid: 0
+      - GUID: 6092
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 6094
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 4
+        bindVarGuid: 0
+      varVariableIntList:
+      - GUID: 5230
+        strName: 
+        flags: 17
+        mValueDef: 0f00000013000000
+        bindVarGuid: 0
+      varVariableLong: []
+      varVariableLongList: []
+      varVariableMonoScript:
+      - GUID: 5618
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5645
+        strName: pReturn
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5625
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5368
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5371
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5726
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5390
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5417
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -525529666
+      - GUID: 5414
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -525529666
+      - GUID: 5711
+        strName: pAble
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5642
+        strName: pReturn
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5698
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5659
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -631906452
+      - GUID: 5721
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5840
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5886
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5893
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5900
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5907
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 5916
+        strName: pPointer
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: 1980077048
+      - GUID: 6064
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -109444619
+      - GUID: 6069
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -109444619
+      varVariableMonoScriptList: []
+      varVariableObject:
+      - GUID: 6071
+        strName: pTrans
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        type: 0
+      varVariableObjectList: []
+      varVariableQuaternion: []
+      varVariableQuaternionList: []
+      varVariableString:
+      - GUID: 5608
+        strName: strProperty
+        flags: 0
+        mValueDef: _RimFactor
+        bindVarGuid: 0
+      - GUID: 5299
+        strName: 
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5619
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5294
+        strName: 
+        flags: 0
+        mValueDef: _RimFactor
+        bindVarGuid: 0
+      - GUID: 5626
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5727
+        strName: 
+        flags: 0
+        mValueDef: Dissolve
+        bindVarGuid: 0
+      - GUID: 5597
+        strName: 
+        flags: 0
+        mValueDef: _DissolveAmount
+        bindVarGuid: 0
+      - GUID: 5575
+        strName: 
+        flags: 0
+        mValueDef: _DissolveAmount
+        bindVarGuid: 0
+      - GUID: 5502
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 5545
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/FX/Common/FX_HeroComplete.prefab
+        bindVarGuid: 0
+      - GUID: 5862
+        strName: 
+        flags: 0
+        mValueDef: Root
+        bindVarGuid: 0
+      - GUID: 5648
+        strName: strProperty
+        flags: 0
+        mValueDef: _MainAlpha
+        bindVarGuid: 0
+      - GUID: 5676
+        strName: 
+        flags: 0
+        mValueDef: _DissolveAmount
+        bindVarGuid: 0
+      - GUID: 5722
+        strName: 
+        flags: 0
+        mValueDef: USE_DISSOLVE
+        bindVarGuid: 0
+      - GUID: 5841
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5887
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5894
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5901
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5908
+        strName: 
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 5917
+        strName: propName
+        flags: 0
+        mValueDef: _RimColor
+        bindVarGuid: 0
+      - GUID: 6042
+        strName: 
+        flags: 0
+        mValueDef: _DissolveAmount
+        bindVarGuid: 0
+      - GUID: 6065
+        strName: strFile
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      varVariableStringList: []
+      varVariableUser:
+      - GUID: 2
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1879118545
+        bAutoDestroy: 0
+      - GUID: 14
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5183
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 170466615
+        bAutoDestroy: 0
+      - GUID: 5187
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 170466615
+        bAutoDestroy: 0
+      - GUID: 5196
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1879118545
+        bAutoDestroy: 0
+      - GUID: 5203
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 170466615
+        bAutoDestroy: 0
+      - GUID: 5226
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5229
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1627565909
+        bAutoDestroy: 0
+      - GUID: 5607
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5287
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5616
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      - GUID: 5263
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -2131304428
+        bAutoDestroy: 0
+      - GUID: 5286
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5329
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5331
+        strName: pUseData
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 5377
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 55777259
+        bAutoDestroy: 0
+      - GUID: 5376
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5342
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5333
+        strName: pUseData
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 5345
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5348
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5350
+        strName: pUseData
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 5224
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1116500292
+        bAutoDestroy: 0
+      - GUID: 5361
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -2131304428
+        bAutoDestroy: 0
+      - GUID: 5363
+        strName: "\u53C2\u65701"
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -2131304428
+        bAutoDestroy: 0
+      - GUID: 5365
+        strName: "\u53C2\u65702"
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -2131304428
+        bAutoDestroy: 0
+      - GUID: 5370
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 170466615
+        bAutoDestroy: 0
+      - GUID: 5379
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5380
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5382
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5389
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 55777259
+        bAutoDestroy: 0
+      - GUID: 5596
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5605
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      - GUID: 5418
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5415
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5425
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5420
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5430
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5435
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5442
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -109978949
+        bAutoDestroy: 0
+      - GUID: 5934
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -109978949
+        bAutoDestroy: 0
+      - GUID: 5574
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5583
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      - GUID: 5468
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5504
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5539
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5542
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 660158659
+        bAutoDestroy: 0
+      - GUID: 5544
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 660158659
+        bAutoDestroy: 0
+      - GUID: 5644
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 55777259
+        bAutoDestroy: 0
+      - GUID: 5647
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5656
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      - GUID: 5998
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 55777259
+        bAutoDestroy: 0
+      - GUID: 6000
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1980077048
+        bAutoDestroy: 0
+      - GUID: 5554
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 55777259
+        bAutoDestroy: 0
+      - GUID: 5673
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5675
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5684
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      - GUID: 5730
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5732
+        strName: pUseData
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 5
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 855166293
+        bAutoDestroy: 0
+      - GUID: 5752
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5754
+        strName: pTrigger
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 6076
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 6081
+        strName: pTarget
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 5770
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 5825
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5830
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5835
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1498978502
+        bAutoDestroy: 0
+      - GUID: 5847
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 457018166
+        bAutoDestroy: 0
+      - GUID: 5851
+        strName: pReturn
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 457018166
+        bAutoDestroy: 0
+      - GUID: 5850
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5866
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 5958
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 5966
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 6002
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 6004
+        strName: pUseData
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 6030
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1089212927
+        bAutoDestroy: 0
+      - GUID: 6041
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -460919082
+        bAutoDestroy: 0
+      - GUID: 6050
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 85319012
+        bAutoDestroy: 0
+      - GUID: 6060
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: 1501439831
+        bAutoDestroy: 0
+      - GUID: 6062
+        strName: pUseData
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -110543973
+        bAutoDestroy: 0
+      - GUID: 6083
+        strName: pPointer
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -1879118545
+        bAutoDestroy: 0
+      varVariableUserList: []
+      varVariableVector2: []
+      varVariableVector2List: []
+      varVariableVector2Int: []
+      varVariableVector2IntList: []
+      varVariableVector3:
+      - GUID: 5546
+        strName: 
+        flags: 0
+        mValueDef: {x: 0, y: 0, z: 0}
+        bindVarGuid: 0
+      - GUID: 5547
+        strName: 
+        flags: 0
+        mValueDef: {x: 0, y: 0, z: 0}
+        bindVarGuid: 0
+      - GUID: 5831
+        strName: 
+        flags: 0
+        mValueDef: {x: 0, y: 0, z: -8}
+        bindVarGuid: 0
+      - GUID: 5836
+        strName: 
+        flags: 0
+        mValueDef: {x: 0, y: 0, z: 0}
+        bindVarGuid: 0
+      varVariableVector3List: []
+      varVariableVector3Int: []
+      varVariableVector3IntList: []
+      varVariableVector4: []
+      varVariableVector4List: []
+    vNodes:
+    - GUID: 0
+      strName: get_damageLevel
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5948
+        refPortID: 0
+        dummys: []
+      nextActionsID: 030000002f0000003a0000003c0000006300000073000000790000007b00000002000000a2000000
+      rect:
+        serializedVersion: 2
+        x: -669.3029
+        y: 66.47456
+        width: 252.5
+        height: 10
+      actionType: -412087707
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 2
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 6020
+        refPortID: 0
+        dummys:
+        - actionGuid: 0
+          varGuid: 5948
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 33.233276
+        y: -373.26926
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 6022
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 27000000
+        - opType: 8
+          argv:
+            guid: 6024
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 9a000000
+        - opType: 8
+          argv:
+            guid: 6026
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 9a000000
+        - opType: 8
+          argv:
+            guid: 6028
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 1e000000
+    - GUID: 3
+      strName: get_pActor
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 14
+        refPortID: 0
+        dummys: []
+      nextActionsID: 2800000066000000
+      rect:
+        serializedVersion: 2
+        x: -63.13114
+        y: -7.8329253
+        width: 204.5
+        height: 10
+      actionType: 325760087
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 15
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5168
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -2430.0776
+        y: 1587.1995
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 9
+      condition:
+        portals:
+        - opType: 4
+          argv:
+            guid: 5170
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 13000000
+        - opType: 7
+          argv:
+            guid: 5172
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 14000000
+    - GUID: 19
+      strName: "\u663E\u793A\u52A0\u901F\u6548\u679C"
+      flags: 0
+      inArgvs:
+      - guid: 5183
+        refPortID: 0
+        dummys: []
+      - guid: 5184
+        refPortID: 0
+        dummys: []
+      - guid: 5185
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 4b000000
+      rect:
+        serializedVersion: 2
+        x: -2099.0776
+        y: 1530.1995
+        width: 242
+        height: 10
+      actionType: 1584359221
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 20
+      strName: "\u5173\u95ED\u52A0\u901F\u6548\u679C"
+      flags: 0
+      inArgvs:
+      - guid: 5187
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 4a000000
+      rect:
+        serializedVersion: 2
+        x: -2112.3977
+        y: 1848.9595
+        width: 176
+        height: 10
+      actionType: -442604134
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 28
+      strName: get_damageLevel
+      flags: 0
+      inArgvs:
+      - guid: 5196
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5221
+        refPortID: 0
+        dummys: []
+      nextActionsID: 18000000
+      rect:
+        serializedVersion: 2
+        x: -286.35403
+        y: -757.1617
+        width: 252.5
+        height: 10
+      actionType: -412087707
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 24
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5221
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 37000000
+      rect:
+        serializedVersion: 2
+        x: 239.81299
+        y: -800.167
+        width: 203
+        height: 10
+      actionType: 70
+      custumeValue: 3
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5201
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 1e0000009a000000
+    - GUID: 25
+      strName: "\u663E\u793A\u6389\u8840\u6548\u679C"
+      flags: 0
+      inArgvs:
+      - guid: 5203
+        refPortID: 0
+        dummys: []
+      - guid: 5204
+        refPortID: 0
+        dummys: []
+      - guid: 5205
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 9a000000
+      rect:
+        serializedVersion: 2
+        x: 390.93802
+        y: -54.131927
+        width: 242
+        height: 10
+      actionType: 1157515512
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 27
+      strName: StartActionByType
+      flags: 0
+      inArgvs:
+      - guid: 14
+        refPortID: 0
+        dummys: []
+      - guid: 5211
+        refPortID: 0
+        dummys: []
+      - guid: 5212
+        refPortID: 0
+        dummys: []
+      - guid: 5213
+        refPortID: 0
+        dummys: []
+      - guid: 5214
+        refPortID: 0
+        dummys: []
+      - guid: 5215
+        refPortID: 0
+        dummys: []
+      - guid: 5216
+        refPortID: 0
+        dummys: []
+      - guid: 5217
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5218
+        refPortID: 0
+        dummys: []
+      nextActionsID: 27000000
+      rect:
+        serializedVersion: 2
+        x: 1389.779
+        y: 54.45581
+        width: 302
+        height: 10
+      actionType: 955251209
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 30
+      strName: "\u624B\u673A\u9707\u52A8"
+      flags: 0
+      inArgvs:
+      - guid: 5226
+        refPortID: 0
+        dummys: []
+      - guid: 5227
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 3600000027000000
+      rect:
+        serializedVersion: 2
+        x: 726.3072
+        y: -677.6354
+        width: 172.5
+        height: 10
+      actionType: 1166592248
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 31
+      strName: "\u9884\u5B9E\u4F8B\u5316UI\u8D44\u6E90"
+      flags: 0
+      inArgvs:
+      - guid: 5229
+        refPortID: 0
+        dummys: []
+      - guid: 5230
+        refPortID: 0
+        dummys: []
+      - guid: 5231
+        refPortID: 0
+        dummys: []
+      - guid: 5232
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -689.29755
+        y: -1953.9447
+        width: 244.5
+        height: 10
+      actionType: -410715753
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 39
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      inArgvs:
+      - guid: 5607
+        refPortID: 0
+        dummys:
+        - actionGuid: 40
+          varGuid: 5287
+      - guid: 5608
+        refPortID: 0
+        dummys: []
+      - guid: 5609
+        refPortID: 0
+        dummys: []
+      - guid: 5610
+        refPortID: 0
+        dummys: []
+      - guid: 5611
+        refPortID: 0
+        dummys: []
+      - guid: 5612
+        refPortID: 0
+        dummys: []
+      - guid: 5613
+        refPortID: 0
+        dummys: []
+      - guid: 5614
+        refPortID: 0
+        dummys: []
+      - guid: 5615
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5616
+        refPortID: 0
+        dummys: []
+      nextActionsID: 2c000000
+      rect:
+        serializedVersion: 2
+        x: 1869.3715
+        y: 159.40448
+        width: 268.5
+        height: 10
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 43
+      strName: SetPropertyColor
+      flags: 0
+      inArgvs:
+      - guid: 5263
+        refPortID: 0
+        dummys: []
+      - guid: 5299
+        refPortID: 0
+        dummys: []
+      - guid: 5300
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -296.21747
+        y: 1625.7317
+        width: 272.19116
+        height: 10
+      actionType: 255764216
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 40
+      strName: GetPropertyEffecter
+      flags: 0
+      inArgvs:
+      - guid: 5286
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      outArgvs:
+      - guid: 5287
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 416.44284
+        y: 72.843475
+        width: 273.5
+        height: 10
+      actionType: 636507301
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 41
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5618
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5619
+        refPortID: 0
+        dummys: []
+      - guid: 5620
+        refPortID: 0
+        dummys: []
+      - guid: 5621
+        refPortID: 0
+        dummys: []
+      - guid: 5622
+        refPortID: 0
+        dummys: []
+      - guid: 5623
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 2705.685
+        y: -82.73459
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 42
+      strName: "\u8868\u73B0Rim\u6548\u679C"
+      flags: 0
+      inArgvs:
+      - guid: 5263
+        refPortID: 0
+        dummys: []
+      - guid: 5294
+        refPortID: 0
+        dummys: []
+      - guid: 5295
+        refPortID: 0
+        dummys: []
+      - guid: 5296
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 2b0000003e000000
+      rect:
+        serializedVersion: 2
+        x: -541.11743
+        y: 1743.6317
+        width: 228
+        height: 10
+      actionType: 398127439
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 44
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5305
+        refPortID: 0
+        dummys:
+        - actionGuid: 45
+          varGuid: 5303
+        - actionGuid: 57
+          varGuid: 5353
+        - actionGuid: 58
+          varGuid: 5356
+      outArgvs: []
+      nextActionsID: 8600000099000000
+      rect:
+        serializedVersion: 2
+        x: 2244.679
+        y: 51.862743
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5307
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 2900000099000000
+        - opType: 9
+          argv:
+            guid: 5309
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 
+    - GUID: 46
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5625
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5626
+        refPortID: 0
+        dummys: []
+      - guid: 5627
+        refPortID: 0
+        dummys: []
+      - guid: 5628
+        refPortID: 0
+        dummys: []
+      - guid: 5629
+        refPortID: 0
+        dummys: []
+      - guid: 5630
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 4042.581
+        y: 720.5603
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 47
+      strName: get_monsterType
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5316
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -242.14105
+        y: 652.3776
+        width: 216.41022
+        height: 10
+      actionType: -1067317187
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 49
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5321
+        refPortID: 0
+        dummys:
+        - actionGuid: 48
+          varGuid: 5319
+        - actionGuid: 57
+          varGuid: 5353
+        - actionGuid: 58
+          varGuid: 5356
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 145.52264
+        y: 312.95972
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5323
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 3d000000
+        - opType: 8
+          argv:
+            guid: 6006
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: a3000000
+    - GUID: 50
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5325
+        refPortID: 0
+        dummys:
+        - actionGuid: 47
+          varGuid: 5316
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 568.5336
+        y: 575.1804
+        width: 199.06532
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5327
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 33000000
+    - GUID: 51
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 5329
+        refPortID: 0
+        dummys: []
+      - guid: 5330
+        refPortID: 0
+        dummys: []
+      - guid: 5331
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 910.1727
+        y: 647.8829
+        width: 191.60835
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 52
+      strName: GetActorType
+      flags: 0
+      inArgvs:
+      - guid: 5377
+        refPortID: 0
+        dummys:
+        - actionGuid: 64
+          varGuid: 5376
+      outArgvs:
+      - guid: 5336
+        refPortID: 0
+        dummys: []
+      nextActionsID: 35000000
+      rect:
+        serializedVersion: 2
+        x: -385.5111
+        y: -1305.3698
+        width: 228.5
+        height: 10
+      actionType: -2041391782
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 53
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5338
+        refPortID: 0
+        dummys:
+        - actionGuid: 52
+          varGuid: 5336
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -52.63472
+        y: -1448.8947
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 9
+          argv:
+            guid: 5340
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 4500000055000000
+        - opType: 8
+          argv:
+            guid: 5440
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 50000000
+    - GUID: 54
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 5342
+        refPortID: 0
+        dummys: []
+      - guid: 5343
+        refPortID: 0
+        dummys: []
+      - guid: 5333
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 991.9907
+        y: -731.3476
+        width: 236
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 55
+      strName: "\u624B\u673A\u9707\u52A8"
+      flags: 0
+      inArgvs:
+      - guid: 5345
+        refPortID: 0
+        dummys: []
+      - guid: 5346
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 630.4439
+        y: -952.533
+        width: 172.5
+        height: 10
+      actionType: 1166592248
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 56
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 5348
+        refPortID: 0
+        dummys: []
+      - guid: 5349
+        refPortID: 0
+        dummys: []
+      - guid: 5350
+        refPortID: 0
+        dummys:
+        - actionGuid: 29
+          varGuid: 5224
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 555.0333
+        y: -827.4129
+        width: 236.1583
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 58
+      strName: get_actorType
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5356
+        refPortID: 0
+        dummys: []
+      nextActionsID: 310000003b000000
+      rect:
+        serializedVersion: 2
+        x: -226.8231
+        y: 502.4625
+        width: 234.04358
+        height: 10
+      actionType: 605191648
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 59
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5358
+        refPortID: 0
+        dummys:
+        - actionGuid: 58
+          varGuid: 5356
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 200.68166
+        y: 583.6218
+        width: 167.69228
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5323
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 3200000075000000
+    - GUID: 60
+      strName: get_bodyPart
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5361
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -58.9
+        y: 204.82
+        width: 221.5
+        height: 10
+      actionType: -1058052478
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 61
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5363
+        refPortID: 0
+        dummys:
+        - actionGuid: 60
+          varGuid: 5361
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 569.5192
+        y: 305.13635
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 29
+      condition:
+        portals:
+        - opType: 10
+          argv:
+            guid: 5365
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 27000000
+    - GUID: 62
+      strName: "\u83B7\u53D6\u51C6\u5FC3\u5BF9\u8C61"
+      flags: 0
+      inArgvs:
+      - guid: 5263
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5368
+        refPortID: 0
+        dummys: []
+      nextActionsID: 3f000000
+      rect:
+        serializedVersion: 2
+        x: -289.68817
+        y: 1902.6696
+        width: 218.12119
+        height: 10
+      actionType: -69107422
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 63
+      strName: "InstableScale\u6548\u679C"
+      flags: 0
+      inArgvs:
+      - guid: 5370
+        refPortID: 0
+        dummys: []
+      - guid: 5371
+        refPortID: 0
+        dummys:
+        - actionGuid: 62
+          varGuid: 5368
+      - guid: 5372
+        refPortID: 0
+        dummys: []
+      - guid: 5373
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1.6881714
+        y: 1909.6696
+        width: 259.36523
+        height: 10
+      actionType: 850885922
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 64
+      strName: "\u53D8\u91CF\u8F6C\u5316"
+      flags: 0
+      inArgvs:
+      - guid: 5333
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5376
+        refPortID: 0
+        dummys: []
+      nextActionsID: 91000000410000009e000000
+      rect:
+        serializedVersion: 2
+        x: -1238.0697
+        y: -1625.2501
+        width: 184
+        height: 10
+      actionType: 3
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 65
+      strName: GetPropertyEffecter
+      flags: 0
+      inArgvs:
+      - guid: 5379
+        refPortID: 0
+        dummys:
+        - actionGuid: 64
+          varGuid: 5376
+      outArgvs:
+      - guid: 5380
+        refPortID: 0
+        dummys: []
+      nextActionsID: 42000000
+      rect:
+        serializedVersion: 2
+        x: -340.3751
+        y: -1763.4708
+        width: 273.5
+        height: 10
+      actionType: 636507301
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 66
+      strName: SetDestrotyDelta
+      flags: 0
+      inArgvs:
+      - guid: 5382
+        refPortID: 0
+        dummys:
+        - actionGuid: 64
+          varGuid: 5376
+      - guid: 5383
+        refPortID: 0
+        dummys: []
+      - guid: 5384
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 43000000
+      rect:
+        serializedVersion: 2
+        x: 65.638885
+        y: -1920.663
+        width: 253
+        height: 10
+      actionType: -1336095790
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 67
+      strName: "\u66FF\u6362Shader"
+      flags: 0
+      inArgvs:
+      - guid: 5726
+        refPortID: 0
+        dummys:
+        - actionGuid: 68
+          varGuid: 5390
+      - guid: 5727
+        refPortID: 0
+        dummys: []
+      - guid: 5728
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 424.3196
+        y: -1957.8093
+        width: 219.5
+        height: 10
+      actionType: 522038616
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 68
+      strName: GetObjectAble
+      flags: 0
+      inArgvs:
+      - guid: 5389
+        refPortID: 0
+        dummys:
+        - actionGuid: 64
+          varGuid: 5376
+      outArgvs:
+      - guid: 5390
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -372.14053
+        y: -1485.3635
+        width: 231.5
+        height: 10
+      actionType: 1974416911
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 69
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      inArgvs:
+      - guid: 5596
+        refPortID: 0
+        dummys:
+        - actionGuid: 65
+          varGuid: 5380
+      - guid: 5597
+        refPortID: 0
+        dummys: []
+      - guid: 5598
+        refPortID: 0
+        dummys: []
+      - guid: 5599
+        refPortID: 0
+        dummys: []
+      - guid: 5600
+        refPortID: 0
+        dummys: []
+      - guid: 5601
+        refPortID: 0
+        dummys:
+        - actionGuid: 158
+          varGuid: 6058
+      - guid: 5602
+        refPortID: 0
+        dummys: []
+      - guid: 5603
+        refPortID: 0
+        dummys: []
+      - guid: 5604
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5605
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 351.58124
+        y: -1812.8065
+        width: 268.5
+        height: 10
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 75
+      strName: "\u83B7\u53D6\u5F53\u524D\u6A21\u5F0F"
+      flags: 0
+      inArgvs:
+      - guid: 5417
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5418
+        refPortID: 0
+        dummys: []
+      nextActionsID: 4c0000004e00000082000000
+      rect:
+        serializedVersion: 2
+        x: -1770.7251
+        y: 1461.0348
+        width: 214
+        height: 10
+      actionType: -1592752874
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 74
+      strName: "\u83B7\u53D6\u5F53\u524D\u6A21\u5F0F"
+      flags: 0
+      inArgvs:
+      - guid: 5414
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5415
+        refPortID: 0
+        dummys: []
+      nextActionsID: 4d0000004f00000083000000
+      rect:
+        serializedVersion: 2
+        x: -1845.4678
+        y: 1857.7609
+        width: 214
+        height: 10
+      actionType: -1592752874
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 77
+      strName: SetLockFovOffset
+      flags: 0
+      inArgvs:
+      - guid: 5425
+        refPortID: 0
+        dummys:
+        - actionGuid: 74
+          varGuid: 5415
+      - guid: 5426
+        refPortID: 0
+        dummys: []
+      - guid: 5427
+        refPortID: 0
+        dummys: []
+      - guid: 5428
+        refPortID: 0
+        dummys: []
+      - guid: 5942
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1479.179
+        y: 1694.7274
+        width: 260
+        height: 10
+      actionType: -361570703
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 76
+      strName: SetLockFovOffset
+      flags: 0
+      inArgvs:
+      - guid: 5420
+        refPortID: 0
+        dummys:
+        - actionGuid: 75
+          varGuid: 5418
+      - guid: 5421
+        refPortID: 0
+        dummys: []
+      - guid: 5422
+        refPortID: 0
+        dummys: []
+      - guid: 5423
+        refPortID: 0
+        dummys: []
+      - guid: 5940
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1407.5972
+        y: 1532.1139
+        width: 260
+        height: 10
+      actionType: -361570703
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 78
+      strName: SetLockYawOffset
+      flags: 0
+      inArgvs:
+      - guid: 5430
+        refPortID: 0
+        dummys:
+        - actionGuid: 75
+          varGuid: 5418
+      - guid: 5431
+        refPortID: 0
+        dummys: []
+      - guid: 5432
+        refPortID: 0
+        dummys: []
+      - guid: 5433
+        refPortID: 0
+        dummys: []
+      - guid: 5938
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1362.704
+        y: 1363.6976
+        width: 265
+        height: 10
+      actionType: 1993292537
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 79
+      strName: SetLockYawOffset
+      flags: 0
+      inArgvs:
+      - guid: 5435
+        refPortID: 0
+        dummys:
+        - actionGuid: 74
+          varGuid: 5415
+      - guid: 5436
+        refPortID: 0
+        dummys: []
+      - guid: 5437
+        refPortID: 0
+        dummys: []
+      - guid: 5438
+        refPortID: 0
+        dummys: []
+      - guid: 5944
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1481.7014
+        y: 1867.5839
+        width: 265
+        height: 10
+      actionType: 1993292537
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 80
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5445
+        refPortID: 0
+        dummys:
+        - actionGuid: 81
+          varGuid: 5443
+      outArgvs: []
+      nextActionsID: 53000000
+      rect:
+        serializedVersion: 2
+        x: 392.84152
+        y: -1399.7814
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5447
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 550000009d000000
+        - opType: 8
+          argv:
+            guid: 5449
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 88000000
+        - opType: 8
+          argv:
+            guid: 5869
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 88000000
+    - GUID: 81
+      strName: GetMonsterType
+      flags: 0
+      inArgvs:
+      - guid: 5442
+        refPortID: 0
+        dummys:
+        - actionGuid: 144
+          varGuid: 5934
+      outArgvs:
+      - guid: 5443
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -141.9601
+        y: -1124.6523
+        width: 250.5
+        height: 10
+      actionType: 206428463
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 83
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      inArgvs:
+      - guid: 5574
+        refPortID: 0
+        dummys:
+        - actionGuid: 65
+          varGuid: 5380
+      - guid: 5575
+        refPortID: 0
+        dummys: []
+      - guid: 5576
+        refPortID: 0
+        dummys: []
+      - guid: 5577
+        refPortID: 0
+        dummys: []
+      - guid: 5578
+        refPortID: 0
+        dummys: []
+      - guid: 5579
+        refPortID: 0
+        dummys:
+        - actionGuid: 158
+          varGuid: 6058
+      - guid: 5580
+        refPortID: 0
+        dummys: []
+      - guid: 5581
+        refPortID: 0
+        dummys: []
+      - guid: 5582
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5583
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 819.7835
+        y: -1393.303
+        width: 268.5
+        height: 10
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 85
+      strName: SetDestrotyDelta
+      flags: 0
+      inArgvs:
+      - guid: 5468
+        refPortID: 0
+        dummys:
+        - actionGuid: 64
+          varGuid: 5376
+      - guid: 5469
+        refPortID: 0
+        dummys: []
+      - guid: 5470
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 834.4568
+        y: -1797.2937
+        width: 253
+        height: 10
+      actionType: -1336095790
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 86
+      strName: get_damagePostBit
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5473
+        refPortID: 0
+        dummys: []
+      nextActionsID: 5700000065000000
+      rect:
+        serializedVersion: 2
+        x: -1162.1036
+        y: -174.26495
+        width: 265.2545
+        height: 10
+      actionType: 1235412740
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 87
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5475
+        refPortID: 0
+        dummys:
+        - actionGuid: 86
+          varGuid: 5473
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -795.7361
+        y: -194.15993
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 3
+      condition:
+        portals:
+        - opType: 9
+          argv:
+            guid: 5477
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 00000000
+    - GUID: 95
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5502
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -617.28186
+        y: -2634.8564
+        width: 193
+        height: 10
+      actionType: 70
+      custumeValue: 25
+      condition:
+        portals: []
+    - GUID: 96
+      strName: "\u5B9E\u4F8B\u5316\u6E32\u67D3\u5F00\u5173"
+      flags: 0
+      inArgvs:
+      - guid: 5504
+        refPortID: 0
+        dummys: []
+      - guid: 5505
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -357.28186
+        y: -2636.8564
+        width: 232.13184
+        height: 10
+      actionType: 2092791991
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 97
+      strName: GetActorAgent
+      flags: 0
+      inArgvs:
+      - guid: 5539
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5542
+        refPortID: 0
+        dummys: []
+      nextActionsID: 62000000
+      rect:
+        serializedVersion: 2
+        x: -690.39197
+        y: -2940.4885
+        width: 237.66809
+        height: 10
+      actionType: -780460258
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 98
+      strName: CreateParticle
+      flags: 0
+      inArgvs:
+      - guid: 5544
+        refPortID: 0
+        dummys:
+        - actionGuid: 97
+          varGuid: 5542
+      - guid: 5545
+        refPortID: 0
+        dummys: []
+      - guid: 5546
+        refPortID: 0
+        dummys: []
+      - guid: 5547
+        refPortID: 0
+        dummys: []
+      - guid: 5861
+        refPortID: 0
+        dummys: []
+      - guid: 5862
+        refPortID: 0
+        dummys: []
+      - guid: 5863
+        refPortID: 0
+        dummys: []
+      - guid: 5551
+        refPortID: 0
+        dummys: []
+      - guid: 5864
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5552
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -384
+        y: -2970
+        width: 247.43729
+        height: 10
+      actionType: 727478422
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 100
+      strName: "\u8BBE\u7F6E\u5143\u7D20\u5C5E\u6027\u8868\u73B0"
+      flags: 0
+      inArgvs:
+      - guid: 5710
+        refPortID: 0
+        dummys: []
+      - guid: 5711
+        refPortID: 0
+        dummys:
+        - actionGuid: 101
+          varGuid: 5642
+      - guid: 5712
+        refPortID: 0
+        dummys:
+        - actionGuid: 99
+          varGuid: 5633
+      - guid: 5713
+        refPortID: 0
+        dummys: []
+      - guid: 5714
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5715
+        refPortID: 0
+        dummys: []
+      nextActionsID: 71000000
+      rect:
+        serializedVersion: 2
+        x: 424.1557
+        y: -499.38873
+        width: 263.5304
+        height: 10
+      actionType: 980081810
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 99
+      strName: get_attackElementType
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5633
+        refPortID: 0
+        dummys: []
+      nextActionsID: 64000000
+      rect:
+        serializedVersion: 2
+        x: -214.85664
+        y: -523.1311
+        width: 294.78906
+        height: 10
+      actionType: 1895646541
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 101
+      strName: get_pInstanceAble
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5642
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -729.9337
+        y: -402.26486
+        width: 262.5
+        height: 10
+      actionType: 14559046
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 102
+      strName: GetObjectAble
+      flags: 0
+      inArgvs:
+      - guid: 5644
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      outArgvs:
+      - guid: 5645
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1446.2246
+        y: 1046.193
+        width: 231.5
+        height: 10
+      actionType: 1974416911
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 103
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      inArgvs:
+      - guid: 5647
+        refPortID: 0
+        dummys:
+        - actionGuid: 40
+          varGuid: 5287
+      - guid: 5648
+        refPortID: 0
+        dummys: []
+      - guid: 5649
+        refPortID: 0
+        dummys: []
+      - guid: 5650
+        refPortID: 0
+        dummys: []
+      - guid: 5651
+        refPortID: 0
+        dummys: []
+      - guid: 5652
+        refPortID: 0
+        dummys: []
+      - guid: 5653
+        refPortID: 0
+        dummys: []
+      - guid: 5654
+        refPortID: 0
+        dummys: []
+      - guid: 5655
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5656
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1174.5684
+        y: -451.88422
+        width: 268.5
+        height: 10
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 152
+      strName: GetObjectAble
+      flags: 0
+      inArgvs:
+      - guid: 5998
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6000
+        refPortID: 0
+        dummys: []
+      nextActionsID: 6b000000
+      rect:
+        serializedVersion: 2
+        x: -771.7855
+        y: 2179.2493
+        width: 231.5
+        height: 10
+      actionType: 1974416911
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 105
+      strName: "\u66F4\u6362\u5143\u7D20\u5C5E\u6027\u6750\u8D28"
+      flags: 0
+      inArgvs:
+      - guid: 5697
+        refPortID: 0
+        dummys: []
+      - guid: 5698
+        refPortID: 0
+        dummys:
+        - actionGuid: 104
+          varGuid: 5659
+      - guid: 5699
+        refPortID: 0
+        dummys:
+        - actionGuid: 106
+          varGuid: 5667
+      outArgvs:
+      - guid: 5700
+        refPortID: 0
+        dummys: []
+      nextActionsID: 6f000000
+      rect:
+        serializedVersion: 2
+        x: 152.03911
+        y: 2130.6602
+        width: 246
+        height: 10
+      actionType: 1910498644
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 107
+      strName: GetElementFlags
+      flags: 0
+      inArgvs:
+      - guid: 5554
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5670
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -494.58
+        y: 2107.6702
+        width: 249.5
+        height: 10
+      actionType: -1485093526
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 108
+      strName: GetPropertyEffecter
+      flags: 0
+      inArgvs:
+      - guid: 5554
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5673
+        refPortID: 0
+        dummys: []
+      nextActionsID: 6d000000
+      rect:
+        serializedVersion: 2
+        x: 1039.1654
+        y: 2268.4985
+        width: 273.5
+        height: 10
+      actionType: 636507301
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 109
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      inArgvs:
+      - guid: 5675
+        refPortID: 0
+        dummys:
+        - actionGuid: 108
+          varGuid: 5673
+      - guid: 5676
+        refPortID: 0
+        dummys: []
+      - guid: 5677
+        refPortID: 0
+        dummys: []
+      - guid: 5678
+        refPortID: 0
+        dummys: []
+      - guid: 5679
+        refPortID: 0
+        dummys: []
+      - guid: 5680
+        refPortID: 0
+        dummys: []
+      - guid: 5681
+        refPortID: 0
+        dummys: []
+      - guid: 5682
+        refPortID: 0
+        dummys: []
+      - guid: 5683
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5684
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1437.1322
+        y: 2289.1694
+        width: 268.5
+        height: 10
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 111
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5702
+        refPortID: 0
+        dummys:
+        - actionGuid: 105
+          varGuid: 5700
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 470.41373
+        y: 2100.2832
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5704
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 70000000
+    - GUID: 112
+      strName: EnableKeyWorld
+      flags: 0
+      inArgvs:
+      - guid: 5721
+        refPortID: 0
+        dummys:
+        - actionGuid: 104
+          varGuid: 5659
+      - guid: 5722
+        refPortID: 0
+        dummys: []
+      - guid: 5723
+        refPortID: 0
+        dummys: []
+      - guid: 5724
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 6c000000
+      rect:
+        serializedVersion: 2
+        x: 669.69
+        y: 2314.23
+        width: 260.5
+        height: 10
+      actionType: -1791680667
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 113
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5717
+        refPortID: 0
+        dummys:
+        - actionGuid: 100
+          varGuid: 5715
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: -551
+        width: 195.73003
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5719
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 67000000
+    - GUID: 114
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 5730
+        refPortID: 0
+        dummys: []
+      - guid: 5731
+        refPortID: 0
+        dummys: []
+      - guid: 5732
+        refPortID: 0
+        dummys:
+        - actionGuid: 0
+          varGuid: 5
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 4724.746
+        y: 918.72253
+        width: 236
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 115
+      strName: get_bCril
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5735
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -269.0061
+        y: 777.5845
+        width: 187.5
+        height: 10
+      actionType: -1024554556
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 121
+      strName: get_bDamageExport
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5757
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -270.45074
+        y: 885.23096
+        width: 275.5
+        height: 10
+      actionType: 1974570053
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 117
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5740
+        refPortID: 0
+        dummys:
+        - actionGuid: 47
+          varGuid: 5316
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 291.31537
+        y: 883.0012
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 9
+          argv:
+            guid: 5742
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 7a000000
+    - GUID: 118
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5744
+        refPortID: 0
+        dummys:
+        - actionGuid: 115
+          varGuid: 5735
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 857.9579
+        y: 1090.3337
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5746
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 77000000
+    - GUID: 119
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5759
+        refPortID: 0
+        dummys:
+        - actionGuid: 121
+          varGuid: 5757
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1080.9579
+        y: 1193.3337
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 9
+      condition:
+        portals:
+        - opType: 4
+          argv:
+            guid: 5761
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 78000000
+    - GUID: 120
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6-\u89E6\u53D1\u8005-\u4F5C\u7528\u8005"
+      flags: 0
+      inArgvs:
+      - guid: 5752
+        refPortID: 0
+        dummys: []
+      - guid: 5753
+        refPortID: 0
+        dummys: []
+      - guid: 5754
+        refPortID: 0
+        dummys:
+        - actionGuid: 162
+          varGuid: 6076
+      - guid: 6081
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1647.8461
+        y: 1296.6965
+        width: 343.5
+        height: 10
+      actionType: 485988348
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 122
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5763
+        refPortID: 0
+        dummys:
+        - actionGuid: 123
+          varGuid: 5768
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 542.66656
+        y: 1064.1522
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5765
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 76000000
+    - GUID: 123
+      strName: get_bKilled
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5768
+        refPortID: 0
+        dummys: []
+      nextActionsID: 7f000000
+      rect:
+        serializedVersion: 2
+        x: -320.22473
+        y: 1055.9723
+        width: 205.17326
+        height: 10
+      actionType: -456976464
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 124
+      strName: SetCreateDelay
+      flags: 0
+      inArgvs:
+      - guid: 5770
+        refPortID: 0
+        dummys:
+        - actionGuid: 40
+          varGuid: 5287
+      - guid: 5771
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1615.8556
+        y: 1209.3031
+        width: 238.5
+        height: 10
+      actionType: -2058834526
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 127
+      strName: get_damage_id
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5821
+        refPortID: 0
+        dummys: []
+      nextActionsID: 95000000
+      rect:
+        serializedVersion: 2
+        x: -177.8302
+        y: 1282.8224
+        width: 238.047
+        height: 10
+      actionType: -725834923
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 126
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5988
+        refPortID: 0
+        dummys:
+        - actionGuid: 127
+          varGuid: 5821
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 705.7547
+        y: 1365.4601
+        width: 197.43651
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 6
+          argv:
+            guid: 5990
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 96000000
+    - GUID: 128
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 5825
+        refPortID: 0
+        dummys: []
+      - guid: 5826
+        refPortID: 0
+        dummys: []
+      - guid: 5333
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 810.059
+        y: -1910.5051
+        width: 236
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 130
+      strName: SetLockCameraLookAtOffset
+      flags: 0
+      inArgvs:
+      - guid: 5830
+        refPortID: 0
+        dummys:
+        - actionGuid: 75
+          varGuid: 5418
+      - guid: 5831
+        refPortID: 0
+        dummys: []
+      - guid: 5832
+        refPortID: 0
+        dummys: []
+      - guid: 5833
+        refPortID: 0
+        dummys: []
+      - guid: 5936
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1427.9495
+        y: 1168.0715
+        width: 347
+        height: 10
+      actionType: -450170215
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 131
+      strName: SetLockCameraLookAtOffset
+      flags: 0
+      inArgvs:
+      - guid: 5835
+        refPortID: 0
+        dummys:
+        - actionGuid: 74
+          varGuid: 5415
+      - guid: 5836
+        refPortID: 0
+        dummys: []
+      - guid: 5837
+        refPortID: 0
+        dummys: []
+      - guid: 5838
+        refPortID: 0
+        dummys: []
+      - guid: 5946
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -1529.9495
+        y: 2016.0715
+        width: 347
+        height: 10
+      actionType: -450170215
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 132
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5840
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5841
+        refPortID: 0
+        dummys: []
+      - guid: 5842
+        refPortID: 0
+        dummys: []
+      - guid: 5843
+        refPortID: 0
+        dummys: []
+      - guid: 5844
+        refPortID: 0
+        dummys: []
+      - guid: 5845
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 3923.7444
+        y: 424.8058
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 133
+      strName: "\u662F\u5426\u865A\u843D"
+      flags: 0
+      inArgvs:
+      - guid: 5847
+        refPortID: 0
+        dummys:
+        - actionGuid: 134
+          varGuid: 5851
+      outArgvs:
+      - guid: 5848
+        refPortID: 0
+        dummys: []
+      nextActionsID: 87000000
+      rect:
+        serializedVersion: 2
+        x: 2950.8535
+        y: 310.2359
+        width: 183.5
+        height: 10
+      actionType: 917025435
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 134
+      strName: GetActorParameter
+      flags: 0
+      inArgvs:
+      - guid: 5850
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      outArgvs:
+      - guid: 5851
+        refPortID: 0
+        dummys: []
+      nextActionsID: 85000000
+      rect:
+        serializedVersion: 2
+        x: 2565.1758
+        y: 325.90314
+        width: 267.5
+        height: 10
+      actionType: -465067774
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 135
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5853
+        refPortID: 0
+        dummys:
+        - actionGuid: 133
+          varGuid: 5848
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 3186.763
+        y: 477.03995
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5855
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 89000000
+        - opType: 8
+          argv:
+            guid: 5859
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 89000000
+    - GUID: 136
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 5866
+        refPortID: 0
+        dummys: []
+      - guid: 5867
+        refPortID: 0
+        dummys: []
+      - guid: 5333
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 863.8152
+        y: -1091.9862
+        width: 236
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 137
+      strName: get_attackElementType
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5872
+        refPortID: 0
+        dummys: []
+      nextActionsID: 8a000000
+      rect:
+        serializedVersion: 2
+        x: 3447.8809
+        y: 640.47363
+        width: 300.5
+        height: 10
+      actionType: 1895646541
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 138
+      strName: "\u5206\u6D41-Switch"
+      flags: 0
+      inArgvs:
+      - guid: 5874
+        refPortID: 0
+        dummys:
+        - actionGuid: 137
+          varGuid: 5872
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 3757.7715
+        y: 794.65625
+        width: 202.5
+        height: 10
+      actionType: 71
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5876
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 2e000000
+        - opType: 8
+          argv:
+            guid: 5878
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 8b000000
+        - opType: 8
+          argv:
+            guid: 5880
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 8f000000
+        - opType: 8
+          argv:
+            guid: 5882
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 8c000000
+        - opType: 8
+          argv:
+            guid: 5884
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 8d000000
+        - opType: 8
+          argv:
+            guid: 5914
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 8e000000
+    - GUID: 139
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5886
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5887
+        refPortID: 0
+        dummys: []
+      - guid: 5888
+        refPortID: 0
+        dummys: []
+      - guid: 5889
+        refPortID: 0
+        dummys: []
+      - guid: 5890
+        refPortID: 0
+        dummys: []
+      - guid: 5891
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 4048.7793
+        y: 891.22754
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 140
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5893
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5894
+        refPortID: 0
+        dummys: []
+      - guid: 5895
+        refPortID: 0
+        dummys: []
+      - guid: 5896
+        refPortID: 0
+        dummys: []
+      - guid: 5897
+        refPortID: 0
+        dummys: []
+      - guid: 5898
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 4046.977
+        y: 1236.5377
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 141
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5900
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5901
+        refPortID: 0
+        dummys: []
+      - guid: 5902
+        refPortID: 0
+        dummys: []
+      - guid: 5903
+        refPortID: 0
+        dummys: []
+      - guid: 5904
+        refPortID: 0
+        dummys: []
+      - guid: 5905
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 4053.977
+        y: 1422.5377
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 142
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5907
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5908
+        refPortID: 0
+        dummys: []
+      - guid: 5909
+        refPortID: 0
+        dummys: []
+      - guid: 5910
+        refPortID: 0
+        dummys: []
+      - guid: 5911
+        refPortID: 0
+        dummys: []
+      - guid: 5912
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 4059.977
+        y: 1595.5377
+        width: 189.30446
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 143
+      strName: "\u8BBE\u7F6E\u989C\u8272"
+      flags: 0
+      inArgvs:
+      - guid: 5916
+        refPortID: 0
+        dummys:
+        - actionGuid: 102
+          varGuid: 5645
+      - guid: 5917
+        refPortID: 0
+        dummys: []
+      - guid: 5918
+        refPortID: 0
+        dummys: []
+      - guid: 5919
+        refPortID: 0
+        dummys: []
+      - guid: 5920
+        refPortID: 0
+        dummys: []
+      - guid: 5921
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 72000000
+      rect:
+        serializedVersion: 2
+        x: 4053.2065
+        y: 1068.4642
+        width: 189
+        height: 10
+      actionType: 880711736
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 144
+      strName: "\u53D8\u91CF\u8F6C\u5316"
+      flags: 0
+      inArgvs:
+      - guid: 5333
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5934
+        refPortID: 0
+        dummys: []
+      nextActionsID: 51000000
+      rect:
+        serializedVersion: 2
+        x: -624.2838
+        y: -1135.4822
+        width: 184
+        height: 10
+      actionType: 3
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 145
+      strName: HasBuffEffect
+      flags: 0
+      inArgvs:
+      - guid: 5958
+        refPortID: 0
+        dummys:
+        - actionGuid: 64
+          varGuid: 5376
+      - guid: 5959
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 5960
+        refPortID: 0
+        dummys: []
+      nextActionsID: 92000000
+      rect:
+        serializedVersion: 2
+        x: -945.9341
+        y: -1568.4691
+        width: 232.5
+        height: 10
+      actionType: 1590420
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 146
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5962
+        refPortID: 0
+        dummys:
+        - actionGuid: 145
+          varGuid: 5960
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -646.6714
+        y: -1573.8706
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5964
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 440000003400000090000000
+    - GUID: 147
+      strName: SetDestrotyDelta
+      flags: 0
+      inArgvs:
+      - guid: 5966
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      - guid: 5967
+        refPortID: 0
+        dummys: []
+      - guid: 5968
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1594.5824
+        y: 1414.1584
+        width: 255.93332
+        height: 10
+      actionType: -1336095790
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 150
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5992
+        refPortID: 0
+        dummys:
+        - actionGuid: 127
+          varGuid: 5821
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 974.7725
+        y: 1430.3445
+        width: 197.43651
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 7
+          argv:
+            guid: 5994
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 78000000
+    - GUID: 149
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5972
+        refPortID: 0
+        dummys:
+        - actionGuid: 58
+          varGuid: 5356
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 157.63174
+        y: 1331.8617
+        width: 197.43651
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5323
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 97000000
+    - GUID: 151
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 5996
+        refPortID: 0
+        dummys:
+        - actionGuid: 123
+          varGuid: 5768
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 447.10498
+        y: 1288.8367
+        width: 197.43651
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 5765
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 7e000000
+    - GUID: 153
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 6002
+        refPortID: 0
+        dummys: []
+      - guid: 6003
+        refPortID: 0
+        dummys: []
+      - guid: 6004
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 2698.9133
+        y: 167.35234
+        width: 236
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 154
+      strName: CanDoGroundAction
+      flags: 0
+      inArgvs:
+      - guid: 6030
+        refPortID: 0
+        dummys:
+        - actionGuid: 3
+          varGuid: 14
+      - guid: 6078
+        refPortID: 0
+        dummys: []
+      - guid: 6079
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6031
+        refPortID: 0
+        dummys: []
+      nextActionsID: 9b000000
+      rect:
+        serializedVersion: 2
+        x: 696.52216
+        y: -226.83665
+        width: 296.17755
+        height: 10
+      actionType: 1917471407
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 155
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 6033
+        refPortID: 0
+        dummys:
+        - actionGuid: 154
+          varGuid: 6031
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1081.2964
+        y: -50.015274
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 6035
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 1b000000
+    - GUID: 157
+      strName: "\u6DFB\u52A0\u6D6E\u70B9\u5C5E\u6027-\u66F2\u7EBF"
+      flags: 0
+      inArgvs:
+      - guid: 6041
+        refPortID: 0
+        dummys:
+        - actionGuid: 65
+          varGuid: 5380
+      - guid: 6042
+        refPortID: 0
+        dummys: []
+      - guid: 6043
+        refPortID: 0
+        dummys: []
+      - guid: 6044
+        refPortID: 0
+        dummys: []
+      - guid: 6045
+        refPortID: 0
+        dummys: []
+      - guid: 6046
+        refPortID: 0
+        dummys:
+        - actionGuid: 158
+          varGuid: 6058
+      - guid: 6047
+        refPortID: 0
+        dummys: []
+      - guid: 6048
+        refPortID: 0
+        dummys: []
+      - guid: 6049
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6050
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 820.6327
+        y: -1671.5214
+        width: 268.5
+        height: 10
+      actionType: 1712569318
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 158
+      strName: "\u52A0"
+      flags: 0
+      inArgvs:
+      - guid: 6056
+        refPortID: 0
+        dummys:
+        - actionGuid: 156
+          varGuid: 6039
+      - guid: 6057
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6058
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -96
+        y: -1648
+        width: 136
+        height: 10
+      actionType: 10
+      custumeValue: 9
+      condition:
+        portals: []
+    - GUID: 159
+      strName: "\u89E6\u53D1\u6307\u5B9AID\u4E8B\u4EF6"
+      flags: 0
+      inArgvs:
+      - guid: 6060
+        refPortID: 0
+        dummys: []
+      - guid: 6061
+        refPortID: 0
+        dummys: []
+      - guid: 6062
+        refPortID: 0
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 542.5
+        width: 236
+        height: 10
+      actionType: 1790642020
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 160
+      strName: "\u64AD\u653E\u97F3\u6548-Volume"
+      flags: 0
+      inArgvs:
+      - guid: 6064
+        refPortID: 0
+        dummys: []
+      - guid: 6065
+        refPortID: 0
+        dummys: []
+      - guid: 6066
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6067
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 904.5
+        width: 210
+        height: 10
+      actionType: -1231053816
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 161
+      strName: "\u64AD\u653E\u97F3\u6548-Transform"
+      flags: 0
+      inArgvs:
+      - guid: 6069
+        refPortID: 0
+        dummys: []
+      - guid: 6070
+        refPortID: 0
+        dummys: []
+      - guid: 6071
+        refPortID: 0
+        dummys: []
+      - guid: 6072
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6073
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 432.5
+        width: 232
+        height: 10
+      actionType: 1177948898
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 162
+      strName: get_pAttacker
+      flags: 0
+      inArgvs:
+      - guid: 2
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6076
+        refPortID: 0
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: -63.72337
+        y: 91.28792
+        width: 227.5
+        height: 10
+      actionType: -1399618266
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 163
+      strName: get_damageLevel
+      flags: 0
+      inArgvs:
+      - guid: 6083
+        refPortID: 0
+        dummys: []
+      outArgvs:
+      - guid: 6084
+        refPortID: 0
+        dummys: []
+      nextActionsID: a4000000
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 467.5
+        width: 250.97617
+        height: 10
+      actionType: -412087707
+      custumeValue: 0
+      condition:
+        portals: []
+    - GUID: 164
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      inArgvs:
+      - guid: 6086
+        refPortID: 0
+        dummys:
+        - actionGuid: 163
+          varGuid: 6084
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 513.5
+        width: 196.5
+        height: 10
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 6088
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 
+        - opType: 8
+          argv:
+            guid: 6090
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 9f000000
+        - opType: 8
+          argv:
+            guid: 6092
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 9f000000
+        - opType: 8
+          argv:
+            guid: 6094
+            refPortID: 0
+            dummys: []
+          compare:
+            guid: 0
+            refPortID: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 9f000000
+    vATApis: []
+    Tasks:
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 200
+        CustomID: 1
+        CustomName: monster
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 2
+          refPortID: 0
+          dummys: []
+        ActionGUID: 86
+        rect:
+          serializedVersion: 2
+          x: -1438.3586
+          y: -214.83348
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 202
+        CustomID: 1
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5168
+          refPortID: 0
+          dummys: []
+        ActionGUID: 15
+        rect:
+          serializedVersion: 2
+          x: -2760.6274
+          y: 1572.3228
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 201
+        CustomID: 1
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5196
+          refPortID: 0
+          dummys: []
+        ActionGUID: 28
+        rect:
+          serializedVersion: 2
+          x: -697.16833
+          y: -812.4791
+          width: 100
+          height: 100
+    - type: 0
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 0
+        CustomID: 0
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          refPortID: 0
+          dummys: []
+        ActionGUID: 31
+        rect:
+          serializedVersion: 2
+          x: -883.487
+          y: -1953.3813
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: bodyparthit
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5263
+          refPortID: 0
+          dummys: []
+        ActionGUID: 42
+        rect:
+          serializedVersion: 2
+          x: -1034.0076
+          y: 1625.1118
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 198
+        CustomID: 1
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5333
+          refPortID: 0
+          dummys: []
+        ActionGUID: 64
+        rect:
+          serializedVersion: 2
+          x: -1495.3917
+          y: -1620.2119
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: InstancingCheck
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5502
+          refPortID: 0
+          dummys: []
+        ActionGUID: 95
+        rect:
+          serializedVersion: 2
+          x: -901.28186
+          y: -2639.8564
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnCityCreateActor
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5539
+          refPortID: 0
+          dummys: []
+        ActionGUID: 97
+        rect:
+          serializedVersion: 2
+          x: -982.39197
+          y: -2953.4885
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: ChangeElementFlags
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 5554
+          refPortID: 0
+          dummys: []
+        ActionGUID: 152
+        rect:
+          serializedVersion: 2
+          x: -1042.4685
+          y: 2121.7656
+          width: 100
+          height: 100
+    StructDatas: []
+    RefPorts: []

@@ -1,0 +1,1435 @@
+﻿{
+    "datas": [
+        {
+            "nID": 1,
+            "strName": "关卡-英雄展示路径动画",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 32,
+            "animClip": "Assets/Datas/Camera/level/GoldHangUp.anim",
+            "timeline": "",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [
+                {
+                    "time": 0.0,
+                    "inTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "outTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "bSet": false,
+                    "bLookAt": false,
+                    "lookat": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "fov": 45.0
+                },
+                {
+                    "time": 6.166666507720947,
+                    "inTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "outTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "bSet": false,
+                    "bLookAt": false,
+                    "lookat": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "fov": 45.0
+                }
+            ],
+            "eventDatas": [
+                "19:8.1,-1,1,0,0,1,3,2005,,"
+            ]
+        },
+        {
+            "nID": 2,
+            "strName": "关卡-英雄进入战斗场景动作",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 32,
+            "animClip": "Assets/Datas/Camera/level/fight.anim",
+            "timeline": "",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [
+                {
+                    "time": 0.0,
+                    "inTan": {
+                        "x": 0.0,
+                        "y": 34.0,
+                        "z": 0.0
+                    },
+                    "outTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "bSet": false,
+                    "bLookAt": false,
+                    "lookat": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "fov": 45.0
+                },
+                {
+                    "time": 1.0,
+                    "inTan": {
+                        "x": 0.0,
+                        "y": 34.0,
+                        "z": 0.0
+                    },
+                    "outTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "bSet": false,
+                    "bLookAt": false,
+                    "lookat": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "fov": 45.0
+                }
+            ],
+            "eventDatas": [
+                "14:0,-1,1,0,0,1,0,0,0,1,0,",
+                "14:0,-1,1,0,2,1,0,0,0,1,0,"
+            ]
+        },
+        {
+            "nID": 3,
+            "strName": "开场动画",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/general/8001Corgi/8001Corgi_H_Show2.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "18:0,-1,1,61440,2,1,1824,1,1,",
+                "18:5.2,-1,1,61440,2,1,1024,0,0,",
+                "7:5,-1,1,61440,2,1,6,2202902,1,0.000,0.000,40.000,0.000,0.000,0.000,0,1,1,0,2,0,0,0,0,0,9,0,",
+                "18:6.5,-1,1,61440,2,1,800,0,1,",
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:6.5,-1,1,61440,2,1,0,0,3,0,"
+            ]
+        },
+        {
+            "nID": 101,
+            "strName": "精灵龙登场",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3013xiannvlong/3013xiannvlongShow.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "18:0,-1,1,61440,2,1,1184,1,1,",
+                "18:6.283333,-1,1,61440,2,1,1184,0,0,",
+                "19:6.283333,-1,1,61440,2,1,17,0,,",
+                "19:6.283333,-1,1,61440,2,1,17,1,,",
+                "19:0,-1,1,61440,2,1,18,0,,",
+                "19:0,-1,1,61440,2,1,18,1,,",
+                "7:6.283333,-1,1,61440,2,1,6,4301301,1,0.000,0.000,30.000,0.000,180.000,0.000,0,1,1,0,0,0,0,0,0,0,9,0,",
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:6.283333,-1,1,61440,2,1,0,0,3,0,"
+            ]
+        },
+        {
+            "nID": 12,
+            "strName": "关卡-boss死亡",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 7,
+            "animClip": "Assets/Datas/Camera/Boss/boss_dead_canmera.anim",
+            "timeline": "",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [
+                {
+                    "time": 0.0,
+                    "inTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "outTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "bSet": false,
+                    "bLookAt": false,
+                    "lookat": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "fov": 60.0
+                },
+                {
+                    "time": 4.0,
+                    "inTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "outTan": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "eulerAngle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "bSet": false,
+                    "bLookAt": false,
+                    "lookat": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "fov": 60.0
+                }
+            ],
+            "eventDatas": [
+                "20:0,-1,1,0,2,1,1,",
+                "20:4.2,-1,1,0,2,1,0,",
+                "19:0,-1,1,0,2,1,10,0,,",
+                "18:0,-1,1,0,2,1,7936,1,0,",
+                "18:4.2,-1,1,0,2,1,0,0,0,",
+                "19:0,-1,1,0,2,1,28,0,,",
+                "200:0,-1,1,0,2,1,3,0,0,0,0,0,,"
+            ]
+        },
+        {
+            "nID": 14,
+            "strName": "关卡-野猪王倒追",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 19,
+            "animClip": "",
+            "timeline": "Assets/Datas/Camera/Cutscene_Guide/cutscene_guide_4.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "19:0,-1,1,0,2,1,27,0,Monsters,",
+                "19:9.65,-1,1,0,2,1,26,0,Monsters,",
+                "18:0.1,-1,1,0,2,1,7968,1,0,",
+                "18:9.65,-1,1,0,2,1,7968,0,0,",
+                "10:9,-1,1,0,2,1,0,,1,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,1,0,0,"
+            ]
+        },
+        {
+            "nID": 1025,
+            "strName": "素材视频镜头1",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 19,
+            "animClip": "",
+            "timeline": "Assets/Datas/Camera/Cutscene_Guide/cutscene_guide_4.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "19:0,-1,1,0,2,1,27,0,Monsters,",
+                "19:9.65,-1,1,0,2,1,26,0,Monsters,",
+                "18:0,-1,1,0,2,1,7968,1,0,",
+                "18:9.65,-1,1,0,2,1,7968,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,1,0,0,",
+                "10:0,-1,1,0,2,1,0,,0,0,0,",
+                "7:9.683333,-1,1,0,2,1,1,110,1,0.000,0.000,-50.000,0.000,0.000,0.000,0,1,1,0,0,0,0,0,0,0,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,2,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,3,0,0,",
+                "19:0,-1,1,0,2,1,27,0,Particles,",
+                "19:9.683333,-1,1,0,2,1,26,0,Particles,"
+            ]
+        },
+        {
+            "nID": 1026,
+            "strName": "喊招-猩红之牙",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1026xinghongzhiya/1026xinghongzhiya_Flash_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0.7,-1,1,61440,2,1,106,0,1,0,"
+            ]
+        },
+        {
+            "nID": 20,
+            "strName": "UI-战斗胜利",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Camera/Boss/hero_victory_camera/hero_victory_camera.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "50:0,-1,1,0,2,1,-1,5,1,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,2,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,3,0,0,",
+                "17:0,-1,1,0,2,1,0,0,4,0,",
+                "17:10,-1,1,0,2,1,0,0,3,0,",
+                "19:0,-1,1,0,2,1,10,0,,",
+                "200:0,-1,1,0,2,1,3,0,0,0,0,0,,",
+                "10:0,-1,1,0,2,1,0,,1,0,0,",
+                "18:0,-1,1,0,2,1,6944,1,0,",
+                "18:10,-1,1,0,2,1,6944,0,0,",
+                "19:0,-1,1,0,2,1,9,0,idle,",
+                "17:1.9,-1,1,0,2,1,0,0,3,0,",
+                "17:0,-1,1,0,2,1,3,0,1,0,",
+                "17:2,-1,1,0,2,1,5,0,0,0,"
+            ]
+        },
+        {
+            "nID": 21,
+            "strName": "UI-战斗失败",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Camera/Boss/hero_failure_camera/hero_failure_camera.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "50:0,-1,1,0,2,1,-1,5,1,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,2,0,0,",
+                "50:0,-1,1,0,2,1,-1,5,3,0,0,",
+                "17:0,-1,1,0,2,1,0,0,4,0,",
+                "17:10,-1,1,0,2,1,0,0,3,0,",
+                "19:0,-1,1,0,2,1,10,0,,",
+                "200:0,-1,1,0,2,1,3,0,0,0,0,0,,",
+                "10:0,-1,1,0,2,1,0,,1,0,0,",
+                "18:0,-1,1,0,2,1,6944,1,0,",
+                "18:10,-1,1,0,2,1,6944,0,0,",
+                "19:10,-1,1,0,2,1,9,0,dead,",
+                "17:1.9,-1,1,0,2,1,0,0,3,0,",
+                "17:1.8,-1,1,0,2,1,3,0,1,0,",
+                "17:2,-1,1,0,2,1,4,0,0,0,"
+            ]
+        },
+        {
+            "nID": 1049,
+            "strName": "喊招-雷霆卡莎",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1049leitingkasha/1049leitingkasha_Flash_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0.7,-1,1,61440,2,1,106,0,1,0,"
+            ]
+        },
+        {
+            "nID": 1030,
+            "strName": "喊招-烈焰弩手",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1030lieyannushou/1030lieyannushou_Flash_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0.7,-1,1,61440,2,1,106,0,1,0,"
+            ]
+        },
+        {
+            "nID": 2026,
+            "strName": "[解锁]猩红之牙",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1026xinghongzhiya/1026xinghongzhiya_H_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 1053,
+            "strName": "喊招-溪流法师",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1053xiliufashi/1053xiliufashi_Flash_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0.7,-1,1,61440,2,1,106,0,1,0,"
+            ]
+        },
+        {
+            "nID": 2053,
+            "strName": "[解锁]溪流法师",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1053xiliufashi/1053xiliufashi_H_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 1055,
+            "strName": "展示-电刃盗贼",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1055dianrendaozei/1055dianrendaozei_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 2049,
+            "strName": "[解锁]雷霆之牙",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1049leitingkasha/1049leitingkasha_H_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 102,
+            "strName": "炎猪王登场",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3001yezhuwang/3001yezhuwangShow.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:6.333333,-1,1,61440,2,1,0,0,3,0,",
+                "18:0,-1,1,61440,2,1,1200,1,0,",
+                "18:6.333333,-1,1,61440,2,1,1200,0,0,",
+                "19:0,-1,1,61440,2,1,16,0,,",
+                "19:6.333333,-1,1,61440,2,1,15,0,,",
+                "7:6.333333,-1,1,61440,2,1,6,4300101,1,0.000,0.000,45.000,0.000,0.000,0.000,0,1,1,0,1,0,0,0,0,0,8,0,",
+                "19:0,-1,1,61440,2,1,18,1,,",
+                "19:6.333333,-1,1,61440,2,1,17,1,,"
+            ]
+        },
+        {
+            "nID": 103,
+            "strName": "斩尾龙出场",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3012zhanweilong/3012zhanweilongShow.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:7,-1,1,61440,2,1,0,0,3,0,",
+                "18:0,-1,1,61440,2,1,1184,1,1,",
+                "18:7,-1,1,61440,2,1,1184,0,1,",
+                "19:0,-1,1,61440,2,1,16,0,,",
+                "19:7,-1,1,61440,2,1,15,0,,",
+                "7:7,-1,1,61440,2,1,6,4301201,1,0.000,0.000,45.000,0.000,0.000,0.000,0,1,1,0,1,0,0,0,0,0,9,0,"
+            ]
+        },
+        {
+            "nID": 2030,
+            "strName": "[解锁]烈焰弩手",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/hero/1030lieyannushou/1030lieyannushou_H_Show.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 106,
+            "strName": "精灵龙出场-新手",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3013xiannvlong/3013xiannvlongShow.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "19:0,-1,1,61440,2,1,16,0,,",
+                "19:0,-1,1,61440,2,1,27,0,Particles,",
+                "18:0,-1,1,61440,2,1,8096,1,1,",
+                "18:6.283333,-1,1,61440,2,1,8096,0,1,",
+                "7:6.283333,-1,1,61440,2,1,6,4301302,1,0.000,0.000,30.000,0.000,180.000,0.000,0,1,1,0,0,0,0,0,0,0,1,0,",
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "19:6.283333,-1,1,61440,2,1,15,0,,",
+                "19:6.283333,-1,1,61440,2,1,26,0,Particles,",
+                "17:6.283333,-1,1,61440,2,1,0,0,3,0,"
+            ]
+        },
+        {
+            "nID": 107,
+            "strName": "精灵龙出场-主线",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3013xiannvlong/3013xiannvlongShow.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "19:0,-1,1,61440,2,1,16,0,,",
+                "19:0,-1,1,61440,2,1,27,0,Particles,",
+                "18:0,-1,1,61440,2,1,8096,1,1,",
+                "18:6.283333,-1,1,61440,2,1,8096,0,1,",
+                "7:6.283333,-1,1,61440,2,1,6,4301303,1,0.000,0.000,30.000,0.000,180.000,0.000,0,1,1,0,0,0,0,0,0,0,1,0,",
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "19:6.283333,-1,1,61440,2,1,15,0,,",
+                "19:6.283333,-1,1,61440,2,1,26,0,Particles,",
+                "17:6.283333,-1,1,61440,2,1,0,0,3,0,"
+            ]
+        },
+        {
+            "nID": 108,
+            "strName": "炎猪王登场-主线",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3001yezhuwang/3001yezhuwangShow.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:6.333333,-1,1,61440,2,1,0,0,3,0,",
+                "18:0,-1,1,61440,2,1,1200,1,0,",
+                "18:6.333333,-1,1,61440,2,1,1200,0,0,",
+                "19:0,-1,1,61440,2,1,16,0,,",
+                "19:6.333333,-1,1,61440,2,1,15,0,,",
+                "7:6.333333,-1,1,61440,2,1,6,4300102,1,0.000,0.000,45.000,0.000,0.000,0.000,0,1,1,0,1,0,0,0,0,0,8,0,",
+                "19:0,-1,1,61440,2,1,18,1,,",
+                "19:6.333333,-1,1,61440,2,1,17,1,,"
+            ]
+        },
+        {
+            "nID": 109,
+            "strName": "斩尾龙出场-主线",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/boss/3012zhanweilong/3012zhanweilongShow.prefab",
+            "bCloseGameCamera": true,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:7,-1,1,61440,2,1,0,0,3,0,",
+                "18:0,-1,1,61440,2,1,1184,1,1,",
+                "18:7,-1,1,61440,2,1,1184,0,1,",
+                "19:0,-1,1,61440,2,1,16,0,,",
+                "19:7,-1,1,61440,2,1,15,0,,",
+                "7:7,-1,1,61440,2,1,6,4301202,1,0.000,0.000,45.000,0.000,0.000,0.000,0,1,1,0,1,0,0,0,0,0,9,0,"
+            ]
+        },
+        {
+            "nID": 10201,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_monster01/pet_monster02_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10202,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_motharch01/pet_motharch01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10203,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_mushroom01/pet_mushroom01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10204,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_water_dragon01/pet_water_dragon02_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10205,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_mushroom01/pet_mushroom02_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10206,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_monster01/pet_monster01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10207,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_water_dragon01/pet_water_dragon01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10208,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_dragon01/pet_dragon01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10301,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_motharch01/pet_motharch02_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10302,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_ghost01/pet_ghost03_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10303,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_ghost01/pet_ghost04_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10401,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_dragon01/pet_dragon03_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10402,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_elf01/pet_elf02_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10403,
+            "strName": "宠物升星",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_elf01/pet_elf01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 4,
+            "strName": "主线-开场动画",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/general/8001Corgi/8001Corgi_H_Show3.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": [
+                "18:0,-1,1,61440,2,1,1824,1,0,",
+                "18:5.2,-1,1,61440,2,1,1024,0,0,",
+                "18:6.5,-1,1,61440,2,1,800,0,0,",
+                "17:0,-1,1,61440,2,1,0,0,4,0,",
+                "17:6.5,-1,1,61440,2,1,0,0,3,0,",
+                "7:5,-1,1,61440,2,1,6,2202903,1,0.000,0.000,40.000,0.000,0.000,0.000,0,1,1,0,2,0,0,0,0,0,9,0,"
+            ]
+        },
+        {
+            "nID": 10209,
+            "strName": "蓝色章鱼出场",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_octopus01/pet_octopus01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10304,
+            "strName": "红色章鱼出场",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_octopus01/pet_octopus02_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        },
+        {
+            "nID": 10305,
+            "strName": "仙人掌出场",
+            "OffsetRotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "OffsetPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "MirrorReference": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "useEndType": 0,
+            "animClip": "",
+            "timeline": "Assets/Datas/Role/pet/pet_cactus01/pet_cactus01_leisure.prefab",
+            "bCloseGameCamera": false,
+            "isUIPath": false,
+            "keys": [],
+            "eventDatas": []
+        }
+    ]
+}

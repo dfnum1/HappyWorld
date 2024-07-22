@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f2004a2640866f4ea2aa42ca0cb2a1d, type: 3}
+  m_Name: TerrainBrushs
+  m_EditorClassIdentifier: 
+  shareMeshs:
+  - Lods:
+    - distance: 120
+      billboard: 0
+      mesh: {fileID: 4300000, guid: 63c70607876c25e4d9b2fde01d2e8eb4, type: 2}
+    - distance: 150
+      billboard: 0
+      mesh: {fileID: 4300000, guid: c191dd95e04a5f64a9bf001503f680b5, type: 2}
+    - distance: 200
+      billboard: 1
+      mesh: {fileID: 4300000, guid: 8931c957808fad2488840da87c56c6c5, type: 2}
+  - Lods:
+    - distance: 0
+      billboard: 0
+      mesh: {fileID: 4300000, guid: 79ac29201da94d54ab68af90891f480a, type: 2}
+  foliageMatrial: {fileID: 2100000, guid: 685096c00a97cee4fbdf4d037632f9d7, type: 2}
+  treeMaterial: {fileID: 2100000, guid: aa49f959560c92c47adb73a4d9c509ec, type: 2}
+  brushRes: []
+  brushBuffers:
+  - type: 0
+    name: grass_1
+    guid: -1482459781
+    shareMesh: 0
+    bBillboard: 0
+    usOffset: {x: 0, y: 0.5}
+  - type: 0
+    name: grass_2
+    guid: 1
+    shareMesh: 0
+    bBillboard: 0
+    usOffset: {x: 0, y: 0}
+  - type: 0
+    name: grass_3
+    guid: 2
+    shareMesh: 0
+    bBillboard: 0
+    usOffset: {x: 0.5, y: 0}
+  - type: 0
+    name: grass_4
+    guid: 3
+    shareMesh: 0
+    bBillboard: 0
+    usOffset: {x: 0.5, y: 0.5}
+  - type: 1
+    name: tree_01
+    guid: 4
+    shareMesh: 1
+    bBillboard: 0
+    usOffset: {x: 0, y: 0}

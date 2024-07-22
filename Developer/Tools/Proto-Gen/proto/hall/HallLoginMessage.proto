@@ -1,0 +1,127 @@
+syntax = "proto3";
+option java_package = "com.topgame.message.hall";
+option csharp_namespace ="Proto3";
+import "proto/common/CommonMessage.proto"; 
+
+//登录类型
+enum LoginType{
+    ACCOUNT             = 0; //账号登录
+	FAST_LOGIN			= 1; //快速登录
+	SDK 				= 2; //SDK 登录
+}
+
+//登录验证
+message LoginVerifyRequest
+{
+	string account = 1; //账号
+	string password = 2; //密码
+	string nickName = 3; //昵称
+	string registrationToken  = 4; // 设备的注册令
+	string version = 5; //版本号
+	bool autoCreate = 6; //自动创建
+	LoginType loginType = 7; //登录类型 
+	string deviceGUID = 8; // 设备唯一标识 
+	string osInfo = 9; // 操作系统信息，ios 11.0.1等]
+	string deviceType = 10; // 设备类型ipad， iPhone、HUAWEI、小米、OPPO、VIVO等
+	string deviceModel = 11; // 设备型号iPhone6s，ipad mini2，oppoR9，vivo x7等等
+	string loginChannel = 12;//登录渠道
+	string subChannel = 13;//子渠道
+}
+
+message LoginVerifyResponse
+{
+	string account = 1; //账号
+	string password = 2; //密码
+	int64 userId = 3;
+	string registrationToken  = 4; // 设备的注册令
+	string nickName = 5; //昵称
+	string loginChannel = 6;//登录渠道
+	LoginType loginType = 7; //登录类型 
+	ClientServerInfo gate = 8;
+}
+
+//登录（进入游戏）
+message LoginRequest {
+	int64 accountID = 1;
+	string nickName = 2;
+	bool isReconnection = 3; // 是否重连
+	bool isLinkChange = 4;//是否更换服务器
+}
+
+message LoginResponse {	
+	int64 accountID = 1;
+	bool isCreate = 2; //是否是创建新角色
+	int32 onlineTime = 3; // 在线时长（秒）
+	string nickName = 4; //用户名
+	bool isReconnection = 5; // 是否重连
+	int32 underageRemainingTime = 6; // 未成年剩余时间
+	int32 nickNameCTime = 7;//用户名更改次数
+	bool isFirstBuy = 8;//是否拥有首充
+	int32 specialNum = 9;//抽卡累计
+}
+
+message UserBaseInfoResponse {	
+	int64 accountID = 1;
+	bool isNew = 2; //是否新建
+	string nickName = 3; //用户名
+	int32 playerLevel = 4;//用户等级
+	int64 highestScore = 5;//最高分数
+}
+
+enum KillUserType{
+    SAME_ACCOUNT             = 0; // 顶号
+	CLOSE_SERVER             = 1; // 服务器关闭
+	KICKOUT 				 = 2; // 服务器踢出
+}
+
+message KillUserResponse {	
+	KillUserType killUserType = 1;
+}
+
+
+message MessageSeedResponse {	
+
+	int64 userID = 1; //用户id （服务器内部使用）
+	int64 sessionID = 2; //会话ID（服务器内部使用）
+	uint32 seed = 3; // 消息种子
+}
+
+message LoginFinishResponse {	
+
+	int64 accountID = 1;
+}
+ 
+message LogoutRequest {
+	int64 userID = 1; 
+}
+
+message LogoutResponse {
+	int64 userID = 1; 
+}
+
+message KickOutResponse {
+	int64 userID = 1;
+	int32 type = 2;//0-顶号 1-服务器管理后台操作退出
+}
+
+//保存引导数据
+message GuideSaveRequest {
+	int64 accountID = 1;
+	int32 tag = 2;
+}
+
+message GuideInfoResponse {
+	int64 accountID = 1;
+	repeated int32 GuideTags = 2;//引导数据
+}
+
+message ChangeNameRequest {
+	int64 userID = 1; //用户id
+	string userName = 2;
+}
+
+message ChangeNameResponse {
+	int64 userID = 1; //用户id
+	string userName = 2;
+	int32 nickNameCTime = 3;//用户名更改次数
+}

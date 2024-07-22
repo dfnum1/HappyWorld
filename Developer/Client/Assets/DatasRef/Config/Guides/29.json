@@ -1,0 +1,1094 @@
+﻿{
+    "Guid": 135,
+    "Name": "3级-战斗结束-返回大厅",
+    "priority": 0,
+    "Tag": 135,
+    "bRemoveOver": false,
+    "bChangeStateBreak": false,
+    "vTriggers": [
+        {
+            "Guid": 2,
+            "Name": "打开某个UI",
+            "bExpand": true,
+            "posX": -420,
+            "posY": -207,
+            "Ops": [
+                3
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 2,
+            "priority": 993,
+            "argvGuids": [
+                1,
+                2
+            ],
+            "Events": []
+        },
+        {
+            "Guid": 6,
+            "Name": "打开某个UI",
+            "bExpand": true,
+            "posX": -411,
+            "posY": 200,
+            "Ops": [
+                7
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 2,
+            "priority": 993,
+            "argvGuids": [
+                3,
+                4
+            ],
+            "Events": []
+        }
+    ],
+    "vExcudes": [
+        {
+            "Guid": 8,
+            "Name": "获取玩家等级",
+            "bExpand": true,
+            "posX": 148,
+            "posY": -207,
+            "Ops": [
+                12
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 138,
+            "argvGuids": [
+                5
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 11,
+            "Name": "获取玩家等级",
+            "bExpand": true,
+            "posX": 150,
+            "posY": 200,
+            "Ops": [
+                15
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 138,
+            "argvGuids": [
+                6
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 16,
+            "Name": "是否执行过引导组",
+            "bExpand": true,
+            "posX": 740,
+            "posY": -208,
+            "Ops": [
+                17
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 202,
+            "argvGuids": [
+                7,
+                8
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 20,
+            "Name": "是否执行过引导组",
+            "bExpand": true,
+            "posX": 1329,
+            "posY": -208,
+            "Ops": [
+                23
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 202,
+            "argvGuids": [
+                9,
+                10
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 27,
+            "Name": "启用Mask",
+            "bExpand": true,
+            "posX": 2702,
+            "posY": -208,
+            "Ops": [],
+            "nextGuid": 29,
+            "bFireCheck": false,
+            "type": 1,
+            "argvGuids": [
+                32,
+                33,
+                34,
+                35,
+                36,
+                37
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 26,
+            "Name": "提示框",
+            "bExpand": true,
+            "posX": 2177,
+            "posY": -208,
+            "Ops": [],
+            "nextGuid": 28,
+            "bFireCheck": false,
+            "type": 2,
+            "argvGuids": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 25,
+            "Name": "启用Mask",
+            "bExpand": true,
+            "posX": 1910,
+            "posY": -208,
+            "Ops": [],
+            "nextGuid": 26,
+            "bFireCheck": false,
+            "type": 1,
+            "argvGuids": [
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 30,
+            "Name": "记录引导标志",
+            "bExpand": true,
+            "posX": 3245,
+            "posY": -208,
+            "Ops": [],
+            "nextGuid": 0,
+            "bFireCheck": false,
+            "type": 200,
+            "argvGuids": [],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 33,
+            "Name": "是否执行过引导组",
+            "bExpand": true,
+            "posX": 717,
+            "posY": 200,
+            "Ops": [
+                34
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 202,
+            "argvGuids": [
+                48,
+                49
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 35,
+            "Name": "是否执行过引导组",
+            "bExpand": true,
+            "posX": 1306,
+            "posY": 200,
+            "Ops": [
+                36
+            ],
+            "nextGuid": 0,
+            "bFireCheck": true,
+            "type": 202,
+            "argvGuids": [
+                50,
+                51
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 38,
+            "Name": "启用Mask",
+            "bExpand": true,
+            "posX": 2679,
+            "posY": 200,
+            "Ops": [],
+            "nextGuid": 41,
+            "bFireCheck": false,
+            "type": 1,
+            "argvGuids": [
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 39,
+            "Name": "提示框",
+            "bExpand": true,
+            "posX": 2154,
+            "posY": 200,
+            "Ops": [],
+            "nextGuid": 37,
+            "bFireCheck": false,
+            "type": 2,
+            "argvGuids": [
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 40,
+            "Name": "启用Mask",
+            "bExpand": true,
+            "posX": 1887,
+            "posY": 200,
+            "Ops": [],
+            "nextGuid": 39,
+            "bFireCheck": false,
+            "type": 1,
+            "argvGuids": [
+                69,
+                70,
+                71,
+                72,
+                73,
+                74
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 42,
+            "Name": "记录引导标志",
+            "bExpand": true,
+            "posX": 3222,
+            "posY": 200,
+            "Ops": [],
+            "nextGuid": 0,
+            "bFireCheck": false,
+            "type": 200,
+            "argvGuids": [],
+            "beginEvents": [],
+            "endEvents": []
+        }
+    ],
+    "vSteps": [
+        {
+            "Guid": 28,
+            "Name": "任意点击",
+            "bExpand": true,
+            "posX": 2432,
+            "posY": -208,
+            "Ops": [],
+            "nextGuid": 27,
+            "bFireCheck": false,
+            "type": 103,
+            "fDeltaTime": 0.5,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": false,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 29,
+            "Name": "控件点击",
+            "bExpand": true,
+            "posX": 2986,
+            "posY": -208,
+            "Ops": [],
+            "nextGuid": 30,
+            "bFireCheck": false,
+            "type": 100,
+            "fDeltaTime": 0.0,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": false,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 37,
+            "Name": "任意点击",
+            "bExpand": true,
+            "posX": 2409,
+            "posY": 200,
+            "Ops": [],
+            "nextGuid": 38,
+            "bFireCheck": false,
+            "type": 103,
+            "fDeltaTime": 0.5,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": false,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [],
+            "beginEvents": [],
+            "endEvents": []
+        },
+        {
+            "Guid": 41,
+            "Name": "控件点击",
+            "bExpand": true,
+            "posX": 2963,
+            "posY": 200,
+            "Ops": [],
+            "nextGuid": 42,
+            "bFireCheck": false,
+            "type": 100,
+            "fDeltaTime": 0.0,
+            "fDeltaSignTime": 0.0,
+            "bOption": false,
+            "bAutoNext": false,
+            "bAutoSignCheck": false,
+            "bSuccessedListenerBreak": false,
+            "nSuccessedBreakSkipTo": 0,
+            "fAutoTime": 0.0,
+            "autoExcudeNodeGuid": 0,
+            "argvGuids": [
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84
+            ],
+            "beginEvents": [],
+            "endEvents": []
+        }
+    ],
+    "vOperates": [
+        {
+            "Guid": 3,
+            "Name": "3",
+            "bExpand": true,
+            "posX": -135,
+            "posY": -207,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 101,
+                    "dummys": [
+                        {
+                            "nodeGuid": 2,
+                            "argvGuid": 1
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 8
+        },
+        {
+            "Guid": 7,
+            "Name": "3",
+            "bExpand": true,
+            "posX": -126,
+            "posY": 200,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 112,
+                    "dummys": [
+                        {
+                            "nodeGuid": 6,
+                            "argvGuid": 3
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 11
+        },
+        {
+            "Guid": 12,
+            "Name": "12",
+            "bExpand": true,
+            "posX": 448,
+            "posY": -208,
+            "Vars": [
+                {
+                    "type": 3,
+                    "value": 3,
+                    "dummys": [
+                        {
+                            "nodeGuid": 8,
+                            "argvGuid": 5
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 16
+        },
+        {
+            "Guid": 15,
+            "Name": "12",
+            "bExpand": true,
+            "posX": 447,
+            "posY": 198,
+            "Vars": [
+                {
+                    "type": 3,
+                    "value": 3,
+                    "dummys": [
+                        {
+                            "nodeGuid": 11,
+                            "argvGuid": 6
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 33
+        },
+        {
+            "Guid": 17,
+            "Name": "17",
+            "bExpand": true,
+            "posX": 1062,
+            "posY": -208,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 1,
+                    "dummys": [
+                        {
+                            "nodeGuid": 16,
+                            "argvGuid": 8
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 20
+        },
+        {
+            "Guid": 23,
+            "Name": "17",
+            "bExpand": true,
+            "posX": 1649,
+            "posY": -208,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 0,
+                    "dummys": [
+                        {
+                            "nodeGuid": 20,
+                            "argvGuid": 10
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 25
+        },
+        {
+            "Guid": 34,
+            "Name": "17",
+            "bExpand": true,
+            "posX": 1039,
+            "posY": 200,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 1,
+                    "dummys": [
+                        {
+                            "nodeGuid": 33,
+                            "argvGuid": 49
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 35
+        },
+        {
+            "Guid": 36,
+            "Name": "17",
+            "bExpand": true,
+            "posX": 1626,
+            "posY": 200,
+            "Vars": [
+                {
+                    "type": 5,
+                    "value": 0,
+                    "dummys": [
+                        {
+                            "nodeGuid": 35,
+                            "argvGuid": 51
+                        }
+                    ]
+                }
+            ],
+            "Relation": 0,
+            "NextNode": 40
+        }
+    ],
+    "vPorts": [
+        {
+            "guid": 38,
+            "value": 6,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 39,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 40,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 41,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 42,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 43,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 44,
+            "value": 1,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 45,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 46,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 47,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 75,
+            "value": 9,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 76,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 77,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 78,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 79,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 80,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 81,
+            "value": 1,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 82,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 83,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 84,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 1,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 2,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 3,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 4,
+            "value": 0,
+            "strValue": "",
+            "Flag": 0
+        },
+        {
+            "guid": 5,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 6,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 7,
+            "value": 112,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 8,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 9,
+            "value": 136,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 10,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 32,
+            "value": 1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 33,
+            "value": -939524096,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 34,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 35,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 36,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 37,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 21,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 22,
+            "value": 63000044,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 23,
+            "value": -1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 24,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 25,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 26,
+            "value": -300,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 27,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 28,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 29,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 30,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 31,
+            "value": 1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 15,
+            "value": 1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 16,
+            "value": -939524096,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 17,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 18,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 19,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 20,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 48,
+            "value": 112,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 49,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 50,
+            "value": 136,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 51,
+            "value": 0,
+            "strValue": "",
+            "Flag": 4
+        },
+        {
+            "guid": 52,
+            "value": 1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 53,
+            "value": -939524096,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 54,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 55,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 56,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 57,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 58,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 59,
+            "value": 63000044,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 60,
+            "value": -1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 61,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 62,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 63,
+            "value": -300,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 64,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 65,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 66,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 67,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 68,
+            "value": 1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 69,
+            "value": 1,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 70,
+            "value": -939524096,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 71,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 72,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 73,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        },
+        {
+            "guid": 74,
+            "value": 0,
+            "strValue": "",
+            "Flag": 3
+        }
+    ]
+}

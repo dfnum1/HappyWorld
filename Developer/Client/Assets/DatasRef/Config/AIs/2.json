@@ -1,0 +1,219 @@
+﻿{
+    "GUID": 2,
+    "inheritGUID": 0,
+    "strName": "限时宝藏哥布林",
+    "vNodes": [
+        {
+            "Guid": 9,
+            "sort": 0,
+            "nexts": [
+                11
+            ],
+            "bExpand": true,
+            "posX": -457,
+            "posY": 327,
+            "strName": "通用[AI激活OR停止]",
+            "type": 6,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        },
+        {
+            "Guid": 12,
+            "sort": 0,
+            "nexts": [
+                13
+            ],
+            "bExpand": true,
+            "posX": -452,
+            "posY": -1010,
+            "strName": "技能[受到伤害]",
+            "type": 310,
+            "inheritOverride": true,
+            "cmdTypes": [],
+            "variables": []
+        }
+    ],
+    "vEventNodes": [
+        {
+            "Guid": 5,
+            "sort": 0,
+            "nexts": [
+                8
+            ],
+            "bExpand": true,
+            "posX": -128,
+            "posY": -143,
+            "strName": "ActionStateProperty",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "300:0,-1,1,61440,2,1,1/1/0@0@0@0@0@0@0@0@0@0@0@0@0|3@0@0@100@0@0@0@0@0@0@0@0@0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0/0,0,"
+        },
+        {
+            "Guid": 7,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": -119,
+            "posY": -509,
+            "strName": "Trigger",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "19:0,-1,1,61440,2,1,199,0,,"
+        },
+        {
+            "Guid": 8,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 276,
+            "posY": -143,
+            "strName": "Skill",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "40:0,-1,1,61440,2,1,4,2202901,0,1,"
+        },
+        {
+            "Guid": 10,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 216,
+            "posY": 326,
+            "strName": "Trigger",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "19:0,-1,1,61440,2,1,201,1,,"
+        },
+        {
+            "Guid": 17,
+            "sort": 0,
+            "nexts": [],
+            "bExpand": true,
+            "posX": 200,
+            "posY": -1009,
+            "strName": "Trigger",
+            "triggerPort": {
+                "nodeGuid": -1,
+                "cmdType": -1,
+                "nodeArgv": 255,
+                "constValue": true,
+                "value": 0
+            },
+            "evtCmd": "19:0,-1,1,61440,2,1,29,19,,"
+        }
+    ],
+    "vTimers": [
+        {
+            "Guid": 4,
+            "sort": 0,
+            "nexts": [
+                5
+            ],
+            "bExpand": true,
+            "posX": -452,
+            "posY": -143,
+            "strName": "计时器",
+            "fTime": 12.0,
+            "loop": 1,
+            "idleInterval": 0.0,
+            "cmdTypes": []
+        },
+        {
+            "Guid": 6,
+            "sort": 0,
+            "nexts": [
+                7
+            ],
+            "bExpand": true,
+            "posX": -456,
+            "posY": -509,
+            "strName": "计时器",
+            "fTime": 15.0,
+            "loop": 1,
+            "idleInterval": 0.0,
+            "cmdTypes": []
+        }
+    ],
+    "vOperates": [
+        {
+            "Guid": 11,
+            "sort": 0,
+            "nexts": [
+                10
+            ],
+            "bExpand": true,
+            "posX": -123,
+            "posY": 330,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 5,
+                    "cmdType": -1,
+                    "nodeGuid": 9,
+                    "nodeArgv": 0,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 1
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        },
+        {
+            "Guid": 13,
+            "sort": 0,
+            "nexts": [
+                17
+            ],
+            "bExpand": true,
+            "posX": -128,
+            "posY": -1009,
+            "strName": "条件检测器",
+            "opCase": 0,
+            "Vars": [
+                {
+                    "type": 3,
+                    "cmdType": -1,
+                    "nodeGuid": 12,
+                    "nodeArgv": 10,
+                    "cmdTypeOp": -1,
+                    "nodeGuidOp": -1,
+                    "nodeArgvOp": 255,
+                    "value": 0
+                }
+            ],
+            "Relation": 0,
+            "times": 0,
+            "opInterval": 0.0,
+            "fallbacks": []
+        }
+    ],
+    "vExcudes": [],
+    "vTasks": [],
+    "vVariables": []
+}

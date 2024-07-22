@@ -1,0 +1,25 @@
+{
+    "name": "GameEditor",
+    "rootNamespace": "",
+    "references": [
+        "MainScripts",
+        "ThirdParty",
+        "Framework",
+        "Unity.Timeline",
+        "Unity.Timeline.Editor",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "HybridCLR.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

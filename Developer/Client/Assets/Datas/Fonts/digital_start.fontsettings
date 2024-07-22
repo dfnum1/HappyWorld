@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!128 &12800000
+Font:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: digital_start
+  serializedVersion: 5
+  m_LineSpacing: 0.1
+  m_DefaultMaterial: {fileID: 2100000, guid: 40d33e6905c1def41a3e7f6d74bb5d3d, type: 2}
+  m_FontSize: 0
+  m_Texture: {fileID: 0}
+  m_AsciiStartOffset: 0
+  m_Tracking: 1
+  m_CharacterSpacing: 0
+  m_CharacterPadding: 1
+  m_ConvertCase: 0
+  m_CharacterRects:
+  - serializedVersion: 2
+    index: 49
+    uv:
+      serializedVersion: 2
+      x: 0
+      y: 0.51171875
+      width: 0.29296875
+      height: 0.48828125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 75
+      height: -125
+    advance: 75
+    flipped: 0
+  - serializedVersion: 2
+    index: 50
+    uv:
+      serializedVersion: 2
+      x: 0.296875
+      y: 0.51171875
+      width: 0.29296875
+      height: 0.48828125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 75
+      height: -125
+    advance: 75
+    flipped: 0
+  - serializedVersion: 2
+    index: 51
+    uv:
+      serializedVersion: 2
+      x: 0.59375
+      y: 0.51171875
+      width: 0.29296875
+      height: 0.48828125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 75
+      height: -125
+    advance: 75
+    flipped: 0
+  - serializedVersion: 2
+    index: 71
+    uv:
+      serializedVersion: 2
+      x: 0
+      y: 0.01953125
+      width: 0.29296875
+      height: 0.48828125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 75
+      height: -125
+    advance: 75
+    flipped: 0
+  - serializedVersion: 2
+    index: 79
+    uv:
+      serializedVersion: 2
+      x: 0.296875
+      y: 0.01953125
+      width: 0.29296875
+      height: 0.48828125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 75
+      height: -125
+    advance: 75
+    flipped: 0
+  m_KerningValues: []
+  m_PixelScale: 0.1
+  m_FontData: 
+  m_Ascent: 0
+  m_Descent: 0
+  m_DefaultStyle: 0
+  m_FontNames: []
+  m_FallbackFonts: []
+  m_FontRenderingMode: 0
+  m_UseLegacyBoundsCalculation: 0
+  m_ShouldRoundAdvanceValue: 1

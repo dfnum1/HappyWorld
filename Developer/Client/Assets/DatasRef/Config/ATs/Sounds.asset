@@ -1,0 +1,1411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dccf5fb206df874b9e92a632960ae27, type: 3}
+  m_Name: Sounds
+  m_EditorClassIdentifier: 
+  Data:
+    bEnable: 1
+    Locals:
+      varVariableBool:
+      - GUID: 72
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 80
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 88
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 96
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 104
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 64
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 110
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 112
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 114
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 116
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 121
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 144
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 145
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 183
+        strName: 
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      varVariableBoolList: []
+      varVariableByte:
+      - GUID: 3
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 5
+        strName: "\u53C2\u65701"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 7
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 1
+        bindVarGuid: 0
+      - GUID: 9
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 2
+        bindVarGuid: 0
+      - GUID: 11
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 3
+        bindVarGuid: 0
+      - GUID: 13
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 5
+        bindVarGuid: 0
+      - GUID: 15
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 6
+        bindVarGuid: 0
+      - GUID: 17
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableByteList: []
+      varVariableColor: []
+      varVariableColorList: []
+      varVariableCurve:
+      - GUID: 71
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 79
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 87
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 95
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 103
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 63
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 120
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 143
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      - GUID: 182
+        strName: 
+        flags: 0
+        mValueDef:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        bindVarGuid: 0
+      varVariableCurveList: []
+      varVariableFloat:
+      - GUID: 128
+        strName: 
+        flags: 0
+        mValueDef: 0.8
+        bindVarGuid: 0
+      - GUID: 167
+        strName: 
+        flags: 0
+        mValueDef: 0.8
+        bindVarGuid: 0
+      - GUID: 172
+        strName: 
+        flags: 0
+        mValueDef: 0.8
+        bindVarGuid: 0
+      - GUID: 177
+        strName: 
+        flags: 0
+        mValueDef: 0.8
+        bindVarGuid: 0
+      - GUID: 192
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      varVariableFloatList: []
+      varVariableInt:
+      - GUID: 75
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 83
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 91
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 99
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 107
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 67
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 124
+        strName: 
+        flags: 0
+        mValueDef: 14
+        bindVarGuid: 0
+      - GUID: 129
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 147
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 168
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 173
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 178
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 185
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 191
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 194
+        strName: 
+        flags: 0
+        mValueDef: 0
+        bindVarGuid: 0
+      - GUID: 196
+        strName: "\u53C2\u65702"
+        flags: 0
+        mValueDef: 100
+        bindVarGuid: 0
+      varVariableIntList: []
+      varVariableLong: []
+      varVariableLongList: []
+      varVariableMonoScript:
+      - GUID: 69
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 77
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 85
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 93
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 101
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 61
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 118
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 126
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 141
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 165
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 170
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 175
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 180
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      - GUID: 190
+        strName: 
+        flags: 0
+        mValueDef: {fileID: 0}
+        bindVarGuid: 0
+        hashCode: -329504808
+      varVariableMonoScriptList: []
+      varVariableObject: []
+      varVariableObjectList: []
+      varVariableQuaternion: []
+      varVariableQuaternionList: []
+      varVariableString:
+      - GUID: 70
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/Adventure Main(Explore_Loop).mp3
+        bindVarGuid: 0
+      - GUID: 161
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 78
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/Adventure Main(BossBattle_Loop).mp3
+        bindVarGuid: 0
+      - GUID: 159
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 86
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/Adventure Main(BossBattle_Loop).mp3
+        bindVarGuid: 0
+      - GUID: 157
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 94
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/Adventure Main(Explore_Loop).mp3
+        bindVarGuid: 0
+      - GUID: 155
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 102
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/Adventure Main(BossBattle_Loop).mp3
+        bindVarGuid: 0
+      - GUID: 149
+        strName: 
+        flags: 0
+        mValueDef: battle_bg
+        bindVarGuid: 0
+      - GUID: 62
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/battle_bg(not boss).mp3
+        bindVarGuid: 0
+      - GUID: 163
+        strName: 
+        flags: 0
+        mValueDef: 
+        bindVarGuid: 0
+      - GUID: 119
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/Adventure Main(Explore_Loop).mp3
+        bindVarGuid: 0
+      - GUID: 151
+        strName: 
+        flags: 0
+        mValueDef: battle_bg
+        bindVarGuid: 0
+      - GUID: 127
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/Effects/Roles/Npcs/Commons/Boss/Warning.mp3
+        bindVarGuid: 0
+      - GUID: 142
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/BG/The_Adventure(HallBGM).mp3
+        bindVarGuid: 0
+      - GUID: 146
+        strName: 
+        flags: 0
+        mValueDef: hall_bg
+        bindVarGuid: 0
+      - GUID: 166
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/Effects/Roles/Npcs/Commons/Boss/CountDown.mp3
+        bindVarGuid: 0
+      - GUID: 171
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/Effects/Roles/Npcs/Commons/Boss/PostureDown.mp3
+        bindVarGuid: 0
+      - GUID: 176
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/Effects/Roles/Npcs/Commons/Boss/Rage.mp3
+        bindVarGuid: 0
+      - GUID: 181
+        strName: 
+        flags: 0
+        mValueDef: Assets/Datas/Sounds/Effects/Roles/Npcs/Commons/Boss/Feebleness.mp3
+        bindVarGuid: 0
+      - GUID: 184
+        strName: 
+        flags: 0
+        mValueDef: BossWeak
+        bindVarGuid: 0
+      varVariableStringList: []
+      varVariableUser:
+      - GUID: 2
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -634329139
+        bAutoDestroy: 0
+      - GUID: 109
+        strName: 
+        flags: 0
+        bindVarGuid: 0
+        hashCode: -634329139
+        bAutoDestroy: 0
+      varVariableUserList: []
+      varVariableVector2: []
+      varVariableVector2List: []
+      varVariableVector2Int: []
+      varVariableVector2IntList: []
+      varVariableVector3: []
+      varVariableVector3List: []
+      varVariableVector3Int: []
+      varVariableVector3IntList: []
+      varVariableVector4: []
+      varVariableVector4List: []
+    vNodes:
+    - GUID: 0
+      strName: "\u83B7\u53D6\u5173\u5361\u6A21\u5F0F"
+      flags: 0
+      actionType: -1507016438
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 2
+        dummys: []
+      outArgvs:
+      - guid: 3
+        dummys: []
+      nextActionsID: 01000000
+      rect:
+        serializedVersion: 2
+        x: -3.5388184
+        y: 47.56318
+        width: 176.63062
+        height: 10
+    - GUID: 1
+      strName: "\u5206\u6D41-Switch"
+      flags: 0
+      actionType: 71
+      custumeValue: 3
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 7
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 08000000
+        - opType: 8
+          argv:
+            guid: 9
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 09000000
+        - opType: 8
+          argv:
+            guid: 11
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 0a000000
+        - opType: 8
+          argv:
+            guid: 13
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 0b000000
+        - opType: 8
+          argv:
+            guid: 15
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 0c000000
+        - opType: 8
+          argv:
+            guid: 17
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 0e000000
+      inArgvs:
+      - guid: 5
+        dummys:
+        - actionGuid: 0
+          varGuid: 3
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 244.15118
+        y: 37.233177
+        width: 203.9683
+        height: 10
+    - GUID: 9
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 69
+        dummys: []
+      - guid: 70
+        dummys: []
+      - guid: 71
+        dummys: []
+      - guid: 72
+        dummys: []
+      - guid: 161
+        dummys: []
+      outArgvs:
+      - guid: 75
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 629.4129
+        y: -43.77466
+        width: 271.69202
+        height: 10
+    - GUID: 10
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 77
+        dummys: []
+      - guid: 78
+        dummys: []
+      - guid: 79
+        dummys: []
+      - guid: 80
+        dummys: []
+      - guid: 159
+        dummys: []
+      outArgvs:
+      - guid: 83
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 630.4129
+        y: 123.22534
+        width: 271.69202
+        height: 10
+    - GUID: 11
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 85
+        dummys: []
+      - guid: 86
+        dummys: []
+      - guid: 87
+        dummys: []
+      - guid: 88
+        dummys: []
+      - guid: 157
+        dummys: []
+      outArgvs:
+      - guid: 91
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 633.4129
+        y: 291.22534
+        width: 271.69202
+        height: 10
+    - GUID: 12
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 93
+        dummys: []
+      - guid: 94
+        dummys: []
+      - guid: 95
+        dummys: []
+      - guid: 96
+        dummys: []
+      - guid: 155
+        dummys: []
+      outArgvs:
+      - guid: 99
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 633.4129
+        y: 458.75534
+        width: 271.69202
+        height: 10
+    - GUID: 13
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 101
+        dummys: []
+      - guid: 102
+        dummys: []
+      - guid: 103
+        dummys: []
+      - guid: 104
+        dummys: []
+      - guid: 149
+        dummys: []
+      outArgvs:
+      - guid: 107
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1178.1731
+        y: 664.8854
+        width: 271.69202
+        height: 10
+    - GUID: 8
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 61
+        dummys: []
+      - guid: 62
+        dummys: []
+      - guid: 63
+        dummys: []
+      - guid: 64
+        dummys: []
+      - guid: 163
+        dummys: []
+      outArgvs:
+      - guid: 67
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 629.41296
+        y: -214.77466
+        width: 271.69202
+        height: 10
+    - GUID: 14
+      strName: IsNextCrossChapter
+      flags: 0
+      actionType: -1216155841
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 109
+        dummys: []
+      outArgvs:
+      - guid: 110
+        dummys: []
+      nextActionsID: 0f000000
+      rect:
+        serializedVersion: 2
+        x: 631.8999
+        y: 690.99994
+        width: 235.19461
+        height: 10
+    - GUID: 15
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      actionType: 70
+      custumeValue: 1
+      condition:
+        portals:
+        - opType: 8
+          argv:
+            guid: 114
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 0d000000
+        - opType: 0
+          argv:
+            guid: 116
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 10000000
+      inArgvs:
+      - guid: 112
+        dummys:
+        - actionGuid: 14
+          varGuid: 110
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 898.1
+        y: 693.2
+        width: 197.75496
+        height: 10
+    - GUID: 16
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 118
+        dummys: []
+      - guid: 119
+        dummys: []
+      - guid: 120
+        dummys: []
+      - guid: 121
+        dummys: []
+      - guid: 151
+        dummys: []
+      outArgvs:
+      - guid: 124
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1186.0731
+        y: 853.78546
+        width: 271.69202
+        height: 10
+    - GUID: 17
+      strName: "\u64AD\u653E\u97F3\u6548-Volume"
+      flags: 0
+      actionType: 2005546597
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 126
+        dummys: []
+      - guid: 127
+        dummys: []
+      - guid: 128
+        dummys: []
+      outArgvs:
+      - guid: 129
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1059
+        width: 251.19461
+        height: 10
+    - GUID: 19
+      strName: "\u64AD\u653E\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1230280245
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 141
+        dummys: []
+      - guid: 142
+        dummys: []
+      - guid: 143
+        dummys: []
+      - guid: 144
+        dummys: []
+      - guid: 145
+        dummys: []
+      - guid: 146
+        dummys: []
+      outArgvs:
+      - guid: 147
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 280.41296
+        y: -459.77466
+        width: 287.5309
+        height: 10
+    - GUID: 20
+      strName: "\u64AD\u653E\u97F3\u6548-Volume"
+      flags: 0
+      actionType: 2005546597
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 165
+        dummys: []
+      - guid: 166
+        dummys: []
+      - guid: 167
+        dummys: []
+      outArgvs:
+      - guid: 168
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 341.25354
+        y: 1364.1072
+        width: 251.19461
+        height: 10
+    - GUID: 21
+      strName: "\u64AD\u653E\u97F3\u6548-Volume"
+      flags: 0
+      actionType: 2005546597
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 170
+        dummys: []
+      - guid: 171
+        dummys: []
+      - guid: 172
+        dummys: []
+      outArgvs:
+      - guid: 173
+        dummys: []
+      nextActionsID: 17000000
+      rect:
+        serializedVersion: 2
+        x: 315.13824
+        y: 1677.146
+        width: 251.19461
+        height: 10
+    - GUID: 22
+      strName: "\u64AD\u653E\u97F3\u6548-Volume"
+      flags: 0
+      actionType: 2005546597
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 175
+        dummys: []
+      - guid: 176
+        dummys: []
+      - guid: 177
+        dummys: []
+      outArgvs:
+      - guid: 178
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 339.23492
+        y: 2029.8832
+        width: 251.19461
+        height: 10
+    - GUID: 23
+      strName: "\u6DF7\u548C\u80CC\u666F\u97F3\u4E50(Fade)"
+      flags: 0
+      actionType: 1007062038
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 180
+        dummys: []
+      - guid: 181
+        dummys: []
+      - guid: 182
+        dummys: []
+      - guid: 183
+        dummys: []
+      - guid: 184
+        dummys: []
+      outArgvs:
+      - guid: 185
+        dummys: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 650.7418
+        y: 1677.4458
+        width: 271.69202
+        height: 10
+    - GUID: 25
+      strName: "FadeOut\u80CC\u666F\u97F3\u4E50"
+      flags: 0
+      actionType: -1108765933
+      custumeValue: 0
+      condition:
+        portals: []
+      inArgvs:
+      - guid: 190
+        dummys: []
+      - guid: 191
+        dummys: []
+      - guid: 192
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 1241.5
+        y: 1722.5
+        width: 255.58691
+        height: 10
+    - GUID: 26
+      strName: "\u662F\u5426-If Else"
+      flags: 0
+      actionType: 70
+      custumeValue: 5
+      condition:
+        portals:
+        - opType: 7
+          argv:
+            guid: 196
+            dummys: []
+          compare:
+            guid: 0
+            dummys: []
+          ActionGuid: -1
+          excudeActions: 13000000
+      inArgvs:
+      - guid: 194
+        dummys: []
+      outArgvs: []
+      nextActionsID: 
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: -390.5
+        width: 198.11191
+        height: 10
+    Tasks:
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: RunStart
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 0
+        rect:
+          serializedVersion: 2
+          x: -271.53885
+          y: 12.263176
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: BossWarning
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 17
+        rect:
+          serializedVersion: 2
+          x: -72.384674
+          y: 1025.5872
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 50
+        CustomID: 1
+        CustomName: 
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 194
+          dummys: []
+        ActionGUID: 26
+        rect:
+          serializedVersion: 2
+          x: -242
+          y: -443
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnBossFrenzyCountdown
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 20
+        rect:
+          serializedVersion: 2
+          x: -21.131134
+          y: 1330.6943
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnBossFrenzyOnBossWeak
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 21
+        rect:
+          serializedVersion: 2
+          x: -33.600075
+          y: 1663.5824
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnBossFrenzy
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 22
+        rect:
+          serializedVersion: 2
+          x: -23.14975
+          y: 1996.4703
+          width: 100
+          height: 100
+    - type: 3
+      EnterNode:
+        GUID: 0
+        strName: 
+        flags: 0
+        EnterType: 5000
+        CustomID: 0
+        CustomName: OnBossBeginRecorveryPosture
+        CustomGO: {fileID: 0}
+        Param:
+          guid: 0
+          dummys: []
+        ActionGUID: 25
+        rect:
+          serializedVersion: 2
+          x: 952.3999
+          y: 1703.5824
+          width: 100
+          height: 100
+    StructDatas: []

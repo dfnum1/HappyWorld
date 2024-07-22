@@ -1,0 +1,6 @@
+﻿音频组,组号,类型,音频地址,混合组,音量区间,是否3d效果,
+uint,byte,byte,string,string,vector2,bool,
+maplist@,,,,,,,
+id,group,type,location,channel,volume,b3D,
+100,0,1,"Assets/Datas/Audios/battle.wav","",1|100,1,
+101,0,0,"Assets/Datas/Audios/shoot.wav","",100|100,,

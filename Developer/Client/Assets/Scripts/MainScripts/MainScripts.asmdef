@@ -1,0 +1,24 @@
+{
+    "name": "MainScripts",
+    "rootNamespace": "",
+    "references": [
+        "Framework",
+        "ThirdParty",
+        "Unity.Timeline",
+        "Unity.Timeline.Editor",
+        "SDK",
+        "Cinemachine",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.XR.Interaction.Toolkit"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

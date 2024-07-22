@@ -1,0 +1,26 @@
+/********************************************************************
+生成日期:	#DATE_TIME#
+类    名: 	#CLASSNAME#
+作    者:	#AUTHOR#
+描    述:	#DESC#
+*********************************************************************/
+
+using UnityEngine;
+
+namespace TopGame.UI
+{
+    [UI((ushort)EUIType.#TYPE_NAME#, UI.EUIAttr.UI)]
+    public class #CLASSNAME# : UIBase
+    {
+        //------------------------------------------------------
+        protected override void DoShow()
+        {
+            base.DoShow();
+        }
+        //------------------------------------------------------
+        protected override void DoHide()
+        {
+            base.DoHide();
+        }
+    }
+}
