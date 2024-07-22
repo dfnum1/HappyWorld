@@ -215,7 +215,8 @@ namespace TopGame.ED
         bool OnDragItem(TreeAssetView.ItemData pData)
         {
             ObjectItem objData = pData as ObjectItem;
-
+            if(objData == null)
+                return false;
             DragAndDrop.PrepareStartDrag();
             DragAndDrop.SetGenericData("level_editor", objData);
             DragAndDrop.StartDrag(objData.name);

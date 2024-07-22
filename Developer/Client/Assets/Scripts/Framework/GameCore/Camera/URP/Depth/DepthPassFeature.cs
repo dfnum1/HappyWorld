@@ -27,7 +27,7 @@ namespace TopGame.URP
         {
             ms_pInstance = this;
             m_DepthTexture.Init("_CameraDepthTexture");
-            m_DepthPrepass = new DepthOnlyPass(RenderPassEvent.BeforeRenderingPrePasses, RenderQueueRange.opaque, settings.layerMask);
+            m_DepthPrepass = new DepthOnlyPass(UnityEngine.Rendering.Universal.RenderPassEvent.BeforeRenderingPrePasses, RenderQueueRange.opaque, settings.layerMask);
         }
         //------------------------------------------------------
         protected bool IsEnable()
