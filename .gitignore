@@ -17,3 +17,5 @@
 /Developer/Client/Local
 /**/Tools/UnityPlugins/*.zip
 /**/Tools/UnityPlugins/*.rar
+/Developer/Client/Assets/StreamingAssets/build_info
+/Developer/Client/Assets/StreamingAssets/build_info.meta
