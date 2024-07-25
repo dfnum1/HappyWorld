@@ -57,6 +57,7 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
+      serializedVersion: 2
       m_Bits: 1792
     passName: 
     IsOpaque: 1
@@ -75,12 +76,11 @@ MonoBehaviour:
   m_Name: CustomForce
   m_EditorClassIdentifier: 
   m_Active: 1
-  m_CustomOpaque: 2
-  m_CustomTransparent: 3
   customSetting:
     bEnabled: 1
     cameraType: 1
     layerMask:
+      serializedVersion: 2
       m_Bits: 33792
     passName: ForcePass
     IsOpaque: 1
@@ -180,17 +180,17 @@ MonoBehaviour:
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
   m_RendererFeatures:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_RendererFeatureMap: 294b55fd9167f82f937ba78d87220dd766bd7c885b3214558aa7f648e6e0ffea40b3f33c35359b04b4127f8213c95359860fce148f408d0cb4f3035aa315ea80461635a65e8b35ef8f05b0aa0c99e29d
+  - {fileID: 3456626590724999977}
+  - {fileID: 6130580361471376742}
+  - {fileID: -2950664215265313901}
+  - {fileID: -7069920185335937649}
+  - {fileID: 331917500314006336}
+  - {fileID: -9157483100970421324}
+  - {fileID: -1209907686247426490}
+  - {fileID: -1513243670101973110}
+  - {fileID: 6436709378073498292}
+  - {fileID: 904450083444887430}
+  m_RendererFeatureMap: 294b55fd9167f82f66bd7c885b321455937ba78d87220dd78f05b0aa0c99e29d40b3f33c35359b04b4f3035aa315ea80461635a65e8b35ef8aa7f648e6e0ffeab4127f8213c953598f05b0aa0c99e29d
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -245,6 +245,7 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
+      serializedVersion: 2
       m_Bits: 3072
     passName: GrabPass
     IsOpaque: 1
@@ -270,6 +271,7 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
+      serializedVersion: 2
       m_Bits: 2048
     passName: Vignette
     IsOpaque: 1
@@ -277,11 +279,7 @@ MonoBehaviour:
     renderEvent: 500
     blit: {fileID: 2100000, guid: 8d63ec502a2294646ad70691f086a0ff, type: 2}
     center: {x: 0.5, y: 0.5}
-    color:
-      r: 0.4245283
-      g: 0.4245283
-      b: 0.4245283
-      a: 0
+    color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0}
     intensity: 0.55
     smoothness: 0.744
     roundness: 0.57
@@ -300,12 +298,11 @@ MonoBehaviour:
   m_Name: CustomBackground
   m_EditorClassIdentifier: 
   m_Active: 1
-  m_CustomOpaque: 0
-  m_CustomTransparent: 1
   customSetting:
     bEnabled: 1
     cameraType: 0
     layerMask:
+      serializedVersion: 2
       m_Bits: 256
     passName: BackPass
     IsOpaque: 1
@@ -363,12 +360,11 @@ MonoBehaviour:
   m_Name: CustomEffect
   m_EditorClassIdentifier: 
   m_Active: 1
-  m_CustomOpaque: 4
-  m_CustomTransparent: 5
   customSetting:
     bEnabled: 1
     cameraType: 2
     layerMask:
+      serializedVersion: 2
       m_Bits: 2048
     passName: EffectPass
     IsOpaque: 1
@@ -390,6 +386,7 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
+      serializedVersion: 2
       m_Bits: 1024
     passName: Screen
     IsOpaque: 1

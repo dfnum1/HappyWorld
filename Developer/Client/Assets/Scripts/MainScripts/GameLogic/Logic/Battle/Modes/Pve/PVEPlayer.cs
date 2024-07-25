@@ -4,6 +4,7 @@
 作    者:	HappLI
 描    述:	PVE 玩家操控对象
 *********************************************************************/
+using ExternEngine;
 using Framework.Core;
 using TopGame.Core;
 using UnityEngine;
@@ -27,10 +28,12 @@ namespace TopGame.Logic
             var csvPlayer = Data.DataManager.getInstance().GetCsv<Data.CsvData_Player>();
             var data = csvPlayer.GetData(4030041);
             m_pPlayer = GetWorld().SyncCreateNode<Player>( Framework.Core.EActorType.Player, data);
+            m_pPlayer.EnableLogic(true);
         }
         //------------------------------------------------------
         public Vector3 GetPosition()
         {
+            if (m_pPlayer != null && !m_pPlayer.IsKilled()) return m_pPlayer.GetPosition();
             return m_ControllerPosition;
         }
         //------------------------------------------------------
@@ -82,24 +85,22 @@ namespace TopGame.Logic
 
             UpdateKey();
 
+            if (m_pPlayer == null)
+                return;
             if(m_pPlayer.CanDoGroundAction())
             {
                 if (m_bDirectionPressing)
                 {
                     m_ControllerPosition += m_PressDirection * m_pPlayer.GetRunSpeed() * Time.deltaTime;
-                    if (m_pPlayer != null)
-                    {
-                        m_pPlayer.SetPosition(m_ControllerPosition);
-                        m_pPlayer.SetDirection(m_ControllerDirection);
-                        m_pPlayer.StartActionByType(EActionStateType.Run, 0, 1, false, false, true);
-                    }
+                    //m_pPlayer.SetPosition(m_ControllerPosition);
+                    m_pPlayer.SetSpeedXZ(m_PressDirection * m_pPlayer.GetRunSpeed());
+                    m_pPlayer.SetDirection(m_ControllerDirection);
+                    m_pPlayer.StartActionByType(EActionStateType.Run, 0, 1, false, false, true);
                 }
                 else
                 {
-                    if (m_pPlayer != null)
-                    {
-                        m_pPlayer.StartActionByType(EActionStateType.Idle, 0, 1, false, false, true);
-                    }
+                    m_pPlayer.SetSpeedXZ(FVector3.zero);
+                    m_pPlayer.StartActionByType(EActionStateType.Idle, 0, 1, false, false, true);
                 }
             }
         }

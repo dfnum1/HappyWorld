@@ -6,10 +6,12 @@
     "object_scale": 1.0,
     "foot_shadow_scale": 1.0,
     "physics_push_force": 0.0,
-    "physics_radius": 0.0,
+    "physics_radius": 1.0,
     "physics_gravity": 100.0,
     "falling_speed": 1.0,
     "global_action_speed_scale": 1.0,
+    "step_height": 1.1999999284744263,
+    "jump_height": 2.0,
     "collision_type": 2,
     "collison_box_extrude": {
         "x": 0.0,

@@ -2160,6 +2160,7 @@ namespace TopGame.ED
             pGrah.SetPhysicsGravity(Mathf.Max(0, EditorGUILayout.FloatField("Physics Gravity", pGrah.GetPhysicsGravity(), op)));
             pGrah.SetFallingSpeed(EditorGUILayout.FloatField("Falling Speed", pGrah.GetFallingSpeed(), op));
             pGrah.SetMaxJumpHeight(Mathf.Max(0, EditorGUILayout.FloatField("Jump Limit Height", pGrah.GetMaxJumpHeight(), op)));
+            pGrah.SetStepHeight(Mathf.Max(0, EditorGUILayout.FloatField("Step Limit Height", pGrah.GetStepHeight(), op)));
             pGrah.SetUnBlowUp(EditorGUILayout.Toggle("UnBlowUp", pGrah.IsUnBlowUp(), op));
             pGrah.SetHardBody(EditorGUILayout.Toggle("HardBody", pGrah.IsHardBody(), op));
             pGrah.SetFixRotation(EditorGUILayout.Toggle("FixRotation", pGrah.IsFixRotation(), op));

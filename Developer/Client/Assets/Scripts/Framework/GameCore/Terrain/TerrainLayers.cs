@@ -22,7 +22,7 @@ namespace TopGame.Core
         protected List<TerrainLayerElement> m_LayerElements = new List<TerrainLayerElement>(64);
 #endif
         //------------------------------------------------------
-        public override EPhyTerrain GetHeight(FVector3 curPos, FVector3 curUp, ref FVector3 terrain, ref FVector3 normal, float maxDistance = 1f, AInstanceAble pIngore = null)
+        public override EPhyTerrain GetHeight(FVector3 curPos, FVector3 curUp, ref FVector3 terrain, ref FVector3 normal, float maxDistance = 1f, float stepHeight = -1, AInstanceAble pIngore = null)
         {
             terrain = curPos;
             normal = curUp;
@@ -56,11 +56,11 @@ namespace TopGame.Core
                 return EPhyTerrain.Hit;
             }
 #endif
-            return base.GetHeight(curPos, curUp, ref terrain, ref normal, maxDistance, pIngore);
+            return base.GetHeight(curPos, curUp, ref terrain, ref normal, maxDistance, stepHeight, pIngore);
             // return false;
         }
         //------------------------------------------------------
-        public override EPhyTerrain GetHeight(FVector3 curPos, FVector3 curUp, ref FVector3 terrain, ref FVector3 normal, ref int mask, float maxDistance = 1f, AInstanceAble pIngore = null)
+        public override EPhyTerrain GetHeight(FVector3 curPos, FVector3 curUp, ref FVector3 terrain, ref FVector3 normal, ref int mask, float maxDistance = 1f, float stepHeight= -1, AInstanceAble pIngore = null)
         {
             terrain = curPos;
             normal = curUp;
@@ -95,7 +95,7 @@ namespace TopGame.Core
                 return EPhyTerrain.Hit;
             }
 #endif
-            return base.GetHeight(curPos, curUp, ref terrain, ref normal, ref mask, maxDistance, pIngore);
+            return base.GetHeight(curPos, curUp, ref terrain, ref normal, ref mask, maxDistance, stepHeight, pIngore);
         }
         //------------------------------------------------------
         public override void Clear()
