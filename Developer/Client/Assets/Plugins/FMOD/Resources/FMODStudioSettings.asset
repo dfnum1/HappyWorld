@@ -55,9 +55,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -119,9 +117,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -183,9 +179,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -247,9 +241,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -382,9 +374,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -446,9 +436,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -510,9 +498,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 1
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -583,9 +569,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -647,9 +631,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -711,9 +693,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []
@@ -775,9 +755,7 @@ MonoBehaviour:
     StaticPlugins:
       Value: []
       HasValue: 0
-    CallbackHandler:
-      Value: {fileID: 0}
-      HasValue: 0
+    CallbackHandler: {Value: {fileID: 0}, HasValue: 0}
   outputType: 
   threadAffinities:
     Value: []

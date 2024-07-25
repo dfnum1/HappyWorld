@@ -57,7 +57,6 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
-      serializedVersion: 2
       m_Bits: 1792
     passName: 
     IsOpaque: 1
@@ -76,11 +75,12 @@ MonoBehaviour:
   m_Name: CustomForce
   m_EditorClassIdentifier: 
   m_Active: 1
+  m_CustomOpaque: 2
+  m_CustomTransparent: 3
   customSetting:
     bEnabled: 1
     cameraType: 1
     layerMask:
-      serializedVersion: 2
       m_Bits: 33792
     passName: ForcePass
     IsOpaque: 1
@@ -245,7 +245,6 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
-      serializedVersion: 2
       m_Bits: 3072
     passName: GrabPass
     IsOpaque: 1
@@ -271,7 +270,6 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
-      serializedVersion: 2
       m_Bits: 2048
     passName: Vignette
     IsOpaque: 1
@@ -279,7 +277,11 @@ MonoBehaviour:
     renderEvent: 500
     blit: {fileID: 2100000, guid: 8d63ec502a2294646ad70691f086a0ff, type: 2}
     center: {x: 0.5, y: 0.5}
-    color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0}
+    color:
+      r: 0.4245283
+      g: 0.4245283
+      b: 0.4245283
+      a: 0
     intensity: 0.55
     smoothness: 0.744
     roundness: 0.57
@@ -298,11 +300,12 @@ MonoBehaviour:
   m_Name: CustomBackground
   m_EditorClassIdentifier: 
   m_Active: 1
+  m_CustomOpaque: 0
+  m_CustomTransparent: 1
   customSetting:
     bEnabled: 1
     cameraType: 0
     layerMask:
-      serializedVersion: 2
       m_Bits: 256
     passName: BackPass
     IsOpaque: 1
@@ -360,11 +363,12 @@ MonoBehaviour:
   m_Name: CustomEffect
   m_EditorClassIdentifier: 
   m_Active: 1
+  m_CustomOpaque: 4
+  m_CustomTransparent: 5
   customSetting:
     bEnabled: 1
     cameraType: 2
     layerMask:
-      serializedVersion: 2
       m_Bits: 2048
     passName: EffectPass
     IsOpaque: 1
@@ -386,7 +390,6 @@ MonoBehaviour:
     bEnabled: 1
     cameraType: 1
     layerMask:
-      serializedVersion: 2
       m_Bits: 1024
     passName: Screen
     IsOpaque: 1
