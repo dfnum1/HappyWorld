@@ -2116,7 +2116,7 @@ namespace TopGame.ED
                 if (m_JumpTest.bSimulateJump)
                 {
                     m_pActor.SetSpeed(Vector3.zero);
-                    m_pActor.StartActionByType(EActionStateType.JumpStartRight, 0, 1, true, false, true);
+                    m_pActor.StartActionByType(EActionStateType.JumpStart, 0, 1, true, false, true);
                     m_JumpTest.StartJump(m_pActor);
                 }
             }

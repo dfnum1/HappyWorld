@@ -52,13 +52,13 @@ MonoBehaviour:
     false\n                },\n                {\n                    \"items\":
     [],\n                    \"loop\": 0,\n                    \"random\": false\n               
     }\n            ]\n        },\n        {\n            \"parent\": {\n               
-    \"eType\": 20,\n                \"tag\": 0\n            },\n            \"continues\":
+    \"eType\": 19,\n                \"tag\": 0\n            },\n            \"continues\":
     [\n                {\n                    \"items\": [\n                       
-    {\n                            \"action\": 21,\n                            \"random\":
+    {\n                            \"action\": 20,\n                            \"random\":
     100\n                        }\n                    ],\n                    \"loop\":
     0,\n                    \"random\": false\n                },\n               
     {\n                    \"items\": [\n                        {\n                           
-    \"action\": 23,\n                            \"random\": 100\n                       
+    \"action\": 20,\n                            \"random\": 100\n                       
     }\n                    ],\n                    \"loop\": 0,\n                   
     \"random\": false\n                },\n                {\n                   
     \"items\": [\n                        {\n                            \"action\":
@@ -267,85 +267,71 @@ MonoBehaviour:
     \"random\": 100\n                        }\n                    ],\n                   
     \"loop\": -1,\n                    \"random\": false\n                }\n           
     ]\n        },\n        {\n            \"parent\": {\n                \"eType\":
-    74,\n                \"tag\": 0\n            },\n            \"continues\": [\n               
+    11,\n                \"tag\": 0\n            },\n            \"continues\": [\n               
     {\n                    \"items\": [\n                        {\n                           
-    \"action\": 18,\n                            \"random\": 100\n                       
+    \"action\": 76,\n                            \"random\": 100\n                       
     }\n                    ],\n                    \"loop\": 0,\n                   
     \"random\": false\n                },\n                {\n                   
-    \"items\": [\n                        {\n                            \"action\":
-    19,\n                            \"random\": 100\n                        }\n                   
-    ],\n                    \"loop\": 0,\n                    \"random\": false\n               
+    \"items\": [],\n                    \"loop\": 0,\n                    \"random\":
+    false\n                },\n                {\n                    \"items\":
+    [],\n                    \"loop\": 0,\n                    \"random\": false\n               
     },\n                {\n                    \"items\": [],\n                   
-    \"loop\": 0,\n                    \"random\": false\n                },\n               
-    {\n                    \"items\": [],\n                    \"loop\": 0,\n                   
-    \"random\": false\n                }\n            ]\n        },\n        {\n           
-    \"parent\": {\n                \"eType\": 75,\n                \"tag\": 0\n           
-    },\n            \"continues\": [\n                {\n                    \"items\":
-    [\n                        {\n                            \"action\": 22,\n                           
-    \"random\": 100\n                        }\n                    ],\n                   
-    \"loop\": 0,\n                    \"random\": false\n                },\n               
+    \"loop\": 0,\n                    \"random\": false\n                }\n           
+    ]\n        },\n        {\n            \"parent\": {\n                \"eType\":
+    46,\n                \"tag\": 0\n            },\n            \"continues\": [\n               
     {\n                    \"items\": [\n                        {\n                           
-    \"action\": 23,\n                            \"random\": 100\n                       
+    \"action\": 47,\n                            \"random\": 100\n                       
     }\n                    ],\n                    \"loop\": 0,\n                   
     \"random\": false\n                },\n                {\n                   
     \"items\": [],\n                    \"loop\": 0,\n                    \"random\":
     false\n                },\n                {\n                    \"items\":
     [],\n                    \"loop\": 0,\n                    \"random\": false\n               
-    }\n            ]\n        },\n        {\n            \"parent\": {\n               
-    \"eType\": 11,\n                \"tag\": 0\n            },\n            \"continues\":
-    [\n                {\n                    \"items\": [\n                       
-    {\n                            \"action\": 76,\n                            \"random\":
-    100\n                        }\n                    ],\n                    \"loop\":
-    0,\n                    \"random\": false\n                },\n               
-    {\n                    \"items\": [],\n                    \"loop\": 0,\n                   
-    \"random\": false\n                },\n                {\n                   
-    \"items\": [],\n                    \"loop\": 0,\n                    \"random\":
-    false\n                },\n                {\n                    \"items\":
-    [],\n                    \"loop\": 0,\n                    \"random\": false\n               
-    }\n            ]\n        }\n    ],\n    \"Cancels\": [\n        {\n           
-    \"origin\": {\n                \"eType\": 1,\n                \"tag\": 0\n           
-    },\n            \"states\": [\n                {\n                    \"eType\":
-    31,\n                    \"tag\": 20\n                },\n                {\n                   
-    \"eType\": 65,\n                    \"tag\": 0\n                },\n               
-    {\n                    \"eType\": 50,\n                    \"tag\": 0\n               
-    }\n            ]\n        },\n        {\n            \"origin\": {\n               
-    \"eType\": 2,\n                \"tag\": 0\n            },\n            \"states\":
-    [\n                {\n                    \"eType\": 31,\n                   
+    },\n                {\n                    \"items\": [],\n                   
+    \"loop\": 0,\n                    \"random\": false\n                }\n           
+    ]\n        }\n    ],\n    \"Cancels\": [\n        {\n            \"origin\":
+    {\n                \"eType\": 1,\n                \"tag\": 0\n            },\n           
+    \"states\": [\n                {\n                    \"eType\": 31,\n                   
     \"tag\": 20\n                },\n                {\n                    \"eType\":
-    23,\n                    \"tag\": 0\n                },\n                {\n                   
-    \"eType\": 19,\n                    \"tag\": 0\n                }\n           
+    65,\n                    \"tag\": 0\n                },\n                {\n                   
+    \"eType\": 50,\n                    \"tag\": 0\n                }\n           
     ]\n        },\n        {\n            \"origin\": {\n                \"eType\":
-    3,\n                \"tag\": 0\n            },\n            \"states\": [\n               
+    2,\n                \"tag\": 0\n            },\n            \"states\": [\n               
     {\n                    \"eType\": 31,\n                    \"tag\": 20\n               
     },\n                {\n                    \"eType\": 23,\n                   
     \"tag\": 0\n                },\n                {\n                    \"eType\":
     19,\n                    \"tag\": 0\n                }\n            ]\n       
-    },\n        {\n            \"origin\": {\n                \"eType\": 7,\n               
+    },\n        {\n            \"origin\": {\n                \"eType\": 3,\n               
     \"tag\": 0\n            },\n            \"states\": [\n                {\n                   
-    \"eType\": 31,\n                    \"tag\": 10\n                },\n               
-    {\n                    \"eType\": 31,\n                    \"tag\": 20\n               
-    }\n            ]\n        },\n        {\n            \"origin\": {\n               
-    \"eType\": 20,\n                \"tag\": 0\n            },\n            \"states\":
-    [\n                {\n                    \"eType\": 31,\n                   
-    \"tag\": 20\n                }\n            ]\n        },\n        {\n           
-    \"origin\": {\n                \"eType\": 21,\n                \"tag\": 0\n           
+    \"eType\": 31,\n                    \"tag\": 20\n                },\n               
+    {\n                    \"eType\": 23,\n                    \"tag\": 0\n               
+    },\n                {\n                    \"eType\": 19,\n                   
+    \"tag\": 0\n                }\n            ]\n        },\n        {\n           
+    \"origin\": {\n                \"eType\": 7,\n                \"tag\": 0\n           
     },\n            \"states\": [\n                {\n                    \"eType\":
-    31,\n                    \"tag\": 20\n                },\n                {\n                   
-    \"eType\": 31,\n                    \"tag\": 30\n                }\n           
+    31,\n                    \"tag\": 10\n                },\n                {\n                   
+    \"eType\": 31,\n                    \"tag\": 20\n                }\n           
     ]\n        },\n        {\n            \"origin\": {\n                \"eType\":
-    16,\n                \"tag\": 0\n            },\n            \"states\": [\n               
+    20,\n                \"tag\": 0\n            },\n            \"states\": [\n               
     {\n                    \"eType\": 31,\n                    \"tag\": 20\n               
     }\n            ]\n        },\n        {\n            \"origin\": {\n               
-    \"eType\": 17,\n                \"tag\": 0\n            },\n            \"states\":
+    \"eType\": 21,\n                \"tag\": 0\n            },\n            \"states\":
     [\n                {\n                    \"eType\": 31,\n                   
     \"tag\": 20\n                },\n                {\n                    \"eType\":
     31,\n                    \"tag\": 30\n                }\n            ]\n       
-    },\n        {\n            \"origin\": {\n                \"eType\": 35,\n               
-    \"tag\": 0\n            },\n            \"states\": []\n        },\n        {\n           
-    \"origin\": {\n                \"eType\": 45,\n                \"tag\": 0\n           
+    },\n        {\n            \"origin\": {\n                \"eType\": 16,\n               
+    \"tag\": 0\n            },\n            \"states\": [\n                {\n                   
+    \"eType\": 31,\n                    \"tag\": 20\n                }\n           
+    ]\n        },\n        {\n            \"origin\": {\n                \"eType\":
+    17,\n                \"tag\": 0\n            },\n            \"states\": [\n               
+    {\n                    \"eType\": 31,\n                    \"tag\": 20\n               
+    },\n                {\n                    \"eType\": 31,\n                   
+    \"tag\": 30\n                }\n            ]\n        },\n        {\n           
+    \"origin\": {\n                \"eType\": 35,\n                \"tag\": 0\n           
     },\n            \"states\": []\n        },\n        {\n            \"origin\":
-    {\n                \"eType\": 25,\n                \"tag\": 0\n            },\n           
-    \"states\": [\n                {\n                    \"eType\": 31,\n                   
+    {\n                \"eType\": 45,\n                \"tag\": 0\n            },\n           
+    \"states\": []\n        },\n        {\n            \"origin\": {\n               
+    \"eType\": 25,\n                \"tag\": 0\n            },\n            \"states\":
+    [\n                {\n                    \"eType\": 31,\n                   
     \"tag\": 20\n                },\n                {\n                    \"eType\":
     31,\n                    \"tag\": 30\n                }\n            ]\n       
     },\n        {\n            \"origin\": {\n                \"eType\": 31,\n               
@@ -413,56 +399,5 @@ MonoBehaviour:
     [\n                {\n                    \"eType\": 31,\n                   
     \"tag\": 9999\n                }\n            ]\n        }\n    ],\n    \"Events\":
     [\n        {\n            \"eType\": 31,\n            \"tag\": 30,\n           
-    \"eventCore\": {\n                \"ChangeTargetElements\": [],\n               
-    \"ActionStatePropertys\": [],\n                \"Projectiles\": [],\n               
-    \"PropertyEffects\": [\n                    {\n                        \"triggetTime\":
-    0.0,\n                        \"totalTriggertCount\": -1,\n                       
-    \"triggerRate\": 0.0,\n                        \"triggerBit\": 0,\n                       
-    \"actionWithBit\": 2,\n                        \"canTriggerAfterKilled\": true,\n                       
-    \"valueType\": 2,\n                        \"applayFlag\": 6,\n                       
-    \"propertyName\": \"_MainColor\",\n                        \"valueVector\": {\n                           
-    \"x\": 0.3962264060974121,\n                            \"y\": 0.3962264060974121,\n                           
-    \"z\": 0.3962264060974121,\n                            \"w\": 0.12156862765550614\n                       
-    },\n                        \"pingpong\": true,\n                        \"lerpCurve\":
-    {\n                            \"serializedVersion\": \"2\",\n                           
-    \"m_Curve\": [\n                                {\n                                   
-    \"serializedVersion\": \"3\",\n                                    \"time\":
-    0.0,\n                                    \"value\": 0.0,\n                                   
-    \"inSlope\": 5.0,\n                                    \"outSlope\": 5.0,\n                                   
-    \"tangentMode\": 34,\n                                    \"weightedMode\": 0,\n                                   
-    \"inWeight\": 0.0,\n                                    \"outWeight\": 0.3333333432674408\n                               
-    },\n                                {\n                                    \"serializedVersion\":
-    \"3\",\n                                    \"time\": 0.10000000149011612,\n                                   
-    \"value\": 0.5,\n                                    \"inSlope\": 0.10290246456861496,\n                                   
-    \"outSlope\": 0.0,\n                                    \"tangentMode\": 65,\n                                   
-    \"weightedMode\": 0,\n                                    \"inWeight\": 1.0,\n                                   
-    \"outWeight\": 0.3333333432674408\n                                },\n                               
-    {\n                                    \"serializedVersion\": \"3\",\n                                   
-    \"time\": 0.44999998807907107,\n                                    \"value\":
-    0.5,\n                                    \"inSlope\": 0.0,\n                                   
-    \"outSlope\": -1.2500001192092896,\n                                    \"tangentMode\":
-    69,\n                                    \"weightedMode\": 0,\n                                   
-    \"inWeight\": 0.0,\n                                    \"outWeight\": 0.0\n                               
-    }\n                            ],\n                            \"m_PreInfinity\":
-    2,\n                            \"m_PostInfinity\": 2,\n                           
-    \"m_RotationOrder\": 4\n                        }\n                    }\n               
-    ],\n                \"RenderBlends\": [],\n                \"RenderCurves\":
-    [],\n                \"RenderLayers\": [],\n                \"RunerSpeeds\":
-    [],\n                \"SkillCDs\": [],\n                \"Skills\": [],\n               
-    \"Sounds\": [],\n                \"SpawnSplines\": [],\n                \"Summons\":
-    [],\n                \"SwapTeams\": [],\n                \"TakeSlotSkills\":
-    [],\n                \"TargetPaths\": [],\n                \"TimerLockHitTargets\":
-    [],\n                \"TimeScaleEventParamenter\": [],\n                \"TrackBinds\":
-    [],\n                \"Triggers\": [],\n                \"UIs\": [],\n               
-    \"PostRenders\": [],\n                \"Particles\": [],\n                \"ObjScales\":
-    [],\n                \"MoveTypes\": [],\n                \"ActionSwitchs\": [],\n               
-    \"Buffs\": [],\n                \"CameraCurves\": [],\n                \"Cameras\":
-    [],\n                \"CameraOffsets\": [],\n                \"CameraShakes\":
-    [],\n                \"CameraSplines\": [],\n                \"CameraToggles\":
-    [],\n                \"CameraZoomLocks\": [],\n                \"DamageLinks\":
-    [],\n                \"FollowToTargets\": [],\n                \"GrabThrows\":
-    [],\n                \"Instances\": [],\n                \"Invincibles\": [],\n               
-    \"LevelChanges\": [],\n                \"LineLinks\": [],\n                \"Locks\":
-    [],\n                \"LockHitTargets\": [],\n                \"MoveToTargets\":
-    [],\n                \"Variables\": [],\n                \"CameraCloseUps\":
-    []\n            }\n        }\n    ],\n    \"GraphTemplates\": []\n}"
+    \"eventCore\": {\n                \"events\": []\n            }\n        }\n   
+    ],\n    \"GraphTemplates\": []\n}"
