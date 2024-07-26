@@ -636,6 +636,7 @@ namespace TopGame.ED
             {
                 m_pActor.SetDirection(Vector3.forward);
                 m_pActor.GetActorParameter().SetBasseAttr(EAttrType.AttackSpeedRate, 1);
+                m_pActor.EnableTerrainHit(false);
             }
         }
         //-----------------------------------------------------
@@ -1789,7 +1790,7 @@ namespace TopGame.ED
                     {
                         DeleteActionState(m_pCurActionState);
                         m_pCurActionState = null;
-                        EditorUtil.EndHorizontal();
+                        //EditorUtil.EndHorizontal();
                         return;
                     }
                 }
@@ -2028,7 +2029,7 @@ namespace TopGame.ED
                         if(EditorUtility.DisplayDialog("提示", "确定删除绑点?", "删除", "取消"))
                         {
                             m_vSlots.RemoveAt(i);
-                            EditorUtil.EndHorizontal();
+                            //EditorUtil.EndHorizontal();
                             break;
                         }
                     }
@@ -2244,7 +2245,7 @@ namespace TopGame.ED
 
                                 if (m_pActor != null && m_pActor.GetActorAgent() != null)
                                     m_pActor.GetActorAgent().CreateSlotAvatars(avatars);
-                                EditorUtil.EndHorizontal();
+                               // EditorUtil.EndHorizontal();
                                 break;
                             }
                         }
@@ -2309,7 +2310,7 @@ namespace TopGame.ED
                                             List<uint> vTems = new List<uint>(avatar.hideInState);
                                             vTems.RemoveAt(i);
                                             avatar.hideInState = vTems.ToArray();
-                                            EditorUtil.EndHorizontal();
+                                          //  EditorUtil.EndHorizontal();
                                             break;
                                         }
                                         EditorUtil.EndHorizontal();
@@ -2374,7 +2375,7 @@ namespace TopGame.ED
                         }
                         frames.RemoveAt(m_nStateFrameIndex);
                         m_nSelectIndex = -1;
-                        EditorUtil.EndHorizontal();
+                       // EditorUtil.EndHorizontal();
                         return;
                     }
                 }
@@ -2498,7 +2499,7 @@ namespace TopGame.ED
                     if (EditorUtility.DisplayDialog("Tip", "delete action stance?", "ok", "cancel"))
                     {
                         DeleteStance(pGrah.GetCurrentStance());
-                        EditorUtil.EndHorizontal();
+                       // EditorUtil.EndHorizontal();
                         return;
                     }
                 }
@@ -2647,7 +2648,7 @@ namespace TopGame.ED
                 {
                     succeeds.Remove(db.Key);
                     m_bExpandSucceedChecks.Remove(db.Key);
-                    EditorUtil.EndHorizontal();
+                    //EditorUtil.EndHorizontal();
                     break;
                 }
                 m_bExpandSucceedChecks[db.Key] = bExpand;
@@ -2712,7 +2713,7 @@ namespace TopGame.ED
                                     if (GUILayout.Button("移除", new GUILayoutOption[] { GUILayout.Width(40) }))
                                     {
                                         actions.RemoveAt(j);
-                                        EditorUtil.EndHorizontal();
+                                      //  EditorUtil.EndHorizontal();
                                         break;
                                     }
                                     EditorUtil.EndHorizontal();
@@ -3184,7 +3185,7 @@ namespace TopGame.ED
                             vReqs.RemoveAt(i);
                             vReqs.Insert(i-1, seq);
                             pCore.animations = vReqs.ToArray();
-                            EditorUtil.EndHorizontal();
+                           // EditorUtil.EndHorizontal();
                             break;
                         }
                         if (i < pCore.animations.Length-1 && GUILayout.Button("↓"))
@@ -3193,12 +3194,12 @@ namespace TopGame.ED
                             vReqs.RemoveAt(i);
                             vReqs.Insert(i+1, seq);
                             pCore.animations = vReqs.ToArray();
-                            EditorUtil.EndHorizontal();
+                           // EditorUtil.EndHorizontal();
                             break;
                         }
                         if (i == 0 && i == pCore.animations.Length - 1)
                             GUILayout.Label("--", updwWidthOp);
-                        EditorUtil.EndHorizontal();
+                       // EditorUtil.EndHorizontal();
 
                         if (GUILayout.Button("-", ctlWidthOp))
                         {
@@ -3207,7 +3208,7 @@ namespace TopGame.ED
                                 List<AnimationSeq> vReqs = new List<AnimationSeq>(pCore.animations);
                                 vReqs.RemoveAt(i);
                                 pCore.animations = vReqs.ToArray();
-                                EditorUtil.EndHorizontal();
+                            //    EditorUtil.EndHorizontal();
                                 break;
                             }
                         }
@@ -3258,7 +3259,7 @@ namespace TopGame.ED
                     {
                         DelActionFrame(pCore.frame[m_nSelectFrame]);
                         m_nSelectFrame = -1;
-                        EditorUtil.EndHorizontal();
+                     //   EditorUtil.EndHorizontal();
                         return;
                     }
                 }
