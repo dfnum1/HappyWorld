@@ -105,7 +105,7 @@ namespace TopGame.Logic
             }
             else
             {
-                m_pPlayer.SetSpeedXZ(FVector3.zero);
+              //  m_pPlayer.SetSpeedXZ(FVector3.zero);
             }
         }
         //------------------------------------------------------
