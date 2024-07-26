@@ -103,6 +103,10 @@ namespace TopGame.Logic
                     m_pPlayer.StartActionByType(EActionStateType.Idle, 0, 1, false, false, true);
                 }
             }
+            else
+            {
+                m_pPlayer.SetSpeedXZ(FVector3.zero);
+            }
         }
         //------------------------------------------------------
         protected override void OnClear()
