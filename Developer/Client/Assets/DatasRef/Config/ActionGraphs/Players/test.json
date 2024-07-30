@@ -8,7 +8,7 @@
     "physics_push_force": 0.0,
     "physics_radius": 1.0,
     "physics_gravity": 9.800000190734864,
-    "falling_speed": 0.7999999523162842,
+    "falling_speed": 1.1999999284744263,
     "global_action_speed_scale": 1.0,
     "step_height": 1.1999999284744263,
     "jump_height": 2.0,
@@ -212,12 +212,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 0.4333333969116211,
+                            "duration": 0.06666672229766846,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.4333333969116211,
+                    "duration": 0.06666672229766846,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -267,12 +267,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 0.4333333969116211,
+                            "duration": 0.06599999964237213,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.4333333969116211,
+                    "duration": 0.06599999964237213,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -322,12 +322,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 1.6000001430511475,
+                            "duration": 1.4670000076293946,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 1.6000001430511475,
+                    "duration": 1.4670000076293946,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -377,12 +377,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 1.0,
+                            "duration": 1.0670000314712525,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 1.0,
+                    "duration": 1.0670000314712525,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -432,12 +432,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 0.4333333969116211,
+                            "duration": 0.06700000166893006,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.4333333969116211,
+                    "duration": 0.06700000166893006,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -487,12 +487,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 1.6000001430511475,
+                            "duration": 1.4670000076293946,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 1.6000001430511475,
+                    "duration": 1.4670000076293946,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
