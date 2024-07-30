@@ -140,14 +140,14 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 08926973a1eedbf418d66c266b0b2c96, type: 2}
+      clip: {fileID: 7400000, guid: a190667b06f2e234f929c89f17d074bd, type: 2}
       clipFile: 
     loadType: 1
-    name: Idle
-    nameHash: 2081823275
+    name: JumpEnd
+    nameHash: -342501864
     layer: 0
     blendParameter: 
-    isDefault: 1
+    isDefault: 0
     canClamp: 0
   - clipTracks:
     - main: 0
@@ -157,18 +157,6 @@ MonoBehaviour:
     loadType: 1
     name: Run
     nameHash: 1748754976
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: 33241e778c6f07842b857a1b7f9ab057, type: 2}
-      clipFile: 
-    loadType: 1
-    name: JumpBegin
-    nameHash: -719294677
     layer: 0
     blendParameter: 
     isDefault: 0
@@ -188,14 +176,26 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: a190667b06f2e234f929c89f17d074bd, type: 2}
+      clip: {fileID: 7400000, guid: 33241e778c6f07842b857a1b7f9ab057, type: 2}
       clipFile: 
     loadType: 1
-    name: JumpEnd
-    nameHash: -342501864
+    name: JumpBegin
+    nameHash: -719294677
     layer: 0
     blendParameter: 
     isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 08926973a1eedbf418d66c266b0b2c96, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Idle
+    nameHash: 2081823275
+    layer: 0
+    blendParameter: 
+    isDefault: 1
     canClamp: 0
   layerAvatarMasks: []
   bodyParts: []
