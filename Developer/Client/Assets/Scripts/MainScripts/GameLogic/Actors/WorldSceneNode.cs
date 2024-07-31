@@ -24,9 +24,6 @@ namespace TopGame.Logic
         private Vector3 m_CutSceneOffsetRotation = Vector3.zero;
         private Vector3 m_CutSceneScale = Vector3.one;
 
-        private List<LevelScene.LinePoint> m_vLinePoints = null;
-        private List<LevelScene.CameraPoint> m_vCameraPoints = null;
-
         public override uint GetConfigID()
         {
             return 0;
@@ -39,19 +36,13 @@ namespace TopGame.Logic
         //------------------------------------------------------
         protected override void OnInnerSpawnObject()
         {
-            m_vCameraPoints = null;
-            m_vLinePoints = null;
             m_BoundBox.Clear();
             if (m_pObjectAble == null) return;
             m_fSceneSizeDepth = 100;
             LevelScene levelScene = m_pObjectAble as LevelScene;
             if(levelScene!=null)
             {
-                m_fSceneSizeDepth = levelScene.SizeDepth;
                 m_BoundBox.Set(new Vector3(-levelScene.BoxSize.x/2, -1.0f, 0.0f), new Vector3(levelScene.BoxSize.x/2, levelScene.BoxSize.y+1.0f, levelScene.BoxSize.z));
-                m_vLinePoints = levelScene.LinePoints;
-                m_vCameraPoints = levelScene.CameraPoints;
-
                 //! create trigger
                 if(levelScene.worldTriggers!=null)
                 {
@@ -123,8 +114,6 @@ namespace TopGame.Logic
         {
             if (m_pCutScene != null) m_pCutScene.Destroy();
             m_pCutScene = null;
-            m_vCameraPoints = null;
-            m_vLinePoints = null;
         }
         //------------------------------------------------------
         public void SetCutScene(string strFile, Vector3 position, Vector3 rotation, Vector3 scale)
@@ -175,55 +164,6 @@ namespace TopGame.Logic
         void OnCutSceneSign(InstanceOperiaon callback)
         {
             callback.bUsed = !IsDestroy();
-        }
-        //------------------------------------------------------
-        public bool HasAlongPoints()
-        {
-            return m_vLinePoints!=null && m_vLinePoints.Count > 1;
-        }
-        //------------------------------------------------------
-        public List<LevelScene.LinePoint> GetAlongPoints()
-        {
-            return m_vLinePoints;
-        }
-        //------------------------------------------------------
-        public List<LevelScene.CameraPoint> GetCameraLookAtPoints()
-        {
-            return m_vCameraPoints;
-        }
-        //------------------------------------------------------
-        public bool GetAlongPathPointBySqrDistance(FFloat distance, out FVector3 position, out FVector3 euler)
-        {
-            position = GetPosition();
-            euler = GetEulerAngle();
-            if (!HasAlongPoints()) return false;
-            FFloat lastDist = FFloat.zero;
-            LevelScene.LinePoint start = m_vLinePoints[0];
-            if(distance <= FFloat.zero)
-            {
-                position = start.position;
-                euler = start.rotate;
-                return true;
-            }
-            for (int i =1; i < m_vLinePoints.Count; ++i)
-            {
-                LevelScene.LinePoint cur = m_vLinePoints[i];
-                FFloat tempDist = (cur.position - start.position).sqrMagnitude;
-                if(tempDist > FFloat.zero)
-                {
-                    lastDist = distance;
-                    distance -= tempDist;
-                    if (lastDist > FFloat.zero && distance <= FFloat.zero)
-                    {
-                        FFloat factor = FMath.Sqrt(lastDist/tempDist);
-                        position = start.position* factor + cur.position*(1-factor);
-                        euler = start.rotate * factor + cur.rotate * (1 - factor);
-                        return true;
-                    }
-                }
-                start = cur;
-            }
-            return false;
         }
     }
 }

@@ -28,6 +28,13 @@ namespace TopGame.UI
 					pUI.SetView( pView );
 					return pUI;
 				}
+				case 11:
+				{
+					UIBase pUI = new TopGame.UI.UIGameInfo();
+					TopGame.UI.UIGameInfoView pView = new TopGame.UI.UIGameInfoView();
+					pUI.SetView( pView );
+					return pUI;
+				}
 				case 13:
 				{
 					UIBase pUI = new TopGame.UI.UIGMPanel();
@@ -36,13 +43,6 @@ namespace TopGame.UI
 						pUI.AddLogic( pLogic );
 					}
 					TopGame.UI.UIGMPanelView pView = new TopGame.UI.UIGMPanelView();
-					pUI.SetView( pView );
-					return pUI;
-				}
-				case 11:
-				{
-					UIBase pUI = new TopGame.UI.UIGameInfo();
-					TopGame.UI.UIGameInfoView pView = new TopGame.UI.UIGameInfoView();
 					pUI.SetView( pView );
 					return pUI;
 				}
@@ -104,8 +104,8 @@ namespace TopGame.UI
 				ms_vUITypeMaps[typeof(TopGame.UI.UICommonTip)] = 255;
 				ms_vUITypeMaps[typeof(TopGame.UI.DialogPanel)] = 12;
 				ms_vUITypeMaps[typeof(TopGame.UI.UIFullScreenFillPanel)] = 2;
-				ms_vUITypeMaps[typeof(TopGame.UI.UIGMPanel)] = 13;
 				ms_vUITypeMaps[typeof(TopGame.UI.UIGameInfo)] = 11;
+				ms_vUITypeMaps[typeof(TopGame.UI.UIGMPanel)] = 13;
 				ms_vUITypeMaps[typeof(TopGame.UI.GuidePanel)] = 254;
 				ms_vUITypeMaps[typeof(TopGame.UI.UILoading)] = 1;
 				ms_vUITypeMaps[typeof(TopGame.UI.UILogin)] = 10;

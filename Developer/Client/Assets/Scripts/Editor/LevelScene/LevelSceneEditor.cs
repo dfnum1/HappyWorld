@@ -9,6 +9,7 @@ using UnityEngine.AI;
 using System.Collections.Generic;
 using Framework.Core;
 using Framework.ED;
+using Framework.Base;
 #if UNITY_EDITOR
 using UnityEditor;
 using TopGame.ED;
@@ -20,24 +21,11 @@ namespace TopGame.Core
     [CustomEditor(typeof(LevelScene), true)]
     public class LevelSceneEditor : Editor
     {
-        enum SplineType
-        {
-            [Framework.Data.DisplayNameGUI("路径点曲线")]LinePoint,
-            [Framework.Data.DisplayNameGUI("相机跟随曲线")] CameraPoint,
-        }
         Material m_pDrawMat;
         Mesh m_pMesh = null;
         int m_nSelectEvent = -1;
 
-        float m_fExternLine = 0;
-
         EEventType m_AddEventType;
-
-        GameObject m_pLineFbx = null;
-
-        SplineType m_SpineEditorType = SplineType.LinePoint;
-        Framework.ED.Spline3DEditor m_pSplineEditor = new Spline3DEditor();
-        Framework.ED.Spline3DEditor m_pCameraSplineEditor = new Spline3DEditor();
 
         bool m_bColliderTest = false;
         List<Collider> m_vMeshCollider = new List<Collider>();
@@ -60,27 +48,7 @@ namespace TopGame.Core
 
             RefreshEventPop();
 
-            m_pSplineEditor.EnableGUI = false;
-            m_pSplineEditor.EnableTan = false;
-            m_pSplineEditor.ShowPositionHandle = false;
             LevelScene levelScene = target as LevelScene;
-            m_pSplineEditor.OffsetStart = Vector3.zero;
-            if (levelScene.LinePoints != null)
-            {
-                for (int i = 0; i < levelScene.LinePoints.Count; ++i)
-                {
-                    m_pSplineEditor.AddPoint(i, levelScene.LinePoints[i].position, levelScene.LinePoints[i].rotate, Vector3.zero, Vector3.zero);
-                }
-            }
-
-            if (levelScene.CameraPoints != null)
-            {
-                for (int i = 0; i < levelScene.CameraPoints.Count; ++i)
-                {
-                    m_pCameraSplineEditor.AddPoint(i, levelScene.CameraPoints[i].position, levelScene.CameraPoints[i].inTan, levelScene.CameraPoints[i].outTan);
-                }
-            }
-
             if(levelScene.worldTriggers!=null)
             {
                 for(int i =0; i < levelScene.worldTriggers.Length; ++i)
@@ -119,7 +87,6 @@ namespace TopGame.Core
         //------------------------------------------------------
         void Save()
         {
-            SaveCureLine();
             LevelScene levelScene = target as LevelScene;
             if(levelScene.worldTriggers!=null)
             {
@@ -137,29 +104,6 @@ namespace TopGame.Core
                     worldTrigger.events = eventCmds;
                     levelScene.worldTriggers[i] = worldTrigger;
                 }
-            }
-        }
-        //------------------------------------------------------
-        void SaveCureLine()
-        {
-            LevelScene levelScene = target as LevelScene;
-            levelScene.LinePoints = new List<LevelScene.LinePoint>();
-            foreach (var db in m_pSplineEditor.Points)
-            {
-                LevelScene.LinePoint curve = new LevelScene.LinePoint();
-                curve.position = db.point + m_pSplineEditor.OffsetStart;
-                curve.rotate = db.rotation;
-                levelScene.LinePoints.Add(curve);
-            }
-
-            levelScene.CameraPoints = new List<LevelScene.CameraPoint>();
-            foreach (var db in m_pCameraSplineEditor.Points)
-            {
-                LevelScene.CameraPoint curve = new LevelScene.CameraPoint();
-                curve.position = db.point + m_pCameraSplineEditor.OffsetStart;
-                curve.inTan = db.inTan;
-                curve.outTan = db.outTan;
-                levelScene.CameraPoints.Add(curve);
             }
         }
         //------------------------------------------------------
@@ -304,42 +248,6 @@ namespace TopGame.Core
                 levelScene.worldTriggers[m_nSelectEvent] = evt;
             }
 
-            m_SpineEditorType = (SplineType)Framework.ED.HandleUtilityWrapper.PopEnum("曲线编辑", m_SpineEditorType);
-            if(m_SpineEditorType == SplineType.CameraPoint)
-            {
-                GUILayout.BeginHorizontal();
-                GUILayout.Label("路径点个数：" + m_pCameraSplineEditor.Points.Count);
-                if (GUILayout.Button("清除"))
-                {
-                    m_pCameraSplineEditor.ClearPoints();
-                }
-                GUILayout.EndHorizontal();
-            }
-            else
-            {
-                GUILayout.BeginHorizontal();
-                GUILayout.Label("路径点个数：" + m_pSplineEditor.Points.Count);
-                EditorGUI.BeginDisabledGroup(m_pSplineEditor.Points.Count <= 1);
-                if (GUILayout.Button("路径反转"))
-                {
-                    m_pSplineEditor.Revert();
-                }
-                EditorGUI.EndDisabledGroup();
-                GUILayout.EndHorizontal();
-
-                GUILayout.BeginHorizontal();
-                m_pLineFbx = EditorGUILayout.ObjectField(m_pLineFbx, typeof(GameObject), true) as GameObject;
-                EditorGUI.BeginDisabledGroup(m_pLineFbx == null);
-                m_fExternLine = EditorGUILayout.Slider(m_fExternLine, -10, 10);
-                if (GUILayout.Button("路径曲线烘焙"))
-                {
-                    BakeLinePoints(levelScene, m_pLineFbx, m_fExternLine);
-                }
-                EditorGUI.EndDisabledGroup();
-                GUILayout.EndHorizontal();
-            }
-            
-
             if (!string.IsNullOrEmpty(levelScene.AssetFile))
             {
                 if(GUILayout.Button("保存到预制"))
@@ -403,7 +311,7 @@ namespace TopGame.Core
         {
             LevelScene levelScene = target as LevelScene;
             WorldBoundBox worldBox = new WorldBoundBox();
-            worldBox.Set(new ExternEngine.FVector3(-levelScene.BoxSize.x / 2.0f, -1.0f, 0.0f), new ExternEngine.FVector3(levelScene.BoxSize.x / 2.0f, levelScene.BoxSize.y+1.0f, levelScene.BoxSize.z));
+            worldBox.Set(new ExternEngine.FVector3(0, -1.0f, 0.0f), new ExternEngine.FVector3(levelScene.BoxSize.x, levelScene.BoxSize.y+1.0f, levelScene.BoxSize.z));
             CommonUtility.DrawBoundingBox(worldBox.GetCenter(), worldBox.GetHalf(), levelScene.transform.localToWorldMatrix, Framework.Core.CommonUtility.GetVolumeToColor(EVolumeType.Target), false);
 
             if(levelScene.worldTriggers != null)
@@ -453,25 +361,24 @@ namespace TopGame.Core
                     levelScene.worldTriggers[i] = evt;
                 }
             }
-            if (m_SpineEditorType == SplineType.LinePoint)
-            {
-                if (m_pSplineEditor.Points != null && m_pSplineEditor.Points.Count > 1)
-                {
-                    m_pSplineEditor.DrawPointHandle(0, levelScene.transform.position, levelScene.transform.eulerAngles);
-                    m_pSplineEditor.DrawPointHandle(m_pSplineEditor.Points.Count - 1, levelScene.transform.position, levelScene.transform.eulerAngles);
-                }
-                m_pSplineEditor.OnSceneGUI(levelScene.transform.position, levelScene.transform.eulerAngles);
 
-                if (m_pSplineEditor.Points != null && m_pSplineEditor.Points.Count > 1)
-                {
-                    m_pSplineEditor.DrawPointHandleGUI(0, levelScene.transform.position, levelScene.transform.eulerAngles);
-                    m_pSplineEditor.DrawPointHandleGUI(m_pSplineEditor.Points.Count - 1, levelScene.transform.position, levelScene.transform.eulerAngles);
-                }
-            }
-            else
-            {
-                m_pCameraSplineEditor.OnSceneGUI(levelScene.transform.position, levelScene.transform.eulerAngles);
-            }
+//             if (levelScene.navMesh!=null)
+//             {
+//                 NavMeshTriangulation tris = NavMesh.CalculateTriangulation();
+//                 if (tris.vertices != null)
+//                 {
+//                     ms_pDebugMesh.Clear();
+//                     Color[] colors = new Color[tris.vertices.Length];
+//                     for (int i = 0; i < ms_pDebugMesh.vertices.Length; ++i)
+//                         colors[i] = new Color(0, 1, 0, 0.25f);
+//                     ms_pDebugMesh.vertices = tris.vertices;
+//                     ms_pDebugMesh.colors = colors;
+//                     ms_pDebugMesh.triangles = tris.indices;
+//                 }
+//                 ms_CalculateDelta = 1;
+//             }
+//             Graphics.DrawMesh(ms_pDebugMesh, Matrix4x4.Translate(Vector3.up * 0.5f), Framework.Core.CommonUtility.debugMaterial, LayerMask.NameToLayer(GlobalDef.ms_foregroundLayerName));
+
         }
         //------------------------------------------------------
         void RefreshColliderTest()
@@ -488,25 +395,6 @@ namespace TopGame.Core
                     collider.hideFlags |= HideFlags.DontSave;
                     m_vMeshCollider.Add(collider);
                 }
-            }
-        }
-        //------------------------------------------------------
-        void BakeLinePoints(LevelScene levelScene, GameObject lineRoot, float externLine)
-        {
-            if (lineRoot == null) return;
-            levelScene.LinePoints = new List<LevelScene.LinePoint>();
-            for(int i =0; i < lineRoot.transform.childCount; ++i)
-            {
-                LevelScene.LinePoint lp = new LevelScene.LinePoint();
-                Transform point = lineRoot.transform.GetChild(i);
-                lp.position = point.position + (point.up+point.right)*externLine;
-                lp.rotate = point.eulerAngles;
-                levelScene.LinePoints.Add(lp);
-            }
-            m_pSplineEditor.ClearPoints();
-            for (int i = 0; i < levelScene.LinePoints.Count; ++i)
-            {
-                m_pSplineEditor.AddPoint(i, levelScene.LinePoints[i].position, levelScene.LinePoints[i].rotate, Vector3.zero, Vector3.zero);
             }
         }
     }

@@ -96,6 +96,7 @@ namespace TopGame.Logic
 						m_vModes.Add(mode,pMode);
 					}
 					pMode.RegisterLogic<TopGame.Logic.PVECamera>();
+					pMode.RegisterLogic<TopGame.Logic.PVELevel>();
 					pMode.RegisterLogic<TopGame.Logic.PVEPlayer>();
 					return pMode;
 				}
