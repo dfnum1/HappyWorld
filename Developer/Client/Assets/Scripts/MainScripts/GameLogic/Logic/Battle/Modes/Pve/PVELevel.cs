@@ -34,7 +34,7 @@ namespace TopGame.Logic
             m_pScene = callback.pPoolAble;
             if (m_pScene != null)
             {
-                m_pScene.SetPosition(Vector3.zero);
+                m_pScene.SetPosition(new Vector3(-25,0,-25));
                 m_pScene.SetScale(Vector3.one);
                 m_pScene.SetEulerAngle(Vector3.zero);
             }

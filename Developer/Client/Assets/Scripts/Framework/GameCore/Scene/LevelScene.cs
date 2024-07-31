@@ -41,9 +41,8 @@ namespace TopGame.Core
             }
         }
         //------------------------------------------------------
-        protected override void OnEnable()
+        public override void OnPoolStart()
         {
-            base.OnEnable();
             if (m_pNavMeshInstance.valid)
             {
                 NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
