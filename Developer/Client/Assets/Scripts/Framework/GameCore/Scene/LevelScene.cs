@@ -18,31 +18,57 @@ namespace TopGame.Core
         public NavMeshData navMesh;
 
         public Vector3 BoxSize = new Vector3(50.0f,10.0f, 50.0f);
+
+        private NavMeshDataInstance m_pNavMeshInstance;
         //------------------------------------------------------
         public override void OnRecyle()
         {
             base.OnRecyle();
+            if (m_pNavMeshInstance.valid)
+            {
+                NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
+                m_pNavMeshInstance.Remove();
+            }
         }
         //------------------------------------------------------
         protected override void OnDestroy()
         {
             base.OnDestroy();
+            if (m_pNavMeshInstance.valid)
+            {
+                NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
+                m_pNavMeshInstance.Remove();
+            }
         }
-//         //------------------------------------------------------
-//         private void Update()
-//         {
-//             if (Mirror)
-//             {
-//                 int dir = Vector3.Dot(CameraKit.MainCameraDirection, Vector3.forward) > 0 ? 1 : -1;
-//                 if (dir != m_nDir)
-//                 {
-//                     m_nDir = dir;
-//                     Vector3 scale = m_pTransform.localScale;
-//                     scale.z = Mathf.Abs(scale.z) * m_nDir;
-//                     m_pTransform.localScale = scale;
-//                 }
-//             }
-//         }
+        //------------------------------------------------------
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            if (m_pNavMeshInstance.valid)
+            {
+                NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
+                m_pNavMeshInstance.Remove();
+            }
+            if(navMesh!=null)
+            {
+                m_pNavMeshInstance = NavMesh.AddNavMeshData(navMesh, this.GetPosition(), this.GetRotation());
+            }
+        }
+        //         //------------------------------------------------------
+        //         private void Update()
+        //         {
+        //             if (Mirror)
+        //             {
+        //                 int dir = Vector3.Dot(CameraKit.MainCameraDirection, Vector3.forward) > 0 ? 1 : -1;
+        //                 if (dir != m_nDir)
+        //                 {
+        //                     m_nDir = dir;
+        //                     Vector3 scale = m_pTransform.localScale;
+        //                     scale.z = Mathf.Abs(scale.z) * m_nDir;
+        //                     m_pTransform.localScale = scale;
+        //                 }
+        //             }
+        //         }
     }
 
 }

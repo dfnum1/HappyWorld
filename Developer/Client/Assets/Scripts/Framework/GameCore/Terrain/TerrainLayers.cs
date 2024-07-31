@@ -217,7 +217,7 @@ namespace TopGame.Core
         //------------------------------------------------------
         public void RemoveNav(NavMeshDataInstance pIns)
         {
-            pIns.Remove();
+            if(pIns.valid) pIns.Remove();
         }
         //------------------------------------------------------
         public void AddLayerElement(TerrainLayerElement layerElement)
