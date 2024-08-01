@@ -82,11 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowChangeLayer: 1
   usePlayableGraph: 1
-  Slots:
-  - name: shoot
-    transform: {fileID: 7287032955286340073}
-    offset: {x: 0, y: 0, z: 0}
-    centroid: {fileID: 0}
+  Slots: []
   playables: []
   layerAvatarMasks: []
   bodyParts: []
