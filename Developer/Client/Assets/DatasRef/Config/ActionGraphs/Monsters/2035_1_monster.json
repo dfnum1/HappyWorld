@@ -107,8 +107,8 @@
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.0,
-                    "bDummy": false,
+                    "duration": 1.0,
+                    "bDummy": true,
                     "bOverride": false,
                     "forbidJump": false,
                     "forbidMove": false,
@@ -138,7 +138,12 @@
                     },
                     "frame": [],
                     "action_event_core": {
-                        "events": []
+                        "events": [
+                            {
+                                "type": 2,
+                                "eventCmd": "2:0.5,-1,1,61440,2,1,1,0.000,0.000,0.000,,0.000,0.000,0.000,255,0,0,0,"
+                            }
+                        ]
                     },
                     "action_property_data": []
                 }
