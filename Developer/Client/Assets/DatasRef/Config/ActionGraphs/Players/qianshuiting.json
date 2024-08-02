@@ -91,7 +91,7 @@
                     "name": "attack",
                     "type": 31,
                     "id": 2,
-                    "tag": 100,
+                    "tag": 10,
                     "animLoadType": 3,
                     "switch_stance": "",
                     "seqType": 0,
@@ -142,9 +142,9 @@
     ],
     "action_state_cancle": [],
     "succeed_action_state": [],
-    "min_attack_distance": -0.14339999854564668,
-    "max_attack_distance": -0.14339999854564668,
-    "max_target_distance": -0.14339999854564668,
-    "max_target_zoom": -0.14339999854564668,
+    "min_attack_distance": -0.14329999685287476,
+    "max_attack_distance": -0.14329999685287476,
+    "max_target_distance": -0.14329999685287476,
+    "max_target_zoom": -0.14329999685287476,
     "slotAvatars": []
 }

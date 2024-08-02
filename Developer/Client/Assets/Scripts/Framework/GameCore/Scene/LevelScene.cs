@@ -19,39 +19,38 @@ namespace TopGame.Core
 
         public Vector3 BoxSize = new Vector3(50.0f,10.0f, 50.0f);
 
-        private NavMeshDataInstance m_pNavMeshInstance;
+        private int m_nNavID = -1;
         //------------------------------------------------------
         public override void OnRecyle()
         {
             base.OnRecyle();
-            if (m_pNavMeshInstance.valid)
+            if(m_nNavID >= 0)
             {
-                NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
-                m_pNavMeshInstance.Remove();
+                TerrainNavMeshs.RemoveNavMesh(Framework.Module.ModuleManager.mainFramework, m_nNavID);
+                m_nNavID = -1;
             }
         }
         //------------------------------------------------------
         protected override void OnDestroy()
         {
             base.OnDestroy();
-            if (m_pNavMeshInstance.valid)
+            if (m_nNavID >= 0)
             {
-                NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
-                m_pNavMeshInstance.Remove();
+                TerrainNavMeshs.RemoveNavMesh(Framework.Module.ModuleManager.mainFramework, m_nNavID);
+                m_nNavID = -1;
             }
         }
         //------------------------------------------------------
         public override void OnPoolStart()
         {
-            if (m_pNavMeshInstance.valid)
+            if (m_nNavID >= 0)
             {
-                NavMesh.RemoveNavMeshData(m_pNavMeshInstance);
-                m_pNavMeshInstance.Remove();
+                TerrainNavMeshs.RemoveNavMesh(Framework.Module.ModuleManager.mainFramework, m_nNavID);
+                m_nNavID = -1;
             }
             if(navMesh!=null)
-            {
-                m_pNavMeshInstance = NavMesh.AddNavMeshData(navMesh, this.GetPosition(), this.GetRotation());
-            }
+                m_nNavID = TerrainNavMeshs.AddNavMesh(Framework.Module.ModuleManager.mainFramework, GetPosition(),GetRotation(), navMesh);
+
         }
         //         //------------------------------------------------------
         //         private void Update()
