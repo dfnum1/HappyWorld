@@ -79,61 +79,6 @@
             "jump_vertical_speed": 0.0,
             "stance_action_state_core": [
                 {
-                    "name": "jump_end",
-                    "type": 19,
-                    "id": 6,
-                    "tag": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "JumpEnd",
-                            "hashState": -342501864,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": 0,
-                            "duration": 1.4670000076293946,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 1.4670000076293946,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
-                },
-                {
                     "name": "run",
                     "type": 1,
                     "id": 2,
@@ -215,6 +160,116 @@
                             "frameID": 0
                         }
                     ],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "jump_end",
+                    "type": 19,
+                    "id": 6,
+                    "tag": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "JumpEnd",
+                            "hashState": -342501864,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 1.4670000076293946,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 1.4670000076293946,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "falling_loop",
+                    "type": 22,
+                    "id": 8,
+                    "tag": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "Jumping",
+                            "hashState": 1137391654,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 0.06700000166893006,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 0.06700000166893006,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 0,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
                     "action_event_core": {
                         "events": []
                     },
@@ -331,9 +386,9 @@
                     "action_property_data": []
                 },
                 {
-                    "name": "falling_loop",
-                    "type": 22,
-                    "id": 8,
+                    "name": "jump_ing_up",
+                    "type": 17,
+                    "id": 4,
                     "tag": 0,
                     "animLoadType": 1,
                     "switch_stance": "",
@@ -345,12 +400,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 0.06700000166893006,
+                            "duration": 0.06666672229766846,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.06700000166893006,
+                    "duration": 0.06666672229766846,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -473,111 +528,6 @@
                     "action_property_data": []
                 },
                 {
-                    "name": "jump_ing_up",
-                    "type": 17,
-                    "id": 4,
-                    "tag": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "Jumping",
-                            "hashState": 1137391654,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": 0,
-                            "duration": 0.06666672229766846,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 0.06666672229766846,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 0,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
-                },
-                {
-                    "name": "attack",
-                    "type": 31,
-                    "id": 10,
-                    "tag": 9999,
-                    "animLoadType": 3,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [],
-                    "actionParameter": "",
-                    "duration": 1.0,
-                    "bDummy": true,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": [
-                            {
-                                "type": 2,
-                                "eventCmd": "2:0.2379182,-1,1,61440,2,1,1,0.000,0.000,0.000,,0.000,0.000,0.000,255,0,0,0,"
-                            }
-                        ]
-                    },
-                    "action_property_data": []
-                },
-                {
                     "name": "jump_start",
                     "type": 16,
                     "id": 3,
@@ -684,6 +634,56 @@
                     "frame": [],
                     "action_event_core": {
                         "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "attack",
+                    "type": 31,
+                    "id": 10,
+                    "tag": 10,
+                    "animLoadType": 3,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [],
+                    "actionParameter": "",
+                    "duration": 1.0,
+                    "bDummy": true,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": [
+                            {
+                                "type": 2,
+                                "eventCmd": "2:0.2379182,-1,1,61440,2,1,1,0.000,0.000,0.000,,0.000,0.000,0.000,255,0,0,0,"
+                            }
+                        ]
                     },
                     "action_property_data": []
                 }
