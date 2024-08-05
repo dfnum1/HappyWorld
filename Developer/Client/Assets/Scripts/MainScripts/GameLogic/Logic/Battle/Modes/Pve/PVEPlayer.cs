@@ -28,8 +28,31 @@ namespace TopGame.Logic
             var csvPlayer = Data.DataManager.getInstance().GetCsv<Data.CsvData_Player>();
             var data = csvPlayer.GetData(4030041);
             m_pPlayer = GetWorld().SyncCreateNode<Player>( Framework.Core.EActorType.Player, data);
+            m_pPlayer.SetActived(true);
             m_pPlayer.EnableLogic(true);
+            m_pPlayer.EnableSkill(true);
+            m_pPlayer.SetVisible(true);
+            m_pPlayer.EnableRVO(false);
+            m_pPlayer.SetAttackGroup(0);
+            m_pPlayer.EnableAI(true);
             m_pPlayer.GetActorParameter().SetLevel(10000);
+            m_pPlayer.GetActorParameter().AppendHP(100000);
+            m_pPlayer.GetActorParameter().AddpendBaseAttr(EAttrType.Attack, 1000);
+
+            Framework.BattlePlus.RunerAgent agent = m_pPlayer.GetActorAgent() as Framework.BattlePlus.RunerAgent;
+            if (agent != null)
+            {
+                agent.EnableAILogic(false);
+                agent.EnableAIType(Framework.BattlePlus.EAILogicType.GoTarget, false);
+                agent.EnableAIType(Framework.BattlePlus.EAILogicType.Search, false);
+            }
+
+            SkillInformation skillSys = m_pPlayer.GetSkill();
+            if (skillSys != null)
+            {
+                skillSys.AutoSkill(true);
+                skillSys.EnableSkill(true);
+            }
         }
         //------------------------------------------------------
         public Vector3 GetPosition()
