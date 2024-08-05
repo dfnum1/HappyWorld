@@ -67,10 +67,10 @@ namespace TopGame.Logic
                 return;
 #endif
 
-            if (m_vMonster.Count <= 1 && m_vSpawnPoints.Count > 0)
+            if (m_vMonster.Count <= 20 && m_vSpawnPoints.Count > 0)
             {
                 FVector3 playerPos = GetModeLogic<PVEPlayer>().GetPosition();
-                for (int i = 0; i < 1; ++i)
+                for (int i = 0; i < 20; ++i)
                 {
                     var data = Data.DataManager.getInstance().Monster.GetData(1203801);
                     if (data != null)

@@ -164,11 +164,11 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 493af4f4dca7fd54e805ef8f05c710b1, type: 2}
+      clip: {fileID: 7400000, guid: 33241e778c6f07842b857a1b7f9ab057, type: 2}
       clipFile: 
     loadType: 1
-    name: Jumping
-    nameHash: 1137391654
+    name: JumpBegin
+    nameHash: -719294677
     layer: 0
     blendParameter: 
     isDefault: 0
@@ -176,11 +176,11 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 33241e778c6f07842b857a1b7f9ab057, type: 2}
+      clip: {fileID: 7400000, guid: 493af4f4dca7fd54e805ef8f05c710b1, type: 2}
       clipFile: 
     loadType: 1
-    name: JumpBegin
-    nameHash: -719294677
+    name: Jumping
+    nameHash: 1137391654
     layer: 0
     blendParameter: 
     isDefault: 0
