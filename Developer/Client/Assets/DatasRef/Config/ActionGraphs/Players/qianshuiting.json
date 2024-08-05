@@ -12,11 +12,11 @@
     "global_action_speed_scale": 1.0,
     "step_height": 1.0,
     "jump_height": 2.0,
-    "collision_type": 2,
+    "collision_type": 0,
     "collison_box_extrude": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 2.0,
+        "y": 0.7996000051498413,
+        "z": 2.0
     },
     "collision_capsule_radius": 0.0,
     "collision_capsule_height": 0.0,
@@ -142,9 +142,9 @@
     ],
     "action_state_cancle": [],
     "succeed_action_state": [],
-    "min_attack_distance": -0.14329999685287476,
-    "max_attack_distance": -0.14329999685287476,
-    "max_target_distance": -0.14329999685287476,
-    "max_target_zoom": -0.14329999685287476,
+    "min_attack_distance": 0.0,
+    "max_attack_distance": 0.0,
+    "max_target_distance": 0.0,
+    "max_target_zoom": 0.0,
     "slotAvatars": []
 }

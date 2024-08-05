@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DebugConfig
   m_EditorClassIdentifier: 
   m_LogLevel: 65798
+  m_bBatlleReport: 0
   m_bSkillDebug: 0
   m_bAIDebug: 0
   m_bDamageDebug: 0

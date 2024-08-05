@@ -12,11 +12,11 @@
     "global_action_speed_scale": 1.0,
     "step_height": 0.5,
     "jump_height": 2.0,
-    "collision_type": 2,
+    "collision_type": 0,
     "collison_box_extrude": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
+        "x": 2.0,
+        "y": 0.5,
+        "z": 2.0
     },
     "collision_capsule_radius": 0.0,
     "collision_capsule_height": 0.0,

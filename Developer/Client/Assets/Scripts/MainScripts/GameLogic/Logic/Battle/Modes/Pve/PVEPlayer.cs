@@ -29,6 +29,7 @@ namespace TopGame.Logic
             var data = csvPlayer.GetData(4030041);
             m_pPlayer = GetWorld().SyncCreateNode<Player>( Framework.Core.EActorType.Player, data);
             m_pPlayer.EnableLogic(true);
+            m_pPlayer.GetActorParameter().SetLevel(10000);
         }
         //------------------------------------------------------
         public Vector3 GetPosition()
