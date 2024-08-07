@@ -280,7 +280,7 @@ namespace TopGame.ED
             m_pGameModuel.Destroy();
 
             if (m_preview != null)
-                m_preview.OnDestroy();
+                m_preview.Destroy();
 
             if (m_pCamera) GameObject.DestroyImmediate(m_pCamera.gameObject);
             m_pCamera = null;

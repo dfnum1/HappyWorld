@@ -27,8 +27,9 @@ namespace TopGame.ED
         {
             Element,
             Monster,
+            TerrainScene,
         }
-        static string[] tabs = { "障碍列表", "怪物列表"};
+        static string[] tabs = { "障碍列表", "怪物列表", "地表场景"};
         public ETab m_eTab = ETab.Element;
 
 
@@ -36,6 +37,7 @@ namespace TopGame.ED
         public DungonEditor Editor { get { return m_pEditor; } }
         public BattleObjectEditorLogic m_pBattleObject = new BattleObjectEditorLogic();
         public MonsterObjectEditorLogic m_pMonsterObject = new MonsterObjectEditorLogic();
+        public TerrainSceneLogic m_pSceneLogic = new TerrainSceneLogic();
 
         Vector2 m_Scroll = Vector2.zero;
 
@@ -47,6 +49,7 @@ namespace TopGame.ED
             m_pEditor = pEditor;
             m_pBattleObject.Enable(this);
             m_pMonsterObject.Enable(this);
+            m_pSceneLogic.Enable(this);
             m_bDraging = false;
         }
         //-----------------------------------------------------
@@ -56,6 +59,7 @@ namespace TopGame.ED
 
             m_pBattleObject.Disable();
             m_pMonsterObject.Disable();
+            m_pSceneLogic.Disable();
             m_bDraging = false;
         }
         //-----------------------------------------------------
@@ -106,6 +110,14 @@ namespace TopGame.ED
                 }
                 //  evt.Use();
             }
+            if(m_eTab == ETab.TerrainScene)
+            {
+                if (m_pSceneLogic != null)
+                {
+                    m_pSceneLogic.OnEvent(evt);
+                }
+            }
+
         }
         //------------------------------------------------------
         void OnSceneEvent(Event evt)
@@ -177,6 +189,10 @@ namespace TopGame.ED
             {
                 if (m_pMonsterObject != null) m_pMonsterObject.OnSceneGUI(view);
             }
+            else if(m_eTab == ETab.TerrainScene)
+            {
+                if (m_pSceneLogic != null) m_pSceneLogic.OnSceneGUI(view);
+            }
             OnSceneEvent(Event.current);
         }
         //-----------------------------------------------------
@@ -186,11 +202,10 @@ namespace TopGame.ED
                 m_pBattleObject.OnDrawInspecPanel(size);
             else if (m_eTab == ETab.Monster)
                 m_pMonsterObject.OnDrawInspecPanel(size);
-            //             else if (m_eTab == ETab.RunScene)
-            //             {
-            //                 m_RunScener.OnInspectorGUI(size);
-            //                 return;
-            //             }
+            else if (m_eTab == ETab.TerrainScene)
+            {
+                m_pSceneLogic.OnDrawInspecPanel(size);
+            }
         }
         //-----------------------------------------------------
         public void New()
@@ -230,6 +245,10 @@ namespace TopGame.ED
             }
             else if (m_eTab == ETab.Monster)
                 m_pMonsterObject.OnDrawLayerPanel(size);
+            else if (m_eTab == ETab.TerrainScene)
+            {
+                m_pSceneLogic.OnDrawLayerPanel(size);
+            }
         }
     }
 }

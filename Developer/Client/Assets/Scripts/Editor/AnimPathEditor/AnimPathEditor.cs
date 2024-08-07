@@ -65,11 +65,7 @@ namespace TopGame.ED
             m_Logic = new AnimPathEditorLogic();
             m_Logic.OnReLoadAssetData();
 
-            GameObject[] roots = new GameObject[1];
-            roots[0] = new GameObject("EditorRoot");
-            Util.ResetGameObject(roots[0], EResetType.All);
-            TargetPreview.InitInstantiatedPreviewRecursive(roots[0], m_preview);
-            setTargets(roots);
+            setTargets();
 
             if (m_Logic != null)
                 m_Logic.OnEnable(this,m_preview);
@@ -83,16 +79,22 @@ namespace TopGame.ED
 
         }
         //-----------------------------------------------------
-        public void setTargets(UnityEngine.Object[] targets)
+        public void setTargets()
         {
             if (m_preview == null)
                 m_preview = new TargetPreview(this);
 
+            GameObject[] roots = new GameObject[1];
+            roots[0] = new GameObject("EditorRoot");
+            Util.ResetGameObject(roots[0], EResetType.All);
+
+            m_preview.AddPreview(roots[0]);
+
             TargetPreview.PreviewCullingLayer = 0;
             m_preview.SetCamera(0.01f, 10000f, 60f);
-            m_preview.Initialize(targets);
-            m_preview.SetPreviewInstance(targets[0] as GameObject);
-            m_pRoot = (targets[0] as GameObject);
+            m_preview.Initialize(roots);
+            m_preview.SetPreviewInstance(roots[0] as GameObject);
+            m_pRoot = (roots[0] as GameObject);
 
 
             m_preview.bLeftMouseForbidMove = true;
@@ -210,7 +212,7 @@ namespace TopGame.ED
         public void OnDestroy()
         {
             if (m_preview != null)
-                m_preview.OnDestroy();
+                m_preview.Destroy();
         }
         //-----------------------------------------------------
         public void RemoveObject(UnityEngine.Object obj)

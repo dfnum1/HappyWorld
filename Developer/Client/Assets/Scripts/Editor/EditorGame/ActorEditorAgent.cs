@@ -77,7 +77,7 @@ namespace TopGame.ED
             base.OnTriggerEvent(pState, pEvent);
 
             if (pEvent.pObject != null && m_pPreview != null)
-                m_pPreview.AddSingleObject(pEvent.pObject.GetObject());
+                m_pPreview.AddPreview(pEvent.pObject.GetObject());
         }
         //------------------------------------------------------
         public override void OnStopEvent(ActionState pState, ActionEvent pEvent)

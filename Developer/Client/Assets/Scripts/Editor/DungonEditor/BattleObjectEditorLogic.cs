@@ -100,10 +100,10 @@ namespace TopGame.ED
         {
             GameObject[] roots = new GameObject[1];
             roots[0] = new GameObject("EditorRoot");
-            TargetPreview.InitInstantiatedPreviewRecursive(roots[0], m_preview);
 
             if (m_preview == null)
                 m_preview = new TargetPreview(m_pLogic.Editor);
+            m_preview.AddPreview(roots[0]);
 
             TargetPreview.PreviewCullingLayer = 0;
             m_preview.SetCamera(0.01f, 10000f, 60f);
@@ -118,7 +118,7 @@ namespace TopGame.ED
             Clear();
 
             if (m_preview != null)
-                m_preview.OnDestroy();
+                m_preview.Destroy();
 
             m_pGridWireBox.Destroy();
         }
@@ -154,7 +154,7 @@ namespace TopGame.ED
                 if (pObj != null)
                 {
                     m_pPreveObject = GameObject.Instantiate<GameObject>(pObj);
-                    m_preview.AddSingleObject(m_pPreveObject);
+                    m_preview.AddPreview(m_pPreveObject);
                 }
             }
         }

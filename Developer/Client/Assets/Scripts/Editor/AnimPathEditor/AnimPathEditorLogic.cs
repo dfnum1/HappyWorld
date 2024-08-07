@@ -119,6 +119,7 @@ namespace TopGame.ED
             m_pTimelineCamea = null;
             m_TimelineBinds.Clear();
             m_TimelineCamera.Clear();
+            if (m_Preivew != null) m_Preivew.Destroy();
         }
         public void OnTrigger(BaseEventParameter param, bool bAutoClear)
         {
@@ -492,7 +493,7 @@ namespace TopGame.ED
             foreach (GameObject rootObj in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
             {
                 HideFlags pre = rootObj.hideFlags;
-                if(!Application.isPlaying)TargetPreview.InitInstantiatedPreviewRecursive(rootObj, m_Preivew, HideFlags.None);
+                if(!Application.isPlaying) m_Preivew.AddPreview(rootObj, HideFlags.None);
                 rootObj.hideFlags = pre;
                 m_SceneGameObject.Add(rootObj);
             }
@@ -581,7 +582,7 @@ namespace TopGame.ED
                 {
                     m_DirectorAsset = pAsset.GetComponent<PlayableDirector>();
                     m_pTimeline = GameObject.Instantiate(pAsset);
-                    TargetPreview.InitInstantiatedPreviewRecursive(m_pTimeline, m_Preivew);
+                    m_Preivew.AddPreview(m_pTimeline);
                     m_DirectorAssetInstance = m_pTimeline.GetComponent<PlayableDirector>();
                     if (m_DirectorAssetInstance)
                     {
