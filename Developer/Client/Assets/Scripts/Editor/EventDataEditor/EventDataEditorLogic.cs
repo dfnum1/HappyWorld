@@ -113,14 +113,18 @@ namespace TopGame.ED
             if(m_pTreeView != null)
             {
                 m_pTreeView.BeginTreeData();
-                foreach (var db in m_pCsvData.datas)
+                if(m_pCsvData!=null)
                 {
-                    EventItem item = new EventItem();
-                    item.pData = db.Value;
-                    item.id = db.Value.nID;
-                    item.name = db.Value.desc + db.Value.nID;
-                    m_pTreeView.AddData(item);
+                    foreach (var db in m_pCsvData.datas)
+                    {
+                        EventItem item = new EventItem();
+                        item.pData = db.Value;
+                        item.id = db.Value.nID;
+                        item.name = db.Value.desc + db.Value.nID;
+                        m_pTreeView.AddData(item);
+                    }
                 }
+
                 m_pTreeView.EndTreeData();
 
                 if(m_pCurItem != null)

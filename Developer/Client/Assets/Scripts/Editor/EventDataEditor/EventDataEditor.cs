@@ -93,7 +93,7 @@ namespace TopGame.ED
             }
 
             base.RemoveNotification();
-            GUILayout.BeginHorizontal();
+
             EditorGUI.BeginChangeCheck();
 
             DrawToolPanel();
@@ -179,6 +179,7 @@ namespace TopGame.ED
         //-----------------------------------------------------
         private void DrawToolPanel()
         {
+            GUILayout.BeginHorizontal();
             if (GUILayout.Button("Save", new GUILayoutOption[] { GUILayout.Width(80f), GUILayout.Height(45f) }))
             {
                 if (m_Logic != null)
@@ -209,6 +210,7 @@ namespace TopGame.ED
             {
                 GUI.FocusControl("");
             }
+            GUILayout.EndHorizontal();
         }
     }
 
