@@ -7,6 +7,7 @@
 using ExternEngine;
 using Framework.Core;
 using System.Collections.Generic;
+using System.Linq;
 using TopGame.Core;
 using UnityEngine;
 
@@ -18,9 +19,12 @@ namespace TopGame.Logic
         AInstanceAble m_pScene;
         List<Vector3> m_vSpawnPoints = new List<Vector3>();
         List<AWorldNode> m_vMonster = new List<AWorldNode>();
+        List<uint> m_MonsterIDs = new List<uint>();
         protected override void OnPreStart()
         {
             base.OnPreStart();
+            m_MonsterIDs.Add(1203801);
+            m_MonsterIDs.Add(1201501);
 
             m_pScene = null;
             var opCall = FileSystemUtil.SpawnInstance("Assets/Datas/Objects/Scenes/Test/TestScene.prefab");
@@ -72,7 +76,7 @@ namespace TopGame.Logic
                 FVector3 playerPos = GetModeLogic<PVEPlayer>().GetPosition();
                 for (int i = 0; i < 20; ++i)
                 {
-                    var data = Data.DataManager.getInstance().Monster.GetData(1203801);
+                    var data = Data.DataManager.getInstance().Monster.GetData(m_MonsterIDs[UnityEngine.Random.Range(0, m_MonsterIDs.Count)]);
                     if (data != null)
                     {
                         Monster monster = GetWorld().CreateNode<Monster>(EActorType.Monster, data);
