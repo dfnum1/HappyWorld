@@ -18,7 +18,7 @@ namespace TopGame
             return Framework.Core.EventMallocHandler.NewEvent(eventType);
         }
         //------------------------------------------------------
-        [Framework.Plugin.AT.ATMethod("触发指定ID事件-触发者-作用者")]
+        [Framework.Plugin.AT.ATMethod("触发指定ID事件-触发者")]
         public override void TriggertEvent(int nEventID, Framework.Plugin.AT.IUserData pTrigger, Framework.Plugin.AT.IUserData pTarget)
         {
             if (m_pEventTrigger == null) return;
