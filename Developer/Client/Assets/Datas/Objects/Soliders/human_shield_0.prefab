@@ -819,6 +819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6225891504040070447}
   - component: {fileID: 6225891504049136355}
+  - component: {fileID: 8864870841598354989}
   m_Layer: 10
   m_Name: human_shield_0
   m_TagString: Untagged
@@ -863,3 +864,58 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &8864870841598354989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225891504039776591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0462bf3fa7328b544bc2587b61e2a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowChangeLayer: 1
+  usePlayableGraph: 1
+  Slots: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 6af9c30c155cae94cb2e6b7aac080264, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Idle
+    nameHash: -1276582900
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Soliders/human_shield/animations/human_shield_0_Attack.anim
+    loadType: 0
+    name: Attack
+    nameHash: -1062434163
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 2cdf8d4066dea624896bbb6578307f42, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Run
+    nameHash: 743463958
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  layerAvatarMasks: []
+  bodyParts: []
+  cameraSlot: {fileID: 0}

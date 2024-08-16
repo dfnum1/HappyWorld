@@ -140,6 +140,18 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Test/animations/JumpEnd.anim
+    loadType: 3
+    name: JumpEnd
+    nameHash: -342501864
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
       clip: {fileID: 7400000, guid: d749f711620eabe49993c8b9db77046e, type: 2}
       clipFile: 
     loadType: 1
@@ -152,35 +164,23 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: a190667b06f2e234f929c89f17d074bd, type: 2}
-      clipFile: 
-    loadType: 1
-    name: JumpEnd
-    nameHash: -342501864
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: 33241e778c6f07842b857a1b7f9ab057, type: 2}
-      clipFile: 
-    loadType: 1
-    name: JumpBegin
-    nameHash: -719294677
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: 493af4f4dca7fd54e805ef8f05c710b1, type: 2}
-      clipFile: 
-    loadType: 1
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Test/animations/Jumping.anim
+    loadType: 3
     name: Jumping
     nameHash: 1137391654
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Test/animations/JumpBegin.anim
+    loadType: 3
+    name: JumpBegin
+    nameHash: -719294677
     layer: 0
     blendParameter: 
     isDefault: 0

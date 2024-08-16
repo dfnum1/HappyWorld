@@ -1637,6 +1637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485137478643235947}
   - component: {fileID: 485137478636065771}
+  - component: {fileID: -1019030853398019436}
   m_Layer: 10
   m_Name: elf_royal_0
   m_TagString: Untagged
@@ -1682,3 +1683,58 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-1019030853398019436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485137478643458443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0462bf3fa7328b544bc2587b61e2a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowChangeLayer: 1
+  usePlayableGraph: 1
+  Slots: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 3069c6f663a0d4d44bc024cedfcf9422, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Idle
+    nameHash: -1276582900
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 17ea073e8f476ca4186ef01929640648, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Run
+    nameHash: 743463958
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Soliders/elf_royal/animations/elf_royal_0_Attack.anim
+    loadType: 0
+    name: Attack
+    nameHash: -1062434163
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  layerAvatarMasks: []
+  bodyParts: []
+  cameraSlot: {fileID: 0}

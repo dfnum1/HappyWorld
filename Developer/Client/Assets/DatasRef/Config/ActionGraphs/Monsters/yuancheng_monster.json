@@ -88,7 +88,7 @@
                     "seqType": 0,
                     "animations": [
                         {
-                            "animation": "Solider_0_Idle",
+                            "animation": "Idle",
                             "hashState": -1276582900,
                             "layer": 0,
                             "scale_speed": 1.0,
@@ -175,7 +175,7 @@
                     "seqType": 0,
                     "animations": [
                         {
-                            "animation": "Solider_0_Attack",
+                            "animation": "Attack",
                             "hashState": -1062434163,
                             "layer": 0,
                             "scale_speed": 1.0,
@@ -235,7 +235,7 @@
                     "seqType": 0,
                     "animations": [
                         {
-                            "animation": "Solider_0_Run",
+                            "animation": "Run",
                             "hashState": 743463958,
                             "layer": 0,
                             "scale_speed": 1.0,

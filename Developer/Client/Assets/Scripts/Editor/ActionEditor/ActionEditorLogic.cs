@@ -219,13 +219,7 @@ namespace TopGame.ED
         List<string> m_vFullNameChildTransformSlotsPop = new List<string>();
         List<Transform> m_vChildTransformSlots = new List<Transform>();
 
-        public class AnimatorStateData
-        {
-            public int layer;
-            public string layerName;
-            public AnimatorControllerLayer layerPtr;
-            public AnimatorState state;
-        }
+
         List<AnimatorStateData> m_vAnimationState = new List<AnimatorStateData>();
         AvatarMask[]    m_AvatarMasks = null;
         private AnimatorController m_AnimatorController;
@@ -378,15 +372,23 @@ namespace TopGame.ED
             m_pActor.SetActionStateGraph(ActionStateManager.getInstance().CreateActionStateGraph(pGrah, m_pGameModuel, true));
         }
         //-----------------------------------------------------
-        AnimatorState FindAnimatorState(string stateName, List<AnimatorStateData> vStates = null)
+        AnimatorState FindAnimatorState(string stateName, List<AnimatorStateData> vStates = null, string prefabName = null)
         {
             if (vStates == null) vStates = m_vAnimationState;
             for (int i = 0; i < vStates.Count; ++i)
             {
                 if (vStates[i].state == null) continue;
-                if (vStates[i].state.name.CompareTo(stateName) == 0)
+
+                if (vStates[i].state.name.Equals(stateName, StringComparison.OrdinalIgnoreCase))
                 {
                     return vStates[i].state;
+                }
+                if (!string.IsNullOrEmpty(prefabName))
+                {
+                    if (vStates[i].state.name.Equals(prefabName + "_" + stateName, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return vStates[i].state;
+                    }
                 }
             }
             return null;
@@ -758,65 +760,15 @@ namespace TopGame.ED
             m_vAnimations.Clear();
             m_vAnimationState.Clear();
 
-            string sourcePath = null;
-            Animator animator = binder.GetComponent<Animator>();
-            if(animator!=null && animator.runtimeAnimatorController!=null)
+            m_vAnimationState = ActionBatchCreateDefault.RefreshLocalAnimation(binder, prefabName);
+            foreach(var db in m_vAnimationState)
             {
-                sourcePath = AssetDatabase.GetAssetPath(animator.runtimeAnimatorController);
-            }
-
-            if (!string.IsNullOrEmpty(sourcePath))
-            {
-                if (!System.IO.Directory.Exists(System.IO.Path.GetDirectoryName(sourcePath).Replace("\\", "/") + "/animations"))
+                string name = db.state.name;
+                if(db.state.motion!=null && db.state.motion is AnimationClip)
                 {
-                    sourcePath = null;
+                    name += "-" + ((AnimationClip)db.state.motion).length;
                 }
-            }
-
-            if(string.IsNullOrEmpty(sourcePath))
-            {
-                var renderers = binder.GetComponentsInChildren<Renderer>();
-                for (int i = 0; i < renderers.Length; ++i)
-                {
-                    if (renderers[i] is MeshRenderer)
-                    {
-                        sourcePath = AssetDatabase.GetAssetPath((renderers[i] as MeshRenderer).additionalVertexStreams);
-                        break;
-                    }
-                    if (renderers[i] is SkinnedMeshRenderer)
-                    {
-                        sourcePath = AssetDatabase.GetAssetPath((renderers[i] as SkinnedMeshRenderer).sharedMesh);
-                        break;
-                    }
-                }
-                if (!string.IsNullOrEmpty(sourcePath))
-                {
-                    if (!System.IO.Directory.Exists(System.IO.Path.GetDirectoryName(sourcePath).Replace("\\", "/") + "/animations"))
-                    {
-                        sourcePath = null;
-                    }
-                }
-            }
-
-            if (string.IsNullOrEmpty(sourcePath)) return;
-            string prefabNameRef = System.IO.Path.GetFileNameWithoutExtension(sourcePath);
-            sourcePath = System.IO.Path.GetDirectoryName(sourcePath).Replace("\\", "/") + "/animations";
-            string[] clips = AssetDatabase.FindAssets("t:AnimationClip", new string[] { sourcePath });
-            for (int i = 0; i < clips.Length; ++i)
-            {
-                AnimationClip clip = AssetDatabase.LoadAssetAtPath<AnimationClip>(AssetDatabase.GUIDToAssetPath(clips[i]));
-                if (clip != null /*&& (clip.name.Contains(prefabName) || clip.name.Contains(prefabNameRef))*/)
-                {
-                    AnimatorStateData action = new AnimatorStateData();
-                    action.layerName = "BaseLayer";
-                    action.layer = 0;
-                    action.state = new AnimatorState();
-                    action.state.name = clip.name.Replace(prefabName + "_", "").Replace(prefabNameRef+"_","");
-                    action.state.motion = clip;
-
-                    m_vAnimationState.Add(action);
-                    m_vAnimations.Add(action.state.name + "-" + clip.length );
-                }
+                m_vAnimations.Add(name);
             }
             m_vAnimationState.Add(new AnimatorStateData() { state = null });
             m_vAnimations.Add("None");
@@ -1211,9 +1163,7 @@ namespace TopGame.ED
                     for (int i = 0; i < db.Value.GetCore().animations.Length; ++i)
                     {
                         var anim = db.Value.GetCore().animations[i];
-                        var state = FindAnimatorState(anim.animation);
-                        if (state == null)
-                            state = FindAnimatorState(anim.animation.ToLower());
+                        var state = FindAnimatorState(anim.animation, null, prefab.name);
                         if (state != null)
                         {
                             if (vHashs.Contains(anim.hashState))

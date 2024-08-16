@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8285716376709962448}
   - component: {fileID: 8285716376719062294}
+  - component: {fileID: 2563090337642687946}
   m_Layer: 10
   m_Name: elf_giant_0
   m_TagString: Untagged
@@ -254,6 +255,61 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &2563090337642687946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285716376709531326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0462bf3fa7328b544bc2587b61e2a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowChangeLayer: 1
+  usePlayableGraph: 1
+  Slots: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: dbdd29197ade2b94e8aaf091e7059860, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Idle
+    nameHash: -1276582900
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Soliders/elf_giant/animations/elf_giant_0_Attack.anim
+    loadType: 0
+    name: Attack
+    nameHash: -1062434163
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 2f0eb153b3528c94fa932284d1173925, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Run
+    nameHash: 743463958
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  layerAvatarMasks: []
+  bodyParts: []
+  cameraSlot: {fileID: 0}
 --- !u!1 &8285716376709531328
 GameObject:
   m_ObjectHideFlags: 0

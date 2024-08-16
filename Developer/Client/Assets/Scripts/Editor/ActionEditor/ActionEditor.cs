@@ -323,6 +323,10 @@ namespace TopGame.ED
             {
                 m_Logic.SaveData();
             }
+            if (GUILayout.Button("批量保存", new GUILayoutOption[] { GUILayout.Width(80f), GUILayout.Height(45f) }))
+            {
+                m_Logic.SaveAlls();
+            }
             if (GUILayout.Button("关联目录", new GUILayoutOption[] { GUILayout.Width(80f), GUILayout.Height(45f) }))
             {
                 EditorKits.OpenPathInExplorer(Application.dataPath + "/Datas/Config/ActionGraphs/");

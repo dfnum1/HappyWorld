@@ -504,6 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590081225156961640}
   - component: {fileID: 590081225164409550}
+  - component: {fileID: -2095763129748383972}
   m_Layer: 10
   m_Name: human_giant_0
   m_TagString: Untagged
@@ -549,6 +550,61 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-2095763129748383972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590081225156999496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0462bf3fa7328b544bc2587b61e2a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowChangeLayer: 1
+  usePlayableGraph: 1
+  Slots: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: ca3daf84c339baa49a7249a035265bc8, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Idle
+    nameHash: -1276582900
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Soliders/human_giant/animations/human_giant_0_Attack.anim
+    loadType: 0
+    name: Attack
+    nameHash: -1062434163
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: c808e85e553260b498c9185c5b9e7e45, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Run
+    nameHash: 743463958
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  layerAvatarMasks: []
+  bodyParts: []
+  cameraSlot: {fileID: 0}
 --- !u!1 &590081225156999498
 GameObject:
   m_ObjectHideFlags: 0

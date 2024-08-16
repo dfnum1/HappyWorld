@@ -4,7 +4,10 @@
         "Assets/Datas/FX",
         "Assets/DatasRef/FX"
     ],
-    "buildDirs": [],
+    "buildDirs": [
+        "Assets/DatasRef/Objects/Soliders/xxx/animations",
+        "Assets/DatasRef/Objects/Roles/xxx/animations"
+    ],
     "unbuildDirs": [
         "Assets/DatasRef/UI/Prefabs",
         "Assets/DatasRef/UI/Widgets"
@@ -133,7 +136,7 @@
     ],
     "versionServerAddress": "http://106.75.26.116:8085/versions/",
     "strEncryptKey": "jsj123^*456{][sd",
-    "buildTarget": 13,
+    "buildTarget": 19,
     "buildOptions": 0,
     "bundleExportDir": "/../Publishs/Packages",
     "copyToStreamAsset": false,
