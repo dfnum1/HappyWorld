@@ -23,8 +23,8 @@ namespace TopGame.Logic
         protected override void OnPreStart()
         {
             base.OnPreStart();
-            m_MonsterIDs.Add(1203801);
-            m_MonsterIDs.Add(1201501);
+            foreach(var db in Data.DataManager.getInstance().Monster.datas)
+                m_MonsterIDs.Add(db.Key);
 
             m_pScene = null;
             var opCall = FileSystemUtil.SpawnInstance("Assets/Datas/Objects/Scenes/Test/TestScene.prefab");

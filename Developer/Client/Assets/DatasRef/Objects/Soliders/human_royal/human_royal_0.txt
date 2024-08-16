@@ -1,0 +1,6 @@
+0-30 loop Idle
+31-66 Attack
+67-133 Response
+204-222 loop Run
+225-243 loop Skill
+135-201 Die

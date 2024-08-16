@@ -1,0 +1,6 @@
+200-247 Response
+0-30 loop Idle
+31-71 Attack
+127-153 loop Run
+72-124 Death
+156-197 Die

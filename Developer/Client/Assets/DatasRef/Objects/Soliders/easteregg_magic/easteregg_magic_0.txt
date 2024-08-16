@@ -1,0 +1,3 @@
+0-32 loop Idle
+36-80 Response
+84-112 Attack
