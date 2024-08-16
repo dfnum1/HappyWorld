@@ -340,7 +340,7 @@ namespace TopGame.ED
 
             float labelWidth = EditorGUIUtility.labelWidth;
             EditorGUIUtility.labelWidth = 60;
-            GUILayout.BeginArea(new Rect(680, 0, position.width-200- 680, 45));
+            GUILayout.BeginArea(new Rect(760, 0, position.width-200- 760, 45));
             {
                 GUILayout.BeginHorizontal();
                 {

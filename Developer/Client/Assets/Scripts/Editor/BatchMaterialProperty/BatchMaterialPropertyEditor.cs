@@ -36,6 +36,7 @@ namespace TopGame.ED
 
         private Shader m_pOldShader = null;
 
+        private string m_strCopyOldPropName = null;
         private string m_strPropertyName;
         private Vector4 m_PropertyValue;
         Texture m_pPropertyTexture = null;
@@ -45,6 +46,7 @@ namespace TopGame.ED
         List<string> m_vShaderPop = new List<string>();
         ShaderUtil.ShaderPropertyType m_PropertyType = ShaderUtil.ShaderPropertyType.Float;
         List<string> m_vMaterialNamePop = new List<string>();
+        List<string> m_vOldMaterialNamePop = new List<string>();
         enum PropertyValue
         {
             Float,
@@ -97,6 +99,15 @@ namespace TopGame.ED
                 {
                     m_pOldShader = Shader.Find(m_vShaderPop[index]);
                 }
+                if (m_pOldShader != null)
+                {
+                    m_vOldMaterialNamePop.Clear();
+                    int cnt = ShaderUtil.GetPropertyCount(m_pOldShader);
+                    for (int i = 0; i < cnt; ++i)
+                    {
+                        m_vOldMaterialNamePop.Add(ShaderUtil.GetPropertyName(m_pOldShader, i));
+                    }
+                }
             }
 
             {
@@ -129,8 +140,6 @@ namespace TopGame.ED
                 m_strPropertyName = m_vMaterialNamePop[matIndex];
                 m_PropertyType = ShaderUtil.GetPropertyType(m_pShader, matIndex);
             }
-
-            m_strPropertyName = EditorGUILayout.TextField("属性名", m_strPropertyName);
             if (!string.IsNullOrEmpty(m_strPropertyName))
             {
                 GUILayout.BeginHorizontal();
@@ -146,6 +155,12 @@ namespace TopGame.ED
                     m_pPropertyTexture = EditorGUILayout.ObjectField(m_pPropertyTexture, typeof(Texture), false) as Texture;
                 GUILayout.EndHorizontal();
 
+                matIndex = m_vOldMaterialNamePop.IndexOf(m_strCopyOldPropName);
+                matIndex = EditorGUILayout.Popup("使用原属性覆盖到新", matIndex, m_vOldMaterialNamePop.ToArray());
+                if (matIndex >= 0 && matIndex < m_vOldMaterialNamePop.Count)
+                {
+                    m_strCopyOldPropName = m_vOldMaterialNamePop[matIndex];
+                }
             }
 
             if (GUILayout.Button("替换Shader"))
@@ -207,6 +222,35 @@ namespace TopGame.ED
                     EditorUtility.DisplayProgressBar("批量[" + vMaterials.Count + "]", vMaterials[i].name, (float)(i / vMaterials.Count));
 
                     if(vMaterials[i].shader != m_pOldShader) continue;
+
+                    object propOriValue = null;
+                    if (!string.IsNullOrEmpty(m_strCopyOldPropName))
+                    {
+                        if (vMaterials[i].HasProperty(m_strCopyOldPropName))
+                        {
+                            if (m_PropertyType == ShaderUtil.ShaderPropertyType.Float)
+                            {
+                                propOriValue = vMaterials[i].GetFloat(m_strCopyOldPropName);
+                            }
+                            else if (m_PropertyType == ShaderUtil.ShaderPropertyType.Range)
+                            {
+                                propOriValue = vMaterials[i].GetFloat(m_strCopyOldPropName);
+                            }
+                            else if (m_PropertyType == ShaderUtil.ShaderPropertyType.Vector)
+                            {
+                                propOriValue = vMaterials[i].GetVector(m_strCopyOldPropName);
+                            }
+                            else if (m_PropertyType == ShaderUtil.ShaderPropertyType.Color)
+                            {
+                                propOriValue = vMaterials[i].GetColor(m_strCopyOldPropName);
+                            }
+                            else if (m_PropertyType == ShaderUtil.ShaderPropertyType.TexEnv)
+                            {
+                                propOriValue = vMaterials[i].GetTexture(m_strCopyOldPropName);
+                            }
+                        }
+                    }
+
                     if (vMaterials[i].shader ==null || vMaterials[i].shader != m_pShader)
                     {
                         vMaterials[i].shader = m_pShader;
@@ -241,6 +285,10 @@ namespace TopGame.ED
                         if (m_PropertyType == ShaderUtil.ShaderPropertyType.Float)
                         {
                             float val = m_PropertyValue.x;
+                            if (propOriValue!=null)
+                            {
+                                val = (float)propOriValue;
+                            }
                             if (m_bAmount)
                             {
                                 val += vMaterials[i].GetFloat(propName);
@@ -251,6 +299,10 @@ namespace TopGame.ED
                         else if (m_PropertyType == ShaderUtil.ShaderPropertyType.Range)
                         {
                             float val = m_PropertyValue.x;
+                            if (propOriValue != null)
+                            {
+                                val = (float)propOriValue;
+                            }
                             if (m_bAmount)
                             {
                                 val += vMaterials[i].GetFloat(propName);
@@ -261,6 +313,10 @@ namespace TopGame.ED
                         else if (m_PropertyType == ShaderUtil.ShaderPropertyType.Vector)
                         {
                             Vector4 val = m_PropertyValue;
+                            if (propOriValue != null)
+                            {
+                                val = (Vector4)propOriValue;
+                            }
                             if (m_bAmount)
                             {
                                 val += vMaterials[i].GetVector(propName);
@@ -271,6 +327,10 @@ namespace TopGame.ED
                         else if (m_PropertyType == ShaderUtil.ShaderPropertyType.Color)
                         {
                             Color val = m_PropertyValue;
+                            if (propOriValue != null)
+                            {
+                                val = (Color)propOriValue;
+                            }
                             if (m_bAmount)
                             {
                                 val += vMaterials[i].GetColor(propName);
@@ -280,7 +340,12 @@ namespace TopGame.ED
                         }
                         else if (m_PropertyType == ShaderUtil.ShaderPropertyType.TexEnv)
                         {
-                            vMaterials[i].SetTexture(propName, m_pPropertyTexture);
+                            Texture val = m_pPropertyTexture;
+                            if (propOriValue != null)
+                            {
+                                val = (Texture)propOriValue;
+                            }
+                            vMaterials[i].SetTexture(propName, val);
                             EditorUtility.SetDirty(vMaterials[i]);
                         }
                         else
@@ -402,7 +467,8 @@ namespace TopGame.ED
                         }
                         else if (m_PropertyType == ShaderUtil.ShaderPropertyType.TexEnv)
                         {
-                            vMaterials[i].SetTexture(propName, m_pPropertyTexture);
+                            Texture propTex = m_pPropertyTexture;
+                            vMaterials[i].SetTexture(propName, propTex);
                             EditorUtility.SetDirty(vMaterials[i]);
                         }
                         else
