@@ -79,10 +79,10 @@ namespace Framework.Plugin.AT
 				ms_vClassTypeToHash[typeof(TopGame.UI.DialogView)]= -663210307;
 				ms_vClassTypeToHash[typeof(TopGame.UI.UIFullScreenFillPanel)]= -1419252118;
 				ms_vClassTypeToHash[typeof(TopGame.UI.UIFullScreenFillView)]= -2104695422;
-				ms_vClassTypeToHash[typeof(TopGame.UI.UIGMPanel)]= -1590900061;
-				ms_vClassTypeToHash[typeof(TopGame.UI.UIGMPanelView)]= 97081629;
 				ms_vClassTypeToHash[typeof(TopGame.UI.UIGameInfo)]= -833143701;
 				ms_vClassTypeToHash[typeof(TopGame.UI.UIGameInfoView)]= 381635682;
+				ms_vClassTypeToHash[typeof(TopGame.UI.UIGMPanel)]= -1590900061;
+				ms_vClassTypeToHash[typeof(TopGame.UI.UIGMPanelView)]= 97081629;
 				ms_vClassTypeToHash[typeof(TopGame.UI.GuidePanel)]= -906153592;
 				ms_vClassTypeToHash[typeof(TopGame.UI.UIGuideView)]= -1053650587;
 				ms_vClassTypeToHash[typeof(TopGame.UI.AUILoading)]= 945521253;
@@ -101,6 +101,9 @@ namespace Framework.Plugin.AT
 				ms_vClassTypeToHash[typeof(TopGame.Core.FreeCameraMode)]= 118271136;
 				ms_vClassTypeToHash[typeof(TopGame.Core.HallCameraMode)]= 599668512;
 				ms_vClassTypeToHash[typeof(TopGame.Core.Projectile)]= 601264434;
+				ms_vClassTypeToHash[typeof(Framework.Core.ATweenEffecter)]= 825531184;
+				ms_vClassTypeToHash[typeof(Framework.Core.AActionGraphBinder)]= 564390056;
+				ms_vClassTypeToHash[typeof(Framework.Core.AParticleController)]= -1257273348;
 				ms_vClassTypeToHash[typeof(Framework.BattlePlus.GameActorAgent)]= 1946692654;
 				ms_vClassTypeToHash[typeof(Framework.BattlePlus.MechaAgent)]= 1941383935;
 				ms_vClassTypeToHash[typeof(Framework.BattlePlus.MonsterAgent)]= -1802823783;
@@ -120,9 +123,6 @@ namespace Framework.Plugin.AT
 				ms_vClassTypeToHash[typeof(Framework.Core.VectorProperty)]= 406635084;
 				ms_vClassTypeToHash[typeof(Framework.Core.Actor)]= 1089212927;
 				ms_vClassTypeToHash[typeof(Framework.Core.AProjectile)]= 1328774582;
-				ms_vClassTypeToHash[typeof(Framework.Core.ATweenEffecter)]= 825531184;
-				ms_vClassTypeToHash[typeof(Framework.Core.AActionGraphBinder)]= 564390056;
-				ms_vClassTypeToHash[typeof(Framework.Core.AParticleController)]= -1257273348;
 			}
 			#endregion
 			int hash = 0;
@@ -202,10 +202,10 @@ namespace Framework.Plugin.AT
 				case -663210307: return typeof(TopGame.UI.DialogView);
 				case -1419252118: return typeof(TopGame.UI.UIFullScreenFillPanel);
 				case -2104695422: return typeof(TopGame.UI.UIFullScreenFillView);
-				case -1590900061: return typeof(TopGame.UI.UIGMPanel);
-				case 97081629: return typeof(TopGame.UI.UIGMPanelView);
 				case -833143701: return typeof(TopGame.UI.UIGameInfo);
 				case 381635682: return typeof(TopGame.UI.UIGameInfoView);
+				case -1590900061: return typeof(TopGame.UI.UIGMPanel);
+				case 97081629: return typeof(TopGame.UI.UIGMPanelView);
 				case -906153592: return typeof(TopGame.UI.GuidePanel);
 				case -1053650587: return typeof(TopGame.UI.UIGuideView);
 				case 945521253: return typeof(TopGame.UI.AUILoading);
@@ -224,6 +224,9 @@ namespace Framework.Plugin.AT
 				case 118271136: return typeof(TopGame.Core.FreeCameraMode);
 				case 599668512: return typeof(TopGame.Core.HallCameraMode);
 				case 601264434: return typeof(TopGame.Core.Projectile);
+				case 825531184: return typeof(Framework.Core.ATweenEffecter);
+				case 564390056: return typeof(Framework.Core.AActionGraphBinder);
+				case -1257273348: return typeof(Framework.Core.AParticleController);
 				case 1946692654: return typeof(Framework.BattlePlus.GameActorAgent);
 				case 1941383935: return typeof(Framework.BattlePlus.MechaAgent);
 				case -1802823783: return typeof(Framework.BattlePlus.MonsterAgent);
@@ -243,9 +246,6 @@ namespace Framework.Plugin.AT
 				case 406635084: return typeof(Framework.Core.VectorProperty);
 				case 1089212927: return typeof(Framework.Core.Actor);
 				case 1328774582: return typeof(Framework.Core.AProjectile);
-				case 825531184: return typeof(Framework.Core.ATweenEffecter);
-				case 564390056: return typeof(Framework.Core.AActionGraphBinder);
-				case -1257273348: return typeof(Framework.Core.AParticleController);
 			}
 			return null;
 		}
@@ -321,10 +321,10 @@ namespace Framework.Plugin.AT
 				case -663210307: return -1757231343;//TopGame.UI.DialogView->TopGame.UI.UIView
 				case -1419252118: return -1458859266;//TopGame.UI.UIFullScreenFillPanel->TopGame.UI.UIBase
 				case -2104695422: return -1757231343;//TopGame.UI.UIFullScreenFillView->TopGame.UI.UIView
-				case -1590900061: return -1458859266;//TopGame.UI.UIGMPanel->TopGame.UI.UIBase
-				case 97081629: return -1757231343;//TopGame.UI.UIGMPanelView->TopGame.UI.UIView
 				case -833143701: return -1458859266;//TopGame.UI.UIGameInfo->TopGame.UI.UIBase
 				case 381635682: return -1757231343;//TopGame.UI.UIGameInfoView->TopGame.UI.UIView
+				case -1590900061: return -1458859266;//TopGame.UI.UIGMPanel->TopGame.UI.UIBase
+				case 97081629: return -1757231343;//TopGame.UI.UIGMPanelView->TopGame.UI.UIView
 				case -906153592: return -1458859266;//TopGame.UI.GuidePanel->TopGame.UI.UIBase
 				case -1053650587: return -1757231343;//TopGame.UI.UIGuideView->TopGame.UI.UIView
 				case 945521253: return -1458859266;//TopGame.UI.AUILoading->TopGame.UI.UIBase
@@ -343,6 +343,9 @@ namespace Framework.Plugin.AT
 				case 118271136: return 1498978502;//TopGame.Core.FreeCameraMode->Framework.Core.CameraMode
 				case 599668512: return 1498978502;//TopGame.Core.HallCameraMode->Framework.Core.CameraMode
 				case 601264434: return 55777259;//TopGame.Core.Projectile->Framework.Core.AWorldNode
+				case 825531184: return 1980077048;//Framework.Core.ATweenEffecter->Framework.Core.AInstanceAble
+				case 564390056: return 1980077048;//Framework.Core.AActionGraphBinder->Framework.Core.AInstanceAble
+				case -1257273348: return 1980077048;//Framework.Core.AParticleController->Framework.Core.AInstanceAble
 				case 1946692654: return 660158659;//Framework.BattlePlus.GameActorAgent->Framework.Core.ActorAgent
 				case 1941383935: return 660158659;//Framework.BattlePlus.MechaAgent->Framework.Core.ActorAgent
 				case -1802823783: return 660158659;//Framework.BattlePlus.MonsterAgent->Framework.Core.ActorAgent
@@ -362,9 +365,6 @@ namespace Framework.Plugin.AT
 				case 406635084: return 85319012;//Framework.Core.VectorProperty->Framework.Core.ABaseProperty
 				case 1089212927: return 55777259;//Framework.Core.Actor->Framework.Core.AWorldNode
 				case 1328774582: return 55777259;//Framework.Core.AProjectile->Framework.Core.AWorldNode
-				case 825531184: return 1980077048;//Framework.Core.ATweenEffecter->Framework.Core.AInstanceAble
-				case 564390056: return 1980077048;//Framework.Core.AActionGraphBinder->Framework.Core.AInstanceAble
-				case -1257273348: return 1980077048;//Framework.Core.AParticleController->Framework.Core.AInstanceAble
 			}
 			return 0;
 		}

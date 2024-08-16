@@ -20,6 +20,19 @@ namespace Framework.Plugin.AT
 			return true;
 		}
 #if UNITY_EDITOR
+		[ATMonoFunc(214774247,"get_pParentAttacker",typeof(Framework.BattlePlus.BattleDamage), true)]
+		[ATMethodArgv(typeof(VariableUser),"pPointer",false,  typeof(Framework.BattlePlus.BattleDamage),null)]
+		[ATMethodReturn(typeof(VariableUser),"pReturn",typeof(Framework.Core.AWorldNode),null)]
+#endif
+		public static bool AT_get_pParentAttacker(Framework.BattlePlus.BattleDamage pPointer, VariableUser pReturn=null)
+		{
+			if(pReturn != null)
+			{	
+				pReturn.mValue = pPointer.pParentAttacker;
+			}	
+			return true;
+		}
+#if UNITY_EDITOR
 		[ATMonoFunc(-1399618266,"get_pAttacker",typeof(Framework.BattlePlus.BattleDamage), true)]
 		[ATMethodArgv(typeof(VariableUser),"pPointer",false,  typeof(Framework.BattlePlus.BattleDamage),null)]
 		[ATMethodReturn(typeof(VariableUser),"pReturn",typeof(Framework.Core.Actor),null)]
@@ -279,6 +292,15 @@ namespace Framework.Plugin.AT
 					if(pUserClass.mValue == null) return true;
 					if(pAction.outArgvs ==null || pAction.outArgvs.Length <1) return true;
 					return AgentTree_BattleDamage.AT_get_pActor((Framework.BattlePlus.BattleDamage)pUserClass.mValue, pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableUser>(0, pTask));
+				}
+				case 214774247:
+				{//Framework.BattlePlus.BattleDamage->pParentAttacker
+					if(pUserClass == null) return true;
+					if(pUserClass.mValue == null)
+						pUserClass.mValue = AgentTreeManager.getInstance().FindUserClass(pUserClass.hashCode, pTask.pAT);
+					if(pUserClass.mValue == null) return true;
+					if(pAction.outArgvs ==null || pAction.outArgvs.Length <1) return true;
+					return AgentTree_BattleDamage.AT_get_pParentAttacker((Framework.BattlePlus.BattleDamage)pUserClass.mValue, pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableUser>(0, pTask));
 				}
 				case -1399618266:
 				{//Framework.BattlePlus.BattleDamage->pAttacker

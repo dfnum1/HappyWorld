@@ -363,6 +363,38 @@ namespace Framework.Plugin.AT
 			return true;
 		}
 #if UNITY_EDITOR
+		[ATMonoFunc(897797937,"GetMaxStepHeight",typeof(Framework.Core.Actor))]
+		[ATMethodArgv(typeof(VariableUser),"pPointer",false,  typeof(Framework.Core.Actor),null)]
+		[ATMethodReturn(typeof(VariableFloat),"pReturn",null,null)]
+#endif
+		public static bool AT_GetMaxStepHeight(Framework.Core.Actor pPointer, VariableFloat pReturn=null)
+		{
+			if(pReturn != null)
+			{	
+				pReturn.mValue = pPointer.GetMaxStepHeight();
+			}	
+			return true;
+		}
+#if UNITY_EDITOR
+		[ATMonoFunc(-862540849,"SetMaxStepHeight",typeof(Framework.Core.Actor))]
+		[ATMethodArgv(typeof(VariableUser),"pPointer",false,  typeof(Framework.Core.Actor),null)]
+		[ATMethodArgv(typeof(VariableFloat),"height",false, null,null)]
+		[ATMethodReturn(typeof(VariableBool),"pReturn",null,null)]
+#endif
+		public static bool AT_SetMaxStepHeight(Framework.Core.Actor pPointer, VariableFloat height, VariableBool pReturn=null)
+		{
+			if(height== null)
+			{
+				AgentTreeUtl.LogWarning("argv is null...");
+				return true;
+			}
+			if(pReturn != null)
+			{	
+				pReturn.mValue = pPointer.SetMaxStepHeight(height.mValue);
+			}	
+			return true;
+		}
+#if UNITY_EDITOR
 		[ATMonoFunc(1883859516,"GetGravity",typeof(Framework.Core.Actor))]
 		[ATMethodArgv(typeof(VariableUser),"pPointer",false,  typeof(Framework.Core.Actor),null)]
 		[ATMethodReturn(typeof(VariableFloat),"pReturn",null,null)]
@@ -523,6 +555,19 @@ namespace Framework.Plugin.AT
 			if(pReturn != null)
 			{	
 				pReturn.mValue = pPointer.CanDoJumpAction();
+			}	
+			return true;
+		}
+#if UNITY_EDITOR
+		[ATMonoFunc(649680399,"CanDoFallingAction",typeof(Framework.Core.Actor))]
+		[ATMethodArgv(typeof(VariableUser),"pPointer",false,  typeof(Framework.Core.Actor),null)]
+		[ATMethodReturn(typeof(VariableBool),"pReturn",null,null)]
+#endif
+		public static bool AT_CanDoFallingAction(Framework.Core.Actor pPointer, VariableBool pReturn=null)
+		{
+			if(pReturn != null)
+			{	
+				pReturn.mValue = pPointer.CanDoFallingAction();
 			}	
 			return true;
 		}
@@ -1183,6 +1228,27 @@ namespace Framework.Plugin.AT
 					if(!(pUserClass.mValue is Framework.Core.Actor)) return true;
 					return AgentTree_Actor.AT_GetMaxJumpHeight(pUserClass.mValue as Framework.Core.Actor, pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableFloat>(0, pTask));
 				}
+				case 897797937:
+				{//Framework.Core.Actor->GetMaxStepHeight
+					if(pUserClass == null) return true;
+					if(pUserClass.mValue == null)
+						pUserClass.mValue = AgentTreeManager.getInstance().FindUserClass(pUserClass.hashCode, pTask.pAT);
+					if(pUserClass.mValue == null) return true;
+					if(pAction.outArgvs ==null || pAction.outArgvs.Length <1) return true;
+					if(!(pUserClass.mValue is Framework.Core.Actor)) return true;
+					return AgentTree_Actor.AT_GetMaxStepHeight(pUserClass.mValue as Framework.Core.Actor, pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableFloat>(0, pTask));
+				}
+				case -862540849:
+				{//Framework.Core.Actor->SetMaxStepHeight
+					if(pUserClass == null) return true;
+					if(pUserClass.mValue == null)
+						pUserClass.mValue = AgentTreeManager.getInstance().FindUserClass(pUserClass.hashCode, pTask.pAT);
+					if(pUserClass.mValue == null) return true;
+					if(pAction.inArgvs.Length <=1) return true;
+					if(pAction.outArgvs ==null || pAction.outArgvs.Length <1) return true;
+					if(!(pUserClass.mValue is Framework.Core.Actor)) return true;
+					return AgentTree_Actor.AT_SetMaxStepHeight(pUserClass.mValue as Framework.Core.Actor, pAction.GetInVariableByIndex<Framework.Plugin.AT.VariableFloat>(1, pTask), pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableBool>(0, pTask));
+				}
 				case 1883859516:
 				{//Framework.Core.Actor->GetGravity
 					if(pUserClass == null) return true;
@@ -1294,6 +1360,16 @@ namespace Framework.Plugin.AT
 					if(pAction.outArgvs ==null || pAction.outArgvs.Length <1) return true;
 					if(!(pUserClass.mValue is Framework.Core.Actor)) return true;
 					return AgentTree_Actor.AT_CanDoJumpAction(pUserClass.mValue as Framework.Core.Actor, pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableBool>(0, pTask));
+				}
+				case 649680399:
+				{//Framework.Core.Actor->CanDoFallingAction
+					if(pUserClass == null) return true;
+					if(pUserClass.mValue == null)
+						pUserClass.mValue = AgentTreeManager.getInstance().FindUserClass(pUserClass.hashCode, pTask.pAT);
+					if(pUserClass.mValue == null) return true;
+					if(pAction.outArgvs ==null || pAction.outArgvs.Length <1) return true;
+					if(!(pUserClass.mValue is Framework.Core.Actor)) return true;
+					return AgentTree_Actor.AT_CanDoFallingAction(pUserClass.mValue as Framework.Core.Actor, pAction.GetOutVariableByIndex<Framework.Plugin.AT.VariableBool>(0, pTask));
 				}
 				case -538469385:
 				{//Framework.Core.Actor->CanDoBuffStateAction

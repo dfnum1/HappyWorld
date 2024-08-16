@@ -172,6 +172,26 @@ namespace Framework.Plugin.AT
 				{//TopGame.Data.CsvData_Dialog.DialogData
 					return AgentTree_DialogData.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
 				}
+				case -1651345459:
+				{//Framework.Core.AFileSystem
+					return AgentTree_AFileSystem.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
+				}
+				case 1980077048:
+				{//Framework.Core.AInstanceAble
+					return AgentTree_AInstanceAble.DoAction(pUserPointer as VariableMonoScript, pTask, pAction, functionId);
+				}
+				case -1089217254:
+				{//Framework.Core.InstanceOperiaon
+					return AgentTree_InstanceOperiaon.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
+				}
+				case 2138846980:
+				{//Framework.Core.MaterailBlockUtil
+					return AgentTree_MaterailBlockUtil.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
+				}
+				case 661331526:
+				{//Framework.Core.DyncmicTransformCollects
+					return AgentTree_DyncmicTransformCollects.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
+				}
 				case 149187860:
 				{//Framework.BattlePlus.AMonster
 					return AgentTree_AMonster.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
@@ -223,26 +243,6 @@ namespace Framework.Plugin.AT
 				case 55777259:
 				{//Framework.Core.AWorldNode
 					return AgentTree_AWorldNode.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
-				}
-				case -1651345459:
-				{//Framework.Core.AFileSystem
-					return AgentTree_AFileSystem.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
-				}
-				case 1980077048:
-				{//Framework.Core.AInstanceAble
-					return AgentTree_AInstanceAble.DoAction(pUserPointer as VariableMonoScript, pTask, pAction, functionId);
-				}
-				case -1089217254:
-				{//Framework.Core.InstanceOperiaon
-					return AgentTree_InstanceOperiaon.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
-				}
-				case 2138846980:
-				{//Framework.Core.MaterailBlockUtil
-					return AgentTree_MaterailBlockUtil.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
-				}
-				case 661331526:
-				{//Framework.Core.DyncmicTransformCollects
-					return AgentTree_DyncmicTransformCollects.DoAction(pUserPointer as VariableUser, pTask, pAction, functionId);
 				}
 			}
 			return true;

@@ -342,7 +342,7 @@ namespace TopGame.Logic
                 if (bCanTriggerEvent && !pEle.IsCanPick())
                 {
                     BattleDamage damage = new BattleDamage();
-                    damage.Set(BattleFrameDamage.DEF, attacker as Actor, target as Actor, false, false, 1, pEle.GetPosition());
+                    damage.Set(BattleFrameDamage.DEF, attacker as Actor, target, target as Actor, false, false, 1, pEle.GetPosition());
                     Framework.Plugin.AT.AgentTreeManager.Execute((ushort)Base.EATEventType.OnElementCollision, 1, damage);
                 }
 #endif
