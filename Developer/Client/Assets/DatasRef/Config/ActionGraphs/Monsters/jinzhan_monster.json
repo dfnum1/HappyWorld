@@ -6,7 +6,7 @@
     "object_scale": 1.0,
     "foot_shadow_scale": 1.0,
     "physics_push_force": 1.0,
-    "physics_radius": 0.19999998807907105,
+    "physics_radius": 0.5,
     "physics_gravity": 9.800000190734864,
     "falling_speed": 1.0,
     "global_action_speed_scale": 1.0,

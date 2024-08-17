@@ -134,7 +134,16 @@ float4 MatcapFS(VertexToFragment input) : COLOR
 		finalColor.rgb = lerp(finalColor.rgb, _DissolveEdgeColor.rgb * 10, edge_area);
 	#else
 		finalColor = clamp(finalColor, 0, 1.5);
-	#endif	
+	#endif
+	
+    #ifdef _MAIN_LIGHT_SHADOWS
+		
+        float4 shadowCoord = TransformWorldToShadowCoord(worldPos);
+        half shadowAttenutation = MainLightRealtimeShadow(shadowCoord);
+		
+		float argvLight = _ShadowColor.a;
+        finalColor = lerp(finalColor, finalColor*0.35, (1.0 - shadowAttenutation) * argvLight);
+    #endif	
 
 	UNITY_APPLY_FOG(input.fogCoord, finalColor);
 	return finalColor;
