@@ -14,6 +14,7 @@ Material:
   - _EMISSION
   - _FROZENEFFECT_OFF
   - _SHADOWEFFECT_ON
+  - _USEDIRLIGHT_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -118,7 +119,7 @@ Material:
     - _RimEdgePower: 0.6
     - _RimFactor: 0
     - _ShadowEffect: 1
-    - _ShadowFalloff: 0.1
+    - _ShadowFalloff: 0.8
     - _ShadowOffsetX: 0
     - _ShadowOffsetZ: 0
     - _SmoothnessTextureChannel: 0
@@ -126,14 +127,14 @@ Material:
     - _SrcBlend: 1
     - _Strength: 0.718
     - _UVSec: 0
-    - _UseDirLight: 0
+    - _UseDirLight: 1
     - _UseDissolve: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveEdgeColor: {r: 0.7075472, g: 0.6429099, b: 0.0033374948, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.07352942, g: 0.07352942, b: 0.07352942, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ProjectorColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
