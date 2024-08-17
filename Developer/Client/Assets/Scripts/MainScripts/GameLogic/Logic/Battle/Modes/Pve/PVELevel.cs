@@ -71,10 +71,10 @@ namespace TopGame.Logic
                 return;
 #endif
 
-            if (m_vMonster.Count <= 1 && m_vSpawnPoints.Count > 0)
+            if (m_vMonster.Count <= 60 && m_vSpawnPoints.Count > 0)
             {
                 FVector3 playerPos = GetModeLogic<PVEPlayer>().GetPosition();
-                for (int i = 0; i < 1; ++i)
+                for (int i = 0; i < 60; ++i)
                 {
                     var data = Data.DataManager.getInstance().Monster.GetData(m_MonsterIDs[UnityEngine.Random.Range(0, m_MonsterIDs.Count)]);
                     if (data != null)
@@ -87,7 +87,7 @@ namespace TopGame.Logic
                             monster.EnableRVO(true);
                             monster.EnableSkill(true);
                             monster.SetAttackGroup(1);
-                            monster.GetActorParameter().SetLevel((ushort)(10));
+                            monster.GetActorParameter().SetLevel((ushort)(1));
                             monster.StartActionByType(EActionStateType.Enter, 0, 1, true, false, true);
                             monster.SetFinalPosition(m_vSpawnPoints[GetFramework().GetRamdom(0, m_vSpawnPoints.Count)]);
 

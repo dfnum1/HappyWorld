@@ -37,7 +37,7 @@ namespace TopGame.Logic
             m_pPlayer.EnableAI(true);
             m_pPlayer.GetActorParameter().SetLevel(10000);
             m_pPlayer.GetActorParameter().AppendHP(100000);
-            m_pPlayer.GetActorParameter().AddpendBaseAttr(EAttrType.Attack, 1000);
+            m_pPlayer.GetActorParameter().AddpendBaseAttr(EAttrType.Attack, 10000);
 
             Framework.BattlePlus.RunerAgent agent = m_pPlayer.GetActorAgent() as Framework.BattlePlus.RunerAgent;
             if (agent != null)
