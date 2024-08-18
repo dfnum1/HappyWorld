@@ -38,6 +38,8 @@ namespace TopGame.Logic
             m_pPlayer.GetActorParameter().SetLevel(10000);
             m_pPlayer.GetActorParameter().AppendHP(100000);
             m_pPlayer.GetActorParameter().AddpendBaseAttr(EAttrType.Attack, 10000);
+			
+			m_pPlayer.SetFinalPosition(new FVector3(14.0f,0.0f,6.0f));
 
             Framework.BattlePlus.RunerAgent agent = m_pPlayer.GetActorAgent() as Framework.BattlePlus.RunerAgent;
             if (agent != null)
