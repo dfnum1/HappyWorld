@@ -21,6 +21,7 @@ using Framework.ED;
 using UnityEditor.PackageManager.UI;
 using static Framework.ED.EditorUtil;
 using TopGame.UI;
+using DG.Tweening.Plugins.Core.PathCore;
 
 namespace TopGame.ED
 {
@@ -34,24 +35,23 @@ namespace TopGame.ED
         TargetPreview m_preview;
         GUIStyle m_previewStyle;
 
+        int m_nScanSize = 1;
         int m_nCellSize = 1;
-        Vector3Int m_SceneSize = new Vector3Int(100, 100, 100);
+        Vector3Int m_SceneSize = new Vector3Int(30, 30, 30);
 
         Vector3 m_CurrentWorldPos = Vector3.zero;
-        bool m_bSelectPathing = false;
 
-        int m_nPathBrushSize = 1;
-        bool m_bDragingPath = false;
         List<List<Vector2Int>> m_vPaths = new List<List<Vector2Int>>();
         Mesh m_PathMesh = null;
         Material m_PathMaterial = null;
 
+        TerrainGenerator m_pGenerator = new TerrainGenerator();
         DungonEditorLogic m_pLogic;
         //-----------------------------------------------------
         public void Enable(DungonEditorLogic pEditor)
         {
             m_pLogic = pEditor;
-
+            m_pGenerator.Enable(this);
             setUpPreview();
             m_pGridWireBox.Init(Color.red);
 
@@ -68,6 +68,11 @@ namespace TopGame.ED
                 m_PathMesh.triangles = new int[] { 0, 1, 2, 0, 2, 3 };
                 m_PathMesh.uv = new Vector2[] { new Vector2(0, 0), new Vector2(0, 1), new Vector2(1, 1), new Vector2(1, 0) };
             }
+        }
+        //-----------------------------------------------------
+        public void ShowNotification(string content, float showTime = 1)
+        {
+            m_pLogic.ShowNotification(content, showTime);
         }
         //-----------------------------------------------------
         public void setUpPreview()
@@ -94,6 +99,7 @@ namespace TopGame.ED
         public void Disable()
         {
             Clear();
+            m_pGenerator.Disable();
 
             if (m_preview != null)
                 m_preview.Destroy();
@@ -107,7 +113,7 @@ namespace TopGame.ED
         public void Clear()
         {
             ClearTarget();
-            m_bDragingPath = false;
+            m_pGenerator.Clear();
         }
         //-----------------------------------------------------
         void ClearTarget()
@@ -118,16 +124,12 @@ namespace TopGame.ED
         //-----------------------------------------------------
         public void Update(float fFrameTime)
         {
+            m_pGenerator.Update(fFrameTime);
         }
         //-----------------------------------------------------
-        public void Realod()
+        public void reload()
         {
-
-        }
-        //------------------------------------------------------
-        public void Check()
-        {
-
+            m_pGenerator.reload();
         }
         //-----------------------------------------------------
         public void OnGUI()
@@ -155,16 +157,16 @@ namespace TopGame.ED
         //-----------------------------------------------------
         void OnDrawPreview(int controll, Camera camera, Event evt)
         {
-            Handles.DrawWireCube(new Vector3(m_SceneSize.x * 0.5f, m_SceneSize.y * 0.5f, m_SceneSize.z * 0.5f), new Vector3(m_SceneSize.x, m_SceneSize.y, m_SceneSize.z));
+            Handles.DrawWireCube(new Vector3(m_SceneSize.x*m_nCellSize * 0.5f, m_SceneSize.y * m_nCellSize * 0.5f, m_SceneSize.z * m_nCellSize * 0.5f), new Vector3(m_SceneSize.x * m_nCellSize, m_SceneSize.y * m_nCellSize, m_SceneSize.z * m_nCellSize));
             using (new HandlesColor(new Color(1, 1, 1, 0.25f)))
             {
-                for (int x = 0; x < m_SceneSize.x; x += m_nCellSize)
+                for (int x = 0; x < m_SceneSize.x * m_nCellSize; x += m_nCellSize)
                 {
-                    Handles.DrawLine(new Vector3(x, 0, 0), new Vector3(x, 0, m_SceneSize.z));
+                    Handles.DrawLine(new Vector3(x, 0, 0), new Vector3(x, 0, m_SceneSize.z* m_nCellSize));
                 }
-                for (int z = 0; z < m_SceneSize.z; z += m_nCellSize)
+                for (int z = 0; z < m_SceneSize.z* m_nCellSize; z += m_nCellSize)
                 {
-                    Handles.DrawLine(new Vector3(0, 0, z), new Vector3(m_SceneSize.x, 0, z));
+                    Handles.DrawLine(new Vector3(0, 0, z), new Vector3(m_SceneSize.x * m_nCellSize, 0, z));
                 }
             }
             if (m_pCurItem != null)
@@ -199,13 +201,7 @@ namespace TopGame.ED
                 }
                 Handles.color = color;
             }
-            if(m_bSelectPathing)
-            {
-                if (m_PathMesh != null && m_PathMaterial)
-                {
-                    Graphics.DrawMesh(m_PathMesh, Matrix4x4.TRS(AdjustWorld(m_CurrentWorldPos), Quaternion.identity, Vector3.one * m_nPathBrushSize* m_nCellSize), m_PathMaterial, 0, camera);
-                }
-            }
+
             for (int j = 0; j < m_vPaths.Count; ++j)
             {
                 var path = m_vPaths[j];
@@ -227,6 +223,63 @@ namespace TopGame.ED
                 }
             }
 
+            var statusPoints = m_pGenerator.GetStautsPoints(0);
+            if(statusPoints!=null)
+            {
+                using (new HandlesColor(new Color(1, 0, 0, 1)))
+                {
+                    foreach (var db in statusPoints)
+                    {
+                        Handles.SphereHandleCap(controll, ConvertWorld(m_pGenerator.IndexToGrid(db), true), Quaternion.identity, m_nCellSize * 0.5f, EventType.Repaint);
+                    }
+                }
+            }
+            statusPoints = m_pGenerator.GetStautsPoints(1);
+            if (statusPoints != null)
+            {
+                using (new HandlesColor(new Color(0, 1, 0, 1)))
+                {
+                    foreach (var db in statusPoints)
+                    {
+                        Handles.SphereHandleCap(controll, ConvertWorld(m_pGenerator.IndexToGrid(db), true), Quaternion.identity, m_nCellSize * 0.5f, EventType.Repaint);
+                    }
+                }
+            }
+            statusPoints = m_pGenerator.GetStautsPoints(2);
+            if (statusPoints != null)
+            {
+                using (new HandlesColor(new Color(0, 0, 1, 1)))
+                {
+                    foreach (var db in statusPoints)
+                    {
+                        Handles.SphereHandleCap(controll, ConvertWorld(m_pGenerator.IndexToGrid(db), true), Quaternion.identity, m_nCellSize * 0.5f, EventType.Repaint);
+                    }
+                }
+            }
+
+            statusPoints = m_pGenerator.GetStautsPoints(3);
+            if (statusPoints != null)
+            {
+                using (new HandlesColor(new Color(0, 1, 1, 1)))
+                {
+                    foreach (var db in statusPoints)
+                    {
+                        Handles.SphereHandleCap(controll, ConvertWorld(m_pGenerator.IndexToGrid(db), true), Quaternion.identity, m_nCellSize * 0.5f, EventType.Repaint);
+                    }
+                }
+            }
+
+            var pathPoints = m_pGenerator.GetPaths();
+            if (pathPoints != null)
+            {
+                using (new HandlesColor(new Color(1, 0, 1, 1)))
+                {
+                    foreach (var db in pathPoints)
+                    {
+                        Handles.SphereHandleCap(controll, ConvertWorld(m_pGenerator.IndexToGrid(db), true), Quaternion.identity, m_nCellSize * 0.5f, EventType.Repaint);
+                    }
+                }
+            }
         }
         //-----------------------------------------------------
         public void OnDrawInspecPanel(Vector2 size)
@@ -246,24 +299,20 @@ namespace TopGame.ED
         //-----------------------------------------------------
         public void OnDrawLayerPanel(Vector2 size)
         {
-            EditorGUI.BeginDisabledGroup(m_bSelectPathing);
             m_nCellSize = Math.Max(1, EditorGUILayout.IntField("单元大小", m_nCellSize));
             m_SceneSize = EditorGUILayout.Vector3IntField("地图大小", m_SceneSize);
-            EditorGUI.EndDisabledGroup();
-            if (GUILayout.Button("选择通行路径"))
+            int preScanSize = m_nScanSize;
+            m_nScanSize = EditorGUILayout.IntSlider("路径扩散", m_nScanSize, 1, Math.Max(m_SceneSize.x, m_SceneSize.z));
+            if (preScanSize != m_nScanSize)
+                m_pGenerator.RefreshScan(m_nScanSize);
+            if (GUILayout.Button("随机地图"))
             {
-                m_bSelectPathing = !m_bSelectPathing;
-                m_preview.bLeftMouseForbidMove = m_bSelectPathing;
-            }
-            if(m_bSelectPathing)
-            {
-                m_nPathBrushSize = Math.Max(1, EditorGUILayout.IntField("路径笔刷大小", m_nPathBrushSize));
+                m_pGenerator.Generator(m_SceneSize, 1, m_nScanSize);
             }
         }
         //-----------------------------------------------------
         void OnMosueUp(Ray ray, Vector3 vWorldPos, Event evt)
         {
-            m_bDragingPath = false;
         }
         //-----------------------------------------------------
         void PreviewMouseMove(Ray ray, Vector3 vWorldPos, Event evt)
@@ -276,61 +325,6 @@ namespace TopGame.ED
 
                 if(evt.button == 0)
                 {
-                    if (m_bSelectPathing)
-                    {
-                        int x = Mathf.RoundToInt(vWorldPos.x / m_nCellSize);
-                        int z = Mathf.RoundToInt(vWorldPos.z / m_nCellSize);
-                        if (x < 0 || z < 0 || x >= m_SceneSize.x || z >= m_SceneSize.z)
-                        {
-                            m_pLogic.Editor.ShowNotification(new GUIContent("为无效点"), 1);
-                            return;
-                        }
-                        Vector2Int grid = new Vector2Int(x, z);
-//                         if (m_vPaths.Count>0)
-//                         {
-//                             Vector2Int trail = m_vPaths[m_vPaths.Count - 1];
-//                             if(grid.x > trail.x+1 || grid.x < trail.x-1 || grid.y > trail.y+1 || grid.y < trail.y-1)
-//                             {
-//                                 m_pLogic.Editor.ShowNotification(new GUIContent("没有跟黄点路径相连"), 1);
-//                                 return;
-//                             }
-//                         }
-                        if(!m_bDragingPath)
-                        {
-                            m_vPaths.Add(new List<Vector2Int>());
-                            m_bDragingPath = true;
-                        }
-                        else
-                        { 
-                            if(m_vPaths.Count<=0)
-                                m_vPaths.Add(new List<Vector2Int>());
-                        }
-
-                        if(m_nPathBrushSize>1)
-                        {
-                            int brushSize = m_nPathBrushSize * m_nCellSize / 2;
-                            for (int bx = -brushSize; bx < brushSize; bx += m_nCellSize)
-                            {
-                                for (int bz = -brushSize; bz < brushSize; bz += m_nCellSize)
-                                {
-                                    Vector2Int grid1 = grid + new Vector2Int(bx, bz);
-
-                                    if (grid1.x >= 0 && grid1.y >= 0 && grid1.x < m_SceneSize.x && grid1.y < m_SceneSize.z)
-                                    {
-                                        if (m_vPaths[m_vPaths.Count - 1].Contains(grid1))
-                                            continue;
-                                        m_vPaths[m_vPaths.Count - 1].Add(grid1);
-                                    }
-                                }
-                            }
-                        }
-                        else
-                        {
-                            if (m_vPaths[m_vPaths.Count - 1].Contains(grid))
-                                return;
-                            m_vPaths[m_vPaths.Count - 1].Add(grid);
-                        }
-                    }
                 }
             }
         }
@@ -339,7 +333,7 @@ namespace TopGame.ED
         {
         }
         //-----------------------------------------------------
-        Vector3 ConvertWorld(Vector2Int grid, bool center = false)
+        public Vector3 ConvertWorld(Vector2Int grid, bool center = false)
         {
             if(center)
                 return new Vector3(grid.x * m_nCellSize + m_nCellSize*0.5f, 0, grid.y * m_nCellSize + m_nCellSize * 0.5f);
@@ -347,12 +341,12 @@ namespace TopGame.ED
             return new Vector3(grid.x * m_nCellSize, 0, grid.y * m_nCellSize);
         }
         //-----------------------------------------------------
-        Vector2Int ConvertGrid(Vector3 world)
+        public Vector2Int ConvertGrid(Vector3 world)
         {
             return new Vector2Int(Math.Max(0, Mathf.RoundToInt(world.x / m_nCellSize)), Math.Max(0, Mathf.RoundToInt(world.z / m_nCellSize)));
         }
         //-----------------------------------------------------
-        Vector3 AdjustWorld(Vector3 grid, bool center = false)
+        public Vector3 AdjustWorld(Vector3 grid, bool center = false)
         {
             return ConvertWorld(ConvertGrid(grid));
         }

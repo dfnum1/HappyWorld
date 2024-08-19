@@ -167,6 +167,11 @@ namespace TopGame.ED
 
         }
         //-----------------------------------------------------
+        public void ShowNotification(string content, float showTime)
+        {
+            m_pEditor.ShowNotification(new GUIContent(content), showTime);
+        }
+        //-----------------------------------------------------
         public void OnGUI()
         {
             if (m_eTab == ETab.Element)
