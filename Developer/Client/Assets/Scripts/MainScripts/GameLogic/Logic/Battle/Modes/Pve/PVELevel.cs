@@ -18,13 +18,21 @@ namespace TopGame.Logic
     {
         AInstanceAble m_pScene;
         List<Vector3> m_vSpawnPoints = new List<Vector3>();
+        List<Vector3> m_vBossSpawnPoints = new List<Vector3>();
         List<AWorldNode> m_vMonster = new List<AWorldNode>();
+        Dictionary<int,AWorldNode> m_vBossMonster = new Dictionary<int,AWorldNode>();
         List<uint> m_MonsterIDs = new List<uint>();
+        List<uint> m_BossIDs = new List<uint>();
         protected override void OnPreStart()
         {
             base.OnPreStart();
-            foreach(var db in Data.DataManager.getInstance().Monster.datas)
-                m_MonsterIDs.Add(db.Key);
+            foreach (var db in Data.DataManager.getInstance().Monster.datas)
+            {
+                if (db.Value.monsterType == Framework.Base.EMonsterType.Boss)
+                    m_BossIDs.Add(db.Key);
+                else
+                    m_MonsterIDs.Add(db.Key);
+            }
 
             m_pScene = null;
             var opCall = FileSystemUtil.SpawnInstance("Assets/Datas/Objects/Scenes/Test/TestScene.prefab");
@@ -45,12 +53,20 @@ namespace TopGame.Logic
                 m_pScene.SetScale(Vector3.one);
                 m_pScene.SetEulerAngle(Vector3.zero);
 
-                Transform swapnPoints = m_pScene.GetTransorm().Find("SpwanPoints");
+                Transform swapnPoints = m_pScene.GetTransorm().Find("SpwanPoints/Monsters");
                 if(swapnPoints!=null)
                 {
-                    for(int i =0; i < swapnPoints.childCount; ++i)
+                    for (int i =0; i < swapnPoints.childCount; ++i)
                     {
                         m_vSpawnPoints.Add(swapnPoints.GetChild(i).position);
+                    }
+                }
+                swapnPoints = m_pScene.GetTransorm().Find("SpwanPoints/Bosses");
+                if (swapnPoints != null)
+                {
+                    for (int i = 0; i < swapnPoints.childCount; ++i)
+                    {
+                        m_vBossSpawnPoints.Add(swapnPoints.GetChild(i).position);
                     }
                 }
                 if (!Physics.autoSyncTransforms) Physics.SyncTransforms();
@@ -98,6 +114,40 @@ namespace TopGame.Logic
                     }
                 }
             }
+            if (m_vBossMonster.Count < m_vBossSpawnPoints.Count && m_vBossSpawnPoints.Count > 0)
+            {
+                FVector3 playerPos = GetModeLogic<PVEPlayer>().GetPosition();
+                for (int i = 0; i < m_vBossSpawnPoints.Count; ++i)
+                {
+                    if (m_vBossMonster.TryGetValue(i,out var bossActor))
+                    {
+                        if (bossActor != null && !bossActor.IsKilled() && !bossActor.IsDestroy())
+                            continue;
+
+                        bossActor.Destroy();
+                    }
+                    var data = Data.DataManager.getInstance().Monster.GetData(m_BossIDs[UnityEngine.Random.Range(0, m_BossIDs.Count)]);
+                    if (data != null)
+                    {
+                        Monster monster = GetWorld().CreateNode<Monster>(EActorType.Monster, data);
+                        if (monster != null)
+                        {
+                            monster.EnableAI(true);
+                            monster.EnableLogic(true);
+                            monster.EnableRVO(true);
+                            monster.EnableSkill(true);
+                            monster.SetAttackGroup(1);
+                            monster.GetActorParameter().SetLevel((ushort)(1));
+                            monster.StartActionByType(EActionStateType.Enter, 0, 1, true, false, true);
+                            monster.SetFinalPosition(m_vBossSpawnPoints[GetFramework().GetRamdom(0, m_vBossSpawnPoints.Count)]);
+
+                            Vector3 dir = playerPos - monster.GetPosition();
+                            if (dir.sqrMagnitude > 0) monster.SetDirection(dir);
+                            m_vBossMonster[i] =monster;
+                        }
+                    }
+                }
+            }
             for (int i = 0; i < m_vMonster.Count;)
             {
                 if (m_vMonster[i].IsDestroy() || m_vMonster[i].IsKilled())
@@ -106,6 +156,14 @@ namespace TopGame.Logic
                     continue;
                 }
                 ++i;
+            }
+            foreach (var db in m_vBossMonster)
+            {
+                if (db.Value.IsDestroy() || db.Value.IsKilled())
+                {
+                    db.Value.Destroy();
+                    m_vBossMonster[db.Key] = null;
+                }
             }
         }
         //------------------------------------------------------
@@ -120,6 +178,12 @@ namespace TopGame.Logic
                 db.Destroy();
             }
             m_vMonster.Clear();
+
+            foreach (var db in m_vBossMonster)
+            {
+                db.Value.Destroy();
+            }
+            m_vBossMonster.Clear();
         }
     }
 }

@@ -416,6 +416,7 @@ namespace TopGame.ED
         //-----------------------------------------------------
         static public AnimatorState FindStatesRecursive(AnimatorController controller, string name, bool bChild = true)
         {
+            if (controller == null) return null;
             for(int i =0; i < controller.layers.Length; ++i)
             {
                 var stateMachine = controller.layers[i].stateMachine;

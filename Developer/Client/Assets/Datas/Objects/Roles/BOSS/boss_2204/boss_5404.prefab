@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 2778907901168389709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 536564858078830453}
@@ -228,7 +228,7 @@ Animator:
   m_GameObject: {fileID: 2778907901168389709}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 47f10577ff8b90942b89e27e25f30679, type: 3}
-  m_Controller: {fileID: 22100000, guid: 11b3a5586056047478de44c064d18fb2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -247,6 +247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5847033904265618130}
+  - component: {fileID: -6667190444648666471}
   m_Layer: 10
   m_Name: boss_5404
   m_TagString: Untagged
@@ -272,6 +273,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6667190444648666471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014971756584818258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0462bf3fa7328b544bc2587b61e2a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowChangeLayer: 1
+  usePlayableGraph: 1
+  Slots: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 3c3e96ba0084c3b47bb444bc2d46a8dc, type: 2}
+      clipFile: 
+    loadType: 1
+    name: idle
+    nameHash: -601574123
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: e2f4e3070f0d0814caf23cc9d9d91c8d, type: 2}
+      clipFile: 
+    loadType: 1
+    name: born
+    nameHash: 1155742626
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: ce740e6c21fe3db4c9f7638c4936b662, type: 2}
+      clipFile: 
+    loadType: 1
+    name: die
+    nameHash: 964231127
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 6b9df9e010e4dec4eb2f47c121ec518f, type: 2}
+      clipFile: 
+    loadType: 1
+    name: attack1
+    nameHash: 848348862
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 3c3e96ba0084c3b47bb444bc2d46a8dc, type: 2}
+      clipFile: 
+    loadType: 1
+    name: boss_2204_csz_idle
+    nameHash: -1247566260
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  layerAvatarMasks: []
+  bodyParts: []
+  cameraSlot: {fileID: 0}
 --- !u!1 &6125834796612136778
 GameObject:
   m_ObjectHideFlags: 0

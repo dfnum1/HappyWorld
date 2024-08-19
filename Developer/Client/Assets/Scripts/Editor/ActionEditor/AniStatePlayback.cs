@@ -64,7 +64,10 @@ namespace TopGame.ED
             m_pBaseState = baseState;
             m_pState = state;
             if (target)
+            {
                 m_pAnimator = target.GetComponent<Animator>();
+                if (m_pAnimator == null) m_pAnimator = target.GetComponentInChildren<Animator>();
+            }
             nTotalFrame = 0;
             if(bUseGraphPlayable)
             {
@@ -236,11 +239,29 @@ namespace TopGame.ED
                         m_pAnimator.runtimeAnimatorController = ctl;
                     }
                     var animatorCtl = m_pAnimator.runtimeAnimatorController as AnimatorController;
-                    AnimatorState state = EditorKits.FindStatesRecursive(animatorCtl, m_pState.GetAnimation(m_pState.GetIndex()));
-                    if(state==null)
+                    if(animatorCtl == null)
                     {
-                        state = animatorCtl.AddMotion(m_pSimpleClip, 0);
-                        state.name = m_pState.GetAnimation(m_pState.GetIndex());
+                        AnimatorOverrideController overideAnimatorCtl = m_pAnimator.runtimeAnimatorController as AnimatorOverrideController;
+                        if (overideAnimatorCtl != null)
+                        {
+                            animatorCtl = overideAnimatorCtl.runtimeAnimatorController as AnimatorController;
+                        }
+                    }
+                    if(animatorCtl == null)
+                    {
+                        AnimatorController ctl = new AnimatorController();
+                        ctl.AddLayer("BaseLayer");
+                        m_pAnimator.runtimeAnimatorController = ctl;
+                        animatorCtl = ctl;
+                    }
+                    if(animatorCtl!=null)
+                    {
+                        AnimatorState state = EditorKits.FindStatesRecursive(animatorCtl, m_pState.GetAnimation(m_pState.GetIndex()));
+                        if (state == null)
+                        {
+                            state = animatorCtl.AddMotion(m_pSimpleClip, 0);
+                            state.name = m_pState.GetAnimation(m_pState.GetIndex());
+                        }
                     }
                 }
             }
@@ -273,12 +294,14 @@ namespace TopGame.ED
             }
 
             float time = m_pState.GetClampPlayDelta(m_pState.GetIndex());
-//             if(bUseGraphPlayable)
+//             if (bUseGraphPlayable)
 //             {
 //                 if (m_pAnimator != null) m_pAnimator.enabled = false;
 //                 if (m_pSimpleClip != null)
 //                 {
-//                     m_pSimpleClip.SampleAnimation(m_pTarget, time);
+//                     GameObject targetGo = m_pTarget;
+//                     if (m_pAnimator != null) targetGo = m_pAnimator.gameObject;
+//                     m_pSimpleClip.SampleAnimation(targetGo, time);
 //                 }
 //             }
 //             else

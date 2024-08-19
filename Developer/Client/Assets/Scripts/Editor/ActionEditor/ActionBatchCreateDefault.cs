@@ -91,18 +91,19 @@ namespace TopGame.ED
 
             string sourcePath = null;
             Animator animator = binder.GetComponent<Animator>();
-            if (animator != null && animator.runtimeAnimatorController != null)
-            {
-                sourcePath = AssetDatabase.GetAssetPath(animator.runtimeAnimatorController);
-            }
-
-            if (!string.IsNullOrEmpty(sourcePath))
-            {
-                if (!System.IO.Directory.Exists(System.IO.Path.GetDirectoryName(sourcePath).Replace("\\", "/") + "/animations"))
-                {
-                    sourcePath = null;
-                }
-            }
+            if (animator == null) animator = binder.GetComponentInChildren<Animator>();
+//             if (animator != null && animator.runtimeAnimatorController != null)
+//             {
+//                 sourcePath = AssetDatabase.GetAssetPath(animator.runtimeAnimatorController);
+//             }
+// 
+//             if (!string.IsNullOrEmpty(sourcePath))
+//             {
+//                 if (!System.IO.Directory.Exists(System.IO.Path.GetDirectoryName(sourcePath).Replace("\\", "/") + "/animations"))
+//                 {
+//                     sourcePath = null;
+//                 }
+//             }
 
             if (string.IsNullOrEmpty(sourcePath))
             {

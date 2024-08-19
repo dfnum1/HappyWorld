@@ -218,6 +218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1724015400865817878}
+  - component: {fileID: -3702152497978113821}
   m_Layer: 10
   m_Name: s201
   m_TagString: Untagged
@@ -243,6 +244,97 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3702152497978113821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6141780320657087279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0462bf3fa7328b544bc2587b61e2a295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowChangeLayer: 1
+  usePlayableGraph: 1
+  Slots: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: e55882f62b05d494a8327cd237fe1d33, type: 2}
+      clipFile: 
+    loadType: 1
+    name: idle
+    nameHash: -601574123
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: a748dd00491f70d49a2af072fe56e8b4, type: 2}
+      clipFile: 
+    loadType: 1
+    name: attack
+    nameHash: 1203776827
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 7648b511ff5875c47b406b98cf7387d1, type: 2}
+      clipFile: 
+    loadType: 1
+    name: run
+    nameHash: 1349952704
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Monster/S1/Models/c_s_swordshield_viking_csz/animations/c_s_swordshield_viking_csz_death.anim
+    loadType: 3
+    name: death
+    nameHash: -414722770
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Monster/S1/Models/c_s_swordshield_viking_csz/animations/c_s_swordshield_viking_csz_hit.anim
+    loadType: 3
+    name: hit
+    nameHash: 1523721793
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: a748dd00491f70d49a2af072fe56e8b4, type: 2}
+      clipFile: 
+    loadType: 1
+    name: Attack
+    nameHash: -1062434163
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  layerAvatarMasks: []
+  bodyParts: []
+  cameraSlot: {fileID: 0}
 --- !u!1 &6782827100206275175
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +447,7 @@ Animator:
   m_GameObject: {fileID: 7254851087416218947}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ecdd06a102430e64f88da679c1249450, type: 3}
-  m_Controller: {fileID: 9100000, guid: 552bf5ee5f06b9c46a5c4603cd222b96, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

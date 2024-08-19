@@ -400,6 +400,8 @@ namespace TopGame.ED
             if (m_pActorPrefab != null)
             {
                 Animator animator = m_pActorPrefab.GetComponent<Animator>();
+                if (animator == null)
+                    animator = m_pActorPrefab.GetComponentInChildren<Animator>();
                 if (animator == null) return;
 
                 ActionGraphBinder pBinder = m_pActorPrefab.GetComponent<ActionGraphBinder>();
@@ -795,7 +797,9 @@ namespace TopGame.ED
             m_vParameters.Clear();
             m_vParameterHashs.Clear();
             m_Animator = m_pActorPrefab.GetComponent<Animator>();
-            if(m_pGraphBinder.usePlayableGraph)
+            if (m_Animator == null)
+                m_Animator = m_pActorPrefab.GetComponentInChildren<Animator>();
+            if (m_pGraphBinder.usePlayableGraph)
             {
                 RefreshLocalAnimation(m_pGraphBinder, m_pActorPrefab.name);
             }
@@ -1218,6 +1222,8 @@ namespace TopGame.ED
                 pBinder.playables = vStates.ToArray();
                 pBinder.layerAvatarMasks = m_AvatarMasks;
                 Animator animator = prefab.GetComponent<Animator>();
+                if (animator == null)
+                    animator = prefab.GetComponentInChildren<Animator>();
                 if (animator != null)
                 {
                     animator.runtimeAnimatorController = null;
@@ -1397,7 +1403,8 @@ namespace TopGame.ED
                     pBinder.playables = vStates.ToArray();
                     pBinder.layerAvatarMasks = m_AvatarMasks;
                     Animator animator = m_pActorPrefab.GetComponent<Animator>();
-                    if(animator!=null)
+                    if (animator == null) animator = m_pActorPrefab.GetComponentInChildren<Animator>();
+                    if (animator!=null)
                     {
                         animator.runtimeAnimatorController = null;
                     }
@@ -2744,7 +2751,7 @@ namespace TopGame.ED
                     if (m_vAnimationState[i].state == null) continue;
                     if(usePlayableGraph)
                     {
-                        if (m_vAnimationState[i].state.name.CompareTo(strName) == 0)
+                        if (m_vAnimationState[i].state.name.Equals(strName, StringComparison.OrdinalIgnoreCase))
                         {
                             index = i;
                             break;
@@ -2752,7 +2759,7 @@ namespace TopGame.ED
                     }
                     else
                     {
-                        if (m_vAnimationState[i].state.name.CompareTo(strName) == 0 && m_vAnimationState[i].layer == layer)
+                        if (m_vAnimationState[i].state.name.Equals(strName, StringComparison.OrdinalIgnoreCase) && m_vAnimationState[i].layer == layer)
                         {
                             index = i;
                             break;
@@ -2820,6 +2827,10 @@ namespace TopGame.ED
             if (m_pCopyActionState!= null && GUILayout.Button("黏贴"))
             {
                 actionState.Copy(m_pActor.GetActionStateGraph(), m_pCopyActionState);
+            }
+            if(m_pGraphBinder!=null && m_pActorPrefab && GUILayout.Button("刷新本地动作"))
+            {
+                RefreshLocalAnimation(m_pGraphBinder, m_pActorPrefab.name);
             }
             EditorUtil.EndHorizontal();
 
