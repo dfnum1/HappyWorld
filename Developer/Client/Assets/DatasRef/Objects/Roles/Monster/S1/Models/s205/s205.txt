@@ -1,0 +1,4 @@
+0-28 loop run
+31-61 loop idle
+62-94 attack
+95-139 die

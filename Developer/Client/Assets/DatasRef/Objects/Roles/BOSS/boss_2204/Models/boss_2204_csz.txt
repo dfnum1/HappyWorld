@@ -1,0 +1,6 @@
+0-110 born
+113-193 loop idle
+196-276 attack1
+289-369 attack2
+372-472 die
+480-615 skill

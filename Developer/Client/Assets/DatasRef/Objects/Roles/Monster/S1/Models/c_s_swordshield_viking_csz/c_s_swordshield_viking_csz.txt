@@ -1,0 +1,9 @@
+0-28 loop run
+31-61 loop stand
+64-94 loop idle
+95-127 loop attack
+128-148 hit
+149-187 Block
+188-248 cheer
+249-293 die
+296-341 death

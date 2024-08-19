@@ -1,87 +1,205 @@
 fileFormatVersion: 2
-guid: e5cf31159b022284fb2e67816525a0bf
+guid: ecdd06a102430e64f88da679c1249450
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: archer_viking
-    100002: Bip001
-    100004: Bip001 Head
-    100006: Bip001 L Calf
-    100008: Bip001 L Clavicle
-    100010: Bip001 L Foot
-    100012: Bip001 L Forearm
-    100014: Bip001 L Hand
-    100016: Bip001 L Thigh
-    100018: Bip001 L UpperArm
-    100020: Bip001 Neck
-    100022: Bip001 Pelvis
-    100024: Bip001 R Calf
-    100026: Bip001 R Clavicle
-    100028: Bip001 R Foot
-    100030: Bip001 R Forearm
-    100032: Bip001 R Hand
-    100034: Bip001 R Thigh
-    100036: Bip001 R UpperArm
-    100038: Bip001 Spine
-    100040: Bip001 Spine1
-    100042: boone02
-    100044: boone03
-    100046: boone04
-    100048: boone05
-    100050: boone06
-    100052: boone07
-    100054: boone08
-    100056: //RootNode
-    100058: Ponit_a
-    400000: archer_viking
-    400002: Bip001
-    400004: Bip001 Head
-    400006: Bip001 L Calf
-    400008: Bip001 L Clavicle
-    400010: Bip001 L Foot
-    400012: Bip001 L Forearm
-    400014: Bip001 L Hand
-    400016: Bip001 L Thigh
-    400018: Bip001 L UpperArm
-    400020: Bip001 Neck
-    400022: Bip001 Pelvis
-    400024: Bip001 R Calf
-    400026: Bip001 R Clavicle
-    400028: Bip001 R Foot
-    400030: Bip001 R Forearm
-    400032: Bip001 R Hand
-    400034: Bip001 R Thigh
-    400036: Bip001 R UpperArm
-    400038: Bip001 Spine
-    400040: Bip001 Spine1
-    400042: boone02
-    400044: boone03
-    400046: boone04
-    400048: boone05
-    400050: boone06
-    400052: boone07
-    400054: boone08
-    400056: //RootNode
-    400058: Ponit_a
-    2100000: 'Material #421'
-    4300000: archer_viking
-    7400000: run
-    7400002: stand
-    7400004: idle
-    7400006: attack
-    7400008: hit
-    7400010: die
-    7400012: death
-    9500000: //RootNode
-    13700000: archer_viking
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bip001
+  - first:
+      1: 100002
+    second: Bip001 Head
+  - first:
+      1: 100004
+    second: Bip001 L Calf
+  - first:
+      1: 100006
+    second: Bip001 L Clavicle
+  - first:
+      1: 100008
+    second: Bip001 L Foot
+  - first:
+      1: 100010
+    second: Bip001 L Forearm
+  - first:
+      1: 100012
+    second: Bip001 L Hand
+  - first:
+      1: 100014
+    second: Bip001 L Thigh
+  - first:
+      1: 100016
+    second: Bip001 L UpperArm
+  - first:
+      1: 100018
+    second: Bip001 Neck
+  - first:
+      1: 100020
+    second: Bip001 Pelvis
+  - first:
+      1: 100022
+    second: Bip001 R Calf
+  - first:
+      1: 100024
+    second: Bip001 R Clavicle
+  - first:
+      1: 100026
+    second: Bip001 R Foot
+  - first:
+      1: 100028
+    second: Bip001 R Forearm
+  - first:
+      1: 100030
+    second: Bip001 R Hand
+  - first:
+      1: 100032
+    second: Bip001 R Thigh
+  - first:
+      1: 100034
+    second: Bip001 R UpperArm
+  - first:
+      1: 100036
+    second: Bip001 Spine
+  - first:
+      1: 100038
+    second: Bip001 Spine1
+  - first:
+      1: 100040
+    second: Bone005
+  - first:
+      1: 100042
+    second: //RootNode
+  - first:
+      1: 100044
+    second: point_a
+  - first:
+      1: 100046
+    second: point_b
+  - first:
+      1: 100048
+    second: swordshield_viking
+  - first:
+      4: 400000
+    second: Bip001
+  - first:
+      4: 400002
+    second: Bip001 Head
+  - first:
+      4: 400004
+    second: Bip001 L Calf
+  - first:
+      4: 400006
+    second: Bip001 L Clavicle
+  - first:
+      4: 400008
+    second: Bip001 L Foot
+  - first:
+      4: 400010
+    second: Bip001 L Forearm
+  - first:
+      4: 400012
+    second: Bip001 L Hand
+  - first:
+      4: 400014
+    second: Bip001 L Thigh
+  - first:
+      4: 400016
+    second: Bip001 L UpperArm
+  - first:
+      4: 400018
+    second: Bip001 Neck
+  - first:
+      4: 400020
+    second: Bip001 Pelvis
+  - first:
+      4: 400022
+    second: Bip001 R Calf
+  - first:
+      4: 400024
+    second: Bip001 R Clavicle
+  - first:
+      4: 400026
+    second: Bip001 R Foot
+  - first:
+      4: 400028
+    second: Bip001 R Forearm
+  - first:
+      4: 400030
+    second: Bip001 R Hand
+  - first:
+      4: 400032
+    second: Bip001 R Thigh
+  - first:
+      4: 400034
+    second: Bip001 R UpperArm
+  - first:
+      4: 400036
+    second: Bip001 Spine
+  - first:
+      4: 400038
+    second: Bip001 Spine1
+  - first:
+      4: 400040
+    second: Bone005
+  - first:
+      4: 400042
+    second: //RootNode
+  - first:
+      4: 400044
+    second: point_a
+  - first:
+      4: 400046
+    second: point_b
+  - first:
+      4: 400048
+    second: swordshield_viking
+  - first:
+      21: 2100000
+    second: swordshield_viking
+  - first:
+      43: 4300000
+    second: swordshield_viking
+  - first:
+      74: 7400000
+    second: run
+  - first:
+      74: 7400002
+    second: stand
+  - first:
+      74: 7400004
+    second: idle
+  - first:
+      74: 7400006
+    second: attack
+  - first:
+      74: 7400008
+    second: hit
+  - first:
+      74: 7400010
+    second: Block
+  - first:
+      74: 7400012
+    second: cheer
+  - first:
+      74: 7400014
+    second: die
+  - first:
+      74: 7400016
+    second: death
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: swordshield_viking
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 'Material #421'
-    second: {fileID: 2100000, guid: 828c42621da238645ba81f894bf6c9e1, type: 2}
+      name: swordshield_viking
+    second: {fileID: 2100000, guid: 68b4d535b6fd59244b10f0f3470dd523, type: 2}
   materials:
-    importMaterials: 0
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -90,6 +208,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 1
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -99,27 +218,28 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 0
-    animationRotationError: 0.5
-    animationPositionError: 0.5
-    animationScaleError: 0.5
+    animationCompression: 1
+    animationRotationError: 0.4
+    animationPositionError: 0.4
+    animationScaleError: 0.4
     animationWrapMode: 0
     extraExposedTransformPaths:
     - Bip001
-    - Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L Clavicle/Bip001
-      L UpperArm/Bip001 L Forearm/Bip001 L Hand/Ponit_a
+    - point_a
+    - point_b
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: run
-      takeName: Take 001
+      takeName: 
+      internalID: 7400000
       firstFrame: 0
-      lastFrame: 24
+      lastFrame: 28
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
@@ -127,7 +247,7 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -140,14 +260,15 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: stand
-      takeName: Take 001
-      firstFrame: 27
-      lastFrame: 57
+      takeName: 
+      internalID: 7400002
+      firstFrame: 31
+      lastFrame: 61
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
@@ -155,7 +276,7 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -168,14 +289,15 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: idle
-      takeName: Take 001
-      firstFrame: 60
-      lastFrame: 92
+      takeName: 
+      internalID: 7400004
+      firstFrame: 64
+      lastFrame: 94
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
@@ -183,7 +305,7 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -196,22 +318,23 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: attack
-      takeName: Take 001
-      firstFrame: 93
+      takeName: 
+      internalID: 7400006
+      firstFrame: 95
       lastFrame: 127
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 0
+      loop: 1
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -224,7 +347,8 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: hit
-      takeName: Take 001
+      takeName: 
+      internalID: 7400008
       firstFrame: 128
       lastFrame: 148
       wrapMode: 0
@@ -239,7 +363,65 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Block
+      takeName: 
+      internalID: 7400010
+      firstFrame: 149
+      lastFrame: 187
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: cheer
+      takeName: 
+      internalID: 7400012
+      firstFrame: 188
+      lastFrame: 248
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -252,9 +434,10 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: die
-      takeName: Take 001
-      firstFrame: 149
-      lastFrame: 199
+      takeName: 
+      internalID: 7400014
+      firstFrame: 249
+      lastFrame: 293
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -267,7 +450,7 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -280,9 +463,10 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: death
-      takeName: Take 001
-      firstFrame: 202
-      lastFrame: 244
+      takeName: 
+      internalID: 7400016
+      firstFrame: 296
+      lastFrame: 341
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -295,7 +479,7 @@ ModelImporter:
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
@@ -310,28 +494,37 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 0
     importBlendShapes: 0
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 0
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -340,10 +533,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -353,13 +546,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: game_hero_s2

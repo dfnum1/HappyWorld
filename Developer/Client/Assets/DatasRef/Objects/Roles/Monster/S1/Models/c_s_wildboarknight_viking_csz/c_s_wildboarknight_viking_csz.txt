@@ -1,0 +1,8 @@
+0-16 loop charge
+19-35 loop run
+39-69 loop stand
+72-102 loop idle
+103-138 attack
+139-159 hit
+160-219 die
+222-258 death
