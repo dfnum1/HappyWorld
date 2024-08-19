@@ -114,7 +114,7 @@ namespace TopGame.Logic
                     }
                 }
             }
-            if (m_vBossMonster.Count < m_vBossSpawnPoints.Count && m_vBossSpawnPoints.Count > 0)
+            if (m_vBossSpawnPoints.Count > 0)
             {
                 FVector3 playerPos = GetModeLogic<PVEPlayer>().GetPosition();
                 for (int i = 0; i < m_vBossSpawnPoints.Count; ++i)
@@ -137,7 +137,9 @@ namespace TopGame.Logic
                             monster.EnableRVO(true);
                             monster.EnableSkill(true);
                             monster.SetAttackGroup(1);
-                            monster.GetActorParameter().SetLevel((ushort)(1));
+                            monster.GetActorParameter().SetLevel((ushort)(100));
+                            monster.GetActorParameter().AddpendBaseAttr( EAttrType.MaxHp, 1000000);
+                            monster.GetActorParameter().AppendHP(10000);
                             monster.StartActionByType(EActionStateType.Enter, 0, 1, true, false, true);
                             monster.SetFinalPosition(m_vBossSpawnPoints[i]);
 
@@ -159,6 +161,7 @@ namespace TopGame.Logic
             }
             foreach (var db in m_vBossMonster)
             {
+                if (db.Value == null) continue;
                 if (db.Value.IsDestroy() || db.Value.IsKilled())
                 {
                     db.Value.Destroy();
