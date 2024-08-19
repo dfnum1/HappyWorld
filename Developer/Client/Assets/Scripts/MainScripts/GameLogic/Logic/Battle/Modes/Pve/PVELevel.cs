@@ -124,7 +124,7 @@ namespace TopGame.Logic
                         if (bossActor != null && !bossActor.IsKilled() && !bossActor.IsDestroy())
                             continue;
 
-                        bossActor.Destroy();
+                        if(bossActor!=null) bossActor.Destroy();
                     }
                     var data = Data.DataManager.getInstance().Monster.GetData(m_BossIDs[UnityEngine.Random.Range(0, m_BossIDs.Count)]);
                     if (data != null)
@@ -139,7 +139,7 @@ namespace TopGame.Logic
                             monster.SetAttackGroup(1);
                             monster.GetActorParameter().SetLevel((ushort)(1));
                             monster.StartActionByType(EActionStateType.Enter, 0, 1, true, false, true);
-                            monster.SetFinalPosition(m_vBossSpawnPoints[GetFramework().GetRamdom(0, m_vBossSpawnPoints.Count)]);
+                            monster.SetFinalPosition(m_vBossSpawnPoints[i]);
 
                             Vector3 dir = playerPos - monster.GetPosition();
                             if (dir.sqrMagnitude > 0) monster.SetDirection(dir);
@@ -181,7 +181,7 @@ namespace TopGame.Logic
 
             foreach (var db in m_vBossMonster)
             {
-                db.Value.Destroy();
+                if(db.Value!=null)db.Value.Destroy();
             }
             m_vBossMonster.Clear();
         }
