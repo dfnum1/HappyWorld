@@ -7,6 +7,13 @@ namespace TopGame.UI
 		{
 			switch(type)
 			{
+				case 20:
+				{
+					UIBase pUI = new TopGame.UI.BattlePanel();
+					TopGame.UI.BattleView pView = new TopGame.UI.BattleView();
+					pUI.SetView( pView );
+					return pUI;
+				}
 				case 255:
 				{
 					UIBase pUI = new TopGame.UI.UICommonTip();
@@ -100,7 +107,8 @@ namespace TopGame.UI
 		{
 			if(ms_vUITypeMaps == null)
 			{
-				ms_vUITypeMaps = new System.Collections.Generic.Dictionary<System.Type, int>(11);
+				ms_vUITypeMaps = new System.Collections.Generic.Dictionary<System.Type, int>(12);
+				ms_vUITypeMaps[typeof(TopGame.UI.BattlePanel)] = 20;
 				ms_vUITypeMaps[typeof(TopGame.UI.UICommonTip)] = 255;
 				ms_vUITypeMaps[typeof(TopGame.UI.DialogPanel)] = 12;
 				ms_vUITypeMaps[typeof(TopGame.UI.UIFullScreenFillPanel)] = 2;
