@@ -362,6 +362,11 @@ namespace TopGame.Logic
                 m_BattleCameraMode.AppendFollowDistance(2, false, true, 1);
         }
         //------------------------------------------------------
+        public ushort GetSceneCameraID()
+        {
+            return m_nSceneCamera;
+        }
+        //------------------------------------------------------
         protected override void OnDestroy()
         {
             m_nSceneCamera = 0xffff;

@@ -51,6 +51,16 @@ namespace TopGame.Core
 
             CameraMode pMode = controller.GetCurrentMode();
             controller.m_bEditor = EditorGUILayout.Toggle("编辑模式", controller.m_bEditor);
+
+            if (StateFactory.CurrentState() != null)
+            {
+                BattleCameraLogic battleCameraLogic = StateFactory.CurrentState().GetCurrentModeLogic<BattleCameraLogic>();
+                if(battleCameraLogic!=null)
+                {
+                    EditorGUILayout.IntField("当前相机编号", battleCameraLogic.GetSceneCameraID());
+                }
+            }
+
             if (controller.m_bEditor)
             {
                 bool bPreSync = m_bSyncViewAndGame;
