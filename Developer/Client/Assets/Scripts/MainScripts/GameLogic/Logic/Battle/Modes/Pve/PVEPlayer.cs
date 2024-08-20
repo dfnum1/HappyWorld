@@ -63,6 +63,26 @@ namespace TopGame.Logic
             return m_ControllerPosition;
         }
         //------------------------------------------------------
+        public void DoAttack(GameObject go, params VariablePoolAble[] param)
+        {
+            if (m_pPlayer == null) return;
+            m_pPlayer.GetSkill().DoSkillByTag(100);
+        }
+        //------------------------------------------------------
+        public void OnJoystick(bool bPress, Vector3 vCurPos, Vector3 vLastPos)
+        {
+            m_bDirectionPressing = bPress;
+            if (bPress)
+            {
+                Vector3 world0 = CameraKit.ScreenRayWorldPos(vLastPos);
+                Vector3 world1 = CameraKit.ScreenRayWorldPos(vCurPos);
+                m_PressDirection = (world1 - world0).normalized;
+                m_ControllerDirection = m_PressDirection;
+                m_ControllerDirection.y = 0;
+            }
+            else m_PressDirection = Vector3.zero;
+        }
+        //------------------------------------------------------
         void UpdateKey()
         {
             int lastKey = m_nKeyDir;
