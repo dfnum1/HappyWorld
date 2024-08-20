@@ -953,14 +953,14 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: e6302c16148eed6439f5285e94ca2062, type: 2}
+      clip: {fileID: 7400000, guid: 4acbbec1a4277c245b9f82b7aaa4b71d, type: 2}
       clipFile: 
     loadType: 1
-    name: die
-    nameHash: 964231127
+    name: idle
+    nameHash: -601574123
     layer: 0
     blendParameter: 
-    isDefault: 0
+    isDefault: 1
     canClamp: 0
   - clipTracks:
     - main: 0
@@ -977,6 +977,18 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
+      clip: {fileID: 7400000, guid: e6302c16148eed6439f5285e94ca2062, type: 2}
+      clipFile: 
+    loadType: 1
+    name: die
+    nameHash: 964231127
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
       clip: {fileID: 7400000, guid: 290cb25a2a5db584eb6b2118d8cecb83, type: 2}
       clipFile: 
     loadType: 1
@@ -985,18 +997,6 @@ MonoBehaviour:
     layer: 0
     blendParameter: 
     isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: 4acbbec1a4277c245b9f82b7aaa4b71d, type: 2}
-      clipFile: 
-    loadType: 1
-    name: idle
-    nameHash: -601574123
-    layer: 0
-    blendParameter: 
-    isDefault: 1
     canClamp: 0
   layerAvatarMasks: []
   bodyParts: []
