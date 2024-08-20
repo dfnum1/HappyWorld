@@ -2904,6 +2904,7 @@ namespace TopGame.ED
                     pCore.duration = EditorGUILayout.FloatField("Duration", pCore.duration, op);
                     pCore.scale_animation_speed = EditorGUILayout.Toggle("CanScaleSpeed", pCore.scale_animation_speed, op);
                     pCore.loop = (short)Mathf.Clamp(EditorGUILayout.IntField("Loop", (int)pCore.loop, op), 0, 255);
+                    pCore.flags = (ushort)Framework.ED.EditorEnumPop.PopEnumBit("flags", pCore.flags, typeof(EActionStateFlags), op);
                     //     pCore.can_dir = EditorGUILayout.Toggle("CanDir", pCore.can_dir, op);
                     pCore.can_clamp = EditorGUILayout.Toggle("CanClamp", pCore.can_clamp, op);
                     pCore.cancle_priority = (short)EditorGUILayout.IntField("CanclePriority", pCore.cancle_priority, op);

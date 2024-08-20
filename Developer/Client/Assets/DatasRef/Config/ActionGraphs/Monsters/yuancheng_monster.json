@@ -79,10 +79,184 @@
             "jump_vertical_speed": 0.0,
             "stance_action_state_core": [
                 {
+                    "name": "die",
+                    "type": 11,
+                    "id": 4,
+                    "tag": 0,
+                    "flags": 1,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "die",
+                            "hashState": 964231127,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 1.5,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 1.5,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "attack",
+                    "type": 31,
+                    "id": 2,
+                    "tag": 10,
+                    "flags": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "attack",
+                            "hashState": 1203776827,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 0.8333334922790527,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 0.8333334922790527,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": [
+                            {
+                                "type": 2,
+                                "eventCmd": "2:0.5,-1,1,61440,2,1,1,0.000,0.000,0.000,,0.000,0.000,0.000,255,0,0,0,"
+                            }
+                        ]
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "run",
+                    "type": 1,
+                    "id": 3,
+                    "tag": 0,
+                    "flags": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "run",
+                            "hashState": 1349952704,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": 0,
+                            "duration": 0.8000004291534424,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 0.8000004291534424,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 0,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
                     "name": "idle",
                     "type": 0,
                     "id": 1,
                     "tag": 0,
+                    "flags": 0,
                     "animLoadType": 1,
                     "switch_stance": "",
                     "seqType": 0,
@@ -166,180 +340,11 @@
                     "action_property_data": []
                 },
                 {
-                    "name": "attack",
-                    "type": 31,
-                    "id": 2,
-                    "tag": 10,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "attack",
-                            "hashState": 1203776827,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": 0,
-                            "duration": 0.8333334922790527,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 0.8333334922790527,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": [
-                            {
-                                "type": 2,
-                                "eventCmd": "2:0.5,-1,1,61440,2,1,1,0.000,0.000,0.000,,0.000,0.000,0.000,255,0,0,0,"
-                            }
-                        ]
-                    },
-                    "action_property_data": []
-                },
-                {
-                    "name": "run",
-                    "type": 1,
-                    "id": 3,
-                    "tag": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "run",
-                            "hashState": 1349952704,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": 0,
-                            "duration": 0.8000004291534424,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 0.8000004291534424,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 0,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
-                },
-                {
-                    "name": "die",
-                    "type": 11,
-                    "id": 4,
-                    "tag": 0,
-                    "animLoadType": 3,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "death",
-                            "hashState": -414722770,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": 0,
-                            "duration": 1.5,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 1.5,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
-                },
-                {
                     "name": "hit",
                     "type": 50,
                     "id": 5,
                     "tag": 0,
+                    "flags": 0,
                     "animLoadType": 3,
                     "switch_stance": "",
                     "seqType": 0,

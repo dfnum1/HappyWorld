@@ -599,7 +599,7 @@ Animator:
   m_GameObject: {fileID: 5449422172079110779}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 675f93e30e1b9064abe1b17234ff1f09, type: 3}
-  m_Controller: {fileID: 22100000, guid: c2cbb85745d304a44ba0aab3e64d9dc4, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -949,7 +949,55 @@ MonoBehaviour:
   allowChangeLayer: 1
   usePlayableGraph: 1
   Slots: []
-  playables: []
+  playables:
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: e6302c16148eed6439f5285e94ca2062, type: 2}
+      clipFile: 
+    loadType: 1
+    name: die
+    nameHash: 964231127
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: c98469034a3d3fc4682741d79241c039, type: 2}
+      clipFile: 
+    loadType: 1
+    name: attack
+    nameHash: 1203776827
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 290cb25a2a5db584eb6b2118d8cecb83, type: 2}
+      clipFile: 
+    loadType: 1
+    name: run
+    nameHash: 1349952704
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 4acbbec1a4277c245b9f82b7aaa4b71d, type: 2}
+      clipFile: 
+    loadType: 1
+    name: idle
+    nameHash: -601574123
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
   layerAvatarMasks: []
   bodyParts: []
   cameraSlot: {fileID: 0}

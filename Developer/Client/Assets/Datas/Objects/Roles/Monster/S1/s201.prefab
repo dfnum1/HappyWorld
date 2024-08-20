@@ -263,42 +263,6 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: e55882f62b05d494a8327cd237fe1d33, type: 2}
-      clipFile: 
-    loadType: 1
-    name: idle
-    nameHash: -601574123
-    layer: 0
-    blendParameter: 
-    isDefault: 1
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: a748dd00491f70d49a2af072fe56e8b4, type: 2}
-      clipFile: 
-    loadType: 1
-    name: attack
-    nameHash: 1203776827
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: 7648b511ff5875c47b406b98cf7387d1, type: 2}
-      clipFile: 
-    loadType: 1
-    name: run
-    nameHash: 1349952704
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
       clip: {fileID: 0}
       clipFile: Assets/DatasRef/Objects/Roles/Monster/S1/Models/c_s_swordshield_viking_csz/animations/c_s_swordshield_viking_csz_death.anim
     loadType: 3
@@ -316,6 +280,42 @@ MonoBehaviour:
     loadType: 3
     name: hit
     nameHash: 1523721793
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: a748dd00491f70d49a2af072fe56e8b4, type: 2}
+      clipFile: 
+    loadType: 1
+    name: attack
+    nameHash: 1203776827
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: e55882f62b05d494a8327cd237fe1d33, type: 2}
+      clipFile: 
+    loadType: 1
+    name: idle
+    nameHash: -601574123
+    layer: 0
+    blendParameter: 
+    isDefault: 1
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 7648b511ff5875c47b406b98cf7387d1, type: 2}
+      clipFile: 
+    loadType: 1
+    name: run
+    nameHash: 1349952704
     layer: 0
     blendParameter: 
     isDefault: 0
@@ -427,7 +427,7 @@ Transform:
   m_GameObject: {fileID: 7254851087416218947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 562893489725310265}
