@@ -25,6 +25,8 @@ namespace TopGame.UI
         [Framework.Data.DisplayNameGUI("通用/对话界面")] DialogPanel = 12,
         [Framework.Data.DisplayNameGUI("基础/控制台指令界面")] GMPanel = 13,
 
+        [Framework.Data.DisplayNameGUI("战斗/战斗界面")] BattlePanel = 20,
+
         [Framework.Data.DisplayNameGUI("基础/等待网络界面")] WaitPanel = 200,
         [Framework.Data.DisplayNameGUI("基础/公告界面")] NoticeTip = 201,
         [Framework.Data.DisplayNameGUI("通用/通用等待界面")] CommonWaitPanel = 202,
