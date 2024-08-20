@@ -84,7 +84,7 @@ namespace TopGame
         {
             m_pStartUp = Logic.FrameworkStartUp.getInstance();
             m_pStartUp.Init(this);
-            m_pStartUp.SetSection(Logic.EStartUpSection.Logo);
+            m_pStartUp.SetSection(Logic.EStartUpSection.Version);
         }
         //------------------------------------------------------
         public Coroutine BeginCoroutine(IEnumerator coroutine)

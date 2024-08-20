@@ -87,9 +87,9 @@ namespace TopGame.Logic
                 if (m_nKeyDir != 0)
                 {
                     m_bDirectionPressing = true;
-                    m_PressDirection.z = (((m_nKeyDir & (int)Base.EControllerDirFlag.Left) != 0) ? -1f : (((m_nKeyDir & (int)Base.EControllerDirFlag.Right) != 0) ? 1f : 0f));
+                    m_PressDirection.z = (((m_nKeyDir & (int)Base.EControllerDirFlag.Left) != 0) ? 1f : (((m_nKeyDir & (int)Base.EControllerDirFlag.Right) != 0) ? -1f : 0f));
                     m_PressDirection.y = 0.0f;
-                    m_PressDirection.x = (((m_nKeyDir & (int)Base.EControllerDirFlag.Up) != 0) ? -1f : (((m_nKeyDir & (int)Base.EControllerDirFlag.Down) != 0) ? 1f : 0f));
+                    m_PressDirection.x = (((m_nKeyDir & (int)Base.EControllerDirFlag.Up) != 0) ? 1f : (((m_nKeyDir & (int)Base.EControllerDirFlag.Down) != 0) ? -1f : 0f));
                     m_PressDirection.Normalize();
                     m_ControllerDirection = m_PressDirection;
                 }

@@ -72,8 +72,8 @@
         {
             "stance_name": "default",
             "inherit_stance": "",
-            "run_speed": 5.0,
-            "fast_run_speed": 10.0,
+            "run_speed": 2.0,
+            "fast_run_speed": 4.0,
             "turn_speed": 2.0,
             "jump_horizen_speed": 0.0,
             "jump_vertical_speed": 0.0,
