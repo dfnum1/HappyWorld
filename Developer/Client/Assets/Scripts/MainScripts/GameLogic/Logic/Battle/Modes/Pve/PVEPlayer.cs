@@ -139,7 +139,7 @@ namespace TopGame.Logic
 
             if (m_pPlayer == null)
                 return;
-            if(m_pPlayer.CanDoGroundAction())
+          //  if(m_pPlayer.CanDoGroundAction())
             {
                 if (m_bDirectionPressing)
                 {
@@ -149,16 +149,16 @@ namespace TopGame.Logic
                     m_pPlayer.SetDirection(m_ControllerDirection);
                     m_pPlayer.StartActionByType(EActionStateType.Run, 0, 1, false, false, true);
                 }
-                else
+                else if (m_pPlayer.CanDoGroundAction())
                 {
                     m_pPlayer.SetSpeedXZ(FVector3.zero);
                     m_pPlayer.StartActionByType(EActionStateType.Idle, 0, 1, false, false, true);
                 }
             }
-            else
-            {
-              //  m_pPlayer.SetSpeedXZ(FVector3.zero);
-            }
+//             else
+//             {
+//               //  m_pPlayer.SetSpeedXZ(FVector3.zero);
+//             }
         }
         //------------------------------------------------------
         protected override void OnClear()
