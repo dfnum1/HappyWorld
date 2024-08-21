@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 1054chaoxiyongshi_H
+  m_Shader: {fileID: 4800000, guid: f62f0e7153ef3334fa97a0f00d8ee1b6, type: 3}
+  m_ShaderKeywords: USE_EMISSION_MAP USE_NORMAL_MAP _MAIN_LIGHT_SHADOWS _SHADOWEFFECT_ON
+    _SHADOWS_SOFT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 6eceb0a8c1ba4f24397d101b6d7f1ef8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveNoise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 2800000, guid: b79648b553f6ee941b198eedc83c39cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalRoughMaskTex:
+        m_Texture: {fileID: 2800000, guid: 1fe8dc296a85bf6408baded11d1a7675, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalAOTex:
+        m_Texture: {fileID: 2800000, guid: fb0675d553375bb4da8c6415515824a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - EMISSIONMAP: 1
+    - MAIN_LIGHT_SHADOWS: 1
+    - NORMALMAP: 1
+    - SHADOWS_SOFT: 1
+    - _AOStrength: 0.5
+    - _AO_slider: 0
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DissolveAmount: 0.1
+    - _DissolveEdgeWidth: 0
+    - _DissolveHeight: 0
+    - _DissolveHeightSpeed: 0
+    - _DissolveSmoothness: 0.2
+    - _DissolveUVSwitch: 0
+    - _DstBlend: 0
+    - _EnvironmentReflections: 1
+    - _FarCull: 0
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _Metallic: 0.75
+    - _OcclusionStrength: 1
+    - _Outline: 0.3
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Roughness: 0.9
+    - _ScatterAmtX: 0.3
+    - _ScatterAmtY: 0.75
+    - _ScatterAmtZ: 0.25
+    - _ShadowEffect: 1
+    - _ShadowHeight: 0.02
+    - _ShadowOffsetX: 0
+    - _ShadowOffsetZ: 0
+    - _SkinStrength: 2.5
+    - _SkinToneMap: 0.5
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Surface: 0
+    - _UseDirLight: 0
+    - _UseDissolve: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    - _EmissionColor: {r: 2, g: 2, b: 2, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowColor: {r: 0.13999996, g: 0.13999996, b: 0.13999996, a: 1}
+    - _ShdowLight: {r: 45, g: 90, b: -45, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &4700253542173690766
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1

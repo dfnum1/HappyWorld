@@ -52,7 +52,7 @@ namespace TopGame.Logic
             SkillInformation skillSys = m_pPlayer.GetSkill();
             if (skillSys != null)
             {
-                skillSys.AutoSkill(true);
+              //  skillSys.AutoSkill(true);
                 skillSys.EnableSkill(true);
             }
         }
@@ -97,6 +97,12 @@ namespace TopGame.Logic
 
             if (Input.GetKeyDown(KeyCode.D)) m_nKeyDir |= (int)Base.EControllerDirFlag.Right;
             else if (Input.GetKeyUp(KeyCode.D)) m_nKeyDir = (m_nKeyDir | (int)Base.EControllerDirFlag.Right) - (int)Base.EControllerDirFlag.Right;
+
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                DoAttack(null);
+            }
+
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
