@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Til_0002_03
+  m_Shader: {fileID: 4800000, guid: d9b2c24396e768143b70896d3eaf2af6, type: 3}
+  m_ShaderKeywords: USE_ANIM
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DisturbTex:
+        m_Texture: {fileID: 2800000, guid: 37431eff52a39f341aa8d46e7d59e4ac, type: 3}
+        m_Scale: {x: 1, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1f87d007675af864f804c1f0c47e223a, type: 3}
+        m_Scale: {x: 1, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 7cc90c4be79f21248bfd69aca1ba2310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _AmbientStrength: 0
+    - _BlendMode: 10
+    - _BumpScale: 1
+    - _Cull: 2
+    - _CullMode: 2
+    - _CurveFactor: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Dissolve_Edge: 0
+    - _Dissolve_Intensity: 0
+    - _Dissolve_Intensity_ParticleControl: 0
+    - _Dissolve_Smooth: 0.51
+    - _Dissolve_Smoothstep_Max: 0.689
+    - _Dissolve_Smoothstep_Min: 0.342
+    - _DisturbTexWhite: 0
+    - _DstBlend: 0
+    - _Float2: 2
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HeatForce: 0.05
+    - _MaskSpeedX: 0
+    - _MaskSpeedY: 0
+    - _MaskTexWhite: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Rim_On: 0
+    - _Rim_Width: 1.98
+    - _SloftClip: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpeedX: 0.5
+    - _SpeedY: 0.5
+    - _SrcBlend: 1
+    - _Twist_Intensity: 0.1
+    - _UICLIP: 0
+    - _UVSec: 0
+    - _UVpanner_MainTex_ParticleControl: 0
+    - _UseAnim: 1
+    - _UseCustom: 0
+    - _ZWrite: 1
+    - _Zwrite: 0
+    m_Colors:
+    - _ClipRange0: {r: -1000, g: -1000, b: 1000, a: 1000}
+    - _Color: {r: 5.992157, g: 5.992157, b: 5.992157, a: 0.5019608}
+    - _DIssolveEdgeColor: {r: 31.60946, g: 31.60946, b: 31.60946, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HeatSpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _MainColor: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+    - _MainColorBack: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+    - _RimColor: {r: 43.75374, g: 2.4550962, b: 156.30807, a: 0.5019608}
+    - _TintColor: {r: 0, g: 0, b: 0, a: 1}
+    - _UVpanner_DissolveTex: {r: 0, g: 0, b: 0, a: 0}
+    - _UVpanner_MainTex: {r: -2, g: -2, b: 0, a: 0}
+    - _UVpanner_MaskTex: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

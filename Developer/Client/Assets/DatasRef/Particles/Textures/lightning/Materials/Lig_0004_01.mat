@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Lig_0004_01
+  m_Shader: {fileID: 4800000, guid: 25d2abbb857f64643ac52da4d8da5c23, type: 3}
+  m_ShaderKeywords: USE_ANIM
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DisturbTex:
+        m_Texture: {fileID: 2800000, guid: c43817b8ea87e394f880ada043d30175, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e562ea8da7ec5e742afcb3150ec468bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 569f3298887306940ada4e6632b0df22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AmbientStrength: 0
+    - _BlendMode: 10
+    - _Cull: 0
+    - _CullMode: 2
+    - _CurveFactor: 1
+    - _Cutoff: 0.5
+    - _Dissolve_Smoothstep_Max: 0.526
+    - _Dissolve_Smoothstep_Min: 0
+    - _DisturbTexWhite: 0
+    - _HeatForce: 0
+    - _MaskSpeedX: 0
+    - _MaskSpeedY: 0
+    - _MaskTexWhite: 0
+    - _SpeedX: 2
+    - _SpeedY: 0
+    - _UseAnim: 1
+    - _UseCustom: 0
+    - _UseVertexColor: 1
+    - _Zwrite: 0
+    m_Colors:
+    - _Color: {r: 4.237095, g: 4.237095, b: 4.237095, a: 1}
+    - _HeatSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 5.992157, g: 5.992157, b: 5.992157, a: 0.5019608}
+  m_BuildTextureStacks: []

@@ -185,7 +185,7 @@
                     "id": 2,
                     "tag": 0,
                     "flags": 0,
-                    "animLoadType": 3,
+                    "animLoadType": 1,
                     "switch_stance": "",
                     "seqType": 0,
                     "animations": [
@@ -194,13 +194,13 @@
                             "hashState": 1349952704,
                             "layer": 0,
                             "scale_speed": 1.0,
-                            "multiParameter": -2024739398,
-                            "duration": 0.7000000476837158,
+                            "multiParameter": 0,
+                            "duration": 0.8000004291534424,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.7000000476837158,
+                    "duration": 0.8000004291534424,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -262,62 +262,6 @@
                             "frameID": 0
                         }
                     ],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
-                },
-                {
-                    "name": "falling_start",
-                    "type": 21,
-                    "id": 7,
-                    "tag": 0,
-                    "flags": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "jump_start_left",
-                            "hashState": -1129769264,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": -2024739398,
-                            "duration": 1.0670000314712525,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 1.0670000314712525,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
                     "action_event_core": {
                         "events": []
                     },
@@ -436,6 +380,62 @@
                     "action_property_data": []
                 },
                 {
+                    "name": "falling_start",
+                    "type": 21,
+                    "id": 7,
+                    "tag": 0,
+                    "flags": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "jump_start_left",
+                            "hashState": -1129769264,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": -2024739398,
+                            "duration": 1.0670000314712525,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 1.0670000314712525,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
                     "name": "idle",
                     "type": 0,
                     "id": 1,
@@ -451,12 +451,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": 0,
-                            "duration": 2.5999999046325685,
+                            "duration": 2.6666669845581056,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 2.5999999046325685,
+                    "duration": 2.6666669845581056,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -580,6 +580,62 @@
                     "action_property_data": []
                 },
                 {
+                    "name": "falling_end",
+                    "type": 23,
+                    "id": 9,
+                    "tag": 0,
+                    "flags": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "jump_end_left",
+                            "hashState": 1985243227,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": -2024739398,
+                            "duration": 1.4670000076293946,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 1.4670000076293946,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
                     "name": "普攻",
                     "type": 31,
                     "id": 10,
@@ -663,7 +719,12 @@
                         }
                     ],
                     "action_event_core": {
-                        "events": []
+                        "events": [
+                            {
+                                "type": 1,
+                                "eventCmd": "1:0.09970675,-1,1,61440,3,1,Assets/Datas/Partricles/Hero/FX_1053_Skill_Body.prefab,,0.000,0.000,0.000,0.000,0.000,0.000,1,-1,7,-1,1,"
+                            }
+                        ]
                     },
                     "action_property_data": []
                 },
@@ -722,62 +783,6 @@
                         "events": []
                     },
                     "action_property_data": []
-                },
-                {
-                    "name": "falling_end",
-                    "type": 23,
-                    "id": 9,
-                    "tag": 0,
-                    "flags": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "jump_end_left",
-                            "hashState": 1985243227,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": -2024739398,
-                            "duration": 1.4670000076293946,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 1.4670000076293946,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
                 }
             ]
         }
@@ -803,6 +808,14 @@
                         {
                             "action": 17,
                             "random": 100
+                        },
+                        {
+                            "action": 17,
+                            "random": 100
+                        },
+                        {
+                            "action": 17,
+                            "random": 100
                         }
                     ],
                     "loop": -1,
@@ -810,6 +823,14 @@
                 },
                 {
                     "items": [
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
                         {
                             "action": 19,
                             "random": 100
@@ -856,6 +877,14 @@
                 },
                 {
                     "items": [
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
                         {
                             "action": 19,
                             "random": 100

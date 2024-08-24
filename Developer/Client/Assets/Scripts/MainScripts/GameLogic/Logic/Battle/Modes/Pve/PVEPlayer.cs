@@ -66,7 +66,8 @@ namespace TopGame.Logic
         public void DoAttack(GameObject go, params VariablePoolAble[] param)
         {
             if (m_pPlayer == null) return;
-            m_pPlayer.GetSkill().DoSkillByTag(100);
+            m_pPlayer.GetSkill().ForceDoSkillByTag(100);
+            m_pPlayer.GetSkill().Update(0);
         }
         //------------------------------------------------------
         public void OnJoystick(bool bPress, Vector3 vCurPos, Vector3 vLastPos)

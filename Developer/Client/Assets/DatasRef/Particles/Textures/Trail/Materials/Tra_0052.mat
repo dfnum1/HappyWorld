@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tra_0052
+  m_Shader: {fileID: 4800000, guid: 19877e4d1400c9048b633d85c0ad7997, type: 3}
+  m_ShaderKeywords: USE_ANIM _USEEXPOSUREFX_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DisturbTex:
+        m_Texture: {fileID: 2800000, guid: 8142e039e464a194b891fd99ce1e7200, type: 3}
+        m_Scale: {x: 0.2, y: 0.5}
+        m_Offset: {x: 0.51, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0927bb8e85b3da34ab8ff61aa396d798, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: c46f29a9bf2abc94a82e773060a1e4cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 0d1524816b8a5d645842b3ed2c167ae8, type: 3}
+        m_Scale: {x: -1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 74b4644b706353a42b20f1377840a7d7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 2800000, guid: 51aea57da8907ac43aaa182cc294d3de, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AddMulti: 0
+    - _AmbientStrength: 0
+    - _Blend: 10
+    - _BlendMode: 10
+    - _BumpScale: 1
+    - _CircleMask: 0.45
+    - _ColorLight: 8
+    - _Cull: 0
+    - _CullMode: 0
+    - _CurveFactor: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Dissolve_Smoothstep_Max: 0.415
+    - _Dissolve_Smoothstep_Min: 0.168
+    - _DisturbTexWhite: 0
+    - _DstBlend: 0
+    - _Frequency: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HeatForce: 0.1
+    - _MainTexLight: 2.25
+    - _MainTexQuarterUV: 0
+    - _MaskForTex2: 0
+    - _MaskSpeedX: 0
+    - _MaskSpeedY: 0
+    - _MaskTexWhite: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _NoiseMulti: 0.27
+    - _NoisePolarUV: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SecondTexLight: 8
+    - _SecondTexQuarterUV: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpeedX: 0
+    - _SpeedY: 0
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _UseAnim: 1
+    - _UseCustom: 0
+    - _UseExposureFX: 1
+    - _WaveDirection: 0
+    - _WaveScale: 0
+    - _WaveSpeed: 0
+    - _ZTest0: 4
+    - _ZWrite: 1
+    - _ZWrite0: 0
+    - _Zwrite: 0
+    - _useCustom: 0
+    m_Colors:
+    - _Color: {r: 128, g: 128, b: 128, a: 0.5019608}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HeatSpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _MainTexColor: {r: 0.9764706, g: 0.2226196, b: 0, a: 1}
+    - _NoiseUVRoll: {r: 0.71, g: 0, b: 0, a: 0}
+    - _SecondTexColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TexUVRoll: {r: 2, g: 0, b: 0.5, a: 0}
+    - _TintColor: {r: 95.87451, g: 95.87451, b: 95.87451, a: 1}
+    - _UVRoll: {r: -0.46, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

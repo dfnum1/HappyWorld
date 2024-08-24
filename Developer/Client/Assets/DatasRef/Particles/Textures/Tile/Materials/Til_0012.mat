@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Til_0012
+  m_Shader: {fileID: 4800000, guid: d9b2c24396e768143b70896d3eaf2af6, type: 3}
+  m_ShaderKeywords: USE_ANIM _DISSOLVE_INTENSITY_PARTICLECONTROL_ON _UVPANNER_MAINTEX_PARTICLECONTROL_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissolveTex:
+        m_Texture: {fileID: 2800000, guid: bc0d4104879ddd44e96b9582bf315cdb, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _DisturbTex:
+        m_Texture: {fileID: 2800000, guid: c43817b8ea87e394f880ada043d30175, type: 3}
+        m_Scale: {x: 2, y: 0.3}
+        m_Offset: {x: 0.8, y: 0.5}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0bee4dba45eed7f42a16e08b5a479cf2, type: 3}
+        m_Scale: {x: 1, y: 2}
+        m_Offset: {x: 0.75, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 2772fca37156c31489588efdfde25cc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 52d98612669482a43b67a622fb955f89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _AmbientStrength: 0
+    - _BlendMode: 10
+    - _BumpScale: 1
+    - _Cull: 0
+    - _CullMode: 2
+    - _CurveFactor: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Dissolve_Edge: 0
+    - _Dissolve_Intensity: 0
+    - _Dissolve_Intensity_ParticleControl: 1
+    - _Dissolve_Smooth: 0.827
+    - _Dissolve_Smoothstep_Max: 0.634
+    - _Dissolve_Smoothstep_Min: 0.303
+    - _DisturbTexWhite: 0
+    - _DstBlend: 0
+    - _Float2: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HeatForce: 0
+    - _MaskSpeedX: -0.37
+    - _MaskSpeedY: 0
+    - _MaskTexWhite: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Rim_On: 0
+    - _Rim_Width: 7.1
+    - _SloftClip: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpeedX: 0
+    - _SpeedY: 0.1
+    - _SrcBlend: 1
+    - _Twist_Intensity: 0.2
+    - _UICLIP: 0
+    - _UVSec: 0
+    - _UVpanner_MainTex_ParticleControl: 1
+    - _UseAnim: 1
+    - _UseCustom: 0
+    - _ZWrite: 1
+    - _Zwrite: 0
+    m_Colors:
+    - _ClipRange0: {r: -1000, g: -1000, b: 1000, a: 1000}
+    - _Color: {r: 1.0039216, g: 1.0039216, b: 1.0039216, a: 1}
+    - _DIssolveEdgeColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HeatSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _MainColorBack: {r: 11.984314, g: 11.984314, b: 11.984314, a: 1}
+    - _RimColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.5019608}
+    - _TintColor: {r: 23.968628, g: 23.968628, b: 23.968628, a: 0.7058824}
+    - _UVpanner_DissolveTex: {r: 0, g: -0.2, b: 0, a: 0}
+    - _UVpanner_MainTex: {r: 0, g: 0, b: 0, a: 0}
+    - _UVpanner_MaskTex: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
