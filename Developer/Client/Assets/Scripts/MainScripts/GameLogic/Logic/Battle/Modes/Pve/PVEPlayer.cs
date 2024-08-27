@@ -110,7 +110,7 @@ namespace TopGame.Logic
                 if (m_pPlayer != null)
                 {
                     if(m_pPlayer.StartActionByType(EActionStateType.JumpStart, 0, 1, true, false, true))
-                        m_pPlayer.SetJumpSpeed(10);
+                        m_pPlayer.SetJumpSpeed(8);
                 }
             }
             if (m_nKeyDir != lastKey)
@@ -152,12 +152,14 @@ namespace TopGame.Logic
                     //m_pPlayer.SetPosition(m_ControllerPosition);
                     m_pPlayer.SetSpeedXZ(m_PressDirection * m_pPlayer.GetRunSpeed());
                     m_pPlayer.SetDirection(m_ControllerDirection);
-                    m_pPlayer.StartActionByType(EActionStateType.Run, 0, 1, false, false, true);
+                    if(!m_pPlayer.IsAirJumping())
+                        m_pPlayer.StartActionByType(EActionStateType.Run, 0, 1, false, false, true);
                 }
-                else if (m_pPlayer.CanDoGroundAction())
+                else
                 {
                     m_pPlayer.SetSpeedXZ(FVector3.zero);
-                    m_pPlayer.StartActionByType(EActionStateType.Idle, 0, 1, false, false, true);
+                    if (!m_pPlayer.IsAirJumping())
+                        m_pPlayer.StartActionByType(EActionStateType.Idle, 0, 1, false, false, true);
                 }
             }
 //             else
