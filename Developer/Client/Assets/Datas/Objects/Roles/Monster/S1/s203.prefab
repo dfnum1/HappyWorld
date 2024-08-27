@@ -384,14 +384,14 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: db58b4a10227fc943ac39fee6aec5032, type: 2}
+      clip: {fileID: 7400000, guid: 2f8a9386d3c40f548b5f618f3d57c512, type: 2}
       clipFile: 
     loadType: 1
-    name: idle
-    nameHash: -601574123
+    name: die
+    nameHash: 964231127
     layer: 0
     blendParameter: 
-    isDefault: 1
+    isDefault: 0
     canClamp: 0
   - clipTracks:
     - main: 0
@@ -420,14 +420,14 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 0}
-      clipFile: Assets/DatasRef/Objects/Roles/Monster/S1/Models/c_s_wildboarknight_viking_csz/animations/c_s_wildboarknight_viking_csz_die.anim
-    loadType: 3
-    name: die
-    nameHash: 964231127
+      clip: {fileID: 7400000, guid: db58b4a10227fc943ac39fee6aec5032, type: 2}
+      clipFile: 
+    loadType: 1
+    name: idle
+    nameHash: -601574123
     layer: 0
     blendParameter: 
-    isDefault: 0
+    isDefault: 1
     canClamp: 0
   - clipTracks:
     - main: 0

@@ -263,11 +263,23 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 0}
-      clipFile: Assets/DatasRef/Objects/Roles/Monster/S1/Models/c_s_swordshield_viking_csz/animations/c_s_swordshield_viking_csz_death.anim
-    loadType: 3
-    name: death
-    nameHash: -414722770
+      clip: {fileID: 7400000, guid: 6dd310e828a54f445b20e1906166ee74, type: 2}
+      clipFile: 
+    loadType: 1
+    name: die
+    nameHash: 964231127
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 7648b511ff5875c47b406b98cf7387d1, type: 2}
+      clipFile: 
+    loadType: 1
+    name: run
+    nameHash: 1349952704
     layer: 0
     blendParameter: 
     isDefault: 0
@@ -287,18 +299,6 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: a748dd00491f70d49a2af072fe56e8b4, type: 2}
-      clipFile: 
-    loadType: 1
-    name: attack
-    nameHash: 1203776827
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
       clip: {fileID: 7400000, guid: e55882f62b05d494a8327cd237fe1d33, type: 2}
       clipFile: 
     loadType: 1
@@ -311,11 +311,23 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 7648b511ff5875c47b406b98cf7387d1, type: 2}
+      clip: {fileID: 7400000, guid: a748dd00491f70d49a2af072fe56e8b4, type: 2}
       clipFile: 
     loadType: 1
-    name: run
-    nameHash: 1349952704
+    name: attack
+    nameHash: 1203776827
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Monster/S1/Models/c_s_swordshield_viking_csz/animations/c_s_swordshield_viking_csz_death.anim
+    loadType: 3
+    name: death
+    nameHash: -414722770
     layer: 0
     blendParameter: 
     isDefault: 0

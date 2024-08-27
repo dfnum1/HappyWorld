@@ -155,7 +155,7 @@ namespace TopGame.Logic
                     if(!m_pPlayer.IsAirJumping())
                         m_pPlayer.StartActionByType(EActionStateType.Run, 0, 1, false, false, true);
                 }
-                else
+                else if (m_pPlayer.CanDoGroundAction())
                 {
                     m_pPlayer.SetSpeedXZ(FVector3.zero);
                     if (!m_pPlayer.IsAirJumping())

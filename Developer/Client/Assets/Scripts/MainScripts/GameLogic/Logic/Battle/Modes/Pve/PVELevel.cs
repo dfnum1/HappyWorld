@@ -88,10 +88,10 @@ namespace TopGame.Logic
                 return;
 #endif
 
-            if (m_vMonster.Count <= 1 && m_vSpawnPoints.Count > 0)
+            if (m_vMonster.Count <= 10 && m_vSpawnPoints.Count > 0)
             {
                 FVector3 playerPos = GetModeLogic<PVEPlayer>().GetPosition();
-                for (int i = 0; i < 1; ++i)
+                for (int i = m_vMonster.Count; i < 10; ++i)
                 {
                     var data = Data.DataManager.getInstance().Monster.GetData(m_MonsterIDs[UnityEngine.Random.Range(0, m_MonsterIDs.Count)]);
                     if (data != null)
