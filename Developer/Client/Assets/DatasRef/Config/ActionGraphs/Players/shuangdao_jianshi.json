@@ -121,7 +121,7 @@
             "fast_run_speed": 10.0,
             "turn_speed": 0.19999998807907105,
             "jump_horizen_speed": 0.0,
-            "jump_vertical_speed": 0.0,
+            "jump_vertical_speed": 1.0,
             "stance_action_state_core": [
                 {
                     "name": "jump_end",
@@ -139,12 +139,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": -2024739398,
-                            "duration": 1.4670000076293946,
+                            "duration": 0.16666698455810548,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 1.4670000076293946,
+                    "duration": 0.16666698455810548,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -268,62 +268,6 @@
                     "action_property_data": []
                 },
                 {
-                    "name": "jump_ing_down",
-                    "type": 19,
-                    "id": 5,
-                    "tag": 0,
-                    "flags": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "jump_endloop_left",
-                            "hashState": 432267811,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": -2024739398,
-                            "duration": 0.06599999964237213,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 0.06599999964237213,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 0,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
-                },
-                {
                     "name": "falling_loop",
                     "type": 22,
                     "id": 8,
@@ -412,6 +356,62 @@
                     "face_front_back_angle": 0.0,
                     "can_clamp": false,
                     "loop": 1,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "jump_ing_down",
+                    "type": 19,
+                    "id": 5,
+                    "tag": 0,
+                    "flags": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "jump_endloop_left",
+                            "hashState": 432267811,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": -2024739398,
+                            "duration": 0.6666679382324219,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 0.6666679382324219,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 0,
                     "cancle_priority": 0,
                     "cancle_on_hit": false,
                     "cancle_begin": 0.0,
@@ -539,12 +539,12 @@
                             "layer": 0,
                             "scale_speed": 1.0,
                             "multiParameter": -2024739398,
-                            "duration": 0.06666672229766846,
+                            "duration": 0.6666669845581055,
                             "externParam": 0
                         }
                     ],
                     "actionParameter": "",
-                    "duration": 0.06666672229766846,
+                    "duration": 0.6666669845581055,
                     "bDummy": false,
                     "bOverride": false,
                     "forbidJump": false,
@@ -556,6 +556,62 @@
                     "face_front_back_angle": 0.0,
                     "can_clamp": false,
                     "loop": 0,
+                    "cancle_priority": 0,
+                    "cancle_on_hit": false,
+                    "cancle_begin": 0.0,
+                    "cancle_end": 0.0,
+                    "blend_animation_time": 0.0,
+                    "blend_offset_time": 0.0,
+                    "revert_direction": false,
+                    "face_target": true,
+                    "attack_speed": true,
+                    "invisible_begin": 0.0,
+                    "invisible_end": 0.0,
+                    "hide_actor_name": false,
+                    "actor_name_offset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "frame": [],
+                    "action_event_core": {
+                        "events": []
+                    },
+                    "action_property_data": []
+                },
+                {
+                    "name": "jump_start",
+                    "type": 16,
+                    "id": 3,
+                    "tag": 0,
+                    "flags": 0,
+                    "animLoadType": 1,
+                    "switch_stance": "",
+                    "seqType": 0,
+                    "animations": [
+                        {
+                            "animation": "jump_start_left",
+                            "hashState": -1129769264,
+                            "layer": 0,
+                            "scale_speed": 1.0,
+                            "multiParameter": -2024739398,
+                            "duration": 0.16666698455810548,
+                            "externParam": 0
+                        }
+                    ],
+                    "actionParameter": "",
+                    "duration": 0.16666698455810548,
+                    "bDummy": false,
+                    "bOverride": false,
+                    "forbidJump": false,
+                    "forbidMove": false,
+                    "hard_body": false,
+                    "turnSpeed": -1.0,
+                    "scale_animation_speed": false,
+                    "face_front_back": false,
+                    "face_front_back_angle": 0.0,
+                    "can_clamp": false,
+                    "loop": 1,
                     "cancle_priority": 0,
                     "cancle_on_hit": false,
                     "cancle_begin": 0.0,
@@ -727,62 +783,6 @@
                         ]
                     },
                     "action_property_data": []
-                },
-                {
-                    "name": "jump_start",
-                    "type": 16,
-                    "id": 3,
-                    "tag": 0,
-                    "flags": 0,
-                    "animLoadType": 1,
-                    "switch_stance": "",
-                    "seqType": 0,
-                    "animations": [
-                        {
-                            "animation": "jump_start_left",
-                            "hashState": -1129769264,
-                            "layer": 0,
-                            "scale_speed": 1.0,
-                            "multiParameter": -2024739398,
-                            "duration": 1.0,
-                            "externParam": 0
-                        }
-                    ],
-                    "actionParameter": "",
-                    "duration": 1.0,
-                    "bDummy": false,
-                    "bOverride": false,
-                    "forbidJump": false,
-                    "forbidMove": false,
-                    "hard_body": false,
-                    "turnSpeed": -1.0,
-                    "scale_animation_speed": false,
-                    "face_front_back": false,
-                    "face_front_back_angle": 0.0,
-                    "can_clamp": false,
-                    "loop": 1,
-                    "cancle_priority": 0,
-                    "cancle_on_hit": false,
-                    "cancle_begin": 0.0,
-                    "cancle_end": 0.0,
-                    "blend_animation_time": 0.0,
-                    "blend_offset_time": 0.0,
-                    "revert_direction": false,
-                    "face_target": true,
-                    "attack_speed": true,
-                    "invisible_begin": 0.0,
-                    "invisible_end": 0.0,
-                    "hide_actor_name": false,
-                    "actor_name_offset": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0
-                    },
-                    "frame": [],
-                    "action_event_core": {
-                        "events": []
-                    },
-                    "action_property_data": []
                 }
             ]
         }
@@ -816,6 +816,14 @@
                         {
                             "action": 17,
                             "random": 100
+                        },
+                        {
+                            "action": 17,
+                            "random": 100
+                        },
+                        {
+                            "action": 17,
+                            "random": 100
                         }
                     ],
                     "loop": -1,
@@ -823,6 +831,14 @@
                 },
                 {
                     "items": [
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
                         {
                             "action": 19,
                             "random": 100
@@ -877,6 +893,14 @@
                 },
                 {
                     "items": [
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
+                        {
+                            "action": 19,
+                            "random": 100
+                        },
                         {
                             "action": 19,
                             "random": 100

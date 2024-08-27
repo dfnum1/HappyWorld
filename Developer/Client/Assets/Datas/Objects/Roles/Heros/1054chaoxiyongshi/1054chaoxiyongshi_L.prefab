@@ -217,18 +217,6 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 0ed4615948d5a734f866239aa95463ac, type: 2}
-      clipFile: 
-    loadType: 1
-    name: jump_endloop_left
-    nameHash: 432267811
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
       clip: {fileID: 7400000, guid: ee5c189fea657a44eb8c97f7e7f26dc4, type: 2}
       clipFile: 
     loadType: 1
@@ -246,6 +234,18 @@ MonoBehaviour:
     loadType: 1
     name: jump_start_left
     nameHash: -1129769264
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 0ed4615948d5a734f866239aa95463ac, type: 2}
+      clipFile: 
+    loadType: 1
+    name: jump_endloop_left
+    nameHash: 432267811
     layer: 0
     blendParameter: 
     isDefault: 0
