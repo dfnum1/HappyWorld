@@ -107,7 +107,7 @@ namespace TopGame.Logic
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (m_pPlayer != null)
+                if (m_pPlayer != null && !m_pPlayer.IsAirJumping())
                 {
                     if(m_pPlayer.StartActionByType(EActionStateType.JumpStart, 0, 1, true, false, true))
                         m_pPlayer.SetJumpSpeed(8);
