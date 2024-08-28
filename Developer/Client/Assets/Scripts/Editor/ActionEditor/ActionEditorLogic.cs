@@ -1740,7 +1740,6 @@ namespace TopGame.ED
             }
             using (new UnityEngine.GUILayout.HorizontalScope("box"))
             {
-                EditorUtil.BeginHorizontal();
                 if (m_pCurActionState != null && GUILayout.Button("-", new GUILayoutOption[] { GUILayout.Width(20) }))
                 {
                     if (EditorUtility.DisplayDialog("Tip", "delete action state?", "ok", "cancel"))
@@ -1752,7 +1751,6 @@ namespace TopGame.ED
                     }
                 }
                 m_bExpandAction = EditorGUILayout.Foldout(m_bExpandAction, "Action State", true);
-                EditorUtil.EndHorizontal();
             }
             if (m_bExpandAction)
             {
@@ -2313,7 +2311,6 @@ namespace TopGame.ED
             }
             using (new UnityEngine.GUILayout.HorizontalScope("box"))
             {
-                EditorUtil.BeginHorizontal();
                 if (m_nStateFrameIndex >= 0 && m_nStateFrameIndex < frames.Count && GUILayout.Button("-", new GUILayoutOption[] { GUILayout.Width(20) }))
                 {
                     if (EditorUtility.DisplayDialog("Tip", "delete state frame?", "ok", "cancel"))
@@ -2350,7 +2347,6 @@ namespace TopGame.ED
                     newFrame.id = (byte)newID;
                     frames.Add(newFrame);
                 }
-                EditorUtil.EndHorizontal();
             }
 
 
@@ -2382,7 +2378,6 @@ namespace TopGame.ED
             {
                 using (new UnityEngine.GUILayout.HorizontalScope("box"))
                 {
-                    EditorUtil.BeginHorizontal();
                     m_strAddStandName = EditorGUILayout.TextField("Add ActionStance...", m_strAddStandName, new GUILayoutOption[] { GUILayout.Width(size.x - 20) });
                     EditorUtil.BeginDisabledGroup(m_strAddStandName.Length <= 0 || pGrah.GetActionStateStanceMap().ContainsKey(m_strAddStandName));
                     if (GUILayout.Button("+", new GUILayoutOption[] { GUILayout.Width(20) }))
@@ -2394,7 +2389,6 @@ namespace TopGame.ED
                         OnChangeGraphStand();
                     }
                     EditorUtil.EndDisabledGroup();
-                    EditorUtil.EndHorizontal();
                 }
 
                 return;
@@ -2427,7 +2421,6 @@ namespace TopGame.ED
 
             using (new UnityEngine.GUILayout.HorizontalScope("box"))
             {
-                EditorUtil.BeginHorizontal();
                 m_strAddStandName = EditorGUILayout.TextField("Add ActionStance...", m_strAddStandName, new GUILayoutOption[] { GUILayout.Width(size.x - 20) });
                 EditorUtil.BeginDisabledGroup(m_strAddStandName.Length <= 0);
                 if (GUILayout.Button("+", new GUILayoutOption[] { GUILayout.Width(20) }))
@@ -2443,14 +2436,12 @@ namespace TopGame.ED
 
                 }
                 EditorUtil.EndDisabledGroup();
-                EditorUtil.EndHorizontal();
             }
 
 
             if (pGrah.GetCurrentStance() == null) return;
             using (new UnityEngine.GUILayout.HorizontalScope("box"))
             {
-                EditorUtil.BeginHorizontal();
                 if (GUILayout.Button("-", new GUILayoutOption[] { GUILayout.Width(20) }))
                 {
                     if (EditorUtility.DisplayDialog("Tip", "delete action stance?", "ok", "cancel"))
@@ -2461,7 +2452,6 @@ namespace TopGame.ED
                     }
                 }
                 m_bExpandStand = EditorGUILayout.Foldout(m_bExpandStand, "ActionStance", true);
-                EditorUtil.EndHorizontal();
             }
             if (m_bExpandStand)
             {
@@ -2504,9 +2494,7 @@ namespace TopGame.ED
 
             using (new UnityEngine.GUILayout.HorizontalScope("box"))
             {
-                EditorUtil.BeginHorizontal();
                 m_bExpandSucceedActionList = EditorGUILayout.Foldout(m_bExpandSucceedActionList, "SucceedActionList", true);
-                EditorUtil.EndHorizontal();
             }
             if(m_bExpandSucceedActionList)
             {
@@ -2642,19 +2630,20 @@ namespace TopGame.ED
                     for (int i = 0; i < (int)ESucceedActionState.Count; ++i)
                     {
                         SucceedAction suceed = db.Value[i];
-                        EditorUtil.BeginHorizontal(titleLy);
-                        suceed.expand = EditorGUILayout.Foldout(suceed.expand, ((ESucceedActionState)i).ToString(), true);
-                        EditorUtil.EndHorizontal();
-                        suceed.loop = (short)EditorGUILayout.IntField(suceed.loop, titleLy);
-                        suceed.random = EditorGUILayout.Toggle(suceed.random, titleLy);
-                        if (!EditorGUILayout.Toggle(suceed.loop>0, titleLy))
-                            suceed.loop = -1;
-                        if(GUILayout.Button("Add", titleLy))
+                        using (new GUILayout.HorizontalScope("global_succeed_box", titleLy))
                         {
-                            var actions = suceed.GetStance(pGraph.GetCurrentStance(), true);
-                            if(actions!=null) actions.Add(new SucceedAction.Item() {  pState = null, random = 100 });
+                            suceed.expand = EditorGUILayout.Foldout(suceed.expand, ((ESucceedActionState)i).ToString(), true);
+                            suceed.loop = (short)EditorGUILayout.IntField(suceed.loop, titleLy);
+                            suceed.random = EditorGUILayout.Toggle(suceed.random, titleLy);
+                            if (!EditorGUILayout.Toggle(suceed.loop > 0, titleLy))
+                                suceed.loop = -1;
+                            if (GUILayout.Button("Add", titleLy))
+                            {
+                                var actions = suceed.GetStance(pGraph.GetCurrentStance(), true);
+                                if (actions != null) actions.Add(new SucceedAction.Item() { pState = null, random = 100 });
+                            }
                         }
-                        EditorUtil.EndHorizontal();
+
 
                         if (suceed.expand)
                         {
@@ -2664,16 +2653,16 @@ namespace TopGame.ED
                                 for (int j = 0; j < actions.Count; ++j)
                                 {
                                     SucceedAction.Item item = actions[j];
-                                    EditorUtil.BeginHorizontal();
-                                    item.pState = PopState(pStance, item.pState, null, new GUILayoutOption[] { GUILayout.Width(size.x - 160) });
-                                    item.random = (byte)Mathf.Clamp(EditorGUILayout.IntField(item.random, new GUILayoutOption[] { GUILayout.Width(80) }), 0, 100);
-                                    if (GUILayout.Button("移除", new GUILayoutOption[] { GUILayout.Width(40) }))
+                                    using (new GUILayout.HorizontalScope("item_box"))
                                     {
-                                        actions.RemoveAt(j);
-                                      //  EditorUtil.EndHorizontal();
-                                        break;
+                                        item.pState = PopState(pStance, item.pState, null, new GUILayoutOption[] { GUILayout.Width(size.x - 160) });
+                                        item.random = (byte)Mathf.Clamp(EditorGUILayout.IntField(item.random, new GUILayoutOption[] { GUILayout.Width(80) }), 0, 100);
+                                        if (GUILayout.Button("移除", new GUILayoutOption[] { GUILayout.Width(40) }))
+                                        {
+                                            actions.RemoveAt(j);
+                                            break;
+                                        }
                                     }
-                                    EditorUtil.EndHorizontal();
                                     actions[j] = item;
                                 }
                             }
@@ -2715,7 +2704,6 @@ namespace TopGame.ED
                 }
                 using (new UnityEngine.GUILayout.HorizontalScope("box"))
                 {
-                    EditorUtil.BeginHorizontal();
                     m_addActionName = EditorGUILayout.TextField("Add ActionState...", m_addActionName, new GUILayoutOption[] { GUILayout.Width(remainWidth - 20) });
                     bool hasName = false;
                     if (m_pActor.GetActionStateGraph()!=null && m_pActor.GetActionStateGraph().GetActionStateMap().ContainsKey(m_addActionName)) hasName = true;
@@ -2731,7 +2719,6 @@ namespace TopGame.ED
                         }
                     }
                     EditorUtil.EndDisabledGroup();
-                    EditorUtil.EndHorizontal();
                 }
 
 
@@ -3212,9 +3199,8 @@ namespace TopGame.ED
             if (actionState == null) return;
 
             ActionStateCore pCore = actionState.GetCore();
-            using (new UnityEngine.GUILayout.HorizontalScope("box"))
+            using (new UnityEngine.GUILayout.HorizontalScope("box", new GUILayoutOption[] { GUILayout.Width(size.x - 2) }))
             {
-                EditorUtil.BeginHorizontal(new GUILayoutOption[] { GUILayout.Width(size.x-2) });
                 if (m_nSelectFrame >=0 && m_nSelectFrame < pCore.frame.Count && GUILayout.Button("-", new GUILayoutOption[] { GUILayout.Width(20) }))
                 {
                     if (EditorUtility.DisplayDialog("tips", "确定删除?", "删除", "取消"))
@@ -3226,7 +3212,6 @@ namespace TopGame.ED
                     }
                 }
                 m_bExpandActionFrameParameter = EditorGUILayout.Foldout(m_bExpandActionFrameParameter, "ActionFrames", true);
-                EditorUtil.EndHorizontal();
             }
             if (m_bExpandActionFrameParameter)
             {
@@ -3257,13 +3242,11 @@ namespace TopGame.ED
                 }
                 using (new UnityEngine.GUILayout.HorizontalScope("box"))
                 {
-                    EditorUtil.BeginHorizontal();
                     EditorGUILayout.LabelField("Add ActionFrame...", new GUILayoutOption[] { GUILayout.Width(size.x - 60) });
                     if (GUILayout.Button("+", new GUILayoutOption[] { GUILayout.Width(20) }))
                     {
                         AddActionFrame();
                     }
-                    EditorUtil.EndHorizontal();
                 }
 
 
@@ -3440,14 +3423,12 @@ namespace TopGame.ED
             }
             using (new UnityEngine.GUILayout.HorizontalScope("box"))
             {
-                EditorUtil.BeginHorizontal();
                 EditorGUILayout.LabelField("Add Volume...", new GUILayoutOption[] { GUILayout.Width(gapWidth - 60) });
                 if (GUILayout.Button("+", new GUILayoutOption[] { GUILayout.Width(20) }))
                 {
                     StateFrame.Volume newFrame = new StateFrame.Volume();
                     frame.total_volume.Add(newFrame);
                 }
-                EditorUtil.EndHorizontal();
             }
         }
         //-----------------------------------------------------
@@ -3606,7 +3587,6 @@ namespace TopGame.ED
 
                 using (new UnityEngine.GUILayout.HorizontalScope("box"))
                 {
-                    EditorUtil.BeginHorizontal();
                     EditorGUILayout.LabelField("Add Event...");
                     m_AddEventType = EventPopDatas.DrawEventPop(m_AddEventType, "");
                     EditorUtil.BeginDisabledGroup(m_AddEventType == EEventType.Base || m_AddEventType == EEventType.Count);
@@ -3620,7 +3600,6 @@ namespace TopGame.ED
                         }
                     }
                     EditorUtil.EndDisabledGroup();
-                    EditorUtil.EndHorizontal();
                 }
 
                 GUILayoutOption[] sub_op = new GUILayoutOption[] { GUILayout.Width(size.x - 45) };
@@ -3687,7 +3666,6 @@ namespace TopGame.ED
 
                 using (new UnityEngine.GUILayout.HorizontalScope("box"))
                 {
-                    EditorUtil.BeginHorizontal();
                     EditorGUILayout.LabelField("Add Property...");
                     if (GUILayout.Button("+", new GUILayoutOption[] { GUILayout.Width(20) }))
                     {
@@ -3698,10 +3676,6 @@ namespace TopGame.ED
                         actionState.RebuildActionStatePropertyMap();
                     }
                 }
-                EditorUtil.EndHorizontal();
-
-                GUILayoutOption[] sub_op = new GUILayoutOption[] { GUILayout.Width(size.x - 45) };
-
                 EditorGUI.indentLevel--;
             }
             actionState.SetCore(pCore);

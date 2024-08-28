@@ -193,11 +193,11 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 1b9b6ba1ca9f5ef4a86326f5edb6d435, type: 2}
+      clip: {fileID: 7400000, guid: ee5c189fea657a44eb8c97f7e7f26dc4, type: 2}
       clipFile: 
     loadType: 1
-    name: run
-    nameHash: 1349952704
+    name: jump_startloop_left
+    nameHash: -1487461859
     layer: 0
     blendParameter: 
     isDefault: 0
@@ -217,6 +217,30 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
+      clip: {fileID: 7400000, guid: 4550f1f1b8c5fb440b3ddbc6e9476e82, type: 2}
+      clipFile: 
+    loadType: 1
+    name: jump_start_left
+    nameHash: -1129769264
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: 7ff4691003427ce4dad5dc61025eb558, type: 2}
+      clipFile: 
+    loadType: 1
+    name: attack
+    nameHash: 1203776827
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
       clip: {fileID: 7400000, guid: 0ed4615948d5a734f866239aa95463ac, type: 2}
       clipFile: 
     loadType: 1
@@ -229,23 +253,11 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: ee5c189fea657a44eb8c97f7e7f26dc4, type: 2}
+      clip: {fileID: 7400000, guid: 1b9b6ba1ca9f5ef4a86326f5edb6d435, type: 2}
       clipFile: 
     loadType: 1
-    name: jump_startloop_left
-    nameHash: -1487461859
-    layer: 0
-    blendParameter: 
-    isDefault: 0
-    canClamp: 0
-  - clipTracks:
-    - main: 0
-      threshold: 0
-      clip: {fileID: 7400000, guid: 4550f1f1b8c5fb440b3ddbc6e9476e82, type: 2}
-      clipFile: 
-    loadType: 1
-    name: jump_start_left
-    nameHash: -1129769264
+    name: run
+    nameHash: 1349952704
     layer: 0
     blendParameter: 
     isDefault: 0
@@ -265,11 +277,23 @@ MonoBehaviour:
   - clipTracks:
     - main: 0
       threshold: 0
-      clip: {fileID: 7400000, guid: 7ff4691003427ce4dad5dc61025eb558, type: 2}
+      clip: {fileID: 0}
+      clipFile: Assets/DatasRef/Objects/Roles/Heros/1054chaoxiyongshi/animations/1054chaoxiyongshi_L_jump_left.anim
+    loadType: 3
+    name: jump_left
+    nameHash: -875052822
+    layer: 0
+    blendParameter: 
+    isDefault: 0
+    canClamp: 0
+  - clipTracks:
+    - main: 0
+      threshold: 0
+      clip: {fileID: 7400000, guid: ca9728e3d32cd0e4d9b410f4f18b0cd0, type: 2}
       clipFile: 
     loadType: 1
-    name: attack
-    nameHash: 1203776827
+    name: skill01
+    nameHash: 140030811
     layer: 0
     blendParameter: 
     isDefault: 0
