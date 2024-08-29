@@ -2628,7 +2628,10 @@ namespace TopGame.ED
 #endif
                 //! copy local il2cpp
 
+#if UNITY_WEBGL
+#else
                 PlayerSettings.SetApiCompatibilityLevel(buildGroup, ApiCompatibilityLevel.NET_Standard_2_0);
+#endif
             }
 #endif
                 if (bCheckObb)
