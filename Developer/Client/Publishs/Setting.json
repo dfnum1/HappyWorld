@@ -73,7 +73,7 @@
     "dateName": true,
     "portait": false,
     "versionCheck": false,
-    "useEncrptyPak": true,
+    "useEncrptyPak": false,
     "convertASTC": true,
     "sceneStreamAb": false,
     "streamingMipmaps": true,
@@ -140,7 +140,7 @@
     "buildOptions": 256,
     "bundleExportDir": "/../Publishs/Packages",
     "copyToStreamAsset": false,
-    "buildAutoRun": false,
+    "buildAutoRun": true,
     "platforms": [
         {
             "target": 13,
@@ -1282,7 +1282,7 @@
             "projectExportName": "JSJ",
             "bundleName": "com.stupiddog.studio.jsj",
             "version": "1.0.0",
-            "versionCode": 1,
+            "versionCode": 6,
             "provisioning_profiler_appkey": "94afe52f-4af0-4b3f-9135-49f689e7a2dd",
             "provisioning_profiler_name": "stupiddog_run_dev",
             "development_teamKey": "8J9G7947T9",
