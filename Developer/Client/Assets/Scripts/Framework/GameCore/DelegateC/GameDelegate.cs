@@ -194,6 +194,12 @@ namespace TopGame.Core
         public static void StartUp(AFileSystem fileSystem)
         {
             if (fileSystem == null) return;
+#if UNITY_WEBGL && !UNITY_EDITOR
+            Debug.Log("Web Platform disable CorePlus");
+            fileSystem.InitPackages();
+            return;
+#else
+
 #if UNITY_EDITOR
             CorePlus_SetPath(fileSystem.AssetPath, Application.dataPath+ "/../Binarys/", fileSystem.PersistenDataPath);
 #else
@@ -249,6 +255,7 @@ namespace TopGame.Core
             JniPlugin plugin = new JniPlugin();
 
             fileSystem.InitPackages();
+#endif
         }
         //-------------------------------------------------
         public static System.IntPtr LoadCsv(int type, byte[] bytes)
@@ -260,7 +267,10 @@ namespace TopGame.Core
         //-------------------------------------------------
         public static void OnStatus(EAppStatus status)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_OnStatus((uint)status);
+#endif
         }
         //-------------------------------------------------
         public static void OnChangeState(uint state, EStateStatus status, int userData)
@@ -324,62 +334,100 @@ namespace TopGame.Core
         //-------------------------------------------------
         public static void EnablePackage(bool bEnable)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_EnablePackage(bEnable);
+#endif
         }
         //-------------------------------------------------
         public static void EnableCatchHandle(bool bEnable, int nCatchCount=64)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_EnableCatchHandle(bEnable, nCatchCount);
+#endif
         }
         //-------------------------------------------------
         public static System.IntPtr LoadPackage(string file)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return System.IntPtr.Zero;
+#else
             return CorePlus_LoadPackage(file);
+#endif
         }
         //-------------------------------------------------
         public static void UnloadPackage(string file)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_UnloadPackage(file);
+#endif
         }
         //-------------------------------------------------
         public static void DeleteAllPackages()
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_DeleteAllPackages();
+#endif
         }
         //-------------------------------------------------
 
         public static System.IntPtr CreateEmptyPackage()
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return System.IntPtr.Zero;
+#else
             return CorePlus_CreateEmptyPackage();
+#endif
         }
         //-------------------------------------------------
         public static System.IntPtr FindEntryPackage(string pakFileName)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return System.IntPtr.Zero;
+#else
             return CorePlus_FindEntryPackage(pakFileName);
+#endif
         }
         //-------------------------------------------------
         public static System.IntPtr GetEntryPackage(System.IntPtr packageHanlde, int index)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return System.IntPtr.Zero;
+#else
             return CorePlus_GetEntryPackage(packageHanlde, index);
+#endif
         }
         //-------------------------------------------------
         public static void CreatePackageEntry(System.IntPtr pPackageHandle, byte[] pData, uint nDataSize, string strNamne, bool bEncrpty)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_CreatePackageEntry(pPackageHandle, ref pData[0], nDataSize, strNamne, bEncrpty);
+#endif
         }
         //-------------------------------------------------
         public static string GetEntryPackageMd5(System.IntPtr pEnterPackageHandle)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return string.Empty;
+#else
             if (CorePlus_GetEntryPackageMd5(pEnterPackageHandle, ref ms_Buffer[0], 32))
             {
                 return System.Text.Encoding.ASCII.GetString(ms_Buffer, 0, 32);
             }
             else
                 return string.Empty;
+#endif
         }
         //-------------------------------------------------
         public static string GetEntryPackageFileName(System.IntPtr pEnterPackageHandle)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return string.Empty;
+#else
             int cnt = CorePlus_GetEntryPackageFileName(pEnterPackageHandle, ref ms_Buffer[0], 256);
             if (cnt>0)
             {
@@ -387,76 +435,126 @@ namespace TopGame.Core
             }
             else
                 return string.Empty;
+#endif
         }
         //------------------------------------------------------
         public static int GetPackageEntryCount(System.IntPtr pPackageHandle)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return 0;
+#else
             return CorePlus_GetPackageEntryCount(pPackageHandle);
+#endif
         }
         
         //-------------------------------------------------
         public static bool SavePackage(System.IntPtr pPackageHandle, bool bAutoDestroy = false)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return false; 
+#else
             return CorePlus_SavePackage(pPackageHandle, bAutoDestroy);
+#endif
         }
         //-------------------------------------------------
         public static void SetPackageAbsFilePath(System.IntPtr pPackageHandle, string strAbsFilePath)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_SetPackageAbsFilePath(pPackageHandle, strAbsFilePath);
+#endif
         }
         //-------------------------------------------------
         public static void SetPackageVersion(System.IntPtr pPackageHandle, uint nVersion)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             CorePlus_SetPackageVersion(pPackageHandle, nVersion);
+#endif
         }
         //-------------------------------------------------
         public static int DecompressLZ4(ref byte source, ref byte dest, int compressedSize, int maxDecompressedSize)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return 0;
+#else
             return CorePlus_decompressLZ4(ref source, ref dest, compressedSize, maxDecompressedSize);
+#endif
         }
         //-------------------------------------------------
         public static string Md5(byte[] bytes, int len)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+             return string.Empty;
+#else
             if (CorePlus_buildMd5(ref bytes[0], len, ref ms_Buffer[0], 32))
             {
                 return System.Text.Encoding.ASCII.GetString(ms_Buffer,0, 32);
             }
             else
                 return string.Empty;
+#endif
         }
         //-------------------------------------------------
         public static bool EncryptBuffer(ref byte[] pInBuffer, int nBuffSize, int cipherRemains)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return false;
+#else
             return CorePlus_EncryptBuffer(ref pInBuffer[0], nBuffSize, null, cipherRemains);
+#endif
         }
         //-------------------------------------------------
         public static bool DecodeBuffer(ref byte[] pInBuffer, int nBuffSize, int cipherRemains)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return false;
+#else
             return CorePlus_DecodeBuffer(ref pInBuffer[0], nBuffSize, null, cipherRemains);
+#endif
         }
         //-------------------------------------------------
         public static bool EncryptBuffer1(ref byte[] pInBuffer, int nOffset, int nBuffLen, byte[] arrKeys)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return false;
+#else
             return CorePlus_EncryptBuffer1(ref pInBuffer[0], nOffset, nBuffLen, arrKeys, arrKeys != null ? arrKeys.Length : 0);
+#endif
         }
         //-------------------------------------------------
         public static bool DecodeBuffer1(ref byte[] pInBuffer, int nOffset, int nBuffLen, byte[] arrKeys)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return false;
+#else
             return CorePlus_DecodeBuffer1(ref pInBuffer[0], nOffset, nBuffLen, arrKeys, arrKeys!=null?arrKeys.Length:0);
+#endif
         }
         //-------------------------------------------------
         public static int GetFileSize(string strFile, bool bAbs)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return 0;
+#else
             return CorePlus_GetFileSize(strFile, bAbs);
+#endif
         }
         //-------------------------------------------------
         public static bool FileExist(string strFile, bool bAbs)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return false;
+#else
             return CorePlus_FileExist(strFile, bAbs);
+#endif
         }
         //-------------------------------------------------
         public static byte[] ReadFile(string strFile, bool bAbs, ref int dataSize)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return null;
+#else
             dataSize = GetFileSize(strFile, bAbs);
             if (dataSize <= 0) return null;
             if (ms_Buffer.Length <= dataSize)
@@ -466,17 +564,28 @@ namespace TopGame.Core
                 return ms_Buffer;
             }
             return null;
+#endif
         }
         //-------------------------------------------------
         public static int ReadBufferFile(byte[] buffer, string strFile, bool bAbs, ref int dataSize)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return 0;
+#else
             return CorePlus_ReadFile(strFile, ref buffer[0], dataSize, bAbs);
+#endif
         }
         //-------------------------------------------------
         public static int ReadBuffer(string strFile, byte[] buffer, int dataSize, int bufferOffset, int offsetRead, bool bAbs)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+            return 0;
+#else
             return CorePlus_ReadBuffer(strFile, ref buffer[bufferOffset], dataSize, offsetRead, bAbs);
+#endif
         }
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
         //-------------------------------------------------
 #if !UNITY_EDITOR && UNITY_IPHONE
         const string CoreDLL = "__Internal";
@@ -593,5 +702,6 @@ namespace TopGame.Core
 
         [DllImport(CoreDLL)]
         static extern void CorePlus_SetPackageVersion(System.IntPtr pPackageHandle, uint nVersion);
+#endif
     }
 }

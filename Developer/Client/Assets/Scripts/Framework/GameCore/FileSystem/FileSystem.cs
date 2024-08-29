@@ -49,6 +49,11 @@ namespace TopGame.Core
             m_strStreamPackagesPath =  Application.streamingAssetsPath + "/packages/";
             m_strStreamRawPath = Application.streamingAssetsPath + "/packages/raws/";
             m_strStreamBinaryPath = m_strStreamRawPath + "Binarys/";
+#elif UNITY_WEBGL
+            m_strStreamPath = Application.streamingAssetsPath;
+            m_strStreamPackagesPath =  Application.streamingAssetsPath + "/packages/";
+            m_strStreamRawPath = Application.streamingAssetsPath + "/packages/raws/";
+            m_strStreamBinaryPath = m_strStreamRawPath + "Binarys/";
 #else
             m_strStreamPath = Application.streamingAssetsPath;
             m_strStreamPackagesPath =  Application.streamingAssetsPath + "/packages/";
@@ -108,8 +113,11 @@ namespace TopGame.Core
 #elif UNITY_IOS
                 m_strStreamRawPath = "raws/";
                 m_strStreamBinaryPath = "raws/Binarys/";
+#elif UNITY_WEBGL && !UNITY_EDITOR
+                m_strStreamRawPath = "raws/";
+                m_strStreamBinaryPath = "raws/Binarys/";
 #elif UNITY_EDITOR
-                 m_strStreamPackagesPath = Application.dataPath + "/../Publishs/Packages/" + UnityEditor.EditorUserBuildSettings.activeBuildTarget + "/defualt/encrpty_packages/";
+                m_strStreamPackagesPath = Application.dataPath + "/../Publishs/Packages/" + UnityEditor.EditorUserBuildSettings.activeBuildTarget + "/defualt/encrpty_packages/";
 #endif
             }
         }

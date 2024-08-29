@@ -2072,6 +2072,34 @@ namespace TopGame.ED
                 }
             }
 
+            var scene = UnityEditor.SceneManagement.EditorSceneManager.OpenScene("Assets/Scenes/Startup.unity");
+            if (scene.IsValid())
+            {
+                bool bDirtyScene = false;
+                var roots = scene.GetRootGameObjects();
+                for (int i = 0; i < roots.Length; ++i)
+                {
+                    FrameworkMain frameworkMain = roots[i].GetComponent<FrameworkMain>();
+                    if (frameworkMain == null) frameworkMain = roots[i].GetComponentInChildren<FrameworkMain>();
+                    if (frameworkMain != null)
+                    {
+                        EFileSystemType fileSysType = EFileSystemType.AssetBundle;
+                        if (setting.useEncrptyPak) fileSysType = EFileSystemType.EncrptyPak;
+                        if (frameworkMain.eFileStreamType != fileSysType)
+                        {
+                            frameworkMain.eFileStreamType = fileSysType;
+                            UnityEditor.EditorUtility.SetDirty(frameworkMain);
+                            UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);
+                            bDirtyScene = true;
+                        }
+                        break;
+                    }
+                }
+                if (bDirtyScene)
+                    UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+            }
+
+
             bool fog = RenderSettings.fog;
             RenderSettings.fog = true;
             RenderSettings.fogMode = FogMode.Linear;
