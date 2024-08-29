@@ -85,7 +85,8 @@ namespace TopGame.UI
                 ms_pInstance.m_NoText.text = Base.GlobalUtil.ToLocalization(noId, "No");
             if(ms_pInstance.m_Yes) Base.GlobalUtil.SetActive(ms_pInstance.m_Yes.gameObject, yesId != 0);
             if(ms_pInstance.m_No) Base.GlobalUtil.SetActive(ms_pInstance.m_No.gameObject, noId != 0);
-
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             if (ms_pInstance.m_WebView)
             {
                 ms_pInstance.m_WebView.Load(url);
@@ -107,6 +108,7 @@ namespace TopGame.UI
                 ms_pInstance.m_WebView.UpdateFrame();
                 ms_pInstance.m_WebView.Show();
             }
+#endif
         }
         //------------------------------------------------------
         public static void Hide()

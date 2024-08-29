@@ -296,14 +296,18 @@ public class UniWebView: MonoBehaviour {
             return new Rect(x, y, width, height);
         }
     }
-
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
     void Awake() {
         Init();
     }
+#endif
 
     public void Init()
     {
-        if(listener == null)
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
+        if (listener == null)
         {
             var listenerObject = new GameObject(id);
             listener = listenerObject.AddComponent<UniWebViewNativeListener>();
@@ -324,8 +328,10 @@ public class UniWebView: MonoBehaviour {
             UniWebViewInterface.Init(listener.Name, (int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height);
             isPortrait = Screen.height >= Screen.width;
         }
+#endif
     }
-
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
     void Start() {
         if (showOnStart) {
             Show();
@@ -372,6 +378,7 @@ public class UniWebView: MonoBehaviour {
             Hide();
         }
     }
+#endif
 
     /// <summary>
     /// Loads a url in current web view.
@@ -693,9 +700,9 @@ public class UniWebView: MonoBehaviour {
         UniWebViewContentInsetAdjustmentBehavior behavior
     )
     {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetContentInsetAdjustmentBehavior(listener.Name, behavior);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -721,9 +728,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="flag">A flag indicates whether inline playing of media is allowed or not.</param>
     public static void SetAllowInlinePlay(bool flag) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetAllowInlinePlay(flag);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -739,9 +746,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="flag">A flag indicates whether the universal access for files are allowed or not.</param>
     public static void SetAllowUniversalAccessFromFileURLs(bool flag) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetAllowUniversalAccessFromFileURLs(flag);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -923,9 +930,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="domain">The domain to add to the white list.</param>
     public void AddPermissionTrustDomain(string domain) {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.AddPermissionTrustDomain(listener.Name, domain);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -933,9 +940,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="domain">The domain to remove from white list.</param>
     public void RemovePermissionTrustDomain(string domain) {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.RemovePermissionTrustDomain(listener.Name, domain);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -961,9 +968,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="flag">Whether to enable support for the viewport meta tag.</param>
     public void SetUseWideViewPort(bool flag) {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.SetUseWideViewPort(listener.Name, flag);
-        #endif
+#endif
     } 
 
     /// <summary>
@@ -973,9 +980,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="flag"></param>
     public void SetLoadWithOverviewMode(bool flag) {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.SetLoadWithOverviewMode(listener.Name, flag);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -995,9 +1002,9 @@ public class UniWebView: MonoBehaviour {
     /// <param name="adjustInset">Whether the toolbar transition should also adjust web view position and size
     ///  if overlapped. Default is `false`</param>
     public void SetShowToolbar(bool show, bool animated = false, bool onTop = true, bool adjustInset = false) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetShowToolbar(listener.Name, show, animated, onTop, adjustInset);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1010,9 +1017,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="text">The text needed to be set as done button title.</param>
     public void SetToolbarDoneButtonText(string text) {
-        #if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS && !UNITY_EDITOR
         UniWebViewInterface.SetToolbarDoneButtonText(listener.Name, text);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1025,9 +1032,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="text">The text needed to be set as go back button.</param>
     public void SetToolbarGoBackButtonText(string text) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetToolbarGoBackButtonText(listener.Name, text);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1040,9 +1047,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="text">The text needed to be set as go forward button.</param>
     public void SetToolbarGoForwardButtonText(string text) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetToolbarGoForwardButtonText(listener.Name, text);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1055,9 +1062,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="color">The color should be used for the background tint of the toolbar.</param>
     public void SetToolbarTintColor(Color color) {
-        #if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS && !UNITY_EDITOR
         UniWebViewInterface.SetToolbarTintColor(listener.Name, color.r, color.g, color.b);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1070,9 +1077,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="color">The color should be used for the button text of the toolbar.</param>
     public void SetToolbarTextColor(Color color) {
-        #if UNITY_IOS && !UNITY_EDITOR
+#if UNITY_IOS && !UNITY_EDITOR
         UniWebViewInterface.SetToolbarTextColor(listener.Name, color.r, color.g, color.b);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1086,9 +1093,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="show">Whether the navigation buttons on the toolbar should show or hide.</param>
     public void SetShowToolbarNavigationButtons(bool show) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetShowToolbarNavigationButtons(listener.Name, show);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1124,9 +1131,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="enabled">Whether the window could be able to be resized by cursor.</param>
     public void SetWindowUserResizeEnabled(bool enabled) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetWindowUserResizeEnabled(listener.Name, enabled);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1156,9 +1163,9 @@ public class UniWebView: MonoBehaviour {
     /// The value indicates whether a swipe gestures driven navigation should be allowed. Default is `false`.
     /// </param>
     public void SetAllowBackForwardNavigationGestures(bool flag) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetAllowBackForwardNavigationGestures(listener.Name, flag);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1170,9 +1177,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="flag">Whether the file access from file URLs is allowed or not.</param>
     public void SetAllowFileAccessFromFileURLs(bool flag) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetAllowFileAccessFromFileURLs(listener.Name, flag);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1244,9 +1251,9 @@ public class UniWebView: MonoBehaviour {
     /// </summary>
     /// <param name="size">The target default font size set to the web view.</param>
     public void SetDefaultFontSize(int size) {
-        #if UNITY_ANDROID && !UNITY_EDITOR
+#if UNITY_ANDROID && !UNITY_EDITOR
         UniWebViewInterface.SetDefaultFontSize(listener.Name, size);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1262,9 +1269,9 @@ public class UniWebView: MonoBehaviour {
     /// Whether the drag interaction should be enabled.
     /// </param>
     public void SetDragInteractionEnabled(bool enabled) {
-        #if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
+#if (UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX || UNITY_IOS) && !UNITY_EDITOR_WIN && !UNITY_EDITOR_LINUX
         UniWebViewInterface.SetDragInteractionEnabled(listener.Name, enabled);
-        #endif
+#endif
     }
 
     /// <summary>
@@ -1449,7 +1456,7 @@ public class UniWebView: MonoBehaviour {
     /// get the back button event. On iOS, user's key action is not avaliable and this event will never be 
     /// raised.
     /// </summary>
-    #pragma warning disable CS0067
+#pragma warning disable CS0067
     public event KeyCodeReceivedDelegate OnKeyCodeReceived;
 
 }
