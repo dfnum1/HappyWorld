@@ -21,7 +21,11 @@
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.READ_LOGS" />	
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	<!-- uses-permission add -->
 
+	<!-- application begin -->
     <application
         android:theme="@style/UnityThemeSelector"
         android:icon="@drawable/app_icon"
@@ -35,5 +39,11 @@
             </intent-filter>
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
         </activity>
+		
+		<!-- activity-add -->
+		
+		<!-- meta-data-add -->
+		
     </application>
+	<!-- application end -->
 </manifest>
