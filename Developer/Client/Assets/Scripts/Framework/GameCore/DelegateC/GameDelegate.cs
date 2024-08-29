@@ -268,6 +268,7 @@ namespace TopGame.Core
         public static void OnStatus(EAppStatus status)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported OnStatus API");
 #else
             CorePlus_OnStatus((uint)status);
 #endif
@@ -335,6 +336,7 @@ namespace TopGame.Core
         public static void EnablePackage(bool bEnable)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus EnablePackage API");
 #else
             CorePlus_EnablePackage(bEnable);
 #endif
@@ -343,6 +345,7 @@ namespace TopGame.Core
         public static void EnableCatchHandle(bool bEnable, int nCatchCount=64)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus EnableCatchHandle API");
 #else
             CorePlus_EnableCatchHandle(bEnable, nCatchCount);
 #endif
@@ -351,6 +354,7 @@ namespace TopGame.Core
         public static System.IntPtr LoadPackage(string file)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus LoadPackage API");
             return System.IntPtr.Zero;
 #else
             return CorePlus_LoadPackage(file);
@@ -360,6 +364,7 @@ namespace TopGame.Core
         public static void UnloadPackage(string file)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus UnloadPackage API");
 #else
             CorePlus_UnloadPackage(file);
 #endif
@@ -368,6 +373,7 @@ namespace TopGame.Core
         public static void DeleteAllPackages()
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus DeleteAllPackages API");
 #else
             CorePlus_DeleteAllPackages();
 #endif
@@ -377,6 +383,7 @@ namespace TopGame.Core
         public static System.IntPtr CreateEmptyPackage()
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+           UnityEngine.Debug.LogWarning("not spported CorePlus CreateEmptyPackage API");
             return System.IntPtr.Zero;
 #else
             return CorePlus_CreateEmptyPackage();
@@ -386,6 +393,7 @@ namespace TopGame.Core
         public static System.IntPtr FindEntryPackage(string pakFileName)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus FindEntryPackage API");
             return System.IntPtr.Zero;
 #else
             return CorePlus_FindEntryPackage(pakFileName);
@@ -395,6 +403,7 @@ namespace TopGame.Core
         public static System.IntPtr GetEntryPackage(System.IntPtr packageHanlde, int index)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus GetEntryPackage API");
             return System.IntPtr.Zero;
 #else
             return CorePlus_GetEntryPackage(packageHanlde, index);
@@ -404,6 +413,7 @@ namespace TopGame.Core
         public static void CreatePackageEntry(System.IntPtr pPackageHandle, byte[] pData, uint nDataSize, string strNamne, bool bEncrpty)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus CreatePackageEntry API");
 #else
             CorePlus_CreatePackageEntry(pPackageHandle, ref pData[0], nDataSize, strNamne, bEncrpty);
 #endif
@@ -412,6 +422,7 @@ namespace TopGame.Core
         public static string GetEntryPackageMd5(System.IntPtr pEnterPackageHandle)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus GetEntryPackageMd5 API");
             return string.Empty;
 #else
             if (CorePlus_GetEntryPackageMd5(pEnterPackageHandle, ref ms_Buffer[0], 32))
@@ -426,6 +437,7 @@ namespace TopGame.Core
         public static string GetEntryPackageFileName(System.IntPtr pEnterPackageHandle)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus GetEntryPackageFileName API");
             return string.Empty;
 #else
             int cnt = CorePlus_GetEntryPackageFileName(pEnterPackageHandle, ref ms_Buffer[0], 256);
@@ -441,6 +453,7 @@ namespace TopGame.Core
         public static int GetPackageEntryCount(System.IntPtr pPackageHandle)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus GetPackageEntryCount API");
             return 0;
 #else
             return CorePlus_GetPackageEntryCount(pPackageHandle);
@@ -451,6 +464,7 @@ namespace TopGame.Core
         public static bool SavePackage(System.IntPtr pPackageHandle, bool bAutoDestroy = false)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus SavePackage API");
             return false; 
 #else
             return CorePlus_SavePackage(pPackageHandle, bAutoDestroy);
@@ -460,6 +474,7 @@ namespace TopGame.Core
         public static void SetPackageAbsFilePath(System.IntPtr pPackageHandle, string strAbsFilePath)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus SetPackageAbsFilePath API");
 #else
             CorePlus_SetPackageAbsFilePath(pPackageHandle, strAbsFilePath);
 #endif
@@ -468,6 +483,7 @@ namespace TopGame.Core
         public static void SetPackageVersion(System.IntPtr pPackageHandle, uint nVersion)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus SetPackageVersion API");
 #else
             CorePlus_SetPackageVersion(pPackageHandle, nVersion);
 #endif
@@ -476,6 +492,7 @@ namespace TopGame.Core
         public static int DecompressLZ4(ref byte source, ref byte dest, int compressedSize, int maxDecompressedSize)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus DecompressLZ4 API");
             return 0;
 #else
             return CorePlus_decompressLZ4(ref source, ref dest, compressedSize, maxDecompressedSize);
@@ -485,7 +502,8 @@ namespace TopGame.Core
         public static string Md5(byte[] bytes, int len)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
-             return string.Empty;
+            UnityEngine.Debug.LogWarning("not spported CorePlus Md5 API"); 
+            return string.Empty;
 #else
             if (CorePlus_buildMd5(ref bytes[0], len, ref ms_Buffer[0], 32))
             {
@@ -499,6 +517,7 @@ namespace TopGame.Core
         public static bool EncryptBuffer(ref byte[] pInBuffer, int nBuffSize, int cipherRemains)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus EncryptBuffer API");
             return false;
 #else
             return CorePlus_EncryptBuffer(ref pInBuffer[0], nBuffSize, null, cipherRemains);
@@ -508,6 +527,7 @@ namespace TopGame.Core
         public static bool DecodeBuffer(ref byte[] pInBuffer, int nBuffSize, int cipherRemains)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus DecodeBuffer API");
             return false;
 #else
             return CorePlus_DecodeBuffer(ref pInBuffer[0], nBuffSize, null, cipherRemains);
@@ -517,6 +537,7 @@ namespace TopGame.Core
         public static bool EncryptBuffer1(ref byte[] pInBuffer, int nOffset, int nBuffLen, byte[] arrKeys)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus EncryptBuffer1 API");
             return false;
 #else
             return CorePlus_EncryptBuffer1(ref pInBuffer[0], nOffset, nBuffLen, arrKeys, arrKeys != null ? arrKeys.Length : 0);
@@ -526,6 +547,7 @@ namespace TopGame.Core
         public static bool DecodeBuffer1(ref byte[] pInBuffer, int nOffset, int nBuffLen, byte[] arrKeys)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus DecodeBuffer1 API");
             return false;
 #else
             return CorePlus_DecodeBuffer1(ref pInBuffer[0], nOffset, nBuffLen, arrKeys, arrKeys!=null?arrKeys.Length:0);
@@ -535,6 +557,7 @@ namespace TopGame.Core
         public static int GetFileSize(string strFile, bool bAbs)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus GetFileSize API");
             return 0;
 #else
             return CorePlus_GetFileSize(strFile, bAbs);
@@ -544,6 +567,7 @@ namespace TopGame.Core
         public static bool FileExist(string strFile, bool bAbs)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus FileExist API");
             return false;
 #else
             return CorePlus_FileExist(strFile, bAbs);
@@ -553,6 +577,7 @@ namespace TopGame.Core
         public static byte[] ReadFile(string strFile, bool bAbs, ref int dataSize)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus ReadFile API");
             return null;
 #else
             dataSize = GetFileSize(strFile, bAbs);
@@ -570,6 +595,7 @@ namespace TopGame.Core
         public static int ReadBufferFile(byte[] buffer, string strFile, bool bAbs, ref int dataSize)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus ReadBufferFile API");
             return 0;
 #else
             return CorePlus_ReadFile(strFile, ref buffer[0], dataSize, bAbs);
@@ -579,6 +605,7 @@ namespace TopGame.Core
         public static int ReadBuffer(string strFile, byte[] buffer, int dataSize, int bufferOffset, int offsetRead, bool bAbs)
         {
 #if UNITY_WEBGL && !UNITY_EDITOR
+            UnityEngine.Debug.LogWarning("not spported CorePlus ReadBuffer API");
             return 0;
 #else
             return CorePlus_ReadBuffer(strFile, ref buffer[bufferOffset], dataSize, offsetRead, bAbs);
