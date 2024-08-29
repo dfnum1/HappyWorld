@@ -1710,6 +1710,10 @@ namespace TopGame.ED
             {
                 strTexPlaform = "Android";
             }
+            else if (setting.buildTarget == BuildTarget.WebGL)
+            {
+                strTexPlaform = "WebGL";
+            }
 
             //无Alpha通道的贴图建议压缩格式为ASTC 8x8。
             //贴图为法线贴图，建议压缩格式为ASTC 5x5。
@@ -2533,6 +2537,11 @@ namespace TopGame.ED
                 case BuildTarget.WebGL:
                     {
                         PlayerSettings.WebGL.decompressionFallback = true;
+
+                        projectName = platform.projectExportName;
+                        buildTargetDir = Application.dataPath.Replace("/Assets", "/Assets/../Publishs/WebGL/") + pkgName;
+                        WriteProductFile(Application.dataPath.Replace("/Assets", "/Assets/../Publishs/WebGL/") + "build/" + projectName + ".html");
+                        buildGroup = BuildTargetGroup.WebGL;
                     }
                     break;
 

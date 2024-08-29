@@ -71,7 +71,7 @@
     "androidSdkVersion": 23,
     "obb": false,
     "dateName": true,
-    "portait": true,
+    "portait": false,
     "versionCheck": false,
     "useEncrptyPak": true,
     "convertASTC": true,
@@ -87,7 +87,7 @@
             "pluginDatas": "/../Publishs/SDK/StompyRobot"
         }
     ],
-    "hotType": 3,
+    "hotType": 0,
     "showFps": true,
     "reportView": true,
     "gmPanel": true,
@@ -136,8 +136,8 @@
     ],
     "versionServerAddress": "http://106.75.26.116:8085/versions/",
     "strEncryptKey": "jsj123^*456{][sd",
-    "buildTarget": 19,
-    "buildOptions": 0,
+    "buildTarget": 20,
+    "buildOptions": 256,
     "bundleExportDir": "/../Publishs/Packages",
     "copyToStreamAsset": false,
     "buildAutoRun": false,
@@ -1274,6 +1274,24 @@
                     ]
                 }
             ],
+            "shadervariants": []
+        },
+        {
+            "target": 20,
+            "projectName": "JSJ",
+            "projectExportName": "JSJ",
+            "bundleName": "com.stupiddog.studio.jsj",
+            "version": "1.0.0",
+            "versionCode": 1,
+            "provisioning_profiler_appkey": "94afe52f-4af0-4b3f-9135-49f689e7a2dd",
+            "provisioning_profiler_name": "stupiddog_run_dev",
+            "development_teamKey": "8J9G7947T9",
+            "defaultLanguage": 42,
+            "package_size_kb": 16384,
+            "ignore_path": [],
+            "ignore_suffix": [],
+            "ignore_file": [],
+            "copySdks": [],
             "shadervariants": []
         }
     ],

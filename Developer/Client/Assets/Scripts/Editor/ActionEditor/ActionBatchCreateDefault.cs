@@ -1,23 +1,15 @@
+#if UNITY_EDITOR
 /********************************************************************
 生成日期:	25:7:2019   14:35
 类    名: 	ActionBatchCreateDefault
 作    者:	HappLI
 描    述:	动作批量缺省绑定
 *********************************************************************/
-using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
-using System.Linq;
-using System.IO;
-using TopGame.Data;
-using TopGame.Core;
+using UnityEditor;
 using Framework.Core;
-using Framework.ED;
-using Framework.Data;
-using Framework.Module;
-using ExternEngine;
 
 namespace TopGame.ED
 {
@@ -153,3 +145,4 @@ namespace TopGame.ED
         }
     }
 }
+#endif
