@@ -193,15 +193,48 @@ namespace TopGame.Core
         //-------------------------------------------------
         public static void StartUp(AFileSystem fileSystem)
         {
-            if (fileSystem == null) return;
+            if (fileSystem == null)
+            {
+                return;
+            }
 #if UNITY_WEBGL && !UNITY_EDITOR
             Debug.Log("Web Platform disable CorePlus");
             fileSystem.InitPackages();
-            return;
 #else
+            InnerStartUp(fileSystem);
+
+            fileSystem.InitPackages();
+#endif
+        }
+        //-------------------------------------------------
+        public static System.Collections.Generic.IEnumerator<bool> CoroutineStartUp(AFileSystem fileSystem)
+        {
+            if (fileSystem == null)
+            {
+                yield return false;
+                yield break;
+            }
+#if UNITY_WEBGL && !UNITY_EDITOR
+            Debug.Log("Web Platform disable CorePlus");
+            System.Collections.Generic.IEnumerator<bool> result =  fileSystem.CoroutineInitPackages();
+            yield return result.Current;
+            yield break;
+#else
+            InnerStartUp(fileSystem);
+
+            yield return fileSystem.CoroutineInitPackages().Current;
+#endif
+        }
+        //-------------------------------------------------
+        static void InnerStartUp(AFileSystem fileSystem)
+        {
+            if (fileSystem == null)
+            {
+                return;
+            }
 
 #if UNITY_EDITOR
-            CorePlus_SetPath(fileSystem.AssetPath, Application.dataPath+ "/../Binarys/", fileSystem.PersistenDataPath);
+            CorePlus_SetPath(fileSystem.AssetPath, Application.dataPath + "/../Binarys/", fileSystem.PersistenDataPath);
 #else
             CorePlus_SetPath(fileSystem.AssetPath, fileSystem.StreamPath, fileSystem.PersistenDataPath);
 #endif
@@ -242,20 +275,17 @@ namespace TopGame.Core
 #elif UNITY_IOS
             strArgvs += string.Format(";device:{0}", EDeviceType.DT_IOS);
 #endif
-            strArgvs += string.Format(";visualizer:{0}",1);
+            strArgvs += string.Format(";visualizer:{0}", 1);
             strArgvs += string.Format(";spatial:{0}", 0);
             strArgvs += string.Format(";navmesh:{0}", 1);
             strArgvs += string.Format(";threadCnt:{0}", 0);
-            strArgvs += string.Format(";package:{0}", fileSystem.eType == EFileSystemType.EncrptyPak?1:0);
+            strArgvs += string.Format(";package:{0}", fileSystem.eType == EFileSystemType.EncrptyPak ? 1 : 0);
             strArgvs += string.Format(";filesys_log:{0}", 0);
             strArgvs += string.Format(";catch_file_limit:{0}", 0);
             strArgvs += string.Format(";catch_file_maxsize:{0}", 0);
             strArgvs += string.Format(";catch_file_suffixs:{0}", 0);
             CorePlus_Startup(ref m_BI, strArgvs);
             JniPlugin plugin = new JniPlugin();
-
-            fileSystem.InitPackages();
-#endif
         }
         //-------------------------------------------------
         public static System.IntPtr LoadCsv(int type, byte[] bytes)

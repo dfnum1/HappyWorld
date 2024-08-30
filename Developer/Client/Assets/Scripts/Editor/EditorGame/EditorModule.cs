@@ -72,7 +72,7 @@ namespace TopGame.ED
 
             Framework.Module.ModuleManager.editorModule = this;
             FileSystem pFileSystem = new FileSystem();
-            pFileSystem.PreBuild();
+            pFileSystem.PreBuild(plusSetting);
             m_pFileSystem = RegisterModule<FileSystem>(pFileSystem);
             m_pFileSystem.EnableCoroutines(false);
             if (Data.DataManager.getInstance() == null)

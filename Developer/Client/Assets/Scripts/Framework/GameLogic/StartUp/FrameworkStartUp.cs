@@ -82,7 +82,7 @@ namespace TopGame.Logic
                 }
             }
             m_pFileSystem = new FileSystem();
-            m_pFileSystem.PreBuild();
+            m_pFileSystem.PreBuild(m_pFrameworkMain);
             m_pFileSystem.Init(type, "base_pkg", VersionData.version, VersionData.base_pack_cnt, VersionData.assetbundleEncryptKey, VersionData.sceneStreamAB);
         }
         //------------------------------------------------------
@@ -173,15 +173,27 @@ namespace TopGame.Logic
                 case EStartUpSection.AppAwake:
                     {
                         Debug.Log("awake game");
-                        if (m_pFileSystem != null)
-                        {
-                            GameDelegate.StartUp(m_pFileSystem);
-                        }
                         m_StartUpLoading.SetExternProgress(0);
                         m_StartUpLoading.SetTotalProgress(200);
-                        m_pHotScripts.Awake(m_pFileSystem);
-                        m_pHotScripts.Start();
-                        if (OnStartupSectionChange != null) OnStartupSectionChange.Invoke(EStartUpSection.AppAwake);
+                        if (m_pFileSystem != null)
+                        {
+                            bool useCoroutine = false;
+                            if (useCoroutine)
+                            {
+                                m_pFrameworkMain.BeginCoroutine(InitAppAwake());
+                            }
+                            else
+                            {
+                                GameDelegate.StartUp(m_pFileSystem);
+                                m_pHotScripts.Awake(m_pFileSystem);
+                                m_pHotScripts.Start();
+                                if (OnStartupSectionChange != null) OnStartupSectionChange.Invoke(EStartUpSection.AppAwake);
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogError("FileSystem is null");
+                        }
                     }
                     break;
                 case EStartUpSection.AppStartUp:
@@ -192,6 +204,19 @@ namespace TopGame.Logic
                     }
                     break;
             }
+        }
+        //------------------------------------------------------
+        System.Collections.IEnumerator InitAppAwake()
+        {
+            IEnumerator<bool> result = GameDelegate.CoroutineStartUp(m_pFileSystem);
+            if(!result.Current)
+            {
+                Debug.LogError("FileSystem StartUp Fialed");
+                yield break;
+            }
+            m_pHotScripts.Awake(m_pFileSystem);
+            m_pHotScripts.Start();
+            if (OnStartupSectionChange != null) OnStartupSectionChange.Invoke(EStartUpSection.AppAwake);
         }
         //------------------------------------------------------
         internal void Update()
