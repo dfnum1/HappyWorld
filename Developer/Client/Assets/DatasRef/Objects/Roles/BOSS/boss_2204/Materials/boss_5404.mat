@@ -176,7 +176,7 @@ Material:
     - _DissolveEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ProjectorColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 0, g: 1, b: 0.021739244, a: 0}
     - _ShadowColor: {r: 0.13999996, g: 0.13999996, b: 0.13999996, a: 1}
