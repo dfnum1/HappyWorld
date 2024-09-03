@@ -282,6 +282,14 @@ namespace TopGame.ED
                 proj.WriteToFile(projPath);
 #endif
             }
+            if(target == BuildTarget.WebGL)
+            {
+                string webConfig = Application.dataPath + "/../Publishs/WebGL/web.config";
+                if(File.Exists(webConfig) && Directory.Exists(pathToBuiltProject))
+                {
+                    File.Copy(webConfig, Path.Combine(pathToBuiltProject, "web.config"), true);
+                }
+            }
         }
 
         static string Utf8string(string s)

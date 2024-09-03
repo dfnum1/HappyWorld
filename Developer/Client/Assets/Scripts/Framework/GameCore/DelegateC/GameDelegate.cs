@@ -228,16 +228,17 @@ namespace TopGame.Core
         //-------------------------------------------------
         static void InnerStartUp(AFileSystem fileSystem)
         {
+#if UNITY_WEBGL && !UNITY_EDITOR
+#else
             if (fileSystem == null)
             {
                 return;
             }
-
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
             CorePlus_SetPath(fileSystem.AssetPath, Application.dataPath + "/../Binarys/", fileSystem.PersistenDataPath);
-#else
-            CorePlus_SetPath(fileSystem.AssetPath, fileSystem.StreamPath, fileSystem.PersistenDataPath);
-#endif
+    #else
+                    CorePlus_SetPath(fileSystem.AssetPath, fileSystem.StreamPath, fileSystem.PersistenDataPath);
+    #endif
             m_pVisualizer = new Visualizer();
             m_BI = new sBridgeInterface();
             m_InvBI = new sInvBridgeInterface();
@@ -286,6 +287,7 @@ namespace TopGame.Core
             strArgvs += string.Format(";catch_file_suffixs:{0}", 0);
             CorePlus_Startup(ref m_BI, strArgvs);
             JniPlugin plugin = new JniPlugin();
+#endif
         }
         //-------------------------------------------------
         public static System.IntPtr LoadCsv(int type, byte[] bytes)

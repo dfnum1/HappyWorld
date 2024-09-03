@@ -673,8 +673,11 @@ namespace TopGame.ED
                 if (m_BuildSetting.bIL2CPP)
                 {
                     m_BuildSetting.globalMetaDataEncrypt = EditorGUILayout.Toggle("global-metadata加密", m_BuildSetting.globalMetaDataEncrypt, ops);
-                    m_BuildSetting.armv7 = EditorGUILayout.Toggle("Armv7", m_BuildSetting.armv7, ops);
-                    m_BuildSetting.armv64 = EditorGUILayout.Toggle("Armv64", m_BuildSetting.armv64, ops);
+                    if(m_BuildSetting.buildTarget != BuildTarget.WebGL )
+                    {
+                        m_BuildSetting.armv7 = EditorGUILayout.Toggle("Armv7", m_BuildSetting.armv7, ops);
+                        m_BuildSetting.armv64 = EditorGUILayout.Toggle("Armv64", m_BuildSetting.armv64, ops);
+                    }
                 }
                 m_BuildSetting.useEncrptyPak = EditorGUILayout.Toggle("资源加固", m_BuildSetting.useEncrptyPak, ops);
                 m_BuildSetting.versionCheck = EditorGUILayout.Toggle("版本检测", m_BuildSetting.versionCheck, ops);
