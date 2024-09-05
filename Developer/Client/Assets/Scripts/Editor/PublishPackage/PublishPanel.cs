@@ -2113,6 +2113,8 @@ namespace TopGame.ED
             if (bBuildAB)
                 manifest = CompileAssetBundles.BuildAB(outPut, setting.buildOptions, setting.buildTarget, setting.strEncryptKey);
 
+            CheckAssetBundles.CheckABInfiniteDeps(setting, manifest);
+
             RenderSettings.fog = fog;
             if (setting.copyToStreamAsset)
             {

@@ -27,13 +27,13 @@ namespace TopGame.Core
         //------------------------------------------------------
         protected override void OnPreBuild()
         {
-            m_bCoroutines = true;
+            m_bEnableCoroutines = true;
 #if UNITY_EDITOR
             m_strStreamPath = Application.streamingAssetsPath;
             m_strStreamPackagesPath = Application.streamingAssetsPath;
             m_strStreamRawPath = Application.streamingAssetsPath + "/raws/";
             m_strStreamBinaryPath = Application.dataPath + "/../Binarys/";
-            if (!Application.isPlaying) m_bCoroutines = false;
+            if (!Application.isPlaying) m_bEnableCoroutines = false;
 #elif UNITY_STANDALONE
             m_strStreamPath = Application.streamingAssetsPath;
             m_strStreamPackagesPath = Application.streamingAssetsPath + "/packages/";
